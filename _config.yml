@@ -1,0 +1,19 @@
+# Site
+title: Лестницы.рф
+email: info@lestnicatmp.ru
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/lestnicy.rf"
+url: "http://лестницы.рф"
+
+# Convertation
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
