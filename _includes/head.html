@@ -2,7 +2,7 @@
   <title>{{ page.title }} :: {{ site.title }}</title>
   
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}{% endif %}">
-  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.title }}{% endif %}" />
   <meta charset="utf-8">
   
   <link rel="shortcut icon" href="/images/favicon.ico" />
