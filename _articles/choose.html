@@ -1,7 +1,16 @@
 ---
 title: Подобрать лестницу
+permalink: /подобрать-лестницу/
 ---
 
 <main>
   <h1>{{ page.title }}</h1>
+  
+  {% for hash in site.data.stairs %}
+  {% assign item = hash[1] %}
+  <h3>{{ item.name }}</h3>
+  <p> 
+    {{ item.text }}
+  </p>
+  {% endfor %}
 </main>
