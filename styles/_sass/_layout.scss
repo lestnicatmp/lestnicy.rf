@@ -7,6 +7,7 @@ header {
 	position: fixed;
 	width: 100%;
 	background-color: #ddd;
+	padding-left: 20px;
 	padding-bottom: 10px;
 	@extend %clearfix;
 	
@@ -88,22 +89,22 @@ main {
 main section {
 	padding: 30px 40px;
 	@extend %clearfix;
-}
-
-main section:nth-child(even) {
-	background-color: #eee;
-}
-
-main section img {
-	float: left;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-right: 30px;
-}
-
-main section.next {
-	font-size: 200%;
-	background-color: #ddd;
+	
+	img {
+		float: left;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-right: 30px;
+	}
+		
+	&:nth-child(even) {
+		background-color: #eee;
+	}
+	
+	&.next {
+		font-size: 200%;
+		background-color: #ddd;
+	}	
 }
 
 footer {

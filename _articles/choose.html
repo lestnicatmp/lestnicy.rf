@@ -8,22 +8,28 @@ permalink: /подобрать-лестницу/
     <li class="selected"><a href="">по решению</a></li>
     <li><a href="">по параметрам</a></li>
     <li><a href="">по каталогу</a></li>
-    <li><a href="">лично в шоуруме</a></li>
+    <li><a href="/купить-лестницу/">лично в шоуруме</a></li>
   </ul>
 </nav>
 
 <main>
-  <h1>{{ page.title }}</h1>
+
+  <section>
+    <h1>{{ page.title }}</h1>
+  </section>
   
   {% for hash in site.data.stairs %}
   {% assign item = hash[1] %}
-  <h3>{{ item.name }}</h3>
-  <p> 
-    {{ item.text }}
-  </p>
+  <section>
+    <h2>{{ item.name }}</h2>
+    <p> 
+      {{ item.text }}
+    </p>
+  </section>
   {% endfor %}
     
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
   </section>  
+  
 </main>
