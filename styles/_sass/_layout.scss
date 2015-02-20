@@ -1,1 +1,57 @@
+body {
+  padding: 0px 40px;
+}
 
+header {
+	background-color: #ddd;
+	padding-bottom: 10px;
+	@extend %clearfix;
+}
+
+header #logo{
+	font-size: 200%;
+}
+
+header li {
+	float: left;
+}
+
+#menu-page {
+	background-color: #eee;
+	@extend %clearfix;
+}
+
+#menu-page li {
+	float: left;
+}
+
+main section {
+	padding: 30px 40px;
+	@extend %clearfix;
+}
+
+main section:nth-child(even) {
+	border-radius: 15px;
+	background-color: #eee;
+}
+
+main section img {
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 30px;
+}
+
+section.next {
+	font-size: 250%;
+}
+
+footer {
+	overflow: hidden; //TODO: remove
+	color: #333;
+	background-color: #ddd;
+}
+
+footer nav ul {
+	float: left;	
+}
