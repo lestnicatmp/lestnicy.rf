@@ -1,28 +1,24 @@
-body {
-  padding: 0px 40px;
-}
-
 header {
 	background-color: #ddd;
 	padding-bottom: 10px;
 	@extend %clearfix;
-}
-
-header #logo{
-	font-size: 200%;
-}
-
-header li {
-	float: left;
+	
+	#logo {
+		font-size: 200%;
+	}
+	
+	li {
+		float: left;
+	}
 }
 
 #menu-page {
 	background-color: #eee;
 	@extend %clearfix;
-}
-
-#menu-page li {
-	float: left;
+	
+	li {
+		float: left;
+	}
 }
 
 main section {
@@ -31,7 +27,6 @@ main section {
 }
 
 main section:nth-child(even) {
-	border-radius: 15px;
 	background-color: #eee;
 }
 
@@ -42,7 +37,7 @@ main section img {
 	margin-right: 30px;
 }
 
-section.next {
+main section.next {
 	font-size: 250%;
 }
 
@@ -50,8 +45,8 @@ footer {
 	overflow: hidden; //TODO: remove
 	color: #333;
 	background-color: #ddd;
-}
-
-footer nav ul {
-	float: left;	
+	
+	ul {
+		float: left;	
+	}
 }
