@@ -1,6 +1,6 @@
 ---
-title: Подобрать лестницу по решению
 permalink: /подобрать-лестницу/
+title: Подобрать лестницу по решению
 ---
 
 <nav id="menu-page">
@@ -18,6 +18,17 @@ permalink: /подобрать-лестницу/
     <h1>{{ page.title }}</h1>
   </section>
   
+  {% assign stairs = site.content | where:'stair',true | sort:'order' %}
+  {% for item in stairs %}
+  <section>
+    <img src="{{ item.image }}">
+    <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
+    <p> 
+      {{ item.text }}
+    </p>
+  </section>
+  {% endfor %}
+    
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
   </section>  
