@@ -6,9 +6,9 @@
   
   <nav id="menu-site">
     <ul>
-      <li class="selected"><a href="/">1. Главная страница</a></li>
-      <li><a href="/подобрать-лестницу/">2. Подобрать лестницу</a></li>
-      <li><a href="/купить-лестницу/">3. Купить лестницу</a></li>
+      <li {% if page.main %}class="selected"{% endif %}><a href="/">1. Главная страница</a></li>
+      <li {% if page.select %}class="selected"{% endif %}><a href="/подобрать-лестницу/">2. Подобрать лестницу</a></li>
+      <li {% if page.order %}class="selected"{% endif %}><a href="/купить-лестницу/">3. Купить лестницу</a></li>
     </ul>
   </nav>
   
