@@ -4,8 +4,8 @@ layout: default
 
 <nav id="menu-page">
   <ul>
-    <li class="selected"><a href="/купить-лестницу/">торгово-выставочный зал</a></li>
-    <li><a href="/купить-лестницу/сетевые-магазины/">сетевые магазины</a></li>
+    <li {% if page.order %}class="selected"{% endif %}><a href="/купить-лестницу/">торгово-выставочный зал</a></li>
+    <li {% if page.shops %}class="selected"{% endif %}><a href="/купить-лестницу/сетевые-магазины/">сетевые магазины</a></li>
   </ul>
 </nav>
 
