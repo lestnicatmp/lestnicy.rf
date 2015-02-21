@@ -1,6 +1,7 @@
 ---
 permalink: /подобрать-лестницу/по-каталогу/
 title: Подобрать лестницу по каталогу
+select: true
 ---
 
 <nav id="menu-page">
@@ -18,8 +19,8 @@ title: Подобрать лестницу по каталогу
     <h1>{{ page.title }}</h1>
   </section>
   
-  {% assign stairs = site.content | where:'stair',true | sort:'order' %}
-  {% for item in stairs %}
+  {% assign catalog = site.content | where:'catalog',true | sort:'order' %}
+  {% for item in catalog %}
   <section>
     <img src="{{ item.image }}">
     <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
