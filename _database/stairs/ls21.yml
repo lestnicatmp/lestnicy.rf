@@ -2,6 +2,7 @@
 ---
 name: ЛС-21
 price: 35500
+
 height: 2,9
 size: 2,49 х 0,94
 window: 2,00 х 0,92
@@ -11,7 +12,10 @@ finish: есть
 step_hight: 193
 step_quantity: 15
 step_depth: 40
-photo: /images/stairs/model/ls21.jpg
+
+order: 3
+permalink: /подобрать-лестницу/по-каталогу/ЛС-21/
+image: /images/stairs/model/ls21.jpg
 text: >
   Представляет собой прямую лестницу – в начале захода и поворотную 
   (с забежными ступенями) - на выходе, устанавливается преимущественно 
