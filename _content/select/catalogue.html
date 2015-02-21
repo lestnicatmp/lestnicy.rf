@@ -18,8 +18,8 @@ permalink: /подобрать-лестницу/по-каталогу/
     <h1>{{ page.title }}</h1>
   </section>
   
-  {% for hash in site.data.stairs %}
-  {% assign item = hash[1] %}
+  {% assign stairs = site.content | where:'stair',true | sort:'order' %}
+  {% for item in stairs %}
   <section>
     <img src="{{ item.image }}">
     <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
@@ -27,7 +27,7 @@ permalink: /подобрать-лестницу/по-каталогу/
       {{ item.text }}
     </p>
   </section>
-  {% endfor %}    
+  {% endfor %}
     
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>

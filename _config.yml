@@ -1,7 +1,6 @@
 # Base
 title: Лестницы.рф
 description: "Готовые деревянные лестницы"
-github: lestnicatmpru
 url: "http://лестницы.рф"
 permalink: /blog/:title/:year-:month-:day/
 data_source: ./_database
