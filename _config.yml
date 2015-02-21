@@ -10,7 +10,7 @@ exclude: [CNAME, README.md]
 
 # Collections
 collections:
-  content:
+  contents:
     output: true
     permalink: /:path/
  
