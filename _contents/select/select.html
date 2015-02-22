@@ -10,7 +10,7 @@ layout: select
     <h1>{{ page.title }}</h1>
   </section>
   
-  {% assign catalog = site.content | where:'stair',true | sort:'position' %}
+  {% assign catalog = site.contents | where:'stair',true | sort:'position' %}
   {% for item in catalog %}
   <section>
     <img src="{{ item.image }}">
