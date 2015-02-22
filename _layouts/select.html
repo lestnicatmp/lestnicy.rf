@@ -4,10 +4,24 @@ layout: default
 
 <nav id="menu-page">
   <ul>
-    <li {% if page.select %}class="selected"{% endif %}><a href="/подобрать-лестницу/">по решению</a></li>
-    <li {% if page.select %}class="selected"{% endif %}><a href="/подобрать-лестницу/по-параметрам/">по параметрам</a></li>
-    <li {% if page.select %}class="selected"{% endif %}>по каталогу</a></li>
+    
+    {% assign permalink = '/подобрать-лестницу/' %}
+    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+      <a href="{{ permalink }}">по решению</a>
+    </li>
+    
+    {% assign permalink = '/подобрать-лестницу/по-параметрам/' %}
+    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+      <a href="{{ permalink }}">по параметрам</a>
+    </li>
+    
+    {% assign permalink = '/подобрать-лестницу/по-каталогу/' %}
+    <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+      <a href="{{ permalink }}">по каталогу</a>
+    </li>
+    
     <li><a href="/купить-лестницу/">лично в шоуруме</a></li>
+    
   </ul>
 </nav>
 

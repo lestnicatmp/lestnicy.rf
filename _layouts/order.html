@@ -4,8 +4,17 @@ layout: default
 
 <nav id="menu-page">
   <ul>
-    <li {% if page.order %}class="selected"{% endif %}><a href="/купить-лестницу/">торгово-выставочный зал</a></li>
-    <li {% if page.shops %}class="selected"{% endif %}><a href="/купить-лестницу/сетевые-магазины/">сетевые магазины</a></li>
+    
+    {% assign permalink = '/купить-лестницу/' %}
+    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+      <a href="{{ permalink }}">торгово-выставочный зал</a>
+    </li>
+    
+    {% assign permalink = '/купить-лестницу/сетевые-магазины/' %}
+    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+      <a href="{{ permalink }}">сетевые магазины</a>
+    </li>
+  
   </ul>
 </nav>
 

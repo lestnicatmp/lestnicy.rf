@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
+<head>
+  
+  <title>{{ page.title }} :: {{ site.title }}</title>
+  
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}{% endif %}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.title }}{% endif %}" />
+  <meta charset="utf-8">
+  
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/styles/main.css">
+  
+  <script src="/scripts/main.js"></script>
+  
+</head>
+<body>
+  
+  <header>
+  
+    <div id="logo">
+      <a href="/">Лестницы.рф</a>
+    </div>
+    
+    <nav id="menu-site">
+      <ul>
+      
+        {% assign permalink = '/' %}
+        <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+          <a href="{{ permalink }}">1. Главная страница</a>
+        </li>   
+      
+        {% assign permalink = '/подобрать-лестницу/' %}
+        <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+          <a href="{{ permalink }}">2. Подобрать лестницу</a>
+        </li>   
+      
+        {% assign permalink = '/купить-лестницу/' %}
+        <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+          <a href="{{ permalink }}">3. Купить лестницу</a>
+        </li> 
+  
+      </ul>
+    </nav>
+    
+  </header>
+    
+  <div id="contacts">
+  <ul>
+    <li>+7 (495) 490 38 14</li>
+    <li>+7 (495) 490 38 28</li>
+    <li>+7 (495) 490 38 21</li>
+  </ul>
+  </div>
+  
+  {{ content }}
+  
+  <footer>
+    <a href="/блог/">Блог</a> |
+    <a href="/информация-для-дилеров/">Дилерам</a> |
+    <a href="/продажа-доски/">Продажа доски</a> |  
+    © 2015 ЛПК «Темп»
+  </footer>
 
-  {% include head.html %}
-
-  <body>
-    {% include header.html %}
-    {% include contacts.html %}
-    {{ content }}
-    {% include footer.html %}
-  </body>
-
+</body>
 </html>
