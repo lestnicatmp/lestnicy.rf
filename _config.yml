@@ -1,8 +1,9 @@
 # Base
+url: "http://лестницы.рф"
 title: Лестницы.рф
 description: "Готовые деревянные лестницы"
-url: "http://лестницы.рф"
-permalink: /blog/:title/:year-:month-:day/
+keywords: деревянные лестницы
+permalink: /блог/:title/:year-:month-:day/
 data_source: ./_database
 sass: {sass_dir: styles/_sass}
 exclude: [CNAME, README.md]
@@ -18,7 +19,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: main
   
 # Translators
 markdown: redcarpet
