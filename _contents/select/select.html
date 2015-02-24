@@ -8,18 +8,20 @@ layout: select
 
   <section>
     <h1>{{ page.title }}</h1>
-  </section>
-  
-  {% assign catalog = site.contents | where:'stair',true | sort:'position' %}
-  {% for item in catalog %}
-  <section>
-    <img src="{{ item.image }}">
-    <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
-    <p> 
-      {{ item.text }}
+    <p> Для облегчения вашего выбора мы подготовили наиболее интересные ...
     </p>
   </section>
-  {% endfor %}
+  
+  <section>
+    {% assign solutions = site.contents | where:'solution',true | sort:'position' %}
+    {% for item in solutions %}
+    <div class="solution">
+      <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
+      <p>
+      </p>
+    </div>
+    {% endfor %}
+  </section>
     
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
