@@ -27,17 +27,26 @@
       
         {% assign permalink = '/' %}
         <li {% if page.permalink == permalink %}class="selected"{% endif %}>
-          <a href="{{ permalink }}">1. Главная страница</a>
+          <a href="{{ permalink }}">
+            <div class="number">1</div> 
+            Главная <br> страница
+           </a>
         </li>   
       
         {% assign permalink = '/подобрать-лестницу/' %}
         <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
-          <a href="{{ permalink }}">2. Подобрать лестницу</a>
+          <a href="{{ permalink }}">
+            <div class="number">2</div> 
+            Подобрать <br> лестницу
+          </a>
         </li>   
       
         {% assign permalink = '/купить-лестницу/' %}
         <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
-          <a href="{{ permalink }}">3. Купить лестницу</a>
+          <a href="{{ permalink }}">
+            <div class="number">3</div> 
+            Купить <br> лестницу
+          </a>
         </li> 
   
       </ul>

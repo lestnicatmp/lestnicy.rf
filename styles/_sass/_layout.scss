@@ -10,72 +10,75 @@ header {
   height: 75px;
   position: fixed;
   width: 100%;
-  background-color: #ddd;
+  background-color: #884c27;
   padding-left: 20px;
   padding-bottom: 10px;
+  color: #fff;
+  
+  a {
+    color: #fff;
+  }
   
   #logo {
   	float: left;
   	font-size: 200%;
   }
+}
+
+#menu-site {
+  float: left;
+  margin-left: 100px;
+  color: #fff;
   
-  #menu-site {
-  	float: left;
-  	margin-left: 30px;
-  
-  	ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-  	}
-  		
-  	li {
-  	  float: left;
-  	  height: 51px;
-  	  margin-right: 30px;
-  	  padding: 10px;
-  	  padding-top: 25px;
-  	}
+  a {
+    color: #fff;
+  }
+     
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
   	
-  	li.selected {
-  	  border-left: solid 1px #ccc;
-  	  border-right: solid 1px #ccc;
-  	  background-color: #eee;
-  	}
+  li {
+    position: relative;  	 
+    float: left;
+    height: 66px;
+    margin-right: 30px;
+    padding: 10px;
+    line-height: 110%;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: "Ubuntu Condensed", sans-serif;  
+    
+    .number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 25px 10px 10px 10px;
+      font-size: 250%;
+      color: #fff;
+    }
+  }
+  
+  li.selected {
+    border-left: solid 1px #26150b;
+    border-right: solid 1px #26150b;
+    background-color: #c66f39;
   }
 }
-
-#contacts {
-  position: fixed;
-  z-index: 10;   	
-  top: 0;
-  right: 0;
-  z-index: 10;
-  font-size: 115%;
-  background-color: #fff;
-  border: solid 1px #ccc;
-  border-radius: 15px;
-  margin: 5px;
-  padding: 15px;
-  line-height: 130%;
-	
-  ul {
-  	list-style-type: none;
-  	margin: 0;
-  	padding: 0;		
-  }	
-}
-
+  
 #menu-page {
   @extend %clearfix;
   z-index: 5;   
   top: 85px;
   width: 100%;
   position: fixed;
-  background-color: #eee;
+  background-color: #c66f39;
   padding: 10px 0;
-  border-top: solid 1px #ccc;
-  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #26150b;
+  border-bottom: solid 1px #26150b;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
   
   ul {
   	list-style-type: none;
@@ -88,34 +91,63 @@ header {
   }
   
   li.selected {
-  	border: solid 1px #aaa;
-  	background-color: #ccc;
+  	border: solid 1px #26150b;
+  	background-color: #fff;
   	border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-weight: bold;
   }
 }
 
-main {
-  padding: 30px 40px;
-  @extend %clearfix; 
+#contacts {
+  position: fixed;
+  z-index: 10;   	
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  font-size: 115%;
+  background-color: #fff;
+  border: solid 1px #26150b;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 15px;
+  line-height: 130%;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: bold;
+	
+  ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;		
+  }	
 }
 
-main section {
-  @extend %clearfix;   
+main {
+  @extend %clearfix; 
+  padding: 30px 40px;
+  
   img {
   	float: left;
   	margin-top: 15px;
   	margin-bottom: 15px;
   	margin-right: 30px;
-  }
+  }  
+}
+
+main section {
+  @extend %clearfix;   
+}
+
+main .main-argument {
+  @extend %clearfix; 
+}
+
+main .argument {
+  @extend %clearfix; 
+  border-top: solid 1px #ccc;
+  margin-top: 10px;
+  padding-top: 20px;
   
-  &.next {
-  	font-size: 200%;
-  	background-color: #eee;
-  	border-top: solid 1px #ccc;
-  	border-bottom: solid 1px #ccc;
-  	margin: 0 -40px;
-  	padding: 0 40px;
-  }	
 }
 
 main .solution {
@@ -125,14 +157,13 @@ main .solution {
   padding: 1%;
   margin-right: 2%;
   margin-bottom: 2%;
-  background-color: #fff;
-  border: solid 1px #ccc;
+  border: solid 1px #000;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
   line-height: 150%;
   
   .options li.selected {
-    border: solid 1px #ccc;
+    border: solid 1px #26150b;
     background-color: #eee;
     border-radius: 5px;
   }
@@ -162,16 +193,15 @@ main .filter {
 
 main .param {
   position: relative; 
-  height: 300px;
   float: left;
   width: 29%;
   padding: 1%;
   margin-right: 2%;
   margin-bottom: 2%;
   background-color: #fff;
-  border: solid 1px #ccc;
+  border: solid 1px #000;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
   line-height: 125%;
   
   img {
@@ -186,8 +216,10 @@ main .param {
 }
 
 main .stair {
+  @extend %clearfix; 
   position: relative;
-  @extend %clearfix;    
+  border-top: solid 1px #ccc;
+  padding: 10px 0;
   
   .price {
     position: absolute;
@@ -196,12 +228,22 @@ main .stair {
   }   
 }
 
+main .next {
+  font-size: 175%;
+  background-color: #eee;
+  border-top: solid 1px #ccc;  
+  border-bottom: solid 1px #ccc;  
+  margin: 0 -40px;
+  padding: 20px 40px;
+}	
+  
 footer {
   overflow: hidden; //TODO: remove
   opacity: 0.5;
-  //background-color: #eee;
+  background-color: #eee;
   font-size: 80%;
-  padding: 10px 10px 30px 40px;
+  padding-left: 30px;
+  padding-bottom: 10px;
   
   ul {
   	float: left;	
