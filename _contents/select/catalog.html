@@ -18,7 +18,13 @@ layout: select
       <img src="{{ stair.image }}">
       <h3><a href="{{ stair.permalink }}">{{ stair.name }}</a></h3>
       <p class="text">{{ stair.text }}</p>
-      <div class="price">{{ stair.price }}</div>
+      <div class="price">
+        {% if stair.presence == 'есть' %}
+          {{ stair.price }}
+        {% else %}
+          звоните
+        {% endif %}
+      </div>
     </div>
     {% endfor %}
   </section>

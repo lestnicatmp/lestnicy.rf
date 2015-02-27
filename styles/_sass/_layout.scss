@@ -4,6 +4,7 @@ body {
 }
 
 header {
+  @extend %clearfix;
   top: 0;
   z-index: 10;
   height: 75px;
@@ -12,7 +13,6 @@ header {
   background-color: #ddd;
   padding-left: 20px;
   padding-bottom: 10px;
-  @extend %clearfix;
   
   #logo {
   	float: left;
@@ -67,6 +67,7 @@ header {
 }
 
 #menu-page {
+  @extend %clearfix;
   z-index: 5;   
   top: 85px;
   width: 100%;
@@ -75,7 +76,6 @@ header {
   padding: 10px 0;
   border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
-  @extend %clearfix;
   
   ul {
   	list-style-type: none;

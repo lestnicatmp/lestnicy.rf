@@ -19,19 +19,19 @@ layout: select
   </section>
   
   <section>
-    {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
-    {% for item in stairs %}
+    {% assign stairs = site.contents | where:'stair',true | where:'presence','есть' | sort:'position' %}
+    {% for stair in stairs %}
     <div class="param">
-      <img width="150" src="{{ item.image }}">
-      <h3><a href="{{ item.permalink }}">{{ item.name }}</a></h3>
-      <div>{{ item.text | truncatewords: 3}}..</div>
+      <img width="150" src="{{ stair.image }}">
+      <h3><a href="{{ stair.permalink }}">{{ stair.name }}</a></h3>
+      <div>{{ stair.text | truncatewords: 3}}..</div>
       <ul class="data">
-        <li>Высота: {{ item.height }}</li>
-        <li>Проем: {{ item.window }}</li>
-        <li>Древесина: {{ item.wood }}</li>
+        <li>Высота: {{ stair.height }}</li>
+        <li>Проем: {{ stair.window }}</li>
+        <li>Древесина: {{ stair.wood }}</li>
       </ul>
       <div class="price">
-        {{ item.price }}
+        {{ stair.price }}
       </div>
     </div>
     {% endfor %}
