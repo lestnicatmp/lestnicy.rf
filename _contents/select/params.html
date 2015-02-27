@@ -23,11 +23,11 @@ layout: select
     {% for item in stairs %}
     <div class="params">
       <img width="150" src="{{ item.image }}">
-      <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
-      <p>{{ item.text | truncatewords: 3}}..</p>
-      <p>Высота: {{ item.height }}</p>
-      <p>Проем: {{ item.window }}</p>
-      <p>Древесина: {{ item.wood }}</p>
+      <h3><a href="{{ item.permalink }}">{{ item.name }}</a></h3>
+      <div>{{ item.text | truncatewords: 3}}..</div>
+      <div>Высота: {{ item.height }}</div>
+      <div>Проем: {{ item.window }}</div>
+      <div>Древесина: {{ item.wood }}</div>
     </div>
     {% endfor %}
   </section>
