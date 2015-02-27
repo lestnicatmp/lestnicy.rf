@@ -10,7 +10,8 @@ header {
   height: 75px;
   position: fixed;
   width: 100%;
-  background-color: #884c27;
+  //background-color: #884c27;
+  background: linear-gradient(to bottom, #884c27, #99562c);
   padding-left: 20px;
   padding-bottom: 10px;
   color: #fff;
@@ -22,6 +23,7 @@ header {
   #logo {
   	float: left;
   	font-size: 200%;
+  	font-family: "Ubuntu Condensed", sans-serif;
   }
 }
 
@@ -62,8 +64,8 @@ header {
   }
   
   li.selected {
-    border-left: solid 1px #26150b;
-    border-right: solid 1px #26150b;
+    border-left: solid 1px #66391d;
+    border-right: solid 1px #66391d;
     background-color: #c66f39;
   }
 }
@@ -75,10 +77,11 @@ header {
   width: 100%;
   position: fixed;
   background-color: #c66f39;
+  background: linear-gradient(to bottom, #c66f39, #d4773d);
   padding: 10px 0;
-  border-top: solid 1px #26150b;
-  border-bottom: solid 1px #26150b;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  border-top: solid 1px #66391d;
+  border-bottom: solid 1px #884c27;
+  box-shadow: 0px 0px 15px #884c27;
   
   ul {
   	list-style-type: none;
@@ -91,7 +94,7 @@ header {
   }
   
   li.selected {
-  	border: solid 1px #26150b;
+  	border: solid 1px #66391d;
   	background-color: #fff;
   	border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -107,13 +110,14 @@ header {
   z-index: 10;
   font-size: 115%;
   background-color: #fff;
-  border: solid 1px #26150b;
+  border: solid 1px #66391d;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px #fff;
   padding: 15px;
   line-height: 130%;
   font-family: "Ubuntu Condensed", sans-serif;
   font-weight: bold;
+  color: #222;
 	
   ul {
   	list-style-type: none;
@@ -125,7 +129,7 @@ header {
 main {
   @extend %clearfix; 
   padding: 30px 40px;
-  
+
   img {
   	float: left;
   	margin-top: 15px;
@@ -144,7 +148,7 @@ main .main-argument {
 
 main .argument {
   @extend %clearfix; 
-  border-top: solid 1px #ccc;
+  border-top: solid 1px #777;
   margin-top: 10px;
   padding-top: 20px;
   
@@ -157,18 +161,26 @@ main .solution {
   padding: 1%;
   margin-right: 2%;
   margin-bottom: 2%;
-  border: solid 1px #000;
+  background-color: #fff;
+  border: solid 1px #777;
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
   line-height: 150%;
+  //border: solid 1px #c66f39;
+  //background: linear-gradient(to bottom, #c66f39, #c66f39 60px, #fff 51px);
+  
+  h3 {
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
   
   .options li.selected {
-    border: solid 1px #26150b;
-    background-color: #eee;
-    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
   }
 	
   .price {
+    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
     top: 0.5em;
@@ -199,7 +211,7 @@ main .param {
   margin-right: 2%;
   margin-bottom: 2%;
   background-color: #fff;
-  border: solid 1px #000;
+  border: solid 1px #777;
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
   line-height: 125%;
@@ -209,6 +221,7 @@ main .param {
   }
   
   .price {
+    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
     top: 0.5em;
@@ -218,10 +231,11 @@ main .param {
 main .stair {
   @extend %clearfix; 
   position: relative;
-  border-top: solid 1px #ccc;
+  border-top: solid 1px #777;
   padding: 10px 0;
   
   .price {
+    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
     top: 0.5em;
@@ -230,19 +244,29 @@ main .stair {
 
 main .next {
   font-size: 175%;
-  background-color: #eee;
-  border-top: solid 1px #ccc;  
-  border-bottom: solid 1px #ccc;  
+  border-top: solid 1px #777;
+  border-bottom: solid 1px #777;  
+  padding: 20px 0;
+  font-family: "Ubuntu Condensed", sans-serif;
+}	
+
+/*
+main .next {
+  font-size: 175%;
+  border-top: solid 1px #777;  
+  border-bottom: solid 1px #777; 
+  background-color: #eee; 
   margin: 0 -40px;
   padding: 20px 40px;
-}	
+  font-family: "Ubuntu Condensed", sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}*/
   
 footer {
   overflow: hidden; //TODO: remove
   opacity: 0.5;
-  background-color: #eee;
   font-size: 80%;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-bottom: 10px;
   
   ul {
