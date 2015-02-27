@@ -20,7 +20,9 @@ layout: select
       {% assign default_option = solution.options | first %}
       {% assign default_stair = stairs | where:'name',default_option.stair | first %}
       <h3><a href="{{ solution.permalink }}">{{ solution.name }}</a></h3>
-      <img width="150" src="{{ default_stair.image }}">
+      {% if  default_stair %}
+        <img width="150" src="{{ default_stair.image }}">
+      {% endif %}
       <div class="text">
         {{ solution.text }}
       </div>
@@ -29,7 +31,10 @@ layout: select
           {% for option in solution.options %}
           {% assign stair = stairs | where:'name',option.stair | first %}
           <li {% if stair == default_stair %}class="selected"{% endif %}> 
-            {{ option.stair }} {{ option.descr }} 
+            {{ option.stair }} 
+            {% if option.descr %}
+            - {{ option.descr }}
+            {% endif %} 
           </li>
           {% endfor %}
         </ul>
