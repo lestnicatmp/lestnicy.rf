@@ -11,16 +11,17 @@ layout: select
     <p>Полный каталог нашех лестниц ...</p>
   </section>
   
-  {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
-  {% for item in stairs %}
-  <section>
-    <img src="{{ item.image }}">
-    <h3><a href="{{ item.permalink }}">{{ item.name }}</a></h3>
-    <p> 
-      {{ item.text }}
-    </p>
+  <section class="stairs">
+    {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
+    {% for stair in stairs %}
+    <div class="stair">
+      <img src="{{ stair.image }}">
+      <h3><a href="{{ stair.permalink }}">{{ stair.name }}</a></h3>
+      <p class="text">{{ stair.text }}</p>
+      <div class="price">{{ stair.price }}</div>
+    </div>
+    {% endfor %}
   </section>
-  {% endfor %}
     
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>

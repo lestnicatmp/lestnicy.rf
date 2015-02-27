@@ -149,6 +149,7 @@ main .filter {
   border: solid 1px #ccc;
   border-radius: 15px;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
   
   p {
   	float: left;
@@ -159,7 +160,8 @@ main .filter {
   }
 }
 
-main .params {
+main .param {
+  position: relative; 
   height: 300px;
   float: left;
   width: 29%;
@@ -175,6 +177,23 @@ main .params {
   img {
   	box-shadow: none;
   }
+  
+  .price {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+  }   
+}
+
+main .stair {
+  position: relative;
+  @extend %clearfix;    
+  
+  .price {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+  }   
 }
 
 footer {

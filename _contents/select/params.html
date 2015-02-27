@@ -15,13 +15,13 @@ layout: select
   <section class="filter">
     <p>высота</p>
     <p>проем</p>
-    <p>дервесина</p>
+    <p>древесина</p>
   </section>
   
   <section>
     {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
     {% for item in stairs %}
-    <div class="params">
+    <div class="param">
       <img width="150" src="{{ item.image }}">
       <h3><a href="{{ item.permalink }}">{{ item.name }}</a></h3>
       <div>{{ item.text | truncatewords: 3}}..</div>
@@ -30,6 +30,9 @@ layout: select
         <li>Проем: {{ item.window }}</li>
         <li>Древесина: {{ item.wood }}</li>
       </ul>
+      <div class="price">
+        {{ item.price }}
+      </div>
     </div>
     {% endfor %}
   </section>
