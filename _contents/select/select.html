@@ -12,20 +12,35 @@ layout: select
     </p>
   </section>
   
-  <section style="display:none;">
-  </section>
-  
   <section>
+    {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
     {% assign solutions = site.contents | where:'solution',true | sort:'position' %}
-    {% for item in solutions %}
+    {% for solution in solutions %}
     <div class="solution">
-      <h2><a href="{{ item.permalink }}">{{ item.name }}</a></h2>
-      <p>
-      </p>
+      {% assign default_option = solution.options | first %}
+      {% assign default_stair = stairs | where:'name',default_option.stair | first %}
+      <h3><a href="{{ solution.permalink }}">{{ solution.name }}</a></h3>
+      <img width="150" src="{{ default_stair.image }}">
+      <div class="text">
+        {{ solution.text }}
+      </div>
+      <div class="options">
+        <ul>
+          {% for option in solution.options %}
+          {% assign stair = stairs | where:'name',option.stair | first %}
+          <li {% if stair == default_stair %}class="selected"{% endif %}> 
+            {{ option.stair }} - {{ option.descr }} 
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="price">
+        {{ default_stair.price }}
+      </div>
     </div>
     {% endfor %}
   </section>
-    
+
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
   </section>  
