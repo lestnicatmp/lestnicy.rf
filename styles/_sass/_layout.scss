@@ -150,13 +150,8 @@ main .main-argument {
 
 main .argument {
   @extend %clearfix; 
-  border: solid 1px #777;
-  margin-bottom: 30px;
-  padding: 30px;
-  background-color: #fff;
-  border: solid 1px #777;
-  border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  border-top: dashed 1px #777;
+  padding: 30px 0;
 }
 
 main .solution {
