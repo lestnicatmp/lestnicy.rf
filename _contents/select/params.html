@@ -25,9 +25,11 @@ layout: select
       <img width="150" src="{{ item.image }}">
       <h3><a href="{{ item.permalink }}">{{ item.name }}</a></h3>
       <div>{{ item.text | truncatewords: 3}}..</div>
-      <div>Высота: {{ item.height }}</div>
-      <div>Проем: {{ item.window }}</div>
-      <div>Древесина: {{ item.wood }}</div>
+      <ul class="data">
+        <li>Высота: {{ item.height }}</li>
+        <li>Проем: {{ item.window }}</li>
+        <li>Древесина: {{ item.wood }}</li>
+      </ul>
     </div>
     {% endfor %}
   </section>

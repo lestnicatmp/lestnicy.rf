@@ -29,7 +29,7 @@ layout: select
           {% for option in solution.options %}
           {% assign stair = stairs | where:'name',option.stair | first %}
           <li {% if stair == default_stair %}class="selected"{% endif %}> 
-            {{ option.stair }} - {{ option.descr }} 
+            {{ option.stair }} {{ option.descr }} 
           </li>
           {% endfor %}
         </ul>
