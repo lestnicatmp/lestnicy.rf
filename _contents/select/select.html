@@ -13,8 +13,10 @@ layout: select
   </section>
   
   <section>
+  
     {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
     {% assign solutions = site.data.solutions | sort:'position' %}
+    
     {% for solution in solutions %}
     {% for option in solution.options %}
     {% unless default_stair %}
@@ -51,12 +53,14 @@ layout: select
     {% assign default_stair = null %}
     {% endif %}
     {% endfor %}
+    
     <div class="solution">
       <h3>Изготовление на заказ</h3>
       <div class="text">
         Если вы не смогли подобрать подходящую лестницу.
       </div>
     </div>
+    
   </section>
 
   <section class="next">
