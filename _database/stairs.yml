@@ -1,0 +1,493 @@
+# Stairs
+---
+
+- name: ЛС-01У
+  presence: нет
+  price: 26500
+  height: 2,7
+  size: 1,65 х 1,39
+  window: 1,64 х 0,9
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 193
+  step_quantity: 14
+  step_depth: 40
+  position: 1
+  image: /images/stairs/image/ls01u.jpg
+  text: >
+    Универсальная лестница (возможность сборки в левозаходном и правозаходном 
+    варианте одного и того же комплекта). Удобна при установке в угол помещения, 
+    поэтому не имеет перил. При необходимости клиент может установить пристенные 
+    поручни.
+    
+- name: ЛС-02
+  presence: есть
+  price: 34000
+  height: 2,9
+  size: 2,49 х 1,02
+  window: 2,00 х 0,92
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 193
+  step_quantity: 15
+  step_depth: 40
+  position: 6
+  image: /images/stairs/image/ls02.jpg
+  text: >
+    Аналогична ЛС-21 с той разницей, что у нее поворот наверху происходит 
+    в сторону противоположную стороне с перилами. Разработана для холлов 
+    со вторым светом.    
+    
+- name: ЛС-04У
+  presence: есть
+  price: 31000
+  height: 2,7
+  size: 1,71 х 1,40
+  window: 1,64 х 0,90
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 193
+  step_quantity: 14
+  step_depth: 40
+  position: 2
+  image: /images/stairs/image/ls04u.jpg
+  text: >
+    Отличается от ЛС-01У наличием перил, что позволяет устанавливать ЛС-04У 
+    с примыканием только к одной стене.   
+    
+- name: ЛС-05
+  presence: есть
+  price: 32200
+  height: 2,7
+  size: 1,71 х 1,40
+  window: 1,64 х 0,90
+  wood: хвоя
+  riser: есть
+  finish: есть
+  step_height: 193
+  step_quantity: 14
+  step_depth: 40
+  position: 3
+  image: /images/stairs/image/ls05.jpg
+  text: >
+    Полная комплектация при тех же габаритных размерах, что и две 
+    предыдущие модели. Имеет подступенки, перила и деревянное оформление 
+    центральной колонны.     
+
+- name: ЛС-06
+  presence: есть
+  price: 56200
+  height: 3,1
+  size: 3,50 х 1,64
+  window: 2,23 х 0,93
+  wood: хвоя
+  riser: есть
+  finish: нет
+  step_height: 193
+  step_quantity: 16
+  step_depth: 60
+  position: 10
+  image: /images/stairs/image/ls06.jpg
+  text: >
+    Комфортная лестница с классической схемой: марш-промежуточная площадка-марш. 
+    Основной вариант установки – с примыканием к одной стене. Занимает большую 
+    площадь при установке, но не требует широкого междуэтажного проема.   
+    
+- name: ЛС-08
+  presence: есть
+  price: 43900
+  height: 2,66-3,01
+  size: 1,62 x 0,64, 1,50 x 0,95
+  window: 1,50 х 0,72
+  wood: слоеная береза
+  riser: нет
+  finish: нет
+  step_height: 190-215
+  step_quantity: 13
+  step_depth: 35
+  position: 26
+  image: /images/stairs/image/ls08.jpg
+  text: >
+    Компактная лестница с переменным профилем ступеней. Отличительная 
+    особенность - наличие центрального косоура, состоящего из отдельных 
+    звеньев-модулей, соединенных между собой. Конструкция модулей позволяет 
+    поворачивать лестницу при сборке на угол от 0° до 90°. Лестница снабжена 
+    устойчивыми перилами, располагающимися по внешнему радиусу поворота, 
+    оригинальной конструкции с пластиковым объемным поручнем фирмы «REHAU». 
+    Ступени изготавливаются из специальной фанеры толщиной 35мм.
+    
+- name: ЛС-10У
+  presence: есть
+  price: 26500
+  height: 2,92
+  size: 2,38 х 0,83
+  window: 1,90 х 0,83
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 225
+  step_quantity: 13
+  step_depth: 40
+  position: 12
+  image: /images/stairs/image/ls10u.jpg
+  text: >
+    Имеет прямой марш без подступенков и перила с одной стороны, 
+    последние могут ставиться как слева, так и справа.     
+    
+- name: ЛС-11/12
+  presence: есть
+  price: 14500
+  height: 2,70-2,90
+  size: 1,60/1,70 x 0,63
+  window: 1,30/1,22 х 0,61
+  wood: береза
+  riser: нет
+  finish: нет
+  step_height: 193
+  step_quantity: 14-15
+  step_depth: 18..22
+  position: 25
+  image: /images/stairs/image/ls1112.jpg
+  text: >
+    Трехсекционная складная конструкция, предназначенная преимущественно 
+    для использования при подъеме и спуске на чердак и подвальные помещения. 
+    Компактна, функциональна и проста в эксплуатации. В основе конструкции- 
+    металлический каркас с прикрепленными к нему деревянными ступенями. 
+    Монтируется в собственной коробке, изготовленной из высококачественной 
+    фанеры. Адаптируется по высоте при установке за счет смещения верхнего 
+    короба по вертикали относительно верхнего перекрытия, изменения угла 
+    наклона марша со ступенями, либо подрезкой снизу.  
+    
+- name: ЛС-21
+  presence: есть
+  price: 35500
+  height: 2,9
+  size: 2,49 х 0,94
+  window: 2,00 х 0,92
+  wood: хвоя
+  riser: нет
+  finish: есть
+  step_height: 193
+  step_quantity: 15
+  step_depth: 40
+  position: 4
+  image: /images/stairs/image/ls21.jpg
+  text: >
+    Представляет собой прямую лестницу – в начале захода и поворотную 
+    (с забежными ступенями) - на выходе, устанавливается преимущественно 
+    с примыканием к одной стене.     
+    
+- name: ЛС-215
+  presence: есть
+  price: 36600
+  height: 2,9
+  size: 2,49 х 0,96
+  window: 2,00 х 0,92
+  wood: хвоя
+  riser: есть
+  finish: есть
+  step_height: 193
+  step_quantity: 15
+  step_depth: 40
+  position: 5
+  image: /images/stairs/image/ls215.jpg
+  text: >
+    Аналогичная предыдущей, но закрытого типа: с подступенками.   
+    
+- name: ЛС-225
+  presence: есть
+  price: 39900
+  height: 2,9
+  size: 2,31 х 1,40
+  window: 2,20 х 0,92
+  wood: хвоя
+  riser: есть
+  finish: есть
+  step_height: 193
+  step_quantity: 15
+  step_depth: 40
+  position: 7
+  image: /images/stairs/image/ls225.jpg
+  text: >
+    Лестница с забежными ступенями снизу. 
+    Имеет в своем составе перила, подступенки и деревянное оформление колонны. 
+    Является малогабаритной версией ЛС-06. 
+    
+- name: ЛС-235
+  presence: есть
+  price: 39900
+  height: 3,1
+  size: 2,03 х 1,69
+  window: 1,92 х 1,02
+  wood: хвоя
+  riser: есть
+  finish: есть
+  step_height: 193
+  step_quantity: 16
+  step_depth: 40
+  position: 8
+  image: /images/stairs/image/ls235.jpg
+  text: >
+    Модификация предыдущей лестницы с увеличенной заходной частью и 
+    уменьшенной – выходной. При этом уменьшена требуемая длина междуэтажного 
+    проема за счет увеличения его ширины. Одновременно на один шаг увеличена 
+    высота подъема.  
+    
+- name: ЛС-32
+  presence: есть
+  price: 69000
+  height: 3,13
+  size: 1,95 х 2,23
+  window: 1,87 х 2,11
+  wood: хвоя
+  riser: есть
+  finish: есть
+  step_height: 174
+  step_quantity: 18
+  step_depth: 60
+  position: 9
+  image: /images/stairs/image/ls32.jpg
+  text: >
+    Комфортная лестница средних размеров. Несмотря на наличие забежных 
+    ступеней имеет наилучшие соотношения высоты шага и глубины ступени. 
+    Предназначена для установки в шахту, ограниченную стенами с трех сторон 
+    (требует широкого междуэтажного проема). 
+    
+- name: ЛС-62У
+  presence: есть
+  price: 68000
+  height: 3,1
+  size: 1,95 х 2,57
+  window: 1,95 х 2,55
+  wood: хвоя
+  riser: есть
+  finish: нет
+  step_height: 193
+  step_quantity: 16
+  step_depth: 60
+  position: 11
+  image: /images/stairs/image/ls62u.jpg
+  text: >
+    Лестница шахтного типа, сделанная по схеме марш-площадка-марш без 
+    забежных ступеней. Универсальна по положению маршей (слева и справа). 
+    Требует относительно большой междуэтажный проем, имеет перила, подступенки.
+    
+- name: ЛС-91
+  presence: нет
+  price: 22500
+  height: 2,7
+  size: 1,23 х 1,11
+  window: 1,22 х 0,90
+  wood: хвоя
+  riser: нет
+  finish: есть
+  step_height: 225
+  step_quantity: 12
+  step_depth: 40
+  position: 13
+  image: /images/stairs/image/ls91.jpg
+  text: >
+    Предельно малогабаритная лестница без подступенков 
+    с забежными ступенями снизу. 
+    
+- name: ЛС-92
+  presence: есть
+  price: 25500
+  height: 2,7
+  size: 1,85 х 1,03
+  window: 1,80 х 0,83
+  wood: сосна
+  riser: нет
+  finish: есть
+  step_height: 225
+  step_quantity: 12
+  step_depth: 40
+  position: 14
+  image: /images/stairs/image/ls92.jpg
+  text: >
+    Универсальная лестница без подступенков и поручней.     
+    
+- name: ЛС-925
+  presence: есть
+  price: 30900
+  height: 2,7
+  size: 1,89 х 1,03
+  window: 1,83 х 0,83
+  wood: сосна
+  riser: есть
+  finish: есть
+  step_height: 225
+  step_quantity: 12
+  step_depth: 40
+  position: 15
+  image: /images/stairs/image/ls925.jpg
+  text: >
+    Универсальная лестница с подступенками и поручнями.  
+    
+- name: ЛС-93
+  presence: есть
+  price: 30900
+  height: 2,5
+  size: 1,55 х 0,87
+  window: 1,50 х 0,83
+  wood: сосна
+  riser: нет
+  finish: есть
+  step_height: 227
+  step_quantity: 11
+  step_depth: 60
+  position: 16
+  image: /images/stairs/image/ls93.jpg
+  text: >
+    Сверхмалогабаритная лестница с улучшенной эргономикой 
+    для невысоких помещений.                 
+    
+- name: ЛВ-1.0
+  presence: есть
+  price: 50500
+  height: 2,93-2,97
+  size: 1,00 х 1,00
+  window: 1,00 х 1,00
+  wood: бук
+  riser: нет
+  finish: нет
+  step_height: 225
+  step_quantity: 13
+  step_depth: 40
+  position: 19
+  image: /images/stairs/image/lv10.jpg
+  text: >
+    Сверхмалогабаритная лестница в виде полного винта, квадратная в плане, 
+    в которой за счет замены центральной опорной колонны скрытым металлическим 
+    косоуром достигнуто уменьшение размеров междуэтажного проема до 1,0 м х 1,0 м.
+    
+- name: ЛВ-1.2Б
+  presence: есть
+  price: 50500
+  height: 2,93-2,97
+  size: 1,20 х 1,20
+  window: 1,20 х 1,20
+  wood: бук
+  riser: нет
+  finish: нет
+  step_height: 225
+  step_quantity: 13
+  step_depth: 40
+  position: 20
+  image: /images/stairs/image/lv12b.jpg
+  text: >
+    Аналог предыдущей, но более комфортная за счет 
+    увеличения проема до 1,2 м х 1,2 м.
+    
+- name: ЛВ-1.2Х
+  presence: есть
+  price: 25700
+  height: 2,73
+  size: 1,22 х 1,22
+  window: 1,20 х 1,20
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 210
+  step_quantity: 13
+  step_depth: 40
+  position: 22
+  image: /images/stairs/image/lv12x.jpg
+  text: >
+    Малогабаритная лестница из хвойной древесины в виде винта полного оборота, 
+    квадратная в плане. Размер квадрата (и требуемого междуэтажного проема) 
+    1,2м х 1,2м.         
+    
+- name: ЛВ-1.4Б
+  presence: есть
+  price: 86500
+  height: 2,73
+  size: 1,40 х 1,40
+  window: 1,40 х 1,40
+  wood: бук
+  riser: нет
+  finish: есть
+  step_height: 210
+  step_quantity: 13
+  step_depth: 40
+  position: 21
+  image: /images/stairs/image/lv14b.jpg
+  text: >
+    Самая комфортная лестница в виде полного винта с улучшенным дизайном. 
+    Её перильное ограждение включает в себя поручень с изогнутыми элементами 
+    и балясины, отделанные металлом. Требует проема 1,4м х 1,4м. 
+    
+- name: ЛВ-1.4Х
+  presence: есть
+  price: 29900
+  height: 2,73
+  size: 1,42 х 1,42
+  window: 1,40 х 1,40
+  wood: хвоя
+  riser: нет
+  finish: нет
+  step_height: 210
+  step_quantity: 13
+  step_depth: 40
+  position: 23
+  image: /images/stairs/image/lv14x.jpg
+  text: >
+    Аналогичная предыдущей лестнице с размерами в плане 1,4м х 1,4м.  
+    
+- name: ЛВР-1.0
+  presence: нет
+  price: 
+  height: 2,70-2,75
+  size: d=1,07
+  window: 1,07 х 1,07
+  wood: бук
+  riser: нет
+  finish: есть
+  step_height: 225
+  step_quantity: 12
+  step_depth: 40
+  position: 24
+  image: /images/stairs/image/lvr10.jpg
+  text: >
+    Элегантная винтовая лестница.           
+    
+- name: ЛМ-22
+  presence: есть
+  price: 89900
+  height: '3,17'
+  size: 3,03 х 1,64
+  window: 2,95 х 0,90
+  wood: бук
+  riser: нет
+  finish: нет
+  step_height: 193
+  step_quantity: 16
+  step_depth: 50
+  position: 17
+  image: /images/stairs/image/lm22.jpg
+  text: >
+    Комфортная лестница с улучшенным дизайном с забежными ступенями снизу (поворот на 90°). 
+    Её поручень имеет винтовую вставку.
+    
+- name: ЛМ-31
+  presence: есть
+  price: 125000
+  height: 3,13
+  size: 2,05 х 1,80
+  window: 2,02 х 1,80
+  wood: бук
+  riser: нет
+  finish: есть
+  step_height: 184
+  step_quantity: 17
+  step_depth: 60
+  position: 18
+  image: /images/stairs/image/lm31.jpg
+  text: >
+    Комфортная лестница классической косоурной конструкции с забежными 
+    ступенями (поворот на 180 градусов), центральной колонной и перилами по 
+    центру снизу и сверху. Центральная колонна облицована деревянными втулками.
+                      
