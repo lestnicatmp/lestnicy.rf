@@ -13,6 +13,9 @@ collections:
   contents:
     output: true
     permalink: /:path/
+  test:
+    output: true
+    permalink: /:path/
  
 # Defaults
 defaults:
