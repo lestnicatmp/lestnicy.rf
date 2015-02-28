@@ -1,7 +1,7 @@
 body {
   position: relative;
   padding-top: 135px;
-  background-image: url("/images/background.png");
+  //background-image: url("/images/background.png");
 }
 
 header {
@@ -169,6 +169,11 @@ main .solution {
   //border: solid 1px #c66f39;
   //background: linear-gradient(to bottom, #c66f39, #c66f39 60px, #fff 51px);
   
+  //&:hover {
+  //  border-color: #444;
+  //  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  //}
+  
   h3 {
     font-family: "Ubuntu Condensed", sans-serif;
   }
@@ -253,11 +258,9 @@ main .stair {
 
 main .next {
   font-size: 175%;
-  border: solid 1px #777;
-  border-radius: 15px;
-  background-color: #fff;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
-  padding: 20px 20px;
+  border-top: dashed 1px #777;
+  border-bottom: dashed 1px #777;
+  padding: 20px 0;
   font-family: "Ubuntu Condensed", sans-serif;
 }	
   
