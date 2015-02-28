@@ -14,20 +14,18 @@ layout: select
   
   <section>
     {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
-    {% assign solutions = site.data..solutions | sort:'position' %}
+    {% assign solutions = site.data.solutions | sort:'position' %}
     {% for solution in solutions %}
     {% for option in solution.options %}
     {% unless default_stair %}
     {% assign default_stair = stairs | where:'name',option.stair | first %}
     {% endunless %}
     {% endfor %}
-    {% if default_stair or solution.show %}
+    {% if default_stair %}
     {% assign default_stair_page = site.contents | where:'stair',default_stair.name | first %}
     <div class="solution">
       <h3><a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo; {{ default_stair.name }}</a></h3>
-      {% if  default_stair %}
-        <img width="150" src="{{ default_stair.image }}">
-      {% endif %}
+      <img width="150" src="{{ default_stair.image }}">
       <div class="text">
         {{ solution.text }}
       </div>
@@ -53,6 +51,12 @@ layout: select
     {% assign default_stair = null %}
     {% endif %}
     {% endfor %}
+    <div class="solution">
+      <h3>Изготовление на заказ</h3>
+      <div class="text">
+        Если вы не смогли подобрать подходящую лестницу.
+      </div>
+    </div>
   </section>
 
   <section class="next">
