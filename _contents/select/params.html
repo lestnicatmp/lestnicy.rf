@@ -3,6 +3,7 @@ permalink: /подобрать-лестницу/по-параметрам/
 title: Подобрать лестницу по параметрам
 layout: select
 ---
+{% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
 
 <main>
 
@@ -19,7 +20,6 @@ layout: select
   </section>
   
   <section>
-    {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
     <div class="param">

@@ -3,6 +3,8 @@ permalink: /подобрать-лестницу/
 title: Подобрать лестницу по решению
 layout: select
 ---
+{% assign solutions = site.data.solutions | sort:'position' %}
+{% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
 
 <main>
 
@@ -13,9 +15,6 @@ layout: select
   </section>
   
   <section>
-  
-    {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
-    {% assign solutions = site.data.solutions | sort:'position' %}
     
     {% for solution in solutions %}
     {% for option in solution.options %}

@@ -3,6 +3,7 @@ permalink: /подобрать-лестницу/по-каталогу/
 title: Подобрать лестницу по каталогу
 layout: select
 ---
+{% assign stairs = site.data.stairs | sort:'position' %}
 
 <main>
 
@@ -12,7 +13,6 @@ layout: select
   </section>
   
   <section class="stairs">
-    {% assign stairs = site.data.stairs | sort:'position' %}
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
     <div class="stair">
