@@ -12,7 +12,7 @@ layout: select
   </section>
   
   <section class="stairs">
-    {% assign stairs = site.contents | where:'stair',true | sort:'position' %}
+    {% assign stairs = site.data.stairs | sort:'position' %}
     {% for stair in stairs %}
     <div class="stair">
       <img src="{{ stair.image }}">

@@ -19,7 +19,7 @@ layout: select
   </section>
   
   <section>
-    {% assign stairs = site.contents | where:'stair',true | where:'presence','есть' | sort:'position' %}
+    {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
     {% for stair in stairs %}
     <div class="param">
       <img width="150" src="{{ stair.image }}">
