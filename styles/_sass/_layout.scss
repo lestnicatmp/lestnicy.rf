@@ -237,7 +237,7 @@ main .param {
   }   
 }
 
-main .stair {
+main .stairs .stair {
   @extend %clearfix; 
   position: relative;
   background-color: #fff;
@@ -247,6 +247,19 @@ main .stair {
   margin-bottom: 30px;
   padding: 20px;
   
+  .price {
+    color: #000;  
+    font-family: "Ubuntu Condensed", sans-serif;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+  }   
+}
+
+main > .stair {
+  @extend %clearfix; 
+  position: relative;
+
   .price {
     color: #000;  
     font-family: "Ubuntu Condensed", sans-serif;

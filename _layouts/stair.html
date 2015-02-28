@@ -1,11 +1,79 @@
 ---
 layout: select
 ---
-
 {% assign stair = site.data.stairs | where:'name',page.stair | first %}
+
 <main>
-  <h1>{{ page.title }}</h1>
-  <p>{{ stair.text }}</p>
+
+  <section class="stair">
+    
+    <h1>{{ page.title }}</h1>
+    
+    <img src="{{ stair.image }}">
+    <p>{{ stair.text }}</p>
+    
+    <div class="price">
+      {{ stair.price }}
+    </div>
+    
+    <h2>Параметры</h2>
+    <table>
+    <thead>
+      <tr>
+        <th>Высота подъема от пола до пола, м</th>
+        <th>Минимал. размеры проема, м х м</th>
+        <th><span style="white-space: nowrap;">Древе-</span><br />сина</th>
+        <th>Высота шага, мм</th>
+        <th>Число шагов подъема</th>
+        <th>Толщина ступени, мм</th>
+        <th>Наличие <span style="white-space: nowrap;">подсту-</span><br />пенков</th>
+        <th>Отделка опорной колонны древесиной</th>
+        <th>Габариты в плане, м х м</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ stair.height }}</td>
+        <td>{{ stair.window }}</td>
+        <td>{{ stair.wood }}</td>
+        <td>{{ stair.step_height }}</td>
+        <td>{{ stair.step_quantity }}</td>
+        <td>{{ stair.step_width }}</td>
+        <td>{{ stair.riser }}</td>
+        <td>{{ stair.finish }}</td>
+        <td>{{ stair.size }}</td>
+       </tr>
+    </tbody>
+    </table> 
+    
+    {% if stair.boxes %}
+    <h2>Упаковка</h2>
+    <table>
+    <thead>
+      <tr>
+        <th style="width: 33%;">Номер упаковки</th>
+        <th style="width: 33%;">Габариты, мм</th>
+        <th style="width: 33%;">Масса брутто, кг</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for box in stair.boxes %}
+      <tr>
+        <td>{{ forloop.index }}</td>
+        <td>{{ box.size }}</td>
+        <td>{{ box.weight }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+    {% endif %}
+    
+    {{ content }}
+    
+  </section>
+
+  <section class="next">
+    <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
+  </section>    
   
-  {{ content }}
 </main>
