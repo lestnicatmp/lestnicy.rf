@@ -14,6 +14,7 @@
   step_quantity: 14
   step_depth: 40
   position: 1
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-01У/
   image: /images/stairs/image/ls01u.jpg
   text: >
     Универсальная лестница (возможность сборки в левозаходном и правозаходном 
@@ -34,6 +35,7 @@
   step_quantity: 15
   step_depth: 40
   position: 6
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-02/  
   image: /images/stairs/image/ls02.jpg
   text: >
     Аналогична ЛС-21 с той разницей, что у нее поворот наверху происходит 
@@ -53,6 +55,7 @@
   step_quantity: 14
   step_depth: 40
   position: 2
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-04У/  
   image: /images/stairs/image/ls04u.jpg
   text: >
     Отличается от ЛС-01У наличием перил, что позволяет устанавливать ЛС-04У 
@@ -71,6 +74,7 @@
   step_quantity: 14
   step_depth: 40
   position: 3
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-05/  
   image: /images/stairs/image/ls05.jpg
   text: >
     Полная комплектация при тех же габаритных размерах, что и две 
@@ -90,6 +94,7 @@
   step_quantity: 16
   step_depth: 60
   position: 10
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-06/  
   image: /images/stairs/image/ls06.jpg
   text: >
     Комфортная лестница с классической схемой: марш-промежуточная площадка-марш. 
@@ -109,6 +114,7 @@
   step_quantity: 13
   step_depth: 35
   position: 26
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-08/  
   image: /images/stairs/image/ls08.jpg
   text: >
     Компактная лестница с переменным профилем ступеней. Отличительная 
@@ -132,6 +138,7 @@
   step_quantity: 13
   step_depth: 40
   position: 12
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-10У/  
   image: /images/stairs/image/ls10u.jpg
   text: >
     Имеет прямой марш без подступенков и перила с одной стороны, 
@@ -150,6 +157,7 @@
   step_quantity: 14-15
   step_depth: 18..22
   position: 25
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-1112/  
   image: /images/stairs/image/ls1112.jpg
   text: >
     Трехсекционная складная конструкция, предназначенная преимущественно 
@@ -174,6 +182,7 @@
   step_quantity: 15
   step_depth: 40
   position: 4
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-21/  
   image: /images/stairs/image/ls21.jpg
   text: >
     Представляет собой прямую лестницу – в начале захода и поворотную 
@@ -193,6 +202,7 @@
   step_quantity: 15
   step_depth: 40
   position: 5
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-215/  
   image: /images/stairs/image/ls215.jpg
   text: >
     Аналогичная предыдущей, но закрытого типа: с подступенками.   
@@ -210,6 +220,7 @@
   step_quantity: 15
   step_depth: 40
   position: 7
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-225/  
   image: /images/stairs/image/ls225.jpg
   text: >
     Лестница с забежными ступенями снизу. 
@@ -229,6 +240,7 @@
   step_quantity: 16
   step_depth: 40
   position: 8
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-235/  
   image: /images/stairs/image/ls235.jpg
   text: >
     Модификация предыдущей лестницы с увеличенной заходной частью и 
@@ -249,6 +261,7 @@
   step_quantity: 18
   step_depth: 60
   position: 9
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-32/  
   image: /images/stairs/image/ls32.jpg
   text: >
     Комфортная лестница средних размеров. Несмотря на наличие забежных 
@@ -269,6 +282,7 @@
   step_quantity: 16
   step_depth: 60
   position: 11
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-62У/  
   image: /images/stairs/image/ls62u.jpg
   text: >
     Лестница шахтного типа, сделанная по схеме марш-площадка-марш без 
@@ -288,6 +302,7 @@
   step_quantity: 12
   step_depth: 40
   position: 13
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-91/  
   image: /images/stairs/image/ls91.jpg
   text: >
     Предельно малогабаритная лестница без подступенков 
@@ -306,6 +321,7 @@
   step_quantity: 12
   step_depth: 40
   position: 14
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-92/  
   image: /images/stairs/image/ls92.jpg
   text: >
     Универсальная лестница без подступенков и поручней.     
@@ -323,6 +339,7 @@
   step_quantity: 12
   step_depth: 40
   position: 15
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-925/  
   image: /images/stairs/image/ls925.jpg
   text: >
     Универсальная лестница с подступенками и поручнями.  
@@ -340,6 +357,7 @@
   step_quantity: 11
   step_depth: 60
   position: 16
+  permalink: /подобрать-лестницу/по-каталогу/ЛС-93/  
   image: /images/stairs/image/ls93.jpg
   text: >
     Сверхмалогабаритная лестница с улучшенной эргономикой 
@@ -358,6 +376,7 @@
   step_quantity: 13
   step_depth: 40
   position: 19
+  permalink: /подобрать-лестницу/по-каталогу/ЛВ-1.0/  
   image: /images/stairs/image/lv10.jpg
   text: >
     Сверхмалогабаритная лестница в виде полного винта, квадратная в плане, 
@@ -377,6 +396,7 @@
   step_quantity: 13
   step_depth: 40
   position: 20
+  permalink: /подобрать-лестницу/по-каталогу/ЛВ-1.2Б/  
   image: /images/stairs/image/lv12b.jpg
   text: >
     Аналог предыдущей, но более комфортная за счет 
@@ -395,6 +415,7 @@
   step_quantity: 13
   step_depth: 40
   position: 22
+  permalink: /подобрать-лестницу/по-каталогу/ЛВ-1.2Х/  
   image: /images/stairs/image/lv12x.jpg
   text: >
     Малогабаритная лестница из хвойной древесины в виде винта полного оборота, 
@@ -414,6 +435,7 @@
   step_quantity: 13
   step_depth: 40
   position: 21
+  permalink: /подобрать-лестницу/по-каталогу/ЛВ-1.4Б/  
   image: /images/stairs/image/lv14b.jpg
   text: >
     Самая комфортная лестница в виде полного винта с улучшенным дизайном. 
@@ -433,6 +455,7 @@
   step_quantity: 13
   step_depth: 40
   position: 23
+  permalink: /подобрать-лестницу/по-каталогу/ЛВ-1.4Х/  
   image: /images/stairs/image/lv14x.jpg
   text: >
     Аналогичная предыдущей лестнице с размерами в плане 1,4м х 1,4м.  
@@ -450,6 +473,7 @@
   step_quantity: 12
   step_depth: 40
   position: 24
+  permalink: /подобрать-лестницу/по-каталогу/ЛВР-1.0/  
   image: /images/stairs/image/lvr10.jpg
   text: >
     Элегантная винтовая лестница.           
@@ -467,6 +491,7 @@
   step_quantity: 16
   step_depth: 50
   position: 17
+  permalink: /подобрать-лестницу/по-каталогу/ЛМ-22/  
   image: /images/stairs/image/lm22.jpg
   text: >
     Комфортная лестница с улучшенным дизайном с забежными ступенями снизу (поворот на 90°). 
@@ -485,6 +510,7 @@
   step_quantity: 17
   step_depth: 60
   position: 18
+  permalink: /подобрать-лестницу/по-каталогу/ЛМ-31/  
   image: /images/stairs/image/lm31.jpg
   text: >
     Комфортная лестница классической косоурной конструкции с забежными 

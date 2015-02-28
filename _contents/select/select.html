@@ -13,7 +13,7 @@ layout: select
   </section>
   
   <section>
-    {% assign stairs = site.contents | where:'stair',true | where:'presence','есть' | sort:'position' %}
+    {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
     {% assign solutions = site.data..solutions | sort:'position' %}
     {% for solution in solutions %}
     {% for option in solution.options %}
