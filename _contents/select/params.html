@@ -21,9 +21,10 @@ layout: select
   <section>
     {% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
     {% for stair in stairs %}
+    {% assign stair_page = site.contents | where:'stair',stair.name | first %}
     <div class="param">
       <img width="150" src="{{ stair.image }}">
-      <h3><a href="{{ stair.permalink }}">{{ stair.name }}</a></h3>
+      <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
       <div>{{ stair.text | truncatewords: 3}}..</div>
       <ul class="data">
         <li>Высота: {{ stair.height }}</li>

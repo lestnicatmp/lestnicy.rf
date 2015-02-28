@@ -14,9 +14,10 @@ layout: select
   <section class="stairs">
     {% assign stairs = site.data.stairs | sort:'position' %}
     {% for stair in stairs %}
+    {% assign stair_page = site.contents | where:'stair',stair.name | first %}
     <div class="stair">
       <img src="{{ stair.image }}">
-      <h3><a href="{{ stair.permalink }}">{{ stair.name }}</a></h3>
+      <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
       <p class="text">{{ stair.text }}</p>
       <div class="price">
         {% if stair.presence == 'есть' %}

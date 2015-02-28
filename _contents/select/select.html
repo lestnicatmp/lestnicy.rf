@@ -22,8 +22,9 @@ layout: select
     {% endunless %}
     {% endfor %}
     {% if default_stair or solution.show %}
+    {% assign default_stair_page = site.contents | where:'stair',default_stair.name | first %}
     <div class="solution">
-      <h3><a href="{{ default_stair.permalink }}">{{ solution.name }} &rsaquo; {{ default_stair.name }}</a></h3>
+      <h3><a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo; {{ default_stair.name }}</a></h3>
       {% if  default_stair %}
         <img width="150" src="{{ default_stair.image }}">
       {% endif %}
