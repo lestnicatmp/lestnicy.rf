@@ -2,88 +2,6 @@
 permalink: /подобрать-лестницу/
 title: Подобрать лестницу по решению
 layout: select
-
-solutions:
-  
-  - name: Универсальное решение
-    position: 1
-    options:
-      - stair: ЛС-01У
-      - stair: ЛС-04У
-        descr: перила
-      - stair: ЛС-05
-        descr: перила, подступенки, оттделка
-    text: >
-      Универсальное, доступное по цене решение.
-      
-  - name: Классическое решение
-    position: 2
-    options:
-      - stair: ЛС-21
-      - stair: ЛС-215
-      - stair: ЛС-02
-      - stair: ЛС-225
-      - stair: ЛС-235
-      - stair: ЛС-06    
-    text: >
-      Классика. Длинный марш, забежные ступени снизу или сверху. 
-      
-  - name: Решение шахтного типа  
-    position: 3
-    options:
-      - stair: ЛС-32
-      - stair: ЛС-62У  
-    text: >
-      Повышенная комфортность, требует широкого межэтажного проема. 
-    
-  - name: Компактное решение 
-    position: 4
-    options:
-      - stair: ЛС-91
-      - stair: ЛС-92
-      - stair: ЛС-925
-      - stair: ЛС-93    
-    text: >
-      Компактные, но комфортные лестницы. 
-
-  - name: Решение для квадратного проема      
-    position: 5
-    options:
-      - stair: ЛВ-1.0
-      - stair: ЛС-1.2Х
-      - stair: ЛВ-1.2Б
-      - stair: ЛВ-1.4Х
-      - stair: ЛВ-1.4Б
-    text: >
-      Лестницы для квадратного проема. 
-    
-  - name: Решение премиум класса     
-    position: 6
-    options:
-      - stair: ЛМ-22
-      - stair: ЛС-32
-    text: >
-      Наши премиальные лестницы.   
-  
-  - name: Спецефическое решение    
-    position: 7
-    options:
-      - stair: ЛС-10У
-        descr: прямая
-      - stair: ЛС-11/12
-        descr: чердачная
-      - stair: ЛС-08
-        descr: модульная
-      - stair: ЛВР-1.0
-        descr: винтовая
-    text: >
-      Если вам нужен особый тип лестницы. 
-      
-  - name: Изготовление на заказ
-    position: 8
-    show: true
-    text: >
-      Если вы не смогли подобрать подходящую лестницу.                                   
 ---
 
 <main>
@@ -96,7 +14,7 @@ solutions:
   
   <section>
     {% assign stairs = site.contents | where:'stair',true | where:'presence','есть' | sort:'position' %}
-    {% assign solutions = page.solutions | sort:'position' %}
+    {% assign solutions = site.data..solutions | sort:'position' %}
     {% for solution in solutions %}
     {% for option in solution.options %}
     {% unless default_stair %}
