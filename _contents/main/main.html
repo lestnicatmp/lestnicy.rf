@@ -17,6 +17,13 @@ layout: main
       15 лет на рынке и за это время приобрела устойчивый статус одного из 
       лидеров отрасли. Оцените преимущества нашей продукции.
     </p>
+    <p class="photos">
+      {% for stair in site.data.stairs %}
+      {% for photo in stair.photos %}
+      <img width="150px" src="{{ photo.image | replace:'<size>','200x150' }}">
+      {% endfor %}
+      {% endfor %}
+    </p>
   </section>
   
   <section id="производство" class="argument">
