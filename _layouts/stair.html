@@ -10,7 +10,18 @@ layout: select
     <h1>{{ page.title }}</h1>
     
     <img src="{{ stair.image }}">
-    <p>{{ stair.text }}</p>
+    
+    <p class="text">
+      {{ stair.text }}
+    </p>
+    
+    {% if stair.photos %}
+    <p class="photos">
+      {% for photo in stair.photos %}
+      <img src="{{ photo.image | replace:'<size>','200x150' }}">
+      {% endfor %}
+    </p>
+    {% endif %}
     
     <div class="price">
       {{ stair.price }}

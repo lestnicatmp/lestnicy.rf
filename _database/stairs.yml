@@ -26,7 +26,9 @@
     - size: 2505х410х280
       weight: 86
     - size: 1205х410х280
-      weight: 34    
+      weight: 34
+  photos:
+    - image: /images/stairs/photos/<size>/ls01u-1.jpg
     
 - name: ЛС-02
   presence: есть
