@@ -149,8 +149,14 @@ main .argument-main {
   padding-bottom: 30px;
   background-image: url("/images/background.jpg");
   
-  .photos {
-    opacity: 0.8;
+  .photos img {
+    opacity: 0.75;
+  }
+  
+  .photos img:last-child {
+    opacity: 1;
+    border: solid 2px #000;
+    box-shadow: 0 0 15px #aaa;   
   }
 }
 
