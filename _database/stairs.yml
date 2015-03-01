@@ -29,6 +29,7 @@
       weight: 34
   photos:
     - image: /images/stairs/photos/<size>/ls01u-1.jpg
+      main: true
     
 - name: ЛС-02
   presence: есть
@@ -80,6 +81,9 @@
       weight: 45
     - size: 2505х460х280
       weight: 100
+  photos:
+    - image: /images/stairs/photos/<size>/ls04u-1.jpg
+      main: true     
           
 - name: ЛС-05
   presence: есть
@@ -105,7 +109,10 @@
     - size: 2050х460х280
       weight: 79
     - size: 2750х460х280
-      weight: 105       
+      weight: 105
+  photos:
+    - image: /images/stairs/photos/<size>/ls05-1.jpg
+      main: true        
 
 - name: ЛС-06
   presence: есть
@@ -134,7 +141,10 @@
       weight: 90 
     - size: 3560х415х280
       weight: 137     
-    
+  photos:
+    - image: /images/stairs/photos/<size>/ls06-1.jpg  
+    - image: /images/stairs/photos/<size>/ls06-2.jpg
+        
 - name: ЛС-08
   presence: есть
   price: 43900
@@ -180,7 +190,10 @@
       weight: 14
     - size: 3850х540х200
       weight: 113
-    
+  photos:
+    - image: /images/stairs/photos/<size>/ls10u-1.jpg
+      main: true
+        
 - name: ЛС-11/12
   presence: есть
   price: 14500
@@ -203,7 +216,11 @@
     Монтируется в собственной коробке, изготовленной из высококачественной 
     фанеры. Адаптируется по высоте при установке за счет смещения верхнего 
     короба по вертикали относительно верхнего перекрытия, изменения угла 
-    наклона марша со ступенями, либо подрезкой снизу.  
+    наклона марша со ступенями, либо подрезкой снизу.
+  photos:
+    - image: /images/stairs/photos/<size>/ls1112-1.jpg
+    - image: /images/stairs/photos/<size>/ls1112-2.jpg
+    - image: /images/stairs/photos/<size>/ls1112-3.jpg    
     
 - name: ЛС-21
   presence: есть
@@ -254,7 +271,9 @@
       weight: 58
     - size: 3280х420х280
       weight: 129
-    
+  photos:
+    - image: /images/stairs/photos/<size>/ls215-1.jpg
+        
 - name: ЛС-225
   presence: есть
   price: 39900
@@ -280,6 +299,8 @@
       weight: 130
     - size: 1900х460х280
       weight: 72
+  photos:
+    - image: /images/stairs/photos/<size>/ls225-1.jpg
           
 - name: ЛС-235
   presence: есть
@@ -335,7 +356,9 @@
     - size: 2745х475х280
       weight: 122
     - size: 2745х475х280
-      weight: 114      
+      weight: 114
+  photos:
+    - image: /images/stairs/photos/<size>/ls32-1.jpg
     
 - name: ЛС-62У
   presence: есть
@@ -365,7 +388,9 @@
     - size: 2530х340х280
       weight: 89   
     - size: 2750х460х280
-      weight: 107 
+      weight: 107
+  photos:
+    - image: /images/stairs/photos/<size>/ls62u-1.jpg
                 
 - name: ЛС-91
   presence: нет
@@ -389,7 +414,11 @@
       weight: 20
     - size: 2745х475х280
       weight: 112
-          
+  photos:
+    - image: /images/stairs/photos/<size>/ls91-1.jpg
+    - image: /images/stairs/photos/<size>/ls91-2.jpg
+    - image: /images/stairs/photos/<size>/ls91-3.jpg
+                
 - name: ЛС-92
   presence: есть
   price: 25500
@@ -484,6 +513,11 @@
       weight: 30
     - size: 2000х540х210
       weight: 95
+  photos:
+    - image: /images/stairs/photos/<size>/lv10-1.jpg
+      main: true
+    - image: /images/stairs/photos/<size>/lv10-2.jpg
+    - image: /images/stairs/photos/<size>/lv10-3.jpg      
           
 - name: ЛВ-1.2Б
   presence: есть
@@ -559,6 +593,10 @@
       weight: 65
     - size: 2790х470х220
       weight: 132
+  photos:
+    - image: /images/stairs/photos/<size>/lv14b-1.jpg
+      main: true
+    - image: /images/stairs/photos/<size>/lv14b-2.jpg       
           
 - name: ЛВ-1.4Х
   presence: есть
@@ -583,7 +621,9 @@
       weight: 45
     - size: 2900х460х280
       weight: 105
-    
+  photos:
+    - image: /images/stairs/photos/<size>/lv14x-1.jpg
+        
 - name: ЛМ-22
   presence: есть
   price: 89900
@@ -609,7 +649,10 @@
     - size: 1810х560х280
       weight: 77
     - size: 2820х380х280
-      weight: 102             
+      weight: 102
+  photos:
+    - image: /images/stairs/photos/<size>/lm22-1.jpg
+      main: true          
     
 - name: ЛМ-31
   presence: есть
@@ -638,7 +681,11 @@
       weight: 77
     - size: 2820х380х280
       weight: 102 
-                
+  photos:
+    - image: /images/stairs/photos/<size>/lm31-1.jpg
+    - image: /images/stairs/photos/<size>/lm31-2.jpg
+      main: true        
+                      
 - name: ЛВР-1.0
   presence: нет
   price: 

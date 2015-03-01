@@ -1,7 +1,6 @@
 body {
   position: relative;
-  padding-top: 135px;
-  background-image: url("/images/background.png");
+  padding-top: 150px;
 }
 
 header {
@@ -129,7 +128,7 @@ header {
 
 main {
   @extend %clearfix; 
-  padding: 30px 40px 20px 40px;
+  padding: 0 40px 20px 40px;
 
   img {
   	float: left;
@@ -143,9 +142,16 @@ main section {
   @extend %clearfix;   
 }
 
-main .main-argument {
+main .argument-main {
   @extend %clearfix; 
-  margin-bottom: 30px;
+  margin: 0 -40px;
+  padding: 10px 40px;
+  padding-bottom: 30px;
+  background-image: url("/images/background.jpg");
+  
+  .photos {
+    opacity: 0.8;
+  }
 }
 
 main .argument {
