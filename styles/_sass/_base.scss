@@ -7,12 +7,11 @@ nav, main, header {
 }
 
 body {
+  background-color: $background-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -26,7 +25,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
   border-radius: 10px;
-  //box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 figure > img {
@@ -49,13 +47,14 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;  
+  color: $brand-color;  
   font-weight: bold;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: $header-font-family;
 }
 
 h1 {
   font-size: 175%;
+  padding-top: 15px;
 }
 
 a {
@@ -69,10 +68,8 @@ a {
 
 blockquote {
   color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  border-left: 4px solid lighten($grey-color, 40%);
   padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
   font-style: italic;
 
   > :last-child {

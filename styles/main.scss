@@ -7,20 +7,18 @@ $base-font-family: Ubuntu, sans-serif;
 $base-font-size: 150%;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.65;
+$header-font-family: "Ubuntu Condensed", sans-serif;
 
-$spacing-unit: 30px;
-
-$text-color: #222;
 $background-color: #fff;
+$style-color: #884c27;
 $brand-color: #000;
-
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+$text-color: #222;
+$grey-color: #777;
 
 $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
+$spacing-unit: 30px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

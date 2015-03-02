@@ -1,6 +1,6 @@
 body {
   position: relative;
-  padding-top: 150px;
+  padding-top: 148px;
 }
 
 header {
@@ -10,8 +10,8 @@ header {
   height: 75px;
   position: fixed;
   width: 100%;
-  //background-color: #884c27;
-  background: linear-gradient(to bottom, #884c27, #99562c);
+  background: linear-gradient(
+    to bottom, $style-color, lighten($style-color, 10%));
   padding-left: 20px;
   padding-bottom: 10px;
   color: #fff;
@@ -23,11 +23,17 @@ header {
   #logo {
   	float: left;
   	font-size: 200%;
-  	font-family: "Ubuntu Condensed", sans-serif;
+  	font-family: $header-font-family;
+  	text-shadow: 1px 1px 2px #333;
+  	text-decoration: none;
+  	    
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
-#menu-site {
+#site-menu {
   float: left;
   margin-left: 100px;
   color: #fff;
@@ -45,13 +51,14 @@ header {
   li {
     position: relative;  	 
     float: left;
-    height: 66px;
+    height: 60px;
     margin-right: 30px;
-    padding: 10px;
+    padding: 13px;
     line-height: 110%;
     padding-left: 50px;
+    padding-right: 15px;
     font-weight: bold;
-    font-family: "Ubuntu Condensed", sans-serif;  
+    font-family: $header-font-family;  
     
     .number {
       position: absolute;
@@ -64,25 +71,27 @@ header {
   }
   
   li.selected {
-    border-left: solid 1px #66391d;
-    border-right: solid 1px #66391d;
-    background-color: #c66f39;
+    border-left: solid 1px $style-color;
+    border-right: solid 1px $style-color;
+    background-color: lighten($style-color, 15%);
   }
 }
   
-#menu-page {
+#page-menu {
   @extend %clearfix;
   z-index: 5;   
   top: 85px;
   width: 100%;
   position: fixed;
-  background-color: #c66f39;
-  background: linear-gradient(to bottom, #c66f39, #db7b3f);
+  background: linear-gradient(
+    to bottom, lighten($style-color, 15%), lighten($style-color, 20%));
   padding: 10px 0;
-  border-top: solid 1px #66391d;
-  border-bottom: solid 1px #884c27;
-  box-shadow: 0px 0px 15px #884c27;
-  
+  border-top: solid 1px $style-color;
+  border-bottom: solid 1px lighten($style-color, 5%);
+  box-shadow: 0px 0px 15px rgba($grey-color, 0.5);
+  font-family: $header-font-family; 
+  letter-spacing: 0.05em;
+    
   ul {
   	list-style-type: none;
   }
@@ -94,10 +103,10 @@ header {
   }
   
   li.selected {
-  	border: solid 1px #66391d;
-  	background-color: #fff;
+  	border: solid 1px $style-color;
+  	background-color: $background-color;
   	border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px $background-color;
     font-weight: bold;
   }
 }
@@ -109,15 +118,14 @@ header {
   right: 5px;
   z-index: 10;
   font-size: 115%;
-  background-color: #fff;
-  border: solid 1px #66391d;
+  background-color: $background-color;
+  border: solid 1px $style-color;
   border-radius: 15px;
-  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px $background-color;
   padding: 15px;
   line-height: 130%;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: $header-font-family;
   font-weight: bold;
-  color: #222;
 	
   ul {
   	list-style-type: none;
@@ -145,7 +153,7 @@ main section {
 main .argument-main {
   @extend %clearfix; 
   margin: 0 -40px;
-  padding: 10px 40px;
+  padding: 0 40px;
   padding-bottom: 30px;
   background-image: url("/images/background.jpg");
   
@@ -162,7 +170,7 @@ main .argument-main {
 
 main .argument {
   @extend %clearfix; 
-  border-top: dashed 1px #777;
+  border-top: dashed 1px $grey-color;
   padding: 30px 0;
 }
 
@@ -173,45 +181,34 @@ main .solution {
   padding: 1%;
   margin-right: 2%;
   margin-bottom: 2%;
-  background-color: #fff;
-  border: solid 1px #777;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
   border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   line-height: 150%;
-  //border: solid 1px #c66f39;
-  //background: linear-gradient(to bottom, #c66f39, #c66f39 60px, #fff 51px);
-  
-  //&:hover {
-  //  border-color: #444;
-  //  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  //}
-  
-  h3 {
-    font-family: "Ubuntu Condensed", sans-serif;
-  }
-  
+
   .options li.selected {
     font-weight: bold;
-    color: #000;
+    color: $brand-color;
     text-decoration: underline;
   }
 	
   .price {
-    color: #000;
-    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
-    top: 0.5em;
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
   }
 }
 
 main .filter {
   height: 150px;
-  background-color: #fff;
-  border: solid 1px #777;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
   border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
-  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  background-color: $background-color;
   margin-bottom: 25px;
   
   p {
@@ -230,66 +227,66 @@ main .param {
   padding: 1%;
   margin-right: 2%;
   margin-bottom: 2%;
-  background-color: #fff;
-  border: solid 1px #777;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
   border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   line-height: 125%;
-  
+    
   img {
   	box-shadow: none;
   }
   
   .price {
-    color: #000;  
-    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
-    top: 0.5em;
-  }   
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
+  }  
 }
 
 main .stairs .stair {
   @extend %clearfix; 
   position: relative;
-  background-color: #fff;
-  border: solid 1px #777;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
   border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   margin-bottom: 30px;
   padding: 20px;
-  
+    
   .price {
-    color: #000;  
-    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
-    top: 0.5em;
-  }   
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
+  }  
 }
 
 main > .stair {
   @extend %clearfix; 
   position: relative;
-
+  
   .price {
-    color: #000;  
-    font-family: "Ubuntu Condensed", sans-serif;
     position: absolute;
     right: 0.5em;
-    top: 0.5em;
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
   }   
 }
 
 main .next {
   font-size: 175%;
-  background-color: #fff;
-  border-top: solid 1px #777;
-  border-bottom: solid 1px #777;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+  background-color: $background-color;
+  border-top: solid 1px $grey-color;
+  border-bottom: solid 1px $grey-color;
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   margin: 0 -40px;
   padding: 20px 40px;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: $header-font-family;
 }	
   
 footer {
