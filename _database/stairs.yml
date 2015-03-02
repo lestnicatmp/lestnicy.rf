@@ -9,7 +9,7 @@
   size: 1,65 х 1,39
   window: 1,64 х 0,9
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 193
   step_quantity: 14
@@ -40,7 +40,7 @@
   size: 2,49 х 1,02
   window: 2,00 х 0,92
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 193
   step_quantity: 15
@@ -67,7 +67,7 @@
   size: 1,71 х 1,40
   window: 1,64 х 0,90
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 193
   step_quantity: 14
@@ -96,7 +96,7 @@
   size: 1,71 х 1,40
   window: 1,64 х 0,90
   wood: хвоя
-  riser: есть
+  riser: true
   finish: есть
   step_height: 193
   step_quantity: 14
@@ -126,7 +126,7 @@
   size: 3,50 х 1,64
   window: 2,23 х 0,93
   wood: хвоя
-  riser: есть
+  riser: true
   finish: нет
   step_height: 193
   step_quantity: 16
@@ -158,7 +158,7 @@
   size: 1,62 x 0,64, 1,50 x 0,95
   window: 1,50 х 0,72
   wood: слоеная береза
-  riser: нет
+  riser: false
   finish: нет
   step_height: 190-215
   step_quantity: 13
@@ -182,7 +182,7 @@
   size: 2,38 х 0,83
   window: 1,90 х 0,83
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 225
   step_quantity: 13
@@ -209,7 +209,7 @@
   size: 1,60/1,70 x 0,63
   window: 1,30/1,22 х 0,61
   wood: береза
-  riser: нет
+  riser: false
   finish: нет
   step_height: 193
   step_quantity: 14-15
@@ -238,7 +238,7 @@
   size: 2,49 х 0,94
   window: 2,00 х 0,92
   wood: хвоя
-  riser: нет
+  riser: false
   finish: есть
   step_height: 193
   step_quantity: 15
@@ -265,7 +265,7 @@
   size: 2,49 х 0,96
   window: 2,00 х 0,92
   wood: хвоя
-  riser: есть
+  riser: true
   finish: есть
   step_height: 193
   step_quantity: 15
@@ -292,7 +292,7 @@
   size: 2,31 х 1,40
   window: 2,20 х 0,92
   wood: хвоя
-  riser: есть
+  riser: true
   finish: есть
   step_height: 193
   step_quantity: 15
@@ -321,7 +321,7 @@
   size: 2,03 х 1,69
   window: 1,92 х 1,02
   wood: хвоя
-  riser: есть
+  riser: true
   finish: есть
   step_height: 193
   step_quantity: 16
@@ -349,7 +349,7 @@
   size: 1,95 х 2,23
   window: 1,87 х 2,11
   wood: хвоя
-  riser: есть
+  riser: true
   finish: есть
   step_height: 174
   step_quantity: 18
@@ -381,7 +381,7 @@
   size: 1,95 х 2,57
   window: 1,95 х 2,55
   wood: хвоя
-  riser: есть
+  riser: true
   finish: нет
   step_height: 193
   step_quantity: 16
@@ -414,7 +414,7 @@
   size: 1,23 х 1,11
   window: 1,22 х 0,90
   wood: хвоя
-  riser: нет
+  riser: false
   finish: есть
   step_height: 225
   step_quantity: 12
@@ -442,7 +442,7 @@
   size: 1,85 х 1,03
   window: 1,80 х 0,83
   wood: сосна
-  riser: нет
+  riser: false
   finish: есть
   step_height: 225
   step_quantity: 12
@@ -465,7 +465,7 @@
   size: 1,89 х 1,03
   window: 1,83 х 0,83
   wood: сосна
-  riser: есть
+  riser: true
   finish: есть
   step_height: 225
   step_quantity: 12
@@ -490,7 +490,7 @@
   size: 1,55 х 0,87
   window: 1,50 х 0,83
   wood: сосна
-  riser: нет
+  riser: false
   finish: есть
   step_height: 227
   step_quantity: 11
@@ -516,7 +516,7 @@
   size: 1,00 х 1,00
   window: 1,00 х 1,00
   wood: бук
-  riser: нет
+  riser: false
   finish: нет
   step_height: 225
   step_quantity: 13
@@ -546,7 +546,7 @@
   size: 1,20 х 1,20
   window: 1,20 х 1,20
   wood: бук
-  riser: нет
+  riser: false
   finish: нет
   step_height: 225
   step_quantity: 13
@@ -570,7 +570,7 @@
   size: 1,22 х 1,22
   window: 1,20 х 1,20
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 210
   step_quantity: 13
@@ -597,7 +597,7 @@
   size: 1,40 х 1,40
   window: 1,40 х 1,40
   wood: бук
-  riser: нет
+  riser: false
   finish: есть
   step_height: 210
   step_quantity: 13
@@ -628,7 +628,7 @@
   size: 1,42 х 1,42
   window: 1,40 х 1,40
   wood: хвоя
-  riser: нет
+  riser: false
   finish: нет
   step_height: 210
   step_quantity: 13
@@ -655,7 +655,7 @@
   size: 3,03 х 1,64
   window: 2,95 х 0,90
   wood: бук
-  riser: нет
+  riser: false
   finish: нет
   step_height: 193
   step_quantity: 16
@@ -686,7 +686,7 @@
   size: 2,05 х 1,80
   window: 2,02 х 1,80
   wood: бук
-  riser: нет
+  riser: false
   finish: есть
   step_height: 184
   step_quantity: 17
@@ -719,7 +719,7 @@
   size: d=1,07
   window: 1,07 х 1,07
   wood: бук
-  riser: нет
+  riser: false
   finish: есть
   step_height: 225
   step_quantity: 12
