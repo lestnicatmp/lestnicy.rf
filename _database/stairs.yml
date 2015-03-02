@@ -5,7 +5,7 @@
   slug: ls01u
   presence: false
   price: 26500
-  height: 2,7
+  height: "2,7"
   size: 1,65 x 1,39
   window: 1,64 x 0,9
   wood: хвоя
@@ -36,7 +36,7 @@
   slug: ls02
   presence: true
   price: 34000
-  height: 2,9
+  height: "2,9"
   size: 2,49 x 1,02
   window: 2,00 x 0,92
   wood: хвоя
@@ -63,7 +63,7 @@
   slug: ls04u
   presence: true
   price: 31000
-  height: 2,7
+  height: "2,7"
   size: 1,71 x 1,40
   window: 1,64 x 0,90
   wood: хвоя
@@ -92,7 +92,7 @@
   slug: ls05
   presence: true
   price: 32200
-  height: 2,7
+  height: "2,7"
   size: 1,71 x 1,40
   window: 1,64 x 0,90
   wood: хвоя
@@ -122,7 +122,7 @@
   slug: ls06
   presence: true
   price: 56200
-  height: 3,1
+  height: "3,1"
   size: 3,50 x 1,64
   window: 2,23 x 0,93
   wood: хвоя
@@ -178,7 +178,7 @@
   slug: ls10u
   presence: true
   price: 26500
-  height: 2,92
+  height: "2,92"
   size: 2,38 x 0,83
   window: 1,90 x 0,83
   wood: хвоя
@@ -234,7 +234,7 @@
   slug: ls21
   presence: true
   price: 35500
-  height: 2,9
+  height: "2,9"
   size: 2,49 x 0,94
   window: 2,00 x 0,92
   wood: хвоя
@@ -261,7 +261,7 @@
   slug: ls215
   presence: true
   price: 36600
-  height: 2,9
+  height: "2,9"
   size: 2,49 x 0,96
   window: 2,00 x 0,92
   wood: хвоя
@@ -288,7 +288,7 @@
   slug: ls225
   presence: true
   price: 39900
-  height: 2,9
+  height: "2,9"
   size: 2,31 x 1,40
   window: 2,20 x 0,92
   wood: хвоя
@@ -317,7 +317,7 @@
   slug: ls235
   presence: true
   price: 39900
-  height: 3,1
+  height: "3,1"
   size: 2,03 x 1,69
   window: 1,92 x 1,02
   wood: хвоя
@@ -345,7 +345,7 @@
   slug: ls32
   presence: true
   price: 69000
-  height: 3,13
+  height: "3,13"
   size: 1,95 x 2,23
   window: 1,87 x 2,11
   wood: хвоя
@@ -377,7 +377,7 @@
   slug: ls62u
   presence: true
   price: 68000
-  height: 3,1
+  height: "3,1"
   size: 1,95 x 2,57
   window: 1,95 x 2,55
   wood: хвоя
@@ -410,7 +410,7 @@
   slug: ls91
   presence: false
   price: 22500
-  height: 2,7
+  height: "2,7"
   size: 1,23 x 1,11
   window: 1,22 x 0,90
   wood: хвоя
@@ -438,7 +438,7 @@
   slug: ls92
   presence: true
   price: 25500
-  height: 2,7
+  height: "2,7"
   size: 1,85 x 1,03
   window: 1,80 x 0,83
   wood: сосна
@@ -461,7 +461,7 @@
   slug: ls925
   presence: true
   price: 30900
-  height: 2,7
+  height: "2,7"
   size: 1,89 x 1,03
   window: 1,83 x 0,83
   wood: сосна
@@ -486,7 +486,7 @@
   slug: ls93
   presence: true
   price: 30900
-  height: 2,5
+  height: "2,5"
   size: 1,55 x 0,87
   window: 1,50 x 0,83
   wood: сосна
@@ -566,7 +566,7 @@
   slug: lv12x
   presence: true
   price: 25700
-  height: 2,73
+  height: "2,73"
   size: 1,22 x 1,22
   window: 1,20 x 1,20
   wood: хвоя
@@ -593,7 +593,7 @@
   slug: lv14b
   presence: true
   price: 86500
-  height: 2,73
+  height: "2,73"
   size: 1,40 x 1,40
   window: 1,40 x 1,40
   wood: бук
@@ -624,7 +624,7 @@
   slug: lv14x
   presence: true
   price: 29900
-  height: 2,73
+  height: "2,73"
   size: 1,42 x 1,42
   window: 1,40 x 1,40
   wood: хвоя
@@ -651,7 +651,7 @@
   slug: lm22
   presence: true
   price: 89900
-  height: 3,17
+  height: "3,17"
   size: 3,03 x 1,64
   window: 2,95 x 0,90
   wood: бук
@@ -682,7 +682,7 @@
   slug: lm31
   presence: true
   price: 125000
-  height: 3,13
+  height: "3,13"
   size: 2,05 x 1,80
   window: 2,02 x 1,80
   wood: бук
