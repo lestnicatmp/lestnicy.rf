@@ -51,7 +51,7 @@ layout: select
         <td>{{ stair.step_quantity }}</td>
         <td>{{ stair.step_width }}</td>
         <td>{% if stair.riser %}есть{% else %}нет{% endif %}</td>
-        <td>{{ stair.finish }}</td>
+        <td>{% if stair.finish %}есть{% else %}нет{% endif %}</td>
         <td>{{ stair.size }}</td>
        </tr>
     </tbody>

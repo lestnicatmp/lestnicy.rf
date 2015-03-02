@@ -10,7 +10,7 @@
   window: 1,64 х 0,9
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 14
   step_depth: 40
@@ -41,7 +41,7 @@
   window: 2,00 х 0,92
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 15
   step_depth: 40
@@ -68,7 +68,7 @@
   window: 1,64 х 0,90
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 14
   step_depth: 40
@@ -97,7 +97,7 @@
   window: 1,64 х 0,90
   wood: хвоя
   riser: true
-  finish: есть
+  finish: true
   step_height: 193
   step_quantity: 14
   step_depth: 40
@@ -127,7 +127,7 @@
   window: 2,23 х 0,93
   wood: хвоя
   riser: true
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 16
   step_depth: 60
@@ -159,7 +159,7 @@
   window: 1,50 х 0,72
   wood: слоеная береза
   riser: false
-  finish: нет
+  finish: false
   step_height: 190-215
   step_quantity: 13
   step_depth: 35
@@ -183,7 +183,7 @@
   window: 1,90 х 0,83
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 225
   step_quantity: 13
   step_depth: 40
@@ -210,7 +210,7 @@
   window: 1,30/1,22 х 0,61
   wood: береза
   riser: false
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 14-15
   step_depth: 18..22
@@ -239,7 +239,7 @@
   window: 2,00 х 0,92
   wood: хвоя
   riser: false
-  finish: есть
+  finish: true
   step_height: 193
   step_quantity: 15
   step_depth: 40
@@ -266,7 +266,7 @@
   window: 2,00 х 0,92
   wood: хвоя
   riser: true
-  finish: есть
+  finish: true
   step_height: 193
   step_quantity: 15
   step_depth: 40
@@ -293,7 +293,7 @@
   window: 2,20 х 0,92
   wood: хвоя
   riser: true
-  finish: есть
+  finish: true
   step_height: 193
   step_quantity: 15
   step_depth: 40
@@ -322,7 +322,7 @@
   window: 1,92 х 1,02
   wood: хвоя
   riser: true
-  finish: есть
+  finish: true
   step_height: 193
   step_quantity: 16
   step_depth: 40
@@ -350,7 +350,7 @@
   window: 1,87 х 2,11
   wood: хвоя
   riser: true
-  finish: есть
+  finish: true
   step_height: 174
   step_quantity: 18
   step_depth: 60
@@ -382,7 +382,7 @@
   window: 1,95 х 2,55
   wood: хвоя
   riser: true
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 16
   step_depth: 60
@@ -415,7 +415,7 @@
   window: 1,22 х 0,90
   wood: хвоя
   riser: false
-  finish: есть
+  finish: true
   step_height: 225
   step_quantity: 12
   step_depth: 40
@@ -443,7 +443,7 @@
   window: 1,80 х 0,83
   wood: сосна
   riser: false
-  finish: есть
+  finish: true
   step_height: 225
   step_quantity: 12
   step_depth: 40
@@ -466,7 +466,7 @@
   window: 1,83 х 0,83
   wood: сосна
   riser: true
-  finish: есть
+  finish: true
   step_height: 225
   step_quantity: 12
   step_depth: 40
@@ -491,7 +491,7 @@
   window: 1,50 х 0,83
   wood: сосна
   riser: false
-  finish: есть
+  finish: true
   step_height: 227
   step_quantity: 11
   step_depth: 60
@@ -517,7 +517,7 @@
   window: 1,00 х 1,00
   wood: бук
   riser: false
-  finish: нет
+  finish: false
   step_height: 225
   step_quantity: 13
   step_depth: 40
@@ -547,7 +547,7 @@
   window: 1,20 х 1,20
   wood: бук
   riser: false
-  finish: нет
+  finish: false
   step_height: 225
   step_quantity: 13
   step_depth: 40
@@ -571,7 +571,7 @@
   window: 1,20 х 1,20
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 210
   step_quantity: 13
   step_depth: 40
@@ -598,7 +598,7 @@
   window: 1,40 х 1,40
   wood: бук
   riser: false
-  finish: есть
+  finish: true
   step_height: 210
   step_quantity: 13
   step_depth: 40
@@ -629,7 +629,7 @@
   window: 1,40 х 1,40
   wood: хвоя
   riser: false
-  finish: нет
+  finish: false
   step_height: 210
   step_quantity: 13
   step_depth: 40
@@ -656,7 +656,7 @@
   window: 2,95 х 0,90
   wood: бук
   riser: false
-  finish: нет
+  finish: false
   step_height: 193
   step_quantity: 16
   step_depth: 50
@@ -687,7 +687,7 @@
   window: 2,02 х 1,80
   wood: бук
   riser: false
-  finish: есть
+  finish: true
   step_height: 184
   step_quantity: 17
   step_depth: 60
@@ -720,7 +720,7 @@
   window: 1,07 х 1,07
   wood: бук
   riser: false
-  finish: есть
+  finish: true
   step_height: 225
   step_quantity: 12
   step_depth: 40
