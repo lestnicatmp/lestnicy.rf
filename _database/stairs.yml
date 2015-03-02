@@ -236,43 +236,10 @@
       weight: 124
     - size: 3280 x 420 x 280
       weight: 75
-    
-- name: ЛС-32
-  slug: ls32
-  position: 9
-  presence: true
-  price: 69000
-  height: "3,13"
-  size: 1,95 x 2,23
-  window: 1,87 x 2,11
-  turn: 180
-  wood: хвоя
-  riser: true
-  finish: true
-  step_height: 174
-  step_quantity: 18
-  step_depth: 60
-  image: /images/stairs/image/ls32.jpg
-  text: >
-    Комфортная лестница средних размеров. Несмотря на наличие забежных 
-    ступеней имеет наилучшие соотношения высоты шага и глубины ступени. 
-    Предназначена для установки в шахту, ограниченную стенами с трех сторон 
-    (требует широкого междуэтажного проема). 
-  boxes:
-    - size: 420 x 330 x 225
-      weight: 30
-    - size: 1370 x 610 x 280
-      weight: 77
-    - size: 2745 x 475 x 280
-      weight: 122
-    - size: 2745 x 475 x 280
-      weight: 114
-  photos:
-    - image: /images/stairs/photos/<size>/ls32-1.jpg
-  
+   
 - name: ЛС-06
   slug: ls06
-  position: 10
+  position: 9
   presence: true
   price: 56200
   height: "3,1"
@@ -302,6 +269,39 @@
   photos:
     - image: /images/stairs/photos/<size>/ls06-1.jpg  
     - image: /images/stairs/photos/<size>/ls06-2.jpg
+       
+- name: ЛС-32
+  slug: ls32
+  position: 10
+  presence: true
+  price: 69000
+  height: "3,13"
+  size: 1,95 x 2,23
+  window: 1,87 x 2,11
+  turn: 180
+  wood: хвоя
+  riser: true
+  finish: true
+  step_height: 174
+  step_quantity: 18
+  step_depth: 60
+  image: /images/stairs/image/ls32.jpg
+  text: >
+    Комфортная лестница средних размеров. Несмотря на наличие забежных 
+    ступеней имеет наилучшие соотношения высоты шага и глубины ступени. 
+    Предназначена для установки в шахту, ограниченную стенами с трех сторон 
+    (требует широкого междуэтажного проема). 
+  boxes:
+    - size: 420 x 330 x 225
+      weight: 30
+    - size: 1370 x 610 x 280
+      weight: 77
+    - size: 2745 x 475 x 280
+      weight: 122
+    - size: 2745 x 475 x 280
+      weight: 114
+  photos:
+    - image: /images/stairs/photos/<size>/ls32-1.jpg
       
 - name: ЛС-62У
   slug: ls62u
