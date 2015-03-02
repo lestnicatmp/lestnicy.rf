@@ -6,13 +6,6 @@ layout: main
 
 <main>
 
-  <section>
-    <h1>Блог</h1>
-    <p>
-      Блог текст.
-    </p>
-  </section>
-
   {% for post in site.posts %}
     <section>
       <span>{{ post.date | date: "%b %-d, %Y" }}</span>
