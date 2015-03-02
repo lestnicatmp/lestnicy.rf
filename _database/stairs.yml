@@ -5,9 +5,9 @@
   slug: ls01u
   presence: false
   price: 26500
-  height: 2.7
-  size: 1,65 х 1,39
-  window: 1,64 х 0,9
+  height: 2,7
+  size: 1,65 x 1,39
+  window: 1,64 x 0,9
   wood: хвоя
   riser: false
   finish: false
@@ -22,11 +22,11 @@
     поэтому не имеет перил. При необходимости клиент может установить пристенные 
     поручни.
   boxes:
-    - size: 420х420х200
+    - size: 420 x 420 x 200
       weight: 20
-    - size: 2505х410х280
+    - size: 2505 x 410 x 280
       weight: 86
-    - size: 1205х410х280
+    - size: 1205 x 410 x 280
       weight: 34
   photos:
     - image: /images/stairs/photos/<size>/ls01u-1.jpg
@@ -37,8 +37,8 @@
   presence: true
   price: 34000
   height: 2,9
-  size: 2,49 х 1,02
-  window: 2,00 х 0,92
+  size: 2,49 x 1,02
+  window: 2,00 x 0,92
   wood: хвоя
   riser: false
   finish: false
@@ -52,11 +52,11 @@
     в сторону противоположную стороне с перилами. Разработана для холлов 
     со вторым светом. 
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 23
-    - size: 1960х375х280
+    - size: 1960 x 375 x 280
       weight: 65
-    - size: 3490х340х280
+    - size: 3490 x 340 x 280
       weight: 112        
     
 - name: ЛС-04У
@@ -64,8 +64,8 @@
   presence: true
   price: 31000
   height: 2,7
-  size: 1,71 х 1,40
-  window: 1,64 х 0,90
+  size: 1,71 x 1,40
+  window: 1,64 x 0,90
   wood: хвоя
   riser: false
   finish: false
@@ -78,11 +78,11 @@
     Отличается от ЛС-01У наличием перил, что позволяет устанавливать ЛС-04У 
     с примыканием только к одной стене.   
   boxes:
-    - size: 420х420х200
+    - size: 420 x 420 x 200
       weight: 20
-    - size: 1260х460х280
+    - size: 1260 x 460 x 280
       weight: 45
-    - size: 2505х460х280
+    - size: 2505 x 460 x 280
       weight: 100
   photos:
     - image: /images/stairs/photos/<size>/ls04u-1.jpg
@@ -93,8 +93,8 @@
   presence: true
   price: 32200
   height: 2,7
-  size: 1,71 х 1,40
-  window: 1,64 х 0,90
+  size: 1,71 x 1,40
+  window: 1,64 x 0,90
   wood: хвоя
   riser: true
   finish: true
@@ -108,11 +108,11 @@
     предыдущие модели. Имеет подступенки, перила и деревянное оформление 
     центральной колонны.
   boxes:
-    - size: 420х420х200
+    - size: 420 x 420 x 200
       weight: 25
-    - size: 2050х460х280
+    - size: 2050 x 460 x 280
       weight: 79
-    - size: 2750х460х280
+    - size: 2750 x 460 x 280
       weight: 105
   photos:
     - image: /images/stairs/photos/<size>/ls05-1.jpg
@@ -123,8 +123,8 @@
   presence: true
   price: 56200
   height: 3,1
-  size: 3,50 х 1,64
-  window: 2,23 х 0,93
+  size: 3,50 x 1,64
+  window: 2,23 x 0,93
   wood: хвоя
   riser: true
   finish: false
@@ -138,13 +138,13 @@
     Основной вариант установки – с примыканием к одной стене. Занимает большую 
     площадь при установке, но не требует широкого междуэтажного проема.
   boxes:
-    - size: 360х280х160
+    - size: 360 x 280 x 160
       weight: 24
-    - size: 2060х415х280
+    - size: 2060 x 415 x 280
       weight: 79
-    - size: 2530х340х280
+    - size: 2530 x 340 x 280
       weight: 90 
-    - size: 3560х415х280
+    - size: 3560 x 415 x 280
       weight: 137     
   photos:
     - image: /images/stairs/photos/<size>/ls06-1.jpg  
@@ -156,7 +156,7 @@
   price: 43900
   height: 2,66-3,01
   size: 1,62 x 0,64, 1,50 x 0,95
-  window: 1,50 х 0,72
+  window: 1,50 x 0,72
   wood: слоеная береза
   riser: false
   finish: false
@@ -179,8 +179,8 @@
   presence: true
   price: 26500
   height: 2,92
-  size: 2,38 х 0,83
-  window: 1,90 х 0,83
+  size: 2,38 x 0,83
+  window: 1,90 x 0,83
   wood: хвоя
   riser: false
   finish: false
@@ -193,9 +193,9 @@
     Имеет прямой марш без подступенков и перила с одной стороны, 
     последние могут ставиться как слева, так и справа.
   boxes:
-    - size: 300х260х130
+    - size: 300 x 260 x 130
       weight: 14
-    - size: 3850х540х200
+    - size: 3850 x 540 x 200
       weight: 113
   photos:
     - image: /images/stairs/photos/<size>/ls10u-1.jpg
@@ -207,7 +207,7 @@
   price: 14500
   height: 2,70-2,90
   size: 1,60/1,70 x 0,63
-  window: 1,30/1,22 х 0,61
+  window: 1,30/1,22 x 0,61
   wood: береза
   riser: false
   finish: false
@@ -235,8 +235,8 @@
   presence: true
   price: 35500
   height: 2,9
-  size: 2,49 х 0,94
-  window: 2,00 х 0,92
+  size: 2,49 x 0,94
+  window: 2,00 x 0,92
   wood: хвоя
   riser: false
   finish: true
@@ -250,11 +250,11 @@
     (с забежными ступенями) - на выходе, устанавливается преимущественно 
     с примыканием к одной стене.     
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 23
-    - size: 1960х375х280
+    - size: 1960 x 375 x 280
       weight: 56
-    - size: 3490х340х280
+    - size: 3490 x 340 x 280
       weight: 110  
           
 - name: ЛС-215
@@ -262,8 +262,8 @@
   presence: true
   price: 36600
   height: 2,9
-  size: 2,49 х 0,96
-  window: 2,00 х 0,92
+  size: 2,49 x 0,96
+  window: 2,00 x 0,92
   wood: хвоя
   riser: true
   finish: true
@@ -289,8 +289,8 @@
   presence: true
   price: 39900
   height: 2,9
-  size: 2,31 х 1,40
-  window: 2,20 х 0,92
+  size: 2,31 x 1,40
+  window: 2,20 x 0,92
   wood: хвоя
   riser: true
   finish: true
@@ -304,11 +304,11 @@
     Имеет в своем составе перила, подступенки и деревянное оформление колонны. 
     Является малогабаритной версией ЛС-06. 
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 26
-    - size: 3280х460х280
+    - size: 3280 x 460 x 280
       weight: 130
-    - size: 1900х460х280
+    - size: 1900 x 460 x 280
       weight: 72
   photos:
     - image: /images/stairs/photos/<size>/ls225-1.jpg
@@ -318,8 +318,8 @@
   presence: true
   price: 39900
   height: 3,1
-  size: 2,03 х 1,69
-  window: 1,92 х 1,02
+  size: 2,03 x 1,69
+  window: 1,92 x 1,02
   wood: хвоя
   riser: true
   finish: true
@@ -334,11 +334,11 @@
     проема за счет увеличения его ширины. Одновременно на один шаг увеличена 
     высота подъема.  
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 24
-    - size: 2060х415х280
+    - size: 2060 x 415 x 280
       weight: 124
-    - size: 3280х420х280
+    - size: 3280 x 420 x 280
       weight: 75
     
 - name: ЛС-32
@@ -346,8 +346,8 @@
   presence: true
   price: 69000
   height: 3,13
-  size: 1,95 х 2,23
-  window: 1,87 х 2,11
+  size: 1,95 x 2,23
+  window: 1,87 x 2,11
   wood: хвоя
   riser: true
   finish: true
@@ -362,13 +362,13 @@
     Предназначена для установки в шахту, ограниченную стенами с трех сторон 
     (требует широкого междуэтажного проема). 
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 30
-    - size: 1370х610х280
+    - size: 1370 x 610 x 280
       weight: 77
-    - size: 2745х475х280
+    - size: 2745 x 475 x 280
       weight: 122
-    - size: 2745х475х280
+    - size: 2745 x 475 x 280
       weight: 114
   photos:
     - image: /images/stairs/photos/<size>/ls32-1.jpg
@@ -378,8 +378,8 @@
   presence: true
   price: 68000
   height: 3,1
-  size: 1,95 х 2,57
-  window: 1,95 х 2,55
+  size: 1,95 x 2,57
+  window: 1,95 x 2,55
   wood: хвоя
   riser: true
   finish: false
@@ -393,15 +393,15 @@
     забежных ступеней. Универсальна по положению маршей (слева и справа). 
     Требует относительно большой междуэтажный проем, имеет перила, подступенки.
   boxes:
-    - size: 310х280х160
+    - size: 310 x 280 x 160
       weight: 21
-    - size: 2020х385х280
+    - size: 2020 x 385 x 280
       weight: 87
-    - size: 2340х460х280
+    - size: 2340 x 460 x 280
       weight: 93
-    - size: 2530х340х280
+    - size: 2530 x 340 x 280
       weight: 89   
-    - size: 2750х460х280
+    - size: 2750 x 460 x 280
       weight: 107
   photos:
     - image: /images/stairs/photos/<size>/ls62u-1.jpg
@@ -411,8 +411,8 @@
   presence: false
   price: 22500
   height: 2,7
-  size: 1,23 х 1,11
-  window: 1,22 х 0,90
+  size: 1,23 x 1,11
+  window: 1,22 x 0,90
   wood: хвоя
   riser: false
   finish: true
@@ -425,9 +425,9 @@
     Предельно малогабаритная лестница без подступенков 
     с забежными ступенями снизу. 
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 20
-    - size: 2745х475х280
+    - size: 2745 x 475 x 280
       weight: 112
   photos:
     - image: /images/stairs/photos/<size>/ls91-1.jpg
@@ -439,8 +439,8 @@
   presence: true
   price: 25500
   height: 2,7
-  size: 1,85 х 1,03
-  window: 1,80 х 0,83
+  size: 1,85 x 1,03
+  window: 1,80 x 0,83
   wood: сосна
   riser: false
   finish: true
@@ -452,9 +452,9 @@
   text: >
     Универсальная лестница без подступенков и поручней.     
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 19
-    - size: 2705х525х280
+    - size: 2705 x 525 x 280
       weight: 109
           
 - name: ЛС-925
@@ -462,8 +462,8 @@
   presence: true
   price: 30900
   height: 2,7
-  size: 1,89 х 1,03
-  window: 1,83 х 0,83
+  size: 1,89 x 1,03
+  window: 1,83 x 0,83
   wood: сосна
   riser: true
   finish: true
@@ -475,11 +475,11 @@
   text: >
     Универсальная лестница с подступенками и поручнями.  
   boxes:
-    - size: 420x330x225
+    - size: 420 x 330 x 225
       weight: 19
-    - size: 2705x525x280
+    - size: 2705 x 525 x 280
       weight: 124
-    - size: 785x305x280
+    - size: 785 x 305 x 280
       weight: 28
                 
 - name: ЛС-93
@@ -487,8 +487,8 @@
   presence: true
   price: 30900
   height: 2,5
-  size: 1,55 х 0,87
-  window: 1,50 х 0,83
+  size: 1,55 x 0,87
+  window: 1,50 x 0,83
   wood: сосна
   riser: false
   finish: true
@@ -501,11 +501,11 @@
     Сверхмалогабаритная лестница с улучшенной эргономикой 
     для невысоких помещений.                 
   boxes:
-    - size: 420х330х225
+    - size: 420 x 330 x 225
       weight: 17
-    - size: 1720х400х280
+    - size: 1720 x 400 x 280
       weight: 60
-    - size: 2290х400х280
+    - size: 2290 x 400 x 280
       weight: 60
           
 - name: ЛВ-1.0
@@ -513,8 +513,8 @@
   presence: true
   price: 50500
   height: 2,93-2,97
-  size: 1,00 х 1,00
-  window: 1,00 х 1,00
+  size: 1,00 x 1,00
+  window: 1,00 x 1,00
   wood: бук
   riser: false
   finish: false
@@ -526,11 +526,11 @@
   text: >
     Сверхмалогабаритная лестница в виде полного винта, квадратная в плане, 
     в которой за счет замены центральной опорной колонны скрытым металлическим 
-    косоуром достигнуто уменьшение размеров междуэтажного проема до 1,0 м х 1,0 м.
+    косоуром достигнуто уменьшение размеров междуэтажного проема до 1,0 м x 1,0 м.
   boxes:
-    - size: 360х280х160
+    - size: 360 x 280 x 160
       weight: 30
-    - size: 2000х540х210
+    - size: 2000 x 540 x 210
       weight: 95
   photos:
     - image: /images/stairs/photos/<size>/lv10-1.jpg
@@ -543,8 +543,8 @@
   presence: true
   price: 50500
   height: 2,93-2,97
-  size: 1,20 х 1,20
-  window: 1,20 х 1,20
+  size: 1,20 x 1,20
+  window: 1,20 x 1,20
   wood: бук
   riser: false
   finish: false
@@ -555,11 +555,11 @@
   image: /images/stairs/image/lv12b.jpg
   text: >
     Аналог предыдущей, но более комфортная за счет 
-    увеличения проема до 1,2 м х 1,2 м.
+    увеличения проема до 1,2 м x 1,2 м.
   boxes:
-    - size: 360х280х160
+    - size: 360 x 280 x 160
       weight: 30
-    - size: 2400х640х210
+    - size: 2400 x 640 x 210
       weight: 110
           
 - name: ЛВ-1.2Х
@@ -567,8 +567,8 @@
   presence: true
   price: 25700
   height: 2,73
-  size: 1,22 х 1,22
-  window: 1,20 х 1,20
+  size: 1,22 x 1,22
+  window: 1,20 x 1,20
   wood: хвоя
   riser: false
   finish: false
@@ -580,13 +580,13 @@
   text: >
     Малогабаритная лестница из хвойной древесины в виде винта полного оборота, 
     квадратная в плане. Размер квадрата (и требуемого междуэтажного проема) 
-    1,2м х 1,2м.         
+    1,2м x 1,2м.         
   boxes:
-    - size: 460х435х225
+    - size: 460 x 435 x 225
       weight: 29
-    - size: 620х620х240
+    - size: 620 x 620 x 240
       weight: 35
-    - size: 2900х360х280
+    - size: 2900 x 360 x 280
       weight: 93
                 
 - name: ЛВ-1.4Б
@@ -594,8 +594,8 @@
   presence: true
   price: 86500
   height: 2,73
-  size: 1,40 х 1,40
-  window: 1,40 х 1,40
+  size: 1,40 x 1,40
+  window: 1,40 x 1,40
   wood: бук
   riser: false
   finish: true
@@ -607,13 +607,13 @@
   text: >
     Самая комфортная лестница в виде полного винта с улучшенным дизайном. 
     Её перильное ограждение включает в себя поручень с изогнутыми элементами 
-    и балясины, отделанные металлом. Требует проема 1,4м х 1,4м. 
+    и балясины, отделанные металлом. Требует проема 1,4м x 1,4м. 
   boxes:
-    - size: 515х330х205
+    - size: 515 x 330 x 205
       weight: 18
-    - size: 850х850х280
+    - size: 850 x 850 x 280
       weight: 65
-    - size: 2790х470х220
+    - size: 2790 x 470 x 220
       weight: 132
   photos:
     - image: /images/stairs/photos/<size>/lv14b-1.jpg
@@ -625,8 +625,8 @@
   presence: true
   price: 29900
   height: 2,73
-  size: 1,42 х 1,42
-  window: 1,40 х 1,40
+  size: 1,42 x 1,42
+  window: 1,40 x 1,40
   wood: хвоя
   riser: false
   finish: false
@@ -636,13 +636,13 @@
   position: 23
   image: /images/stairs/image/lv14x.jpg
   text: >
-    Аналогичная предыдущей лестнице с размерами в плане 1,4м х 1,4м.  
+    Аналогичная предыдущей лестнице с размерами в плане 1,4м x 1,4м.  
   boxes:
-    - size: 460х435х225
+    - size: 460 x 435 x 225
       weight: 30
-    - size: 800х800х240
+    - size: 800 x 800 x 240
       weight: 45
-    - size: 2900х460х280
+    - size: 2900 x 460 x 280
       weight: 105
   photos:
     - image: /images/stairs/photos/<size>/lv14x-1.jpg
@@ -652,8 +652,8 @@
   presence: true
   price: 89900
   height: 3,17
-  size: 3,03 х 1,64
-  window: 2,95 х 0,90
+  size: 3,03 x 1,64
+  window: 2,95 x 0,90
   wood: бук
   riser: false
   finish: false
@@ -666,13 +666,13 @@
     Комфортная лестница с улучшенным дизайном с забежными ступенями снизу (поворот на 90°). 
     Её поручень имеет винтовую вставку.
   boxes:
-    - size: 480х270х180
+    - size: 480 x 270 x 180
       weight: 54
-    - size: 480х270х180
+    - size: 480 x 270 x 180
       weight: 52
-    - size: 1810х560х280
+    - size: 1810 x 560 x 280
       weight: 77
-    - size: 2820х380х280
+    - size: 2820 x 380 x 280
       weight: 102
   photos:
     - image: /images/stairs/photos/<size>/lm22-1.jpg
@@ -683,8 +683,8 @@
   presence: true
   price: 125000
   height: 3,13
-  size: 2,05 х 1,80
-  window: 2,02 х 1,80
+  size: 2,05 x 1,80
+  window: 2,02 x 1,80
   wood: бук
   riser: false
   finish: true
@@ -698,13 +698,13 @@
     ступенями (поворот на 180 градусов), центральной колонной и перилами по 
     центру снизу и сверху. Центральная колонна облицована деревянными втулками.
   boxes:
-    - size: 480х270х180
+    - size: 480 x 270 x 180
       weight: 54
-    - size: 480х270х180
+    - size: 480 x 270 x 180
       weight: 52
-    - size: 1810х560х280
+    - size: 1810 x 560 x 280
       weight: 77
-    - size: 2820х380х280
+    - size: 2820 x 380 x 280
       weight: 102 
   photos:
     - image: /images/stairs/photos/<size>/lm31-1.jpg
@@ -717,7 +717,7 @@
   price: 
   height: 2,70-2,75
   size: d=1,07
-  window: 1,07 х 1,07
+  window: 1,07 x 1,07
   wood: бук
   riser: false
   finish: true
