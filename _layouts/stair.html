@@ -31,27 +31,31 @@ layout: select
     <table>
     <thead>
       <tr>
-        <th>Высота подъема от пола до пола, м</th>
+        <th>Поворот, градусов</th>
         <th>Минимал. размеры проема, м х м</th>
-        <th><span style="white-space: nowrap;">Древе-</span><br />сина</th>
+        <th>Высота подъема от пола до пола, м</th>
+        <th>Древесина</th>
+        <th>Наличик перил</th>
+        <th>Наличие подступенков</th>
+        <th>Отделка опорной колонны древесиной</th>
         <th>Высота шага, мм</th>
         <th>Число шагов подъема</th>
         <th>Толщина ступени, мм</th>
-        <th>Наличие <span style="white-space: nowrap;">подсту-</span><br />пенков</th>
-        <th>Отделка опорной колонны древесиной</th>
         <th>Габариты в плане, м х м</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>{{ stair.height }}</td>
+        <td>{{ stair.turn }}</td>
         <td>{{ stair.window }}</td>
+        <td>{{ stair.height }}</td>
         <td>{{ stair.wood }}</td>
+        <td>{% if stair.rail %}есть{% else %}нет{% endif %}</td>
+        <td>{% if stair.riser %}есть{% else %}нет{% endif %}</td>
+        <td>{% if stair.finish %}есть{% else %}нет{% endif %}</td>
         <td>{{ stair.step_height }}</td>
         <td>{{ stair.step_quantity }}</td>
         <td>{{ stair.step_width }}</td>
-        <td>{% if stair.riser %}есть{% else %}нет{% endif %}</td>
-        <td>{% if stair.finish %}есть{% else %}нет{% endif %}</td>
         <td>{{ stair.size }}</td>
        </tr>
     </tbody>

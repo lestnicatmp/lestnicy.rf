@@ -14,9 +14,10 @@ layout: select
   </section>
   
   <section class="filter">
-    <p>высота</p>
-    <p>проем</p>
     <p>поворот</p>
+    <p>проем</p>
+    <p>высота</p>
+    <p>древесина</p>
   </section>
   
   <section>
@@ -27,9 +28,10 @@ layout: select
       <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
       <div>{{ stair.text | truncatewords: 3}}..</div>
       <ul class="data">
-        <li>Высота: {{ stair.height }}</li>
-        <li>Проем: {{ stair.window }}</li>
         <li>Поворот: {{ stair.turn }}</li>
+        <li>Проем: {{ stair.window }}</li>
+        <li>Высота: {{ stair.height }}</li>
+        <li>Древесина: {{ stair.wood }}</li>
       </ul>
       <div class="price">
         {{ stair.price }}
