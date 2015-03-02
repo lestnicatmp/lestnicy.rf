@@ -5,7 +5,7 @@
   slug: ls01u
   presence: false
   price: 26500
-  height: 2,7
+  height: 2.7
   size: 1,65 х 1,39
   window: 1,64 х 0,9
   wood: хвоя
@@ -651,7 +651,7 @@
   slug: lm22
   presence: true
   price: 89900
-  height: '3,17'
+  height: 3,17
   size: 3,03 х 1,64
   window: 2,95 х 0,90
   wood: бук
