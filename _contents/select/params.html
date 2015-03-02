@@ -3,7 +3,7 @@ permalink: /подобрать-лестницу/по-параметрам/
 title: Подобрать лестницу по параметрам
 layout: select
 ---
-{% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
+{% assign stairs = site.data.stairs | where:'presence',true | sort:'position' %}
 
 <main>
 

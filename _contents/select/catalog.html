@@ -20,7 +20,7 @@ layout: select
       <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
       <p class="text">{{ stair.text }}</p>
       <div class="price">
-        {% if stair.presence == 'есть' %}
+        {% if stair.presence %}
           {{ stair.price }}
         {% else %}
           звоните

@@ -3,7 +3,7 @@
 
 - name: ЛС-01У
   slug: ls01u
-  presence: нет
+  presence: false
   price: 26500
   height: 2,7
   size: 1,65 х 1,39
@@ -34,7 +34,7 @@
     
 - name: ЛС-02
   slug: ls02
-  presence: есть
+  presence: true
   price: 34000
   height: 2,9
   size: 2,49 х 1,02
@@ -61,7 +61,7 @@
     
 - name: ЛС-04У
   slug: ls04u
-  presence: есть
+  presence: true
   price: 31000
   height: 2,7
   size: 1,71 х 1,40
@@ -90,7 +90,7 @@
           
 - name: ЛС-05
   slug: ls05
-  presence: есть
+  presence: true
   price: 32200
   height: 2,7
   size: 1,71 х 1,40
@@ -120,7 +120,7 @@
 
 - name: ЛС-06
   slug: ls06
-  presence: есть
+  presence: true
   price: 56200
   height: 3,1
   size: 3,50 х 1,64
@@ -152,7 +152,7 @@
         
 - name: ЛС-08
   slug: ls08
-  presence: есть
+  presence: true
   price: 43900
   height: 2,66-3,01
   size: 1,62 x 0,64, 1,50 x 0,95
@@ -176,7 +176,7 @@
     
 - name: ЛС-10У
   slug: ls10u
-  presence: есть
+  presence: true
   price: 26500
   height: 2,92
   size: 2,38 х 0,83
@@ -203,7 +203,7 @@
         
 - name: ЛС-11/12
   slug: ls1112
-  presence: есть
+  presence: true
   price: 14500
   height: 2,70-2,90
   size: 1,60/1,70 x 0,63
@@ -232,7 +232,7 @@
     
 - name: ЛС-21
   slug: ls21
-  presence: есть
+  presence: true
   price: 35500
   height: 2,9
   size: 2,49 х 0,94
@@ -259,7 +259,7 @@
           
 - name: ЛС-215
   slug: ls215
-  presence: есть
+  presence: true
   price: 36600
   height: 2,9
   size: 2,49 х 0,96
@@ -286,7 +286,7 @@
         
 - name: ЛС-225
   slug: ls225
-  presence: есть
+  presence: true
   price: 39900
   height: 2,9
   size: 2,31 х 1,40
@@ -315,7 +315,7 @@
           
 - name: ЛС-235
   slug: ls235
-  presence: есть
+  presence: true
   price: 39900
   height: 3,1
   size: 2,03 х 1,69
@@ -343,7 +343,7 @@
     
 - name: ЛС-32
   slug: ls32
-  presence: есть
+  presence: true
   price: 69000
   height: 3,13
   size: 1,95 х 2,23
@@ -375,7 +375,7 @@
     
 - name: ЛС-62У
   slug: ls62u
-  presence: есть
+  presence: true
   price: 68000
   height: 3,1
   size: 1,95 х 2,57
@@ -408,7 +408,7 @@
                 
 - name: ЛС-91
   slug: ls91
-  presence: нет
+  presence: false
   price: 22500
   height: 2,7
   size: 1,23 х 1,11
@@ -436,7 +436,7 @@
                 
 - name: ЛС-92
   slug: ls92
-  presence: есть
+  presence: true
   price: 25500
   height: 2,7
   size: 1,85 х 1,03
@@ -459,7 +459,7 @@
           
 - name: ЛС-925
   slug: ls925
-  presence: есть
+  presence: true
   price: 30900
   height: 2,7
   size: 1,89 х 1,03
@@ -484,7 +484,7 @@
                 
 - name: ЛС-93
   slug: ls93
-  presence: есть
+  presence: true
   price: 30900
   height: 2,5
   size: 1,55 х 0,87
@@ -510,7 +510,7 @@
           
 - name: ЛВ-1.0
   slug: lv10
-  presence: есть
+  presence: true
   price: 50500
   height: 2,93-2,97
   size: 1,00 х 1,00
@@ -540,7 +540,7 @@
           
 - name: ЛВ-1.2Б
   slug: lv12b
-  presence: есть
+  presence: true
   price: 50500
   height: 2,93-2,97
   size: 1,20 х 1,20
@@ -564,7 +564,7 @@
           
 - name: ЛВ-1.2Х
   slug: lv12x
-  presence: есть
+  presence: true
   price: 25700
   height: 2,73
   size: 1,22 х 1,22
@@ -591,7 +591,7 @@
                 
 - name: ЛВ-1.4Б
   slug: lv14b
-  presence: есть
+  presence: true
   price: 86500
   height: 2,73
   size: 1,40 х 1,40
@@ -622,7 +622,7 @@
           
 - name: ЛВ-1.4Х
   slug: lv14x
-  presence: есть
+  presence: true
   price: 29900
   height: 2,73
   size: 1,42 х 1,42
@@ -649,7 +649,7 @@
         
 - name: ЛМ-22
   slug: lm22
-  presence: есть
+  presence: true
   price: 89900
   height: '3,17'
   size: 3,03 х 1,64
@@ -680,7 +680,7 @@
     
 - name: ЛМ-31
   slug: lm31
-  presence: есть
+  presence: true
   price: 125000
   height: 3,13
   size: 2,05 х 1,80
@@ -713,7 +713,7 @@
                       
 - name: ЛВР-1.0
   slug: lvr10
-  presence: нет
+  presence: false
   price: 
   height: 2,70-2,75
   size: d=1,07

@@ -4,7 +4,7 @@ title: Подобрать лестницу по решению
 layout: select
 ---
 {% assign solutions = site.data.solutions | sort:'position' %}
-{% assign stairs = site.data.stairs | where:'presence','есть' | sort:'position' %}
+{% assign stairs = site.data.stairs | where:'presence',true | sort:'position' %}
 
 <main>
 
