@@ -2,6 +2,7 @@
 ---
 
 - name: ЛС-01У
+  slug: ls01u
   presence: нет
   price: 26500
   height: 2,7
@@ -32,6 +33,7 @@
       main: true
     
 - name: ЛС-02
+  slug: ls02
   presence: есть
   price: 34000
   height: 2,9
@@ -58,6 +60,7 @@
       weight: 112        
     
 - name: ЛС-04У
+  slug: ls04u
   presence: есть
   price: 31000
   height: 2,7
@@ -86,6 +89,7 @@
       main: true     
           
 - name: ЛС-05
+  slug: ls05
   presence: есть
   price: 32200
   height: 2,7
@@ -115,6 +119,7 @@
       main: true        
 
 - name: ЛС-06
+  slug: ls06
   presence: есть
   price: 56200
   height: 3,1
@@ -146,6 +151,7 @@
     - image: /images/stairs/photos/<size>/ls06-2.jpg
         
 - name: ЛС-08
+  slug: ls08
   presence: есть
   price: 43900
   height: 2,66-3,01
@@ -169,6 +175,7 @@
     Ступени изготавливаются из специальной фанеры толщиной 35мм.
     
 - name: ЛС-10У
+  slug: ls10u
   presence: есть
   price: 26500
   height: 2,92
@@ -195,6 +202,7 @@
       main: true
         
 - name: ЛС-11/12
+  slug: ls1112
   presence: есть
   price: 14500
   height: 2,70-2,90
@@ -223,6 +231,7 @@
     - image: /images/stairs/photos/<size>/ls1112-3.jpg    
     
 - name: ЛС-21
+  slug: ls21
   presence: есть
   price: 35500
   height: 2,9
@@ -249,6 +258,7 @@
       weight: 110  
           
 - name: ЛС-215
+  slug: ls215
   presence: есть
   price: 36600
   height: 2,9
@@ -275,6 +285,7 @@
     - image: /images/stairs/photos/<size>/ls215-1.jpg
         
 - name: ЛС-225
+  slug: ls225
   presence: есть
   price: 39900
   height: 2,9
@@ -303,6 +314,7 @@
     - image: /images/stairs/photos/<size>/ls225-1.jpg
           
 - name: ЛС-235
+  slug: ls235
   presence: есть
   price: 39900
   height: 3,1
@@ -330,6 +342,7 @@
       weight: 75
     
 - name: ЛС-32
+  slug: ls32
   presence: есть
   price: 69000
   height: 3,13
@@ -361,6 +374,7 @@
     - image: /images/stairs/photos/<size>/ls32-1.jpg
     
 - name: ЛС-62У
+  slug: ls62u
   presence: есть
   price: 68000
   height: 3,1
@@ -393,6 +407,7 @@
     - image: /images/stairs/photos/<size>/ls62u-1.jpg
                 
 - name: ЛС-91
+  slug: ls91
   presence: нет
   price: 22500
   height: 2,7
@@ -420,6 +435,7 @@
     - image: /images/stairs/photos/<size>/ls91-3.jpg
                 
 - name: ЛС-92
+  slug: ls92
   presence: есть
   price: 25500
   height: 2,7
@@ -442,6 +458,7 @@
       weight: 109
           
 - name: ЛС-925
+  slug: ls925
   presence: есть
   price: 30900
   height: 2,7
@@ -466,6 +483,7 @@
       weight: 28
                 
 - name: ЛС-93
+  slug: ls93
   presence: есть
   price: 30900
   height: 2,5
@@ -491,6 +509,7 @@
       weight: 60
           
 - name: ЛВ-1.0
+  slug: lv10
   presence: есть
   price: 50500
   height: 2,93-2,97
@@ -520,6 +539,7 @@
     - image: /images/stairs/photos/<size>/lv10-3.jpg      
           
 - name: ЛВ-1.2Б
+  slug: lv12b
   presence: есть
   price: 50500
   height: 2,93-2,97
@@ -543,6 +563,7 @@
       weight: 110
           
 - name: ЛВ-1.2Х
+  slug: lv12x
   presence: есть
   price: 25700
   height: 2,73
@@ -569,6 +590,7 @@
       weight: 93
                 
 - name: ЛВ-1.4Б
+  slug: lv14b
   presence: есть
   price: 86500
   height: 2,73
@@ -599,6 +621,7 @@
     - image: /images/stairs/photos/<size>/lv14b-2.jpg       
           
 - name: ЛВ-1.4Х
+  slug: lv14x
   presence: есть
   price: 29900
   height: 2,73
@@ -625,6 +648,7 @@
     - image: /images/stairs/photos/<size>/lv14x-1.jpg
         
 - name: ЛМ-22
+  slug: lm22
   presence: есть
   price: 89900
   height: '3,17'
@@ -655,6 +679,7 @@
       main: true          
     
 - name: ЛМ-31
+  slug: lm31
   presence: есть
   price: 125000
   height: 3,13
@@ -687,6 +712,7 @@
       main: true        
                       
 - name: ЛВР-1.0
+  slug: lvr10
   presence: нет
   price: 
   height: 2,70-2,75
