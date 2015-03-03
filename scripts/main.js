@@ -1,0 +1,48 @@
+$(document).ready(function() {
+    
+  var hash = $(location).attr('hash')
+  if (hash) {
+    scrollToElement(hash);
+  }
+ 
+  $('#page-menu a').click(function() {
+    var hash = $(this).attr('href').replace('/', '')
+    scrollToElement(hash);
+    return false;
+  });
+  
+  function scrollToElement(selector, duration) {
+    var offset = $('main').offset().top - 1
+    var duration = duration || 500;
+    $('html, body').animate({
+        scrollTop: $(selector).offset().top - offset
+    }, duration);
+  }
+  
+  var pageMenu = $("#page-menu");
+  var menuItems = pageMenu.find("a");
+  var scrollItems = menuItems.map(function() {
+    var item = $($(this).attr("href").replace('/', ''));
+    if (item.length) { return item; }
+  });
+    
+  $(window).scroll(function() {
+    // Get container scroll position
+    var offset = $('main').offset().top + 100
+    var fromTop = $(this).scrollTop()+offset;
+  
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+      if ($(this).offset().top < fromTop) {
+        return this;
+      }
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+    // Set/remove active class
+    menuItems.parent().removeClass("selected");
+    menuItems.filter("[href='/#"+id+"']").parent().addClass("selected");
+  });
+  
+});

@@ -131,7 +131,7 @@ header {
 
 main {
   @extend %clearfix; 
-  margin-top: 148px;
+  margin-top: $menu-height;
   padding: 0 40px 20px 40px;
 
   img {
