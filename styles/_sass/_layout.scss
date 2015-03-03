@@ -185,12 +185,16 @@ main .solution {
 
   .options li {
     cursor: pointer; 
-  }
-
-  .options li.active {
-    font-weight: bold;
-    color: $brand-color;
-    text-decoration: underline;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    &.active {
+      font-weight: bold;
+      color: $brand-color;
+      text-decoration: underline;
+    }
   }
 	
   .price {
