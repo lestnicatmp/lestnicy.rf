@@ -35,7 +35,7 @@ layout: select
           {% for option in solution.options %}
           {% assign stair = stairs | where:'name',option.stair | first %}
           {% if stair %}
-          <li {% if stair == default_stair %}class="selected"{% endif %}> 
+          <li {% if stair == default_stair %}class="active"{% endif %}> 
             {{ option.stair }} 
             {% if option.descr %}
             - {{ option.descr }}

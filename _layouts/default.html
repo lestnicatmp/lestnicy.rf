@@ -29,7 +29,7 @@
       <ul>
       
         {% assign permalink = '/' %}
-        <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+        <li {% if page.permalink == permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
             <div class="number">1</div> 
             Главная <br> страница
@@ -37,7 +37,7 @@
         </li>   
       
         {% assign permalink = '/подобрать-лестницу/' %}
-        <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+        <li {% if page.permalink contains permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
             <div class="number">2</div> 
             Подобрать <br> лестницу
@@ -45,7 +45,7 @@
         </li>   
       
         {% assign permalink = '/купить-лестницу/' %}
-        <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+        <li {% if page.permalink contains permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
             <div class="number">3</div> 
             Купить <br> лестницу

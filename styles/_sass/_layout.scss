@@ -65,7 +65,7 @@ header {
     }
   }
   
-  li.selected {
+  li.active {
     border-left: solid 1px $style-color;
     border-right: solid 1px $style-color;
     background-color: lighten($style-color, 15%);
@@ -97,7 +97,7 @@ header {
   	margin-right: 30px;		
   }
   
-  li.selected {
+  li.active {
   	border: solid 1px $style-color;
   	background-color: $background-color;
   	border-radius: 10px;
@@ -183,7 +183,7 @@ main .solution {
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   line-height: 150%;
 
-  .options li.selected {
+  .options li.active {
     font-weight: bold;
     color: $brand-color;
     text-decoration: underline;

@@ -6,17 +6,17 @@ layout: default
   <ul>
     
     {% assign permalink = '/подобрать-лестницу/' %}
-    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+    <li {% if page.permalink == permalink %}class="active"{% endif %}>
       <a href="{{ permalink }}">по решению</a>
     </li>
     
     {% assign permalink = '/подобрать-лестницу/по-параметрам/' %}
-    <li {% if page.permalink == permalink %}class="selected"{% endif %}>
+    <li {% if page.permalink == permalink %}class="active"{% endif %}>
       <a href="{{ permalink }}">по параметрам</a>
     </li>
     
     {% assign permalink = '/подобрать-лестницу/по-каталогу/' %}
-    <li {% if page.permalink contains permalink %}class="selected"{% endif %}>
+    <li {% if page.permalink contains permalink %}class="active"{% endif %}>
       <a href="{{ permalink }}">по подробному каталогу</a>
     </li>
     

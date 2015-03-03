@@ -41,8 +41,8 @@ $(document).ready(function() {
     cur = cur[cur.length-1];
     var id = cur && cur.length ? cur[0].id : "";
     // Set/remove active class
-    menuItems.parent().removeClass("selected");
-    menuItems.filter("[href='/#"+id+"']").parent().addClass("selected");
+    menuItems.parent().removeClass("active");
+    menuItems.filter("[href='/#"+id+"']").parent().addClass("active");
   });
   
 });
