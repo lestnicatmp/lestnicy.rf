@@ -183,6 +183,10 @@ main .solution {
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   line-height: 150%;
 
+  .options li {
+    cursor: pointer; 
+  }
+
   .options li.active {
     font-weight: bold;
     color: $brand-color;
@@ -196,7 +200,7 @@ main .solution {
     font-family: $header-font-family;
     color: $brand-color;  
     
-    span {
+    .fa {
       font-size: 85%;
     }
   }
@@ -244,9 +248,9 @@ main .param {
     font-family: $header-font-family;
     color: $brand-color;  
     
-    span {
+    .fa {
       font-size: 85%;
-    }    
+    } 
   }  
 }
 
@@ -267,7 +271,7 @@ main .stairs .stair {
     font-family: $header-font-family;
     color: $brand-color;  
     
-    span {
+    .fa {
       font-size: 85%;
     }    
   }  
@@ -284,7 +288,7 @@ main > .stair {
     font-family: $header-font-family;
     color: $brand-color; 
          
-    span {
+    .fa {
       font-size: 85%;
     }
   }   

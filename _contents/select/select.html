@@ -25,7 +25,10 @@ layout: select
     {% if default_stair %}
     {% assign default_stair_page = site.contents | where:'stair',default_stair.name | first %}
     <div class="solution">
-      <h3><a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo; {{ default_stair.name }}</a></h3>
+      <h3>
+        <a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo; 
+        <span class="name">{{ default_stair.name }}</span></a>
+      </h3>
       <img width="150" src="{{ default_stair.image }}">
       <div class="text">
         {{ solution.text }}
@@ -34,9 +37,14 @@ layout: select
         <ul>
           {% for option in solution.options %}
           {% assign stair = stairs | where:'name',option.stair | first %}
+          {% assign stair_page = site.contents | where:'stair',stair.name | first %}
           {% if stair %}
-          <li {% if stair == default_stair %}class="active"{% endif %}> 
-            {{ option.stair }} 
+          <li {% if stair == default_stair %}class="active"{% endif %} 
+            data-name="{{ stair.name }}"
+            data-image="{{ stair.image }}"
+            data-href="{{ stair_page.permalink }}"
+            data-price="{{ stair.price }}"> 
+            {{ stair.name }} 
             {% if option.descr %}
             - {{ option.descr }}
             {% endif %} 
@@ -46,7 +54,7 @@ layout: select
         </ul>
       </div>
       <div class="price">
-        {{ default_stair.price }}
+        <span class="value">{{ default_stair.price }}</span>
         <span class="fa fa-rub"></span>
       </div>
     </div>
