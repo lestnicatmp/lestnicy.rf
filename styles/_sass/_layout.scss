@@ -1,8 +1,3 @@
-body {
-  position: relative;
-  padding-top: 148px;
-}
-
 header {
   @extend %clearfix;
   top: 0;
@@ -136,6 +131,7 @@ header {
 
 main {
   @extend %clearfix; 
+  margin-top: 148px;
   padding: 0 40px 20px 40px;
 
   img {
@@ -199,6 +195,10 @@ main .solution {
     top: 0.5em;  
     font-family: $header-font-family;
     color: $brand-color;  
+    
+    span {
+      font-size: 85%;
+    }
   }
 }
 
@@ -243,6 +243,10 @@ main .param {
     top: 0.5em;  
     font-family: $header-font-family;
     color: $brand-color;  
+    
+    span {
+      font-size: 85%;
+    }    
   }  
 }
 
@@ -262,6 +266,10 @@ main .stairs .stair {
     top: 0.5em;  
     font-family: $header-font-family;
     color: $brand-color;  
+    
+    span {
+      font-size: 85%;
+    }    
   }  
 }
 
@@ -274,7 +282,11 @@ main > .stair {
     right: 0.5em;
     top: 0.5em;  
     font-family: $header-font-family;
-    color: $brand-color;  
+    color: $brand-color; 
+         
+    span {
+      font-size: 85%;
+    }
   }   
 }
 
