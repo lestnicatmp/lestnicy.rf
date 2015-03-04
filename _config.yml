@@ -22,7 +22,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: main
+      layout: home
   
 # Translators
 markdown: redcarpet

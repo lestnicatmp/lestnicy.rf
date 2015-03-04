@@ -3,7 +3,7 @@ permalink: /
 title: Деревянные лестницы на второй этаж
 description: Ведущий производитель готовых деревянных лестниц в России
 keywords: деревянные лестницы
-layout: main
+layout: home
 ---
 
 <main>
@@ -20,7 +20,7 @@ layout: main
     <p class="photos">
       {% for stair in site.data.stairs %}
       {% for photo in stair.photos %}
-      {% if photo.main %}
+      {% if photo.home %}
       <img width="150px" src="{{ photo.image | replace:'<size>','200x150' }}">
       {% endif %}
       {% endfor %}

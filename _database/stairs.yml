@@ -33,7 +33,7 @@
       weight: 34
   photos:
     - image: /images/stairs/photos/<size>/ls01u-1.jpg
-      main: true
+      home: true
     
 - name: ЛС-04У
   slug: ls04u
@@ -64,7 +64,7 @@
       weight: 100
   photos:
     - image: /images/stairs/photos/<size>/ls04u-1.jpg
-      main: true     
+      home: true     
           
 - name: ЛС-05
   slug: ls05
@@ -96,7 +96,7 @@
       weight: 105
   photos:
     - image: /images/stairs/photos/<size>/ls05-1.jpg
-      main: true        
+      home: true        
                      
 - name: ЛС-91
   slug: ls91
@@ -418,7 +418,7 @@
       weight: 95
   photos:
     - image: /images/stairs/photos/<size>/lv10-1.jpg
-      main: true
+      home: true
     - image: /images/stairs/photos/<size>/lv10-2.jpg
     - image: /images/stairs/photos/<size>/lv10-3.jpg      
                       
@@ -478,7 +478,7 @@
       weight: 132
   photos:
     - image: /images/stairs/photos/<size>/lv14b-1.jpg
-      main: true
+      home: true
     - image: /images/stairs/photos/<size>/lv14b-2.jpg       
               
 - name: ЛВ-1.2Х
@@ -639,7 +639,7 @@
       weight: 102
   photos:
     - image: /images/stairs/photos/<size>/lm22-1.jpg
-      main: true          
+      home: true          
     
 - name: ЛМ-31
   slug: lm31
@@ -674,7 +674,7 @@
   photos:
     - image: /images/stairs/photos/<size>/lm31-1.jpg
     - image: /images/stairs/photos/<size>/lm31-2.jpg
-      main: true        
+      home: true        
         
 - name: ЛС-10У
   slug: ls10u
@@ -703,7 +703,7 @@
       weight: 113
   photos:
     - image: /images/stairs/photos/<size>/ls10u-1.jpg
-      main: true
+      home: true
                      
 - name: ЛС-11/12
   slug: ls1112

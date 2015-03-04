@@ -172,8 +172,8 @@ footer {
   }
 }
 
-body[data-layout="main"] {
-  @import "main";    
+body[data-layout="home"] {
+  @import "home";    
 }
 
 body[data-layout="select"] {
