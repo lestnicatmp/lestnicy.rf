@@ -1,0 +1,39 @@
+main .solution {
+  position: relative;
+  float: left;
+  width: 45%;
+  padding: 1%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  line-height: 150%;
+
+  .options li {
+    cursor: pointer; 
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    &.active {
+      font-weight: bold;
+      color: $brand-color;
+      text-decoration: underline;
+    }
+  }
+	
+  .price {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
+    
+    .fa {
+      font-size: 85%;
+    }
+  }
+}

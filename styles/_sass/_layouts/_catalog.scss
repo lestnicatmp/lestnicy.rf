@@ -1,0 +1,39 @@
+main .stairs .stair {
+  @extend %clearfix; 
+  position: relative;
+  background-color: $background-color;
+  border: solid 1px $grey-color;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  margin-bottom: 30px;
+  padding: 20px;
+    
+  .price {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color;  
+    
+    .fa {
+      font-size: 85%;
+    }    
+  }  
+}
+
+main > .stair {
+  @extend %clearfix; 
+  position: relative;
+  
+  .price {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;  
+    font-family: $header-font-family;
+    color: $brand-color; 
+         
+    .fa {
+      font-size: 85%;
+    }
+  }   
+}

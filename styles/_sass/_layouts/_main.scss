@@ -1,0 +1,23 @@
+main .argument-main {
+  @extend %clearfix; 
+  margin: 0 -40px;
+  padding: 0 40px;
+  padding-bottom: 30px;
+  background-image: url("/images/background.jpg");
+  
+  .photos img {
+    opacity: 0.75;
+  }
+  
+  .photos img:last-child {
+    opacity: 1;
+    border: solid 2px #000;
+    box-shadow: 0 0 15px #aaa;   
+  }
+}
+
+main .argument {
+  @extend %clearfix; 
+  border-top: dashed 1px $grey-color;
+  padding: 30px 0;
+}

@@ -1,19 +1,19 @@
 ---
 permalink: /подобрать-лестницу/по-параметрам/
 title: Подобрать лестницу по параметрам
-layout: select
+layout: params
 ---
 {% assign stairs = site.data.stairs | where:'presence',true | sort:'position' %}
 
 <main>
 
-  <section>
+  <section class="header">
     <h1>{{ page.title }}</h1>
     <p>Если вы ограничены жесткими исходными условиями ...
     </p>    
   </section>
   
-  <section class="filter">
+  <section class="filters">
     <div>
       <h4>Поворот</h4>
       <p class="note">Повотор лестницы, градусы</p>
@@ -71,13 +71,12 @@ layout: select
     </div>
   </section>
   
-  <section>
+  <section class="stairs">
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
-    <div class="param">
+    <div class="stair">
       <img width="150" src="{{ stair.image }}">
       <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
-      <div>{{ stair.text | truncatewords: 3}}..</div>
       <ul class="data">
         <li>Поворот: {{ stair.turn }}</li>
         <li>Проем: {{ stair.window }}</li>
