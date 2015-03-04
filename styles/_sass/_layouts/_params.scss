@@ -61,10 +61,23 @@ main .filters {
   }
 }
 
+main .message {
+  border: solid 1px darken(#c0c0ff, 10%);
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  background-color: #c0c0ff;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: $header-font-family;
+  font-size: 90%;
+  text-align: center;
+}
+
 main .stairs {
   display: flex;
   flex-wrap: wrap; 
-  margin: 0 -10px; 
+  margin: -10px -10px; 
   margin-bottom: 20px;
   
   .stair {
