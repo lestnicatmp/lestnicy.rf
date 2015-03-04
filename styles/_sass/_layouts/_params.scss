@@ -95,6 +95,10 @@ main .stairs {
     line-height: 125%;
   }
   
+  .content {
+    font-size: 90%;
+  }
+  
   img {
     margin-right: 30px;
   }
@@ -102,7 +106,6 @@ main .stairs {
   ul {
     margin: 30px 0;
     list-style-position: inside;
-    font-size: 90%;
     white-space: nowrap;
   }
 }
