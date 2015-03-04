@@ -199,3 +199,7 @@ body[data-layout="params"] {
 body[data-layout="catalog"] {
   @import "catalog";    
 }
+
+body[data-layout="stair"] {
+  @import "stair";    
+}
