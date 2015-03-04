@@ -172,6 +172,18 @@ footer {
   }
 }
 
+.price {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;  
+  font-family: $header-font-family;
+  color: $brand-color;  
+  
+  .fa {
+    font-size: 85%;
+  } 
+}
+
 body[data-layout="home"] {
   @import "home";    
 }

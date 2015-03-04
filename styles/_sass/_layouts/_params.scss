@@ -1,16 +1,14 @@
 main .filters {
   display: flex;
   flex-wrap: wrap;
-  background-color: $background-color;
+  margin-bottom: 20px;
   border: solid 1px $grey-color;
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   background-color: $background-color;
-  margin-bottom: 25px;
   font-family: $header-font-family;
-  overflow: hidden;
   
-  > div {
+  .filter {
     flex-basis: 0;
   	flex-grow: 1;
   	min-width: 250px;
@@ -26,12 +24,12 @@ main .filters {
     margin: 3px 0;
   }
   
-  .note {
+  p {
     font-family: $header-font-family;
     font-size: 90%;
     color: #aaa;
   }
-    
+     
   table {
     border-collapse: collapse;
     margin: 15px auto;
@@ -63,32 +61,35 @@ main .filters {
   }
 }
 
-main .param {
-  position: relative; 
-  float: left;
-  width: 29%;
-  padding: 1%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  background-color: $background-color;
-  border: solid 1px $grey-color;
-  border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
-  line-height: 125%;
-    
-  img {
-  	box-shadow: none;
+main .stairs {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0 -10px; 
+  margin-bottom: 20px;
+  
+  .stair {
+    flex-basis: 0;
+  	flex-grow: 1;
+  	position: relative;
+  	display: flex;
+  	min-width: 350px;
+  	margin: 10px;
+    padding: 10px;
+    border: solid 1px $grey-color;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+    background-color: $background-color;
+    line-height: 125%;
   }
   
-  .price {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;  
-    font-family: $header-font-family;
-    color: $brand-color;  
-    
-    .fa {
-      font-size: 85%;
-    } 
-  }  
+  img {
+    margin-right: 30px;
+  }
+  
+  ul {
+    margin: 30px 0;
+    list-style-position: inside;
+    font-size: 90%;
+    white-space: nowrap;
+  }
 }
