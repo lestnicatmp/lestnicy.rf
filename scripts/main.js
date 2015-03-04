@@ -57,25 +57,5 @@ $(document).ready(function () {
     self.siblings().removeClass("active");
     self.addClass("active");
     return false;
-  })
- 
-  $('#turn-slider').slider({
-    range: true,
-    min: 0,
-    max: 270,
-    step: 90,
-    values: [0, 270],
-    slide: function(event, ui) {
-      $('#turn-slider-value').val(ui.values[0]+' - '+ui.values[1]);
-    }
   });
-  
-  $('#height-slider').slider({
-    orientation: 'vertical',
-    range: true,
-    min: 2.5,
-    max: 3.5,
-    step: 0.1,
-    values: [2.5, 3.5],
-  });  
 });

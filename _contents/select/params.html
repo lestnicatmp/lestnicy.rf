@@ -16,45 +16,58 @@ layout: select
   <section class="filter">
     <div>
       <h4>Поворот</h4>
-      <div>
-        <input type="text" value="0" readonly>
-        <input type="text" value="90" readonly>
-      </div>
-      <div>
-        <input type="text" value="180" readonly>
-        <input type="text" value="270" readonly>
-      </div>
+      <p class="note">Повотор лестницы, градусы</p>
+      <table>
+        <tr>
+          <td><input class="option" type="text" value="0" readonly></td>
+          <td><input class="option" type="text" value="90" readonly></td>
+        </tr>
+        <tr>
+          <td><input class="option" type="text" value="180" readonly></td>
+          <td><input class="option" type="text" value="270" readonly></td>
+        </tr>
+      </table>
     </div>
     <div>
       <h4>Проем</h4>
-      <div>
-        <input type="number" min="1" max="3" step="0.5" value="1"> x 
-        <input type="number" min="0.5" max="3" step="0.5" value="0.5">
-      </div>
-      <div>
-        <input type="number" min="1" max="3" step="0.5" value="3"> x 
-        <input type="number" min="0.5" max="3" step="0.5" value="3">
-      </div>
+      <p class="note">Мин. размеры проема, м x м</p>
+      <table>
+        <tr>
+          <td><input class="range" type="number" min="0" max="3" step="0.5" value="0"></td>
+          <td rowspan="2">&nbsp;x&nbsp;</td>
+          <td><input class="range" type="number" min="0" max="3" step="0.5" value="0"></td>
+        </tr>
+        <tr>
+          <td><input class="range" type="number" min="0" max="3" step="0.5" value="3"></td>
+          <td><input class="range" type="number" min="0" max="3" step="0.5" value="3"></td>
+        </tr>
+      </table>
     </div>
     <div>
       <h4>Высота</h4>
-      <div>
-        <input type="number" min="2.5" max="3.3" step="0.2" value="2.5">
-      </div>
-      <div>
-        <input type="number" min="2.5" max="3.3" step="0.2" value="3.3">
-      </div>
+      <p class="note">Высота от пола до пола, м</p>
+      <table>
+        <tr>
+          <td><input class="range" type="number" min="2.5" max="3.5" step="0.2" value="2.5"></td>
+        </tr>
+        <tr>
+         <td><input class="range" type="number" min="2.5" max="3.5" step="0.2" value="3.5"></td>
+        </tr>
+      </table>      
     </div>
     <div>
       <h4>Древесина</h4>
-      <div>
-        <input type="text" value="хвоя" readonly>
-        <input type="text" value="сосна" readonly>
-      </div>
-      <div>
-        <input type="text" value="береза" readonly>
-        <input type="text" value="бук" readonly>
-      </div>
+      <p class="note">Материал лестницы</p>
+      <table>
+        <tr>
+          <td><input class="option" type="text" value="хвоя" readonly></td>
+          <td><input type="text" value="сосна" readonly></td>
+        </tr>
+        <tr>
+          <td><input class="option" type="text" value="береза" readonly></td>
+          <td><input class="option" type="text" value="бук" readonly></td>
+        </tr>
+      </table>      
     </div>
   </section>
   

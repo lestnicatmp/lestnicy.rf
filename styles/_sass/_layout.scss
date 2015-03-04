@@ -212,44 +212,66 @@ main .solution {
 
 main .filter {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   background-color: $background-color;
   border: solid 1px $grey-color;
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   background-color: $background-color;
   margin-bottom: 25px;
-  padding-bottom: 12px;
-  
-  input {
-    width: 100px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    font-family: $header-font-family;
-    
-    &.active {
-      background-color: #eee;
-    }
-  }
+  font-family: $header-font-family;
+  overflow: hidden;
   
   > div {
     flex-basis: 0;
   	flex-grow: 1;
+  	min-width: 250px;
   	padding: 10px;
   	text-align: center;
-  	
-  	input {
-      font-size: 110%;
-      text-align: center;  
-   	}
-  	
-  	.slider {
-  	   margin: 10px;
+    &:not(:last-child) {
+      border-right: dashed 1px #ccc;
+      //border-bottom: dashed 1px #ccc;
   	}
-  	
-  	#height-slider {
-  	  height: 150px;
-  	}
+  }
+  
+  h4 {
+    margin: 3px 0;
+  }
+  
+  .note {
+    font-family: $header-font-family;
+    font-size: 90%;
+    color: #aaa;
+  }
+    
+  table {
+    border-collapse: collapse;
+    margin: 15px auto;
+    td {
+      padding: 2px;
+    }
+  }
+  
+  input {
+    display: block;
+    width: 100px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 100%;
+    font-family: $header-font-family;
+    text-align: center;
+    
+    &.range {
+      padding-left: 12px;
+      width: 88px;
+    }
+    
+    &.option {
+      cursor: pointer;
+      &.active {
+        background-color: #eee;
+      }
+    }
   }
 }
 
