@@ -15,7 +15,7 @@ layout: params
   
   <section class="filters">
     
-    <div class="filter">
+    <div class="filter turn">
       <h4>Поворот</h4>
       <p>Повотор лестницы, градусы</p>
       <table>
@@ -92,7 +92,7 @@ layout: params
       <div class="content">
         <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
         <ul class="data">
-          <li>Поворот: {{ stair.turn }}</li>
+          <li>Поворот: <span class="turn">{{ stair.turn }}</span></li>
           <li>Проем: {{ stair.window }}</li>
           <li>Высота: {{ stair.height }}</li>
           <li>Древесина: {{ stair.wood }}</li>

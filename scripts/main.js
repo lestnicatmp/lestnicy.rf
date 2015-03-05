@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function() {
     
   var hash = $(location).attr('hash')
   if (hash) {
     scrollToElement(hash);
   }
  
-  $('#page-menu a').click(function () {
+  $('#page-menu a').click(function() {
     var hash = $(this).attr('href').replace('/', '')
     scrollToElement(hash);
     return false;
@@ -22,18 +22,18 @@ $(document).ready(function () {
   if ($(location).attr('pathname') == '/') {
     var pageMenu = $("#page-menu");
     var menuItems = pageMenu.find("a");
-    var scrollItems = menuItems.map(function () {
+    var scrollItems = menuItems.map(function() {
       var item = $($(this).attr("href").replace('/', ''));
       if (item.length) { return item; }
     });
       
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       // Get container scroll position
       var offset = $('main').offset().top + 100
       var fromTop = $(this).scrollTop()+offset;
     
       // Get id of current scroll item
-      var cur = scrollItems.map(function (){
+      var cur = scrollItems.map(function() {
         if ($(this).offset().top < fromTop) {
           return this;
         }
@@ -47,15 +47,65 @@ $(document).ready(function () {
     });
   }
   
-  $('main .solution .options li').click(function () {
+  $('main .solution .options li').click(function() {
     var self = $(this);
     var target = self.parentsUntil('.solution').parent();
     target.find('h3 .name').html(self.data('name'));
     target.find('img').attr('src', self.data('image'));
     target.find('h3 a').attr('href', self.data('href'));
     target.find('.price .value').html(self.data('price'));
-    self.siblings().removeClass("active");
-    self.addClass("active");
+    self.siblings().removeClass('active');
+    self.addClass('active');
     return false;
   });
+  
+  if ($('body').data('layout') == 'params') {
+    
+    var options = $('.filter.turn .option');
+    options.click(function () {
+      $(this).toggleClass('active');
+      if (options.length == options.filter('.active').length) {
+        options.removeClass('active');
+      }
+      applyTurnFilter();
+      return false;
+    });
+    
+    function applyTurnFilter() {
+      
+      $('.stairs').hide();
+      
+      //Get allowed values
+      var allowed = [];
+      $('.filter.turn .option').each(function() {
+        if ($(this).hasClass('active')) {
+          allowed.push($(this).attr('value'));
+        }
+      });
+      
+      //Show/hide elements
+      $('.stair').show();
+      if (allowed.length) {
+        $('.stair').each(function(index) {
+          var value = $(this).find('.turn').html();
+          if ($.inArray(value, allowed) != -1) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      }
+      
+      $('.stairs').fadeIn('slow', function() {
+        updateFilterCounter();
+      });
+      
+    }
+    
+    function updateFilterCounter() {
+      var count = $('.stair:visible').length;
+      $('.message .count').html(count);
+    }
+      
+  }
 });
