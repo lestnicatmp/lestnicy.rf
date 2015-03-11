@@ -1,0 +1,8 @@
+session_name: lestnicyrf
+windows:
+  - window_name: main
+    panes:
+      -
+  - window_name: server
+    panes:
+      - jekyll serve
