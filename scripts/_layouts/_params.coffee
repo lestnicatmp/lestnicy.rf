@@ -2,14 +2,14 @@
     options.click ->
       $(this).toggleClass('active')
       if options.length == options.filter('.active').length
-        options.removeClass('active');
+        options.removeClass('active')
       applyTurnFilter()
       return false
 
     applyTurnFilter = ->
-      $('.stairs').hide();
+      $('.stairs').hide()
       # Get allowed values
-      allowed = [];
+      allowed = []
       $('.filter.turn .option').each ->
         if $(this).hasClass('active')
           allowed.push($(this).attr('value'))
@@ -28,3 +28,4 @@
     updateFilterCounter = ->
       count = $('.stair:visible').length
       $('.message .count').html(count)
+
