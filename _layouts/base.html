@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+
   <title>{{ page.title }} :: {{ site.title }}</title>
-  
+
   <meta charset="utf-8">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.title }}{% endif %}" />
-  
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Ubuntu:400,700,300italic|Ubuntu+Condensed&subset=latin,cyrillic'>
   <link rel="shortcut icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="/styles/main.css">
-  
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
   <script src="/scripts/main.js"></script>
-  
+
 </head>
 <body data-layout="{{ page.layout }}">
-  
+
   <header>
-  
+
     <div id="logo">
       <a href="/">Лестницы.рф</a>
     </div>
-    
+
     <nav id="site-menu">
       <ul>
-      
+
         {% assign permalink = '/' %}
         <li {% if page.permalink == permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
-            <div class="number">1</div> 
+            <div class="number">1</div>
             Главная <br> страница
            </a>
-        </li>   
-      
+        </li>
+
         {% assign permalink = '/подобрать-лестницу/' %}
         <li {% if page.permalink contains permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
-            <div class="number">2</div> 
+            <div class="number">2</div>
             Подобрать <br> лестницу
           </a>
-        </li>   
-      
+        </li>
+
         {% assign permalink = '/купить-лестницу/' %}
         <li {% if page.permalink contains permalink %}class="active"{% endif %}>
           <a href="{{ permalink }}">
-            <div class="number">3</div> 
+            <div class="number">3</div>
             Купить <br> лестницу
           </a>
-        </li> 
-  
+        </li>
+
       </ul>
     </nav>
-    
+
   </header>
-    
+
   <div id="contacts">
   <ul>
     <li>+7 (495) 490 38 14</li>
@@ -64,13 +65,13 @@
     <li>+7 (495) 490 38 21</li>
   </ul>
   </div>
-  
+
   {{ content }}
-  
+
   <footer>
     <a href="/блог/">Блог</a> |
     <a href="/информация-для-дилеров/">Дилерам</a> |
-    <a href="/продажа-доски/">Продажа доски</a> |  
+    <a href="/продажа-доски/">Продажа доски</a> |
     <a href="/изготовление-лестниц-на-заказ/">Лестницы на заказ</a> |
     © 2015 ЛПК «Темп»
   </footer>

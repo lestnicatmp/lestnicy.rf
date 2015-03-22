@@ -57,8 +57,9 @@
       $(".stair").show()
       if allowed.length
         $(".stair").each ->
-          value = $(this).find(".#{ option }").html()
-          if $.inArray(value, allowed) != -1
+          values = $(this).find(".#{ option }").html()
+          values = values.split(/[- ]/)
+          if _.intersection(values, allowed).length
             $(this).show()
           else
             $(this).hide()
