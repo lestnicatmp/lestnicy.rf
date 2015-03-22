@@ -10,3 +10,4 @@ jQuery ->
 {% include_relative _layouts/_params.coffee %}
   if layout == 'select'
 {% include_relative _layouts/_select.coffee %}
+

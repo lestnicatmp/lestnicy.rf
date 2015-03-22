@@ -30,7 +30,7 @@ layout: params
       </table>
     </div>
 
-    <div class="filter">
+    <div class="filter window">
       <h4>Проем</h4>
       <p>Мин. размеры проема, м x м</p>
       <table>
@@ -46,7 +46,7 @@ layout: params
       </table>
     </div>
 
-    <div class="filter">
+    <div class="filter height">
       <h4>Высота</h4>
       <p>Высота от пола до пола, м</p>
       <table>
@@ -59,13 +59,13 @@ layout: params
       </table>
     </div>
 
-    <div class="filter">
+    <div class="filter wood">
       <h4>Древесина</h4>
       <p>Материал лестницы</p>
       <table>
         <tr>
           <td><input class="option" type="text" value="хвоя" readonly></td>
-          <td><input type="text" value="сосна" readonly></td>
+          <td><input class="option" type="text" value="сосна" readonly></td>
         </tr>
         <tr>
           <td><input class="option" type="text" value="береза" readonly></td>
@@ -95,7 +95,7 @@ layout: params
           <li>Поворот: <span class="turn">{{ stair.turn }}</span></li>
           <li>Проем: {{ stair.window }}</li>
           <li>Высота: {{ stair.height }}</li>
-          <li>Древесина: {{ stair.wood }}</li>
+          <li>Древесина: <span class="wood">{{ stair.wood }}</span></li>
         </ul>
         <div class="price">
           {{ stair.price }}
