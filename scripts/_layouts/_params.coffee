@@ -75,7 +75,6 @@
         value = $(this).find('.window').html()
         value = value.replace(/,/g, '.')
         [value_left, value_right] = value.split(/[xх]/)
-        console.log(value_left, value_right)
         [value_left_min, value_left_max] = value_left.split('-')
         [value_right_min, value_right_max] = value_right.split('-')
         if not value_left_max
