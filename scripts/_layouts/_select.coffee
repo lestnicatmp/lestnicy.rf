@@ -8,3 +8,4 @@
       self.siblings().removeClass('active')
       self.addClass('active')
       return false
+

@@ -20,6 +20,13 @@
       applyOptionFilter('wood')
       return false
 
+    # Height
+    height_range = $(".filter.height .range")
+    height_range.change ->
+      min = height_range.filter('.min').val()
+      max = height_range.filter('.max').val()
+      applyHeightFilter(min, max)
+
     #
     # Functions
     #
@@ -31,7 +38,6 @@
 
     # Options
     applyOptionFilter = (option) ->
-      console.log(option)
       $(".stairs").hide()
       # Get allowed values
       allowed = []
@@ -43,10 +49,29 @@
       if allowed.length
         $(".stair").each ->
           value = $(this).find(".#{ option }").html()
-          if ($.inArray(value, allowed) != -1)
+          if $.inArray(value, allowed) != -1
             $(this).show()
           else
             $(this).hide()
+      $(".stairs").fadeIn("slow", ->
+        updateFilterCounter())
+
+    # Height
+    applyHeightFilter = (min, max) ->
+      $(".stairs").hide()
+      # Show/hide elements
+      $(".stair").show()
+      $(".stair").each ->
+        value = $(this).find('.height').html()
+        [value_min, value_max] = value.split('-')
+        if not value_max
+          value_max = value_min
+        value_min = parseFloat(value_min.replace(',', '.'))
+        value_max = parseFloat(value_max.replace(',', '.'))
+        if value_max >= min and value_min <= max
+          $(this).show()
+        else
+          $(this).hide()
       $(".stairs").fadeIn("slow", ->
         updateFilterCounter())
 
