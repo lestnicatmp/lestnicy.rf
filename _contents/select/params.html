@@ -10,11 +10,11 @@ layout: params
   <section class="header">
     <h1>{{ page.title }}</h1>
     <p>Если вы ограничены жесткими исходными условиями ...
-    </p>    
+    </p>
   </section>
-  
+
   <section class="filters">
-    
+
     <div class="filter turn">
       <h4>Поворот</h4>
       <p>Повотор лестницы, градусы</p>
@@ -29,7 +29,7 @@ layout: params
         </tr>
       </table>
     </div>
-    
+
     <div class="filter">
       <h4>Проем</h4>
       <p>Мин. размеры проема, м x м</p>
@@ -45,20 +45,20 @@ layout: params
         </tr>
       </table>
     </div>
-    
+
     <div class="filter">
       <h4>Высота</h4>
       <p>Высота от пола до пола, м</p>
       <table>
         <tr>
-          <td><input class="range" type="number" min="2.5" max="3.5" step="0.2" value="2.5"></td>
+          <td><input class="range" type="number" min="2.5" max="3.5" step="0.1" value="2.5"></td>
         </tr>
         <tr>
-         <td><input class="range" type="number" min="2.5" max="3.5" step="0.2" value="3.5"></td>
+         <td><input class="range" type="number" min="2.5" max="3.5" step="0.1" value="3.5"></td>
         </tr>
-      </table>      
+      </table>
     </div>
-    
+
     <div class="filter">
       <h4>Древесина</h4>
       <p>Материал лестницы</p>
@@ -71,20 +71,20 @@ layout: params
           <td><input class="option" type="text" value="береза" readonly></td>
           <td><input class="option" type="text" value="бук" readonly></td>
         </tr>
-      </table>      
+      </table>
     </div>
-    
+
   </section>
-  
+
   <section class="message">
     Подходящих лестниц: <span class="count">{{ stairs.size }}</span>
   </section>
-  
+
   <section class="stairs">
-    
+
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
-    
+
     <div class="stair">
       <div class="image">
         <img width="150" src="{{ stair.image }}">
@@ -103,13 +103,13 @@ layout: params
         </div>
       </div>
     </div>
-    
+
     {% endfor %}
-    
+
   </section>
-      
+
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>  
-  
+  </section>
+
 </main>
