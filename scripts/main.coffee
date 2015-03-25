@@ -1,13 +1,16 @@
 ---
 # Required front matter
 ---
-jQuery ->
 
-  layout = $('body').data('layout')
-  if layout == 'home'
+{% include_relative _application.coffee %}
 {% include_relative _layouts/_home.coffee %}
-  if layout == 'params'
-{% include_relative _layouts/_params.coffee %}
-  if layout == 'select'
 {% include_relative _layouts/_select.coffee %}
+{% include_relative _layouts/_params.coffee %}
+
+jQuery =>
+  app = new Application()
+  app.register(new HomeModule())
+  app.register(new SelectModule())
+  app.register(new ParamsModule())
+  app.run()
 

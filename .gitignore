@@ -41,8 +41,12 @@ docs/_build
 # Vagrant
 .vagrant/
 
+# Vim
+tags
+
 # Virtualenv
 venv/
 venvs/
 virtualenv/
 virtualenvs/
+
