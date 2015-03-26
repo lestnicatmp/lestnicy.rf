@@ -8,47 +8,49 @@ class HomeModule
     @collect()
     @bind()
     if @hash
-      @scrollToElement(@hash)
+      @scroll_to_element(@hash)
 
   collect: =>
     @hash = $(location).attr('hash')
     @menuItems = $('#page-menu').find('a')
-    @scrollItems = @menuItems.map ->
-      item = $($(this).attr('href').replace('/', ''))
+    @scrollItems = @menuItems.map (index, value) =>
+      element = $(value)
+      item = $(element.attr('href').replace('/', ''))
       if item.length
         return item
 
   bind: =>
-    $(window).scroll(@onWindowScroll)
-    $('#page-menu a').click(@onPageMenuLinkClick)
+    $(window).scroll(@on_window_scroll)
+    $('#page-menu a').click(@on_page_menu_click)
 
   # Bindings
 
-  onWindowScroll: (event)  =>
-    element = event.currentTarget
+  on_window_scroll: (event)  =>
+    element = $(event.currentTarget)
     # Get container scroll position
     offset = $('main').offset().top + 100
-    fromTop = $(element).scrollTop()+offset
+    fromTop = element.scrollTop()+offset
     # Get id of current scroll item
-    cur = @scrollItems.map ->
-      if $(this).offset().top < fromTop
+    cur = @scrollItems.map (index, value) =>
+      element = $(value)
+      if element.offset().top < fromTop
         return element
     # Get the id of the current element
     cur = cur[cur.length-1]
     id = cur and if cur.length then cur[0].id else ''
     # Set/remove active class
     @menuItems.parent().removeClass('active')
-    @menuItems.filter("[href='/#{id}']").parent().addClass('active')
+    @menuItems.filter("[href='/##{id}']").parent().addClass('active')
 
-  onPageMenuLinkClick: (event) =>
+  on_page_menu_click: (event) =>
     element = event.currentTarget
     hash = $(element).attr('href').replace('/', '')
-    @scrollToElement(hash)
+    @scroll_to_element(hash)
     return false
 
   # Helpers
 
-  scrollToElement: (selector, duration) =>
+  scroll_to_element: (selector, duration) =>
     offset = $('main').offset().top - 1
     duration = duration or 500
     $('html, body').animate({
