@@ -9,7 +9,7 @@ class HomeModule
     @bind()
     if @hash
       @scroll_to_element(@hash)
-    @showcase_interval = setInterval( @on_showcase_interval, 3000)
+    @showcase_interval = setInterval(@on_showcase_interval, 5000)
 
   collect: =>
     @hash = $(location).attr('hash')
@@ -60,7 +60,7 @@ class HomeModule
     $('img.showcase').stop()
     $('img.showcase').fadeOut 'fast', =>
       $('img.showcase').attr('src', showcase_image)
-      $('img.showcase').fadeIn(1500)
+      $('img.showcase').fadeIn(1000)
     return false
 
   on_showcase_interval: =>
