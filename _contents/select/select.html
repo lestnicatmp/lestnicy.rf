@@ -13,9 +13,9 @@ layout: select
     <p>Для облегчения вашего выбора мы подготовили наиболее интересные ...
     </p>
   </section>
-  
+
   <section class="solutions">
-    
+
     {% for solution in solutions %}
     {% for option in solution.options %}
     {% unless default_stair %}
@@ -24,15 +24,15 @@ layout: select
     {% endfor %}
     {% if default_stair %}
     {% assign default_stair_page = site.contents | where:'stair',default_stair.name | first %}
-    
+
     <div class="solution">
       <h3>
-        <a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo; 
+        <a href="{{ default_stair_page.permalink }}">{{ solution.name }} &rsaquo;
         <span class="name">{{ default_stair.name }}</span></a>
       </h3>
       <div class="box">
         <div class="image">
-          <img width="150" src="{{ default_stair.image }}">
+          <img width="150" src="{{ default_stair.image | replace:'<size>','200x300' }}">
         </div>
         <div class="content">
           <div class="text">{{ solution.text }}</div>
@@ -42,15 +42,15 @@ layout: select
               {% assign stair = stairs | where:'name',option.stair | first %}
               {% assign stair_page = site.contents | where:'stair',stair.name | first %}
               {% if stair %}
-              <li {% if stair == default_stair %}class="active"{% endif %} 
+              <li {% if stair == default_stair %}class="active"{% endif %}
                 data-name="{{ stair.name }}"
-                data-image="{{ stair.image }}"
+                data-image="{{ stair.image | replace:'<size>','200x300' }}"
                 data-href="{{ stair_page.permalink }}"
-                data-price="{{ stair.price }}"> 
-                {{ stair.name }} 
+                data-price="{{ stair.price }}">
+                {{ stair.name }}
                 {% if option.descr %}
                 - {{ option.descr }}
-                {% endif %} 
+                {% endif %}
               </li>
               {% endif %}
               {% endfor %}
@@ -63,11 +63,11 @@ layout: select
         <span class="fa fa-rub"></span>
       </div>
     </div>
-    
+
     {% assign default_stair = null %}
     {% endif %}
     {% endfor %}
-    
+
     <div class="solution">
       <h3><a href="/изготовление-лестниц-на-заказ/">Изготовление на заказ</a></h3>
       <div class="content">
@@ -76,11 +76,11 @@ layout: select
         </div>
       </div>
     </div>
-    
+
   </section>
 
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>  
-  
+  </section>
+
 </main>

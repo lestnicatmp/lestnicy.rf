@@ -9,6 +9,7 @@ class HomeModule
     @bind()
     if @hash
       @scroll_to_element(@hash)
+    @showcase_interval = setInterval( @on_showcase_interval, 3000)
 
   collect: =>
     @hash = $(location).attr('hash')
@@ -22,6 +23,7 @@ class HomeModule
   bind: =>
     $(window).scroll(@on_window_scroll)
     $('#page-menu a').click(@on_page_menu_click)
+    $('.argument-main .preview img').click(@on_preview_image_click)
 
   # Bindings
 
@@ -47,6 +49,26 @@ class HomeModule
     hash = $(element).attr('href').replace('/', '')
     @scroll_to_element(hash)
     return false
+
+  on_preview_image_click: (event, auto=false) =>
+    if not auto
+      clearInterval(@showcase_interval)
+    element = $(event.currentTarget)
+    element.siblings().removeClass('active')
+    element.addClass('active')
+    showcase_image = element.data('showcase-image')
+    $('img.showcase').stop()
+    $('img.showcase').fadeOut 'fast', =>
+      $('img.showcase').attr('src', showcase_image)
+      $('img.showcase').fadeIn(1000)
+    return false
+
+  on_showcase_interval: =>
+    current = $('.preview .active')
+    next = current.next()
+    if not next.length
+      next = current.siblings().first()
+    next.trigger('click', [true])
 
   # Helpers
 

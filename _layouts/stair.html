@@ -6,15 +6,15 @@ layout: select
 <main>
 
   <section class="stair">
-    
+
     <h1>{{ page.title }}</h1>
-    
-    <img src="{{ stair.image }}">
-    
+
+    <img src="{{ stair.image | replace:'<size>','200x300' }}">
+
     <p class="text">
       {{ stair.text }}
     </p>
-    
+
     {% if stair.photos %}
     <p class="photos">
       {% for photo in stair.photos %}
@@ -22,12 +22,12 @@ layout: select
       {% endfor %}
     </p>
     {% endif %}
-    
+
     <div class="price">
       {{ stair.price }}
       <span class="fa fa-rub"></span>
     </div>
-    
+
     <h2>Параметры</h2>
     <table>
     <thead>
@@ -60,8 +60,8 @@ layout: select
         <td>{{ stair.size }}</td>
        </tr>
     </tbody>
-    </table> 
-    
+    </table>
+
     {% if stair.boxes %}
     <h2>Упаковка</h2>
     <table>
@@ -83,13 +83,13 @@ layout: select
     </tbody>
     </table>
     {% endif %}
-    
+
     {{ content }}
-    
+
   </section>
 
   <section class="next">
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>    
-  
+  </section>
+
 </main>

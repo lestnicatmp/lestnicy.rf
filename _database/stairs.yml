@@ -18,7 +18,7 @@
   step_height: 193
   step_quantity: 14
   step_depth: 40
-  image: /images/stairs/image/ls01u.jpg
+  image: /images/stairs/image/<size>/ls01u.jpg
   text: >
     Универсальная лестница (возможность сборки в левозаходном и правозаходном
     варианте одного и того же комплекта). Удобна при установке в угол помещения,
@@ -51,7 +51,7 @@
   step_height: 193
   step_quantity: 14
   step_depth: 40
-  image: /images/stairs/image/ls04u.jpg
+  image: /images/stairs/image/<size>/ls04u.jpg
   text: >
     Отличается от ЛС-01У наличием перил, что позволяет устанавливать ЛС-04У
     с примыканием только к одной стене.
@@ -82,7 +82,7 @@
   step_height: 193
   step_quantity: 14
   step_depth: 40
-  image: /images/stairs/image/ls05.jpg
+  image: /images/stairs/image/<size>/ls05.jpg
   text: >
     Полная комплектация при тех же габаритных размерах, что и две
     предыдущие модели. Имеет подступенки, перила и деревянное оформление
@@ -114,7 +114,7 @@
   step_height: 225
   step_quantity: 12
   step_depth: 40
-  image: /images/stairs/image/ls91.jpg
+  image: /images/stairs/image/<size>/ls91.jpg
   text: >
     Предельно малогабаритная лестница без подступенков
     с забежными ступенями снизу.
@@ -144,7 +144,7 @@
   step_height: 225
   step_quantity: 12
   step_depth: 40
-  image: /images/stairs/image/ls92.jpg
+  image: /images/stairs/image/<size>/ls92.jpg
   text: >
     Универсальная лестница без подступенков и поручней.
   boxes:
@@ -169,7 +169,7 @@
   step_height: 225
   step_quantity: 12
   step_depth: 40
-  image: /images/stairs/image/ls925.jpg
+  image: /images/stairs/image/<size>/ls925.jpg
   text: >
     Универсальная лестница с подступенками и поручнями.
   boxes:
@@ -196,7 +196,7 @@
   step_height: 227
   step_quantity: 11
   step_depth: 60
-  image: /images/stairs/image/ls93.jpg
+  image: /images/stairs/image/<size>/ls93.jpg
   text: >
     Сверхмалогабаритная лестница с улучшенной эргономикой
     для невысоких помещений.
@@ -224,7 +224,7 @@
   step_height: 193
   step_quantity: 15
   step_depth: 40
-  image: /images/stairs/image/ls21.jpg
+  image: /images/stairs/image/<size>/ls21.jpg
   text: >
     Представляет собой прямую лестницу – в начале захода и поворотную
     (с забежными ступенями) - на выходе, устанавливается преимущественно
@@ -253,7 +253,7 @@
   step_height: 193
   step_quantity: 15
   step_depth: 40
-  image: /images/stairs/image/ls215.jpg
+  image: /images/stairs/image/<size>/ls215.jpg
   text: >
     Аналогичная предыдущей, но закрытого типа: с подступенками.
   boxes:
@@ -282,7 +282,7 @@
   step_height: 193
   step_quantity: 15
   step_depth: 40
-  image: /images/stairs/image/ls02.jpg
+  image: /images/stairs/image/<size>/ls02.jpg
   text: >
     Аналогична ЛС-21 с той разницей, что у нее поворот наверху происходит
     в сторону противоположную стороне с перилами. Разработана для холлов
@@ -311,7 +311,7 @@
   step_height: 193
   step_quantity: 15
   step_depth: 40
-  image: /images/stairs/image/ls225.jpg
+  image: /images/stairs/image/<size>/ls225.jpg
   text: >
     Лестница с забежными ступенями снизу.
     Имеет в своем составе перила, подступенки и деревянное оформление колонны.
@@ -342,7 +342,7 @@
   step_height: 193
   step_quantity: 16
   step_depth: 40
-  image: /images/stairs/image/ls235.jpg
+  image: /images/stairs/image/<size>/ls235.jpg
   text: >
     Модификация предыдущей лестницы с увеличенной заходной частью и
     уменьшенной – выходной. При этом уменьшена требуемая длина междуэтажного
@@ -372,7 +372,7 @@
   step_height: 193
   step_quantity: 16
   step_depth: 60
-  image: /images/stairs/image/ls06.jpg
+  image: /images/stairs/image/<size>/ls06.jpg
   text: >
     Комфортная лестница с классической схемой: марш-промежуточная площадка-марш.
     Основной вариант установки – с примыканием к одной стене. Занимает большую
@@ -406,7 +406,7 @@
   step_height: 225
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/lv10.jpg
+  image: /images/stairs/image/<size>/lv10.jpg
   text: >
     Сверхмалогабаритная лестница в виде полного винта, квадратная в плане,
     в которой за счет замены центральной опорной колонны скрытым металлическим
@@ -438,7 +438,7 @@
   step_height: 225
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/lv12b.jpg
+  image: /images/stairs/image/<size>/lv12b.jpg
   text: >
     Аналог предыдущей, но более комфортная за счет
     увеличения проема до 1,2 м x 1,2 м.
@@ -464,7 +464,7 @@
   step_height: 210
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/lv14b.jpg
+  image: /images/stairs/image/<size>/lv14b.jpg
   text: >
     Самая комфортная лестница в виде полного винта с улучшенным дизайном.
     Её перильное ограждение включает в себя поручень с изогнутыми элементами
@@ -497,7 +497,7 @@
   step_height: 210
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/lv12x.jpg
+  image: /images/stairs/image/<size>/lv12x.jpg
   text: >
     Малогабаритная лестница из хвойной древесины в виде винта полного оборота,
     квадратная в плане. Размер квадрата (и требуемого междуэтажного проема)
@@ -526,7 +526,7 @@
   step_height: 210
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/lv14x.jpg
+  image: /images/stairs/image/<size>/lv14x.jpg
   text: >
     Аналогичная предыдущей лестнице с размерами в плане 1,4м x 1,4м.
   boxes:
@@ -555,7 +555,7 @@
   step_height: 174
   step_quantity: 18
   step_depth: 60
-  image: /images/stairs/image/ls32.jpg
+  image: /images/stairs/image/<size>/ls32.jpg
   text: >
     Комфортная лестница средних размеров. Несмотря на наличие забежных
     ступеней имеет наилучшие соотношения высоты шага и глубины ступени.
@@ -589,7 +589,7 @@
   step_height: 193
   step_quantity: 16
   step_depth: 60
-  image: /images/stairs/image/ls62u.jpg
+  image: /images/stairs/image/<size>/ls62u.jpg
   text: >
     Лестница шахтного типа, сделанная по схеме марш-площадка-марш без
     забежных ступеней. Универсальна по положению маршей (слева и справа).
@@ -624,7 +624,7 @@
   step_height: 193
   step_quantity: 16
   step_depth: 50
-  image: /images/stairs/image/lm22.jpg
+  image: /images/stairs/image/<size>/lm22.jpg
   text: >
     Комфортная лестница с улучшенным дизайном с забежными ступенями снизу (поворот на 90°).
     Её поручень имеет винтовую вставку.
@@ -657,7 +657,7 @@
   step_height: 184
   step_quantity: 17
   step_depth: 60
-  image: /images/stairs/image/lm31.jpg
+  image: /images/stairs/image/<size>/lm31.jpg
   text: >
     Комфортная лестница классической косоурной конструкции с забежными
     ступенями (поворот на 180 градусов), центральной колонной и перилами по
@@ -692,7 +692,7 @@
   step_height: 225
   step_quantity: 13
   step_depth: 40
-  image: /images/stairs/image/ls10u.jpg
+  image: /images/stairs/image/<size>/ls10u.jpg
   text: >
     Имеет прямой марш без подступенков и перила с одной стороны,
     последние могут ставиться как слева, так и справа.
@@ -721,7 +721,7 @@
   step_height: 193
   step_quantity: 14-15
   step_depth: 18..22
-  image: /images/stairs/image/ls1112.jpg
+  image: /images/stairs/image/<size>/ls1112.jpg
   text: >
     Трехсекционная складная конструкция, предназначенная преимущественно
     для использования при подъеме и спуске на чердак и подвальные помещения.
@@ -752,7 +752,7 @@
   step_height: 190-215
   step_quantity: 13
   step_depth: 35
-  image: /images/stairs/image/ls08.jpg
+  image: /images/stairs/image/<size>/ls08.jpg
   text: >
     Компактная лестница с переменным профилем ступеней. Отличительная
     особенность - наличие центрального косоура, состоящего из отдельных
@@ -778,7 +778,7 @@
   step_height: 225
   step_quantity: 12
   step_depth: 40
-  image: /images/stairs/image/lvr10.jpg
+  image: /images/stairs/image/<size>/lvr10.jpg
   text: >
     Элегантная винтовая лестница.
 
