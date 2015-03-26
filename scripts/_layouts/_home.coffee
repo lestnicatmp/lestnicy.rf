@@ -60,7 +60,7 @@ class HomeModule
     $('img.showcase').stop()
     $('img.showcase').fadeOut 'fast', =>
       $('img.showcase').attr('src', showcase_image)
-      $('img.showcase').fadeIn(1000)
+      $('img.showcase').fadeIn(1500)
     return false
 
   on_showcase_interval: =>
