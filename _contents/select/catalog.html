@@ -7,28 +7,49 @@ layout: catalog
 
 <main>
 
-  <section>
+  <section class="header">
     <h1>{{ page.title }}</h1>
-    <p>Полный каталог наших лестниц ...</p>
+    <p>На этой странице представлен полный каталог наших лестниц. Вы можете узнать про каждую из лестниц подробнее, нажав на название модели.</p>
   </section>
 
   <section class="stairs">
+
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
     <div class="stair">
-      <img src="{{ stair.image | replace:'<size>','200x300' }}">
-      <h3><a href="{{ stair_page.permalink }}">{{ stair.name }}</a></h3>
-      <p class="text">{{ stair.text }}</p>
+
+      <div class="image">
+        <img width="200px" height="300px" src="{{ stair.image | replace:'<size>','200x300' }}">
+      </div>
+
+      <div class="content">
+        <h3><a href="{{ stair_page.permalink }}">Лестница {{ stair.name }}</a></h3>
+        <p class="text">{{ stair.text }}</p>
+        <div class="cards">
+          <table>
+            <tr><th>Поворот</th><td>{{ stair.turn }}</td></tr>
+            <tr><th>Проем</th><td>{{ stair.window }}</td></tr>
+            <tr><th>Высота</th><td>{{ stair.height }}</td></tr>
+            <tr><th>Древесина</th><td>{{ stair.wood }}</td></tr>
+          </table>
+          {% for photo in stair.photos %}
+          <img width="200px" height="150px" src="{{ photo.image | replace:'<size>','200x150' }}">
+          {% endfor %}
+        </div>
+      </div>
+
       <div class="price">
         {% if stair.presence %}
-          {{ stair.price }}
-          <span class="fa fa-rub"></span>
+        {{ stair.price }}
+        <span class="fa fa-rub"></span>
         {% else %}
-          звоните
+        звоните
         {% endif %}
       </div>
+
     </div>
     {% endfor %}
+
   </section>
 
   <section class="next">
@@ -36,3 +57,4 @@ layout: catalog
   </section>
 
 </main>
+

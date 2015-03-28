@@ -1,7 +1,58 @@
-main .stair {
-  @extend %clearfix; 
-  position: relative;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-top: dashed 1px $grey-color;
+main .header {
+  padding: 0 40px;
 }
+
+main .stairs {
+  border-top: solid 1px #ccc;
+
+  .stair {
+    @extend %clearfix;
+    display: flex;
+    position: relative;
+    border-bottom: solid 1px #ccc;
+    background-color: #fff;
+
+    .image {
+      flex-shrink: 0;
+      align-self: center;
+      padding: 0 20px;
+    }
+
+    .content {
+      width: 100%;
+      padding: 20px;
+      border-left: solid 1px #ccc;
+
+      .cards {
+        display: flex;
+        margin-bottom: 10px;
+
+        & > * {
+          margin-right: 20px;
+        }
+      }
+
+      img {
+        border: solid 1px #ccc;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 90%;
+    height: 152px;
+  }
+
+  th, td {
+    border: solid 1px #ccc;
+    padding: 0 10px;
+  }
+
+  th {
+    background-color: #f8f8f8;
+    font-family: $header-font-family;
+  }
+}
+

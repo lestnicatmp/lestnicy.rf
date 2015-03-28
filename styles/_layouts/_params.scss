@@ -1,13 +1,19 @@
+main .header {
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
 main .filters {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin: 0 40px;
+  margin-bottom: 20px;
   border: solid 1px $grey-color;
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   background-color: $background-color;
   font-family: $header-font-family;
-  
+
   .filter {
     flex-basis: 0;
   	flex-grow: 1;
@@ -19,17 +25,17 @@ main .filters {
       //border-bottom: dashed 1px #ccc;
   	}
   }
-  
+
   h4 {
     margin: 3px 0;
   }
-  
+
   p {
     font-family: $header-font-family;
     font-size: 90%;
     color: #aaa;
   }
-     
+
   table {
     border-collapse: collapse;
     margin: 15px auto;
@@ -37,7 +43,7 @@ main .filters {
       padding: 2px;
     }
   }
-  
+
   input {
     display: block;
     width: 100px;
@@ -46,12 +52,12 @@ main .filters {
     font-size: 100%;
     font-family: $header-font-family;
     text-align: center;
-    
+
     &.range {
       padding-left: 12px;
       width: 88px;
     }
-    
+
     &.option {
       cursor: pointer;
       &.active {
@@ -62,11 +68,12 @@ main .filters {
 }
 
 main .message {
+  margin: 0 40px;
   border: solid 1px darken(#eee, 30%);
   border-radius: 15px;
   box-shadow: 3px 3px 6px rgba($grey-color,0.25);
   background-color: #eee;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 5px 10px;
   color: #aaa;
   font-family: $header-font-family;
@@ -76,10 +83,10 @@ main .message {
 
 main .stairs {
   display: flex;
-  flex-wrap: wrap; 
-  margin: -10px -10px; 
+  flex-wrap: wrap;
+  margin: 0 30px;
   margin-bottom: 20px;
-  
+
   .stair {
     flex-basis: 0;
   	flex-grow: 1;
@@ -93,19 +100,21 @@ main .stairs {
     box-shadow: 3px 3px 6px rgba($grey-color,0.25);
     background-color: $background-color;
     line-height: 125%;
+
+    .image {
+      flex-shrink: 0;
+    }
+    .content {
+      font-size: 90%;
+    }
   }
-  
-  .content {
-    font-size: 90%;
-  }
-  
+
   img {
     margin-right: 30px;
   }
-  
+
   ul {
     margin: 30px 0;
     list-style-position: inside;
-    white-space: nowrap;
   }
 }
