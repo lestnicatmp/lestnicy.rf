@@ -5,7 +5,7 @@ main .header {
 
 main .solutions {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin: 0 30px;
   margin-bottom: 20px;
 
@@ -22,31 +22,31 @@ main .solutions {
     border-radius: 15px;
     box-shadow: 3px 3px 6px rgba($grey-color,0.25);
     line-height: 150%;
-        
+
     .box {
       display: flex;
     }
-    
+
     .image {
       flex-shrink: 0;
     }
-        
+
     .content {
       font-size: 90%;
     }
-    
+
     h3 {
       max-width: 80%;
     }
-    
+
     ul {
       margin: 10px 0 10px 30px;
       list-style-position: inside;
       white-space: nowrap;
     }
-  
+
     li {
-      cursor: pointer; 
+      cursor: pointer;
       &:hover {
         text-decoration: underline;
       }
@@ -58,3 +58,4 @@ main .solutions {
     }
   }
 }
+

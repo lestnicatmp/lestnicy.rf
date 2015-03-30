@@ -3,14 +3,17 @@ main .header {
 }
 
 main .stairs {
-  border-top: solid 1px #ccc;
+  border-top: dotted 1px $grey-color;
 
   .stair {
-    @extend %clearfix;
     display: flex;
     position: relative;
-    border-bottom: solid 1px #ccc;
+    border-bottom: dotted 1px $grey-color;
     background-color: #fff;
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     .image {
       flex-shrink: 0;
@@ -18,10 +21,10 @@ main .stairs {
       padding: 0 20px;
     }
 
-    .content {
+    .brief {
       width: 100%;
       padding: 20px;
-      border-left: solid 1px #ccc;
+      border-left: dotted 1px $grey-color;
 
       .cards {
         display: flex;
@@ -33,7 +36,7 @@ main .stairs {
       }
 
       img {
-        border: solid 1px #ccc;
+        border: solid 1px darken($grey-color, 10%);
       }
     }
   }
@@ -46,7 +49,7 @@ main .stairs {
   }
 
   th, td {
-    border: solid 1px #ccc;
+    border: solid 1px lighten($grey-color, 10%);
     padding: 0 10px;
   }
 

@@ -1,4 +1,68 @@
-main .stair {
-  @extend %clearfix; 
-  position: relative;
+main .header {
+  padding: 0 40px;
+}
+
+main .showcase {
+  display: flex;
+  border-top: dotted 1px $grey-color;
+  border-bottom: dotted 1px $grey-color;
+  background-color: #fff;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .image {
+    flex-shrink: 0;
+    align-self: center;
+    padding: 0 20px;
+  }
+
+  .brief {
+    width: 100%;
+    padding: 20px;
+    border-left: dotted 1px $grey-color;
+
+    .cards {
+      display: flex;
+      margin-bottom: 10px;
+
+      & > * {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      border: solid 1px darken($grey-color, 10%);
+    }
+  }
+}
+
+main .additional {
+  padding: 20px 40px;
+  background-color: $background-color;
+
+  table {
+    margin-bottom: $spacing-unit/2;
+  }
+}
+
+main {
+
+  table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 90%;
+    height: 152px;
+  }
+
+  th, td {
+    border: solid 1px lighten($grey-color, 10%);
+    padding: 0 10px;
+  }
+
+  th {
+    background-color: #f8f8f8;
+    font-family: $header-font-family;
+  }
 }

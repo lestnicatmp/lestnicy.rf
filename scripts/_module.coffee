@@ -1,6 +1,0 @@
-class Module
-
-  # General
-
-  @layouts = []
-
