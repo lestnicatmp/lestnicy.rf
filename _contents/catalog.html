@@ -23,10 +23,18 @@ layout: catalog
       </div>
 
       <div class="brief">
-        <h3>
+        <h2>
           <a href="{{ stair_page.permalink }}">Лестница {{ stair.name }}</a>
           <span class="fa fa-star-o"></span>
-        </h3>
+          <div class="price">
+            {% if stair.presence %}
+            {{ stair.price }}
+            <span class="fa fa-rub"></span>
+            {% else %}
+            звоните
+            {% endif %}
+          </div>
+        </h2>
         <p class="text">{{ stair.text }}</p>
         <div class="cards">
           <table>
@@ -39,15 +47,6 @@ layout: catalog
           <img width="200px" height="150px" src="{{ photo.image | replace:'<size>','200x150' }}">
           {% endfor %}
         </div>
-      </div>
-
-      <div class="price">
-        {% if stair.presence %}
-        {{ stair.price }}
-        <span class="fa fa-rub"></span>
-        {% else %}
-        звоните
-        {% endif %}
       </div>
 
     </div>

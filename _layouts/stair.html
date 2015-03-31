@@ -49,33 +49,25 @@ layout: select
     <table>
     <thead>
       <tr>
-        <th>Поворот, градусов</th>
-        <th>Минимал. размеры проема, м х м</th>
-        <th>Высота подъема от пола до пола, м</th>
-        <th>Древесина</th>
+        <th>Габариты в плане, м х м</th>
         <th>Наличик перил</th>
         <th>Наличие подступенков</th>
-        <th>Отделка опорной колонны древесиной</th>
+        <th>Отделка опорной колонны</th>
         <th>Высота шага, мм</th>
         <th>Число шагов подъема</th>
         <th>Толщина ступени, мм</th>
-        <th>Габариты в плане, м х м</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>{{ stair.turn }}</td>
-        <td>{{ stair.window }}</td>
-        <td>{{ stair.height }}</td>
-        <td>{{ stair.wood }}</td>
+        <td>{{ stair.size }}</td>
         <td>{% if stair.rail %}есть{% else %}нет{% endif %}</td>
         <td>{% if stair.riser %}есть{% else %}нет{% endif %}</td>
         <td>{% if stair.finish %}есть{% else %}нет{% endif %}</td>
         <td>{{ stair.step_height }}</td>
         <td>{{ stair.step_quantity }}</td>
         <td>{{ stair.step_width }}</td>
-        <td>{{ stair.size }}</td>
-       </tr>
+      </tr>
     </tbody>
     </table>
 

@@ -1,12 +1,8 @@
-body {
-  background-image: url("/images/background2.png");
-}
-
 header {
   display: flex;
   position: fixed;
   top: 0;
-  height: 75px;
+  height: $header-height;
   width: 100%;
   z-index: 10;
   background: linear-gradient(
@@ -21,7 +17,7 @@ header {
     display: flex;
     flex: 0 0 auto;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 1rem;
   	font-size: 200%;
   	font-family: $header-font-family;
   	text-shadow: 1px 1px 2px #333;
@@ -35,7 +31,7 @@ header {
   #site-menu {
     flex: 0 0 auto;
     height: 100%;
-    margin-left: 80px;
+    margin-left: 50px;
 
     ol {
       display: flex;
@@ -51,14 +47,17 @@ header {
       flex: 0 0 auto;
       align-items: center;
       position: relative;
-      margin-left: 20px;
+      margin-left: 1rem;
+      margin-bottom: -1px;
+      border-style: solid;
+      border-width: 0 1px;
+      border-color: rgba(0,0,0,0);
       font-weight: bold;
       font-family: $header-font-family;
       line-height: 110%;
 
       &.active {
-        border-left: solid 1px $style-color;
-        border-right: solid 1px $style-color;
+        border-color: $style-color;
         background-color: lighten($style-color, 15%);
       }
 
@@ -84,12 +83,12 @@ header {
 
 #page-menu {
   position: fixed;
-  z-index: 5;
-  top: 85px;
+  top: $header-height;
+  height: $page-menu-height - 2px;
   width: 100%;
+  z-index: 5;
   background: linear-gradient(
     to bottom, lighten($style-color, 15%), lighten($style-color, 20%));
-  padding: 10px 0;
   border-top: solid 1px $style-color;
   border-bottom: solid 1px lighten($style-color, 5%);
   box-shadow: 0 0 15px rgba($grey-color, 0.5);
@@ -98,35 +97,45 @@ header {
 
   ul {
     display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
   	list-style-type: none;
   }
 
   li {
-  	padding: 0 10px;
-  	margin-right: 30px;
-  }
+    padding: 0 1rem;
+  	margin-left: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0);
 
-  li.active {
-  	border: solid 1px $style-color;
-  	background-color: $background-color;
-  	border-radius: 10px;
-    box-shadow: 0 0 10px $background-color;
-    font-weight: bold;
+    &.active {
+      border-color: $style-color;
+      border-radius: 10px;
+      background-color: $background-color;
+      box-shadow: 0 0 10px $background-color;
+      font-weight: bold;
+    }
   }
 }
 
 #contacts {
+  display: flex;
   position: fixed;
-  z-index: 10;
   top: 5px;
+  height: $header-height + $page-menu-height - 10px - 2px;
   right: 5px;
-  font-size: 115%;
-  background-color: $background-color;
+  z-index: 20;
+  align-items: center;
+  padding: 0 15px;
   border: solid 1px $style-color;
   border-radius: 15px;
   box-shadow: 0 0 15px $background-color;
-  padding: 15px;
+  background-color: $background-color;
   line-height: 130%;
+  font-size: 115%;
   font-family: $header-font-family;
   font-weight: bold;
 
@@ -138,15 +147,17 @@ header {
 }
 
 main {
-  margin-top: $menu-height;
+  padding-top: $header-height + $page-menu-height;
 
   .price {
     float: right;
+    font-size: 0.9em;
     font-family: $header-font-family;
+    font-weight: normal;
     color: $brand-color;
 
     .fa {
-      font-size: 85%;
+      font-size: 0.9em;
     }
   }
 
@@ -155,7 +166,7 @@ main {
     border-top: solid 1px lighten($grey-color, 10%);
     border-bottom: solid 1px lighten($grey-color, 10%);
     box-shadow: 3px 3px 6px rgba($grey-color,0.25);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     font-size: 175%;
     padding: 10px 40px;
     font-family: $header-font-family;

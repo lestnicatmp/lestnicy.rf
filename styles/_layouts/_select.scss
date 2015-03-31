@@ -1,42 +1,27 @@
 main .header {
-  margin-bottom: 20px;
-  padding: 0 40px;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 main .solutions {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 30px;
-  margin-bottom: 20px;
+  margin: -0.5rem 1.5rem 1.5rem;
 
   .solution {
-    flex-wrap: wrap;
-    flex-basis: 0;
-  	flex-grow: 1;
   	position: relative;
+    flex: 1 0 0;
   	min-width: 500px;
-  	margin: 10px;
-    padding: 10px;
-    background-color: $background-color;
+  	margin: 0.5rem;
+    padding: 0.5rem 1rem;
     border: solid 1px $grey-color;
     border-radius: 15px;
     box-shadow: 3px 3px 6px rgba($grey-color,0.25);
-    line-height: 150%;
+    background-color: $background-color;
 
-    .box {
-      display: flex;
-    }
-
-    .image {
-      flex-shrink: 0;
-    }
-
-    .content {
-      font-size: 90%;
-    }
-
-    h3 {
-      max-width: 80%;
+    h2 {
+      margin-top: 0;
+      font-size: 1.25em;
     }
 
     ul {
@@ -55,6 +40,19 @@ main .solutions {
         color: $brand-color;
         text-decoration: underline;
       }
+    }
+
+    .box {
+      display: flex;
+    }
+
+    .image {
+      flex-shrink: 0;
+      margin-right: 1rem;
+    }
+
+    .content {
+      font-size: 0.9em;
     }
   }
 }

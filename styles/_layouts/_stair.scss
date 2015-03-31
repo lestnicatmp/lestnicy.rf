@@ -1,3 +1,21 @@
+main {
+
+  table {
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  th, td {
+    border: solid 1px lighten($grey-color, 10%);
+    padding: 0 10px;
+  }
+
+  th {
+    background-color: #f8f8f8;
+    font-family: $header-font-family;
+  }
+}
+
 main .header {
   padding: 0 40px;
 }
@@ -12,6 +30,10 @@ main .showcase {
     border-bottom: none;
   }
 
+  table {
+    height: 152px;
+  }
+
   .image {
     flex-shrink: 0;
     align-self: center;
@@ -23,6 +45,10 @@ main .showcase {
     padding: 20px;
     border-left: dotted 1px $grey-color;
 
+    img {
+      border: solid 1px darken($grey-color, 10%);
+    }
+
     .cards {
       display: flex;
       margin-bottom: 10px;
@@ -30,10 +56,6 @@ main .showcase {
       & > * {
         margin-right: 20px;
       }
-    }
-
-    img {
-      border: solid 1px darken($grey-color, 10%);
     }
   }
 }
@@ -43,26 +65,7 @@ main .additional {
   background-color: $background-color;
 
   table {
-    margin-bottom: $spacing-unit/2;
+    margin-bottom: 0.5rem;
   }
 }
 
-main {
-
-  table {
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 90%;
-    height: 152px;
-  }
-
-  th, td {
-    border: solid 1px lighten($grey-color, 10%);
-    padding: 0 10px;
-  }
-
-  th {
-    background-color: #f8f8f8;
-    font-family: $header-font-family;
-  }
-}

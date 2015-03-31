@@ -3,11 +3,15 @@
 ---
 @charset "utf-8";
 
-$base-font-family: Ubuntu, sans-serif;
-$base-font-size: 150%;
-$small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.65;
-$header-font-family: "Ubuntu Condensed", sans-serif;
+$rem-factor: 150%;
+
+$menu-height: 148px;
+$header-height: 80px;
+$page-menu-height: 60px;
+$content-width: 800px;
+$on-palm: 600px;
+$on-laptop: 800px;
+$spacing-unit: 1rem;
 
 $background-color: #fff;
 $style-color: #884c27;
@@ -15,11 +19,11 @@ $brand-color: #000;
 $text-color: #222;
 $grey-color: #777;
 
-$menu-height: 148px;
-$content-width: 800px;
-$on-palm: 600px;
-$on-laptop: 800px;
-$spacing-unit: 30px;
+$base-font-family: Ubuntu, sans-serif;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+$header-font-family: "Ubuntu Condensed", sans-serif;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
