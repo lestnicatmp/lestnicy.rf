@@ -30,7 +30,7 @@ class HomeModule
   on_window_scroll: (event)  =>
     element = $(event.currentTarget)
     # Get container scroll position
-    offset = $('main').offset().top + 100
+    offset = $('main').offset().top + 150
     fromTop = element.scrollTop()+offset
     # Get id of current scroll item
     cur = @scrollItems.map (index, value) =>
