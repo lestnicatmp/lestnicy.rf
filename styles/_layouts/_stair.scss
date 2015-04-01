@@ -7,7 +7,7 @@ main {
 
   th, td {
     border: solid 1px lighten($grey-color, 10%);
-    padding: 0 10px;
+    padding: 0 0.5rem;
   }
 
   th {
@@ -17,7 +17,7 @@ main {
 }
 
 main .header {
-  padding: 0 40px;
+  padding: 0 2rem;
 }
 
 main .showcase {
@@ -30,20 +30,24 @@ main .showcase {
     border-bottom: none;
   }
 
-  table {
-    height: 152px;
-  }
-
   .image {
     flex-shrink: 0;
     align-self: center;
-    padding: 0 20px;
+    padding: 1rem;
   }
 
   .brief {
     width: 100%;
-    padding: 20px;
+    padding: 1rem;
     border-left: dotted 1px $grey-color;
+
+    p {
+      margin-top: 0;
+    }
+
+    table {
+      height: 152px;
+    }
 
     img {
       border: solid 1px darken($grey-color, 10%);
@@ -51,17 +55,17 @@ main .showcase {
 
     .cards {
       display: flex;
-      margin-bottom: 10px;
 
       & > * {
-        margin-right: 20px;
+        margin-right: 0.5rem;
       }
     }
   }
 }
 
 main .additional {
-  padding: 20px 40px;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
   background-color: $background-color;
 
   table {

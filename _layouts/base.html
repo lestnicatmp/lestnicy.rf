@@ -21,47 +21,45 @@
 <body data-layout="{{ page.layout }}">
 
   <header>
-
-    <div id="logo">
+    <div class="logo">
       <a href="/">Лестницы.рф</a>
     </div>
-
-    <nav id="site-menu">
-      <ol>
-
-        {% assign permalink = '/' %}
-        <li {% if page.permalink == permalink %}class="active"{% endif %}>
-          <a href="{{ permalink }}">
-            Главная<br>страница
-           </a>
-        </li>
-
-        {% assign permalink = '/подобрать-лестницу/' %}
-        <li {% if page.permalink contains permalink %}class="active"{% endif %}>
-          <a href="{{ permalink }}">
-            Подобрать<br>лестницу
-          </a>
-        </li>
-
-        {% assign permalink = '/купить-лестницу/' %}
-        <li {% if page.permalink contains permalink %}class="active"{% endif %}>
-          <a href="{{ permalink }}">
-            Купить<br>лестницу
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
   </header>
 
   <div id="contacts">
-  <ul>
-    <li>+7 (495) 490 38 14</li>
-    <li>+7 (495) 490 38 28</li>
-    <li>+7 (495) 490 38 21</li>
-  </ul>
+    <ul>
+      <li>+7 (495) 490 38 14</li>
+      <li>+7 (495) 490 38 28</li>
+      <li>+7 (495) 490 38 21</li>
+    </ul>
   </div>
+
+  <nav id="site-menu">
+    <ol>
+
+      {% assign permalink = '/' %}
+      <li {% if page.permalink == permalink %}class="active"{% endif %}>
+        <a href="{{ permalink }}">
+          Главная<br>страница
+        </a>
+      </li>
+
+      {% assign permalink = '/подобрать-лестницу/' %}
+      <li {% if page.permalink contains permalink %}class="active"{% endif %}>
+        <a href="{{ permalink }}">
+          Подобрать<br>лестницу
+        </a>
+      </li>
+
+      {% assign permalink = '/купить-лестницу/' %}
+      <li {% if page.permalink contains permalink %}class="active"{% endif %}>
+        <a href="{{ permalink }}">
+          Купить<br>лестницу
+        </a>
+      </li>
+
+    </ol>
+  </nav>
 
   {{ content }}
 

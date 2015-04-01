@@ -4,7 +4,7 @@
 - name: ЛС-01У
   slug: ls01u
   position: 1
-  presence: false
+  presence: true
   price: 26500
   height: "2,7"
   size: 1,65 x 1,39
@@ -101,7 +101,7 @@
 - name: ЛС-91
   slug: ls91
   position: 4
-  presence: false
+  presence: true
   price: 22500
   height: "2,7"
   size: 1,23 x 1,11
@@ -765,7 +765,7 @@
 - name: ЛВР-1.0
   slug: lvr10
   position: 26
-  presence: false
+  presence: true
   price:
   height: 2,70-2,75
   size: d=1,07
