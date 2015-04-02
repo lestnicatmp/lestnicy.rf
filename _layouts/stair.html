@@ -3,9 +3,9 @@ layout: select
 ---
 {% assign stair = site.data.stairs | where:'name',page.stair | first %}
 
-<main>
+<article id="article">
 
-  <section class="header">
+  <header>
     <h1>
       {{ page.title }}
       <span class="fa fa-star-o"></span>
@@ -18,7 +18,7 @@ layout: select
         {% endif %}
       </div>
     </h1>
-  </section>
+  </header>
 
   <section class="showcase">
 
@@ -97,8 +97,8 @@ layout: select
 
   </section>
 
-  <section class="next">
+  <footer>
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>
+  </footer>
 
-</main>
+</article>

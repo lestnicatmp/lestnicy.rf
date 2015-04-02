@@ -1,4 +1,4 @@
-main {
+#article {
 
   h1, h2 {
     margin-top: 0;
@@ -6,35 +6,38 @@ main {
 
   img {
     float: left;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     margin-right: 1rem;
   }
 }
 
-main .argument-main {
+#article > header {
   @extend %clearfix;
   padding: 1rem 2rem 0;
-  padding-bottom: 30px;
-  border-bottom: dotted 1px $grey-color;
+  padding-bottom: 1rem;
   background-image: url("/images/background.jpg");
+
+  img {
+    border: solid 1px #000;
+  }
 
   .preview img {
     opacity: 0.75;
-    border: solid 2px #fff;
+    border: solid 1px #fff;
     cursor: pointer;
   }
 
   .preview img.active {
     opacity: 1;
-    border: solid 2px #000;
-    box-shadow: 0 0 15px #aaa;
+    border-color: #000;
+    box-shadow: 0 0 0.5rem #aaa;
   }
 }
 
-main .argument {
+#article > section {
   @extend %clearfix;
-  padding: 30px 40px;
-  border-bottom: dotted 1px $grey-color;
+  padding: 1rem 2rem;
+  border-top: dashed 1px $grey-color;
   background-color: $background-color;
 }
 

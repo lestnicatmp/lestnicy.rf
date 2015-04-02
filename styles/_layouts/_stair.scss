@@ -1,4 +1,4 @@
-main {
+#article {
 
   table {
     text-align: left;
@@ -16,11 +16,11 @@ main {
   }
 }
 
-main .header {
+#article > header {
   padding: 0 2rem;
 }
 
-main .showcase {
+#article > .showcase {
   display: flex;
   border-top: dotted 1px $grey-color;
   border-bottom: dotted 1px $grey-color;
@@ -63,7 +63,7 @@ main .showcase {
   }
 }
 
-main .additional {
+#article > .additional {
   margin-bottom: 1rem;
   padding: 0 2rem;
   background-color: $background-color;

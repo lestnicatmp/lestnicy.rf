@@ -23,7 +23,7 @@ class HomeModule
   bind: =>
     $(window).scroll(@on_window_scroll)
     $('#page-menu a').click(@on_page_menu_click)
-    $('.argument-main .preview img').click(@on_preview_image_click)
+    $('#article > header .preview img').click(@on_preview_image_click)
 
   # Bindings
 

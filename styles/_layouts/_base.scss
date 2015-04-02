@@ -1,4 +1,4 @@
-header {
+#header {
   display: flex;
   position: fixed;
   top: 0;
@@ -43,10 +43,11 @@ header {
   border-radius: 15px;
   box-shadow: 0 0 15px $background-color;
   background-color: $background-color;
-  line-height: 1.25;
-  font-size: 115%;
+  line-height: 1.33;
+  font-size: 1.1em;
   font-family: $header-font-family;
   font-weight: bold;
+  font-style: normal;
 
   ul {
   	list-style-type: none;
@@ -159,7 +160,7 @@ header {
   }
 }
 
-main {
+#article {
   padding-top: $site-menu-height + $page-menu-height;
 
   .price {
@@ -174,8 +175,10 @@ main {
     }
   }
 
-  .next {
-    margin: 1rem 0;
+  footer {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: dashed 1px $grey-color;
     font-size: 175%;
     font-family: $header-font-family;
     letter-spacing: 0.05em;
@@ -201,10 +204,11 @@ main {
   }
 }
 
-footer {
+#footer {
   font-size: 80%;
-  margin-left: 3rem;
-  margin-bottom: 1rem;
+  padding: 1rem 3rem;
+  border-top: dashed 1px $grey-color;
+  background-color: $background-color;
 
   &, a {
     color: #bbb;

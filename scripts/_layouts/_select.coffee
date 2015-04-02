@@ -8,7 +8,7 @@ class SelectModule
     @bind()
 
   bind: =>
-    $('main .solution .options li').click(@on_option_click)
+    $('#article .solution .options li').click(@on_option_click)
 
   # Bindings
 

@@ -7,9 +7,9 @@ layout: home
 ---
 {% assign stairs = site.data.stairs | where:'presence',true | sort:'position' %}
 
-<main>
+<article id="article">
 
-  <section id="лидеры" class="argument-main">
+  <header id="лидеры">
     <h1>Ведущий производитель готовых деревянных лестниц в России</h1>
     {% assign active = true %}
     {% for stair in stairs %}
@@ -40,9 +40,9 @@ layout: home
       {% endfor %}
       {% endfor %}
     </p>
-  </section>
+  </header>
 
-  <section id="качество" class="argument">
+  <section id="качество">
     <img src="/images/index-3.jpg">
     <h2>Высокое качество</h2>
     <p>
@@ -55,7 +55,7 @@ layout: home
     </p>
   </section>
 
-  <section id="цена" class="argument">
+  <section id="цена">
     <img src="/images/index-2.jpg">
     <h2>Доступная цена</h2>
     <p>
@@ -68,7 +68,7 @@ layout: home
     </p>
   </section>
 
-  <section id="скорость" class="argument">
+  <section id="скорость">
     <img src="/images/index-4.jpg">
     <h2>Шоурум/склад в Москве</h2>
     <p>
@@ -83,8 +83,9 @@ layout: home
     </p>
   </section>
 
-  <section class="next">
+  <footer>
   	<a href="/подобрать-лестницу/">Шаг №2. Перейти к подбору лестницы!</a>
-  </section>
+  </footer>
 
-</main>
+</article>
+

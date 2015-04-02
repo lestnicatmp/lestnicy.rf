@@ -1,5 +1,11 @@
-main .content {
-  padding: 0 40px;
+#article > header {
+  padding: 0 2rem;
+  border-bottom: dashed 1px $grey-color;
+}
+
+#article > .content {
+  @extend %clearfix;
+  padding: 0 2rem;
   background-color: $background-color;
 }
 

@@ -5,17 +5,17 @@ layout: params
 ---
 {% assign stairs = site.data.stairs | sort:'position' %}
 
-<main>
+<article id="article">
 
-  <section class="header">
+  <header>
     <h1>{{ page.title }}</h1>
     <p>Если вы ограничены жесткими исходными условиями. Нажмите на звездочку, что запомнить понравившуюся модель.
     </p>
-  </section>
+  </header>
 
   <section class="filters">
 
-    <div class="filter turn">
+    <section class="filter turn">
       <h4>Поворот</h4>
       <p>Повотор лестницы, градусы</p>
       <table>
@@ -28,9 +28,9 @@ layout: params
           <td><input class="option" type="text" value="270" readonly></td>
         </tr>
       </table>
-    </div>
+    </section>
 
-    <div class="filter window">
+    <section class="filter window">
       <h4>Проем</h4>
       <p>Мин. размеры проема, м x м</p>
       <table>
@@ -44,9 +44,9 @@ layout: params
           <td><input class="range right_max" type="number" min="0" max="3" step="0.5" value="3"></td>
         </tr>
       </table>
-    </div>
+    </section>
 
-    <div class="filter height">
+    <section class="filter height">
       <h4>Высота</h4>
       <p>Высота от пола до пола, м</p>
       <table>
@@ -57,9 +57,9 @@ layout: params
           <td><input class="range max" type="number" min="2.5" max="3.5" step="0.1" value="3.5"></td>
         </tr>
       </table>
-    </div>
+    </section>
 
-    <div class="filter wood">
+    <section class="filter wood">
       <h4>Древесина</h4>
       <p>Материал лестницы</p>
       <table>
@@ -72,7 +72,7 @@ layout: params
           <td><input class="option" type="text" value="бук" readonly></td>
         </tr>
       </table>
-    </div>
+    </section>
 
   </section>
 
@@ -85,10 +85,12 @@ layout: params
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
 
-    <div class="stair" data-slug="{{ stair.slug }}">
+    <article class="stair" data-slug="{{ stair.slug }}">
+
       <div class="image">
         <img width="150px" height="225px" src="{{ stair.image | replace:'<size>','200x300' }}">
       </div>
+
       <div class="content">
         <h2>
           <a href="{{ stair_page.permalink }}">{{ stair.name }}</a>
@@ -109,14 +111,15 @@ layout: params
           <li>Древесина: <span class="wood">{{ stair.wood }}</span></li>
         </ul>
       </div>
-    </div>
+
+    </article>
 
     {% endfor %}
 
   </section>
 
-  <section class="next">
+  <footer>
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>
+  </footer>
 
-</main>
+</article>

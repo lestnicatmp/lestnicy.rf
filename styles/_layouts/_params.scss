@@ -1,21 +1,21 @@
-main .header {
-  margin-bottom: 20px;
-  padding: 0 40px;
+#article > header {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
-main .filters {
+#article > .filters {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 40px;
-  margin-bottom: 20px;
+  margin: 0 2rem;
+  margin-bottom: 1rem;
   border: solid 1px $grey-color;
-  border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
   background-color: $background-color;
   font-family: $header-font-family;
 
   h4 {
-    margin: 3px 0;
+    margin: 0.1rem 0;
   }
 
   p {
@@ -26,7 +26,7 @@ main .filters {
 
   table {
     border-collapse: collapse;
-    margin: 15px auto;
+    margin: 0.5rem auto;
   }
 
   td {
@@ -68,24 +68,23 @@ main .filters {
   }
 }
 
-main .message {
-  margin: 0 40px;
+#article > .message {
+  margin: 0 2rem;
   border: solid 1px darken(#eee, 30%);
-  border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
   background-color: #eee;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   padding: 5px 10px;
   font-family: $header-font-family;
   font-size: 90%;
   text-align: center;
 }
 
-main .stairs {
+#article > .stairs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 30px;
-  margin-bottom: 20px;
+  margin: -0.5rem 1.5rem 0.5rem;
 
   h2 {
     margin-top: 0;
@@ -105,13 +104,13 @@ main .stairs {
   .stair {
   	display: flex;
   	position: relative;
-  	min-width: 350px;
+  	min-width: 15rem;
     flex: 1 0 0;
   	margin: 0.5rem;
     padding: 0.5rem;
     border: solid 1px $grey-color;
-    border-radius: 15px;
-    box-shadow: 3px 3px 6px rgba($grey-color,0.25);
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
     background-color: $background-color;
     line-height: 1.25;
 

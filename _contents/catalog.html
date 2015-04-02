@@ -5,18 +5,18 @@ layout: catalog
 ---
 {% assign stairs = site.data.stairs | sort:'position' %}
 
-<main>
+<article id="article">
 
-  <section class="header">
+  <header>
     <h1>{{ page.title }}</h1>
     <p>На этой странице представлен полный каталог наших лестниц. Вы можете узнать про каждую из лестниц подробнее, нажав на название модели. Нажмите на звездочку, что запомнить понравившуюся модель.</p>
-  </section>
+  </header>
 
   <section class="stairs">
 
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
-    <div class="stair">
+    <article class="stair">
 
       <div class="image">
         <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
@@ -49,14 +49,14 @@ layout: catalog
         </div>
       </div>
 
-    </div>
+    </article>
     {% endfor %}
 
   </section>
 
-  <section class="next">
+  <footer>
     <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>
+  </footer>
 
-</main>
+</article>
 
