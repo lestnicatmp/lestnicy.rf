@@ -765,7 +765,7 @@
 - name: ЛВР-1.0
   slug: lvr10
   position: 26
-  presence: true
+  presence: false
   price:
   height: 2,70-2,75
   size: d=1,07

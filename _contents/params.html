@@ -3,7 +3,7 @@ permalink: /подобрать-лестницу/по-параметрам/
 title: Подобрать лестницу по параметрам
 layout: params
 ---
-{% assign stairs = site.data.stairs | where:'presence',true | sort:'position' %}
+{% assign stairs = site.data.stairs | sort:'position' %}
 
 <main>
 
@@ -94,8 +94,12 @@ layout: params
           <a href="{{ stair_page.permalink }}">{{ stair.name }}</a>
           <span class="fa fa-star-o"></span>
           <div class="price">
+            {% if stair.presence %}
             {{ stair.price }}
             <span class="fa fa-rub"></span>
+            {% else %}
+            звоните
+            {% endif %}
           </div>
         </h2>
         <ul class="data">
