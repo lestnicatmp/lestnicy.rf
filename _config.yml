@@ -16,14 +16,14 @@ collections:
   test:
     output: true
     permalink: /:path/
- 
+
 # Defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: home
-  
+
 # Translators
 markdown: redcarpet
 redcarpet:
@@ -33,3 +33,4 @@ redcarpet:
     - autolink
     - strikethrough
     - fenced_code_blocks
+
