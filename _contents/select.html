@@ -8,13 +8,13 @@ layout: select
 
 <main>
 
-  <section class="header">
+  <div class="header">
     <h1>{{ page.title }}</h1>
     <p>Для облегчения вашего выбора мы подготовили наиболее интересные. Нажмите на звездочку, что запомнить понравившуюся модель.
     </p>
-  </section>
+  </div>
 
-  <section class="solutions">
+  <div class="solutions">
 
     {% for solution in solutions %}
     {% for option in solution.options %}
@@ -50,7 +50,9 @@ layout: select
         </div>
 
         <div class="content">
-          <div class="text">{{ solution.text }}</div>
+
+          <p>{{ solution.text }}</p>
+
           <div class="options">
             <ul>
               {% for option in solution.options %}
@@ -72,6 +74,7 @@ layout: select
               {% endfor %}
             </ul>
           </div>
+
         </div>
 
       </div>
@@ -91,10 +94,10 @@ layout: select
       </div>
     </div>
 
-  </section>
+  </div>
 
-  <section class="next">
-    <a href="/купить-лестницу/">Перейти к покупке лестницы!</a>
-  </section>
+  <div class="next">
+    <a href="/купить-лестницу/">Шаг №3. Перейти к покупке лестницы!</a>
+  </div>
 
 </main>

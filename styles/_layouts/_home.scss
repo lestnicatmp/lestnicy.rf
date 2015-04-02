@@ -15,6 +15,7 @@ main .argument-main {
   @extend %clearfix;
   padding: 1rem 2rem 0;
   padding-bottom: 30px;
+  border-bottom: dotted 1px $grey-color;
   background-image: url("/images/background.jpg");
 
   .preview img {
@@ -33,7 +34,7 @@ main .argument-main {
 main .argument {
   @extend %clearfix;
   padding: 30px 40px;
-  border-top: dotted 1px $grey-color;
+  border-bottom: dotted 1px $grey-color;
   background-color: $background-color;
 }
 
