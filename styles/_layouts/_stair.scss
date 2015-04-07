@@ -1,26 +1,8 @@
-#article {
-
-  table {
-    text-align: left;
-    font-size: 0.9em;
-  }
-
-  th, td {
-    border: solid 1px lighten($grey-color, 10%);
-    padding: 0 0.5rem;
-  }
-
-  th {
-    background-color: #f8f8f8;
-    font-family: $header-font-family;
-  }
-}
-
 #article > header {
   padding: 0 2rem;
 }
 
-#article > .showcase {
+#article .showcase {
   display: flex;
   border-top: dashed 1px $grey-color;
   border-bottom: dashed 1px $grey-color;
@@ -31,12 +13,13 @@
   }
 
   .image {
-    flex-shrink: 0;
+    flex: 0 0 auto;
     align-self: center;
     padding: 1rem;
   }
 
-  .brief {
+  .content {
+    flex: 0 1 auto;
     width: 100%;
     padding: 1rem;
     border-left: dashed 1px $grey-color;
@@ -52,18 +35,19 @@
     img {
       border: solid 1px darken($grey-color, 10%);
     }
+  }
 
-    .cards {
-      display: flex;
+  .items {
+    display: flex;
 
-      & > * {
-        margin-right: 0.5rem;
-      }
+    & > * {
+      margin-right: 0.5rem;
     }
   }
+
 }
 
-#article > .additional {
+#article .description {
   margin-bottom: 1rem;
   padding: 0 2rem;
   background-color: $background-color;

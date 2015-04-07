@@ -2,44 +2,8 @@
   padding: 0 2rem;
 }
 
-#article > .stairs {
+#article .stairs {
   border-top: dashed 1px $grey-color;
-
-  .stair {
-    display: flex;
-    position: relative;
-    border-bottom: dashed 1px $grey-color;
-    background-color: #fff;
-
-    &:last-child {
-      border-bottom: none;
-    }
-
-    .image {
-      flex-shrink: 0;
-      align-self: center;
-      padding: 0 1rem;
-    }
-
-    .brief {
-      width: 100%;
-      padding: 1rem;
-      border-left: dashed 1px $grey-color;
-
-      .cards {
-        display: flex;
-        margin-bottom: 0.5rem;
-
-        & > * {
-          margin-right: 1rem;
-        }
-      }
-
-      img {
-        border: solid 1px darken($grey-color, 10%);
-      }
-    }
-  }
 
   h2 {
     margin-top: 0;
@@ -47,9 +11,7 @@
   }
 
   table {
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 90%;
+    font-size: 0.9em;
     height: 152px;
   }
 
@@ -61,6 +23,42 @@
   th {
     background-color: #f8f8f8;
     font-family: $header-font-family;
+  }
+}
+
+#article .stair {
+  display: flex;
+  position: relative;
+  border-bottom: dashed 1px $grey-color;
+  background-color: #fff;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .image {
+    flex-shrink: 0;
+    align-self: center;
+    padding: 0 1rem;
+  }
+
+  .brief {
+    width: 100%;
+    padding: 1rem;
+    border-left: dashed 1px $grey-color;
+
+    .cards {
+      display: flex;
+      margin-bottom: 0.5rem;
+
+      & > * {
+        margin-right: 1rem;
+      }
+    }
+
+    img {
+      border: solid 1px darken($grey-color, 10%);
+    }
   }
 }
 
