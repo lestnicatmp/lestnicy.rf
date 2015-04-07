@@ -27,12 +27,16 @@ layout: select
 
     <article class="solution">
 
-      <h2>
+      <h2 class="heading">
+
         <a href="{{ default_stair_page.permalink }}">
           {{ solution.name }} &rsaquo;
           <span class="name">{{ default_stair.name }}</span>
         </a>
-        <span class="fa fa-star-o"></span>
+
+        <span class="fa fa-star-o">
+        </span>
+
         <div class="price">
           {% if default_stair.presence %}
           <span class="value">{{ default_stair.price }}</span>
@@ -41,9 +45,10 @@ layout: select
           {% endif %}
           <span class="currency fa fa-rub"></span>
         </div>
+
       </h2>
 
-      <div class="box">
+      <div class="container">
 
         <div class="image">
           <img src="{{ default_stair.image | replace:'<size>','200x300' }}" width="150px" height="225px">
@@ -51,28 +56,44 @@ layout: select
 
         <div class="content">
 
-          <p>{{ solution.text }}</p>
+          <p class="text">
+            {{ solution.text }}
+          </p>
 
-          <div class="options">
-            <ul>
+          <div class="items">
+
+            <table class="options">
               {% for option in solution.options %}
               {% assign stair = stairs | where:'name',option.stair | first %}
               {% assign stair_page = site.contents | where:'stair',stair.name | first %}
               {% if stair %}
-              <li {% if stair == default_stair %}class="active"{% endif %}
-                data-name="{{ stair.name }}"
-                data-image="{{ stair.image | replace:'<size>','200x300' }}"
-                data-href="{{ stair_page.permalink }}"
-                data-presence="{{ stair.presence }}"
-                data-price="{% if stair.presence %}{{ stair.price }}{% else %}звоните{% endif %}">
-                {{ stair.name }}
-                {% if option.descr %}
-                - {{ option.descr }}
-                {% endif %}
-              </li>
+              <tr><th {% if stair == default_stair %}class="active"{% endif %}>
+                <a data-name="{{ stair.name }}"
+                   data-image="{{ stair.image | replace:'<size>','200x300' }}"
+                   data-href="{{ stair_page.permalink }}"
+                   data-presence="{{ stair.presence }}"
+                   data-turn="{{ stair.turn }}"
+                   data-window="{{ stair.window }}"
+                   data-height="{{ stair.height }}"
+                   data-wood="{{ stair.wood }}"
+                   data-price="{% if stair.presence %}{{ stair.price }}{% else %}звоните{% endif %}">
+                  {{ stair.name }}
+                  {% if option.descr %}
+                  - {{ option.descr }}
+                  {% endif %}
+                </a>
+              </th></tr>
               {% endif %}
               {% endfor %}
-            </ul>
+            </table>
+
+            <table class="params">
+              <tr><th>Поворот</th><td class="turn">{{ default_stair.turn }}</td></tr>
+              <tr><th>Проем</th><td class="window">{{ default_stair.window }}</td></tr>
+              <tr><th>Высота</th><td class="height">{{ default_stair.height }}</td></tr>
+              <tr><th>Древесина</th><td class="wood">{{ default_stair.wood }}</td></tr>
+            </table>
+
           </div>
 
         </div>
