@@ -22,8 +22,8 @@
 
 #article > .showcase {
   display: flex;
-  border-top: dotted 1px $grey-color;
-  border-bottom: dotted 1px $grey-color;
+  border-top: dashed 1px $grey-color;
+  border-bottom: dashed 1px $grey-color;
   background-color: #fff;
 
   &:last-child {
@@ -39,7 +39,7 @@
   .brief {
     width: 100%;
     padding: 1rem;
-    border-left: dotted 1px $grey-color;
+    border-left: dashed 1px $grey-color;
 
     p {
       margin-top: 0;
