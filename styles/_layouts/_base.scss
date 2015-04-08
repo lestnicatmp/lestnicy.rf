@@ -163,6 +163,10 @@
 #article {
   padding-top: $site-menu-height + $page-menu-height;
 
+  .star.fa-star {
+    color: $text-color;
+  }
+
   .price {
     float: right;
     font-size: 0.9em;
