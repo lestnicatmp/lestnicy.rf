@@ -13,10 +13,10 @@
   color: #fff;
 
   .logo {
+    @extend %shaddow;
     margin-left: 1rem;
   	font-size: 200%;
   	font-family: $header-font-family;
-  	text-shadow: 1px 1px 2px #333;
   	text-decoration: none;
 
     a {
@@ -59,14 +59,10 @@
 #site-menu {
   position: fixed;
   top: 0;
-  left: 13rem;
+  left: 14rem;
   box-sizing: border-box;
   height: $site-menu-height;
   z-index: 3;
-
-  a {
-    color: #fff;
-  }
 
   ol {
     display: flex;
@@ -82,7 +78,6 @@
     flex: 0 0 auto;
     align-items: center;
     position: relative;
-    margin-left: 1rem;
     margin-bottom: -1px;
     border-style: solid;
     border-width: 0 1px;
@@ -91,28 +86,51 @@
     font-family: $header-font-family;
     line-height: 110%;
 
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
     &.active {
       border-color: $style-color;
       background-color: lighten($style-color, 15%);
     }
+  }
 
-    a {
-      padding-left: 45px;
-      padding-right: 15px;
+  a {
+    color: #fff;
+  }
 
-      &::before {
-        display: flex;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 10px;
-        align-items: center;
-        content: counter(ol-counter);
-        counter-increment: ol-counter;
-        font-size: 250%;
-      }
+  a:not(.stars) {
+    padding-left: 45px;
+    padding-right: 15px;
+
+    &::before {
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 10px;
+      align-items: center;
+      content: counter(ol-counter);
+      counter-increment: ol-counter;
+      font-size: 250%;
     }
   }
+
+  a.stars {
+    display: none;
+    cursor: pointer;
+
+    .layout {
+      @extend %shaddow;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .count {
+      color: black;
+    }
+  }
+
 }
 
 #page-menu {
@@ -163,8 +181,8 @@
 #article {
   padding-top: $site-menu-height + $page-menu-height;
 
-  .star.fa-star {
-    color: $text-color;
+  .star {
+    cursor: pointer;
   }
 
   .price {
@@ -188,6 +206,7 @@
     letter-spacing: 0.05em;
 
     a {
+      @extend %shaddow;
       display: block;
       margin: 0 1rem;
       padding: 0.25rem 0;
@@ -195,7 +214,6 @@
       border-radius: 0.5rem;
       box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
       background-color: #6d85b3;
-      text-shadow: 1px 1px 2px #333;
       text-align: center;
       color: #fff;
 

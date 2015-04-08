@@ -11,9 +11,19 @@ class RememberModule
     $('.star').bind('stair_change', @on_star_change_data)
 
   update: =>
+    @update_menu()
     @update_stars()
 
   # Updaters
+
+  update_menu: =>
+    stairs = @get_stairs()
+    target = $('#site-menu .stars')
+    target.find('.count').html(stairs.length)
+    target.hide()
+    if stairs
+      target.show()
+
 
   update_stars: =>
     $('.star').map (index, element) =>
