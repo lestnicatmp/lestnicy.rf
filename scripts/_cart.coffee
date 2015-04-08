@@ -1,4 +1,4 @@
-class RememberModule
+class CartModule
 
   # General
 
@@ -13,17 +13,18 @@ class RememberModule
   update: =>
     @update_menu()
     @update_stars()
+    @update_stairs()
 
   # Updaters
 
   update_menu: =>
     stairs = @get_stairs()
     target = $('#site-menu .stars')
-    target.find('.count').html(stairs.length)
     target.hide()
-    if stairs
+    target.html()
+    if stairs.length
+      target.find('.count').html(stairs.length)
       target.show()
-
 
   update_stars: =>
     $('.star').map (index, element) =>
@@ -34,6 +35,15 @@ class RememberModule
         element.removeClass('fa-star-o').addClass('fa-star')
       else
         element.removeClass('fa-star').addClass('fa-star-o')
+
+  update_stairs: =>
+    stairs = @get_stairs()
+    $('body[data-layout="cart"] .stair').map (index, element) =>
+      element = $(element)
+      stair = element.find('.star').data('stair')
+      element.hide()
+      if stair in stairs
+        element.show()
 
   # Bindings
 

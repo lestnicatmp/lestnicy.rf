@@ -259,6 +259,10 @@ body[data-layout="catalog"] {
   @import "catalog";
 }
 
+body[data-layout="cart"] {
+  @import "cart";
+}
+
 body[data-layout="stair"] {
   @import "stair";
 }
