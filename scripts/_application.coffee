@@ -11,6 +11,8 @@ class Application
       if module.layouts
         if layout in module.layouts
           module.run()
+      else
+        module.run()
 
   register: (module) =>
     @modules.push(module)

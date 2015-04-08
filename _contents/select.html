@@ -34,7 +34,7 @@ layout: select
           <span class="name">{{ default_stair.name }}</span>
         </a>
 
-        <span class="fa fa-star-o">
+        <span class="star fa fa-star-o" data-stair="{{ default_stair.slug }}">
         </span>
 
         <div class="price">
@@ -69,6 +69,7 @@ layout: select
               {% if stair %}
               <tr><th {% if stair == default_stair %}class="active"{% endif %}>
                 <a data-name="{{ stair.name }}"
+                   data-slug="{{ stair.slug }}"
                    data-image="{{ stair.image | replace:'<size>','200x300' }}"
                    data-href="{{ stair_page.permalink }}"
                    data-presence="{{ stair.presence }}"

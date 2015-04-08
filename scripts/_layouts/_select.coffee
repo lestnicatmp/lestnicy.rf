@@ -19,6 +19,8 @@ class SelectModule
       target.find('h2 .name').html(element.data('name'))
       target.find('img').attr('src', element.data('image'))
       target.find('h2 a').attr('href', element.data('href'))
+      target.find('.star').data('stair', element.data('slug'))
+      target.find('.star').trigger('stair_change')
       target.find('.price .value').html(element.data('price'))
       target.find('.price .currency').hide()
       if element.data('presence')

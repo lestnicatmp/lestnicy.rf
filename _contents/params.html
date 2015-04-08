@@ -94,7 +94,7 @@ layout: params
       <div class="content">
         <h2>
           <a href="{{ stair_page.permalink }}">{{ stair.name }}</a>
-          <span class="fa fa-star-o"></span>
+          <span class="star fa fa-star-o" data-stair="{{ stair.slug }}"></span>
           <div class="price">
             {% if stair.presence %}
             {{ stair.price }}
