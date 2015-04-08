@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url("/images/background2.png");
+  background-image: url("/images/background.png");
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-family: $base-font-family;
@@ -45,7 +45,7 @@ a {
   }
 }
 
-%shaddow {
+%shadow {
   text-shadow: 1px 1px 2px #333;
 }
 
