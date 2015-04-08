@@ -49,21 +49,18 @@
         <a href="{{ permalink }}">
           Подобрать<br>лестницу
         </a>
+        <a class="stars" href="/подобрать-лестницу/по-каталогу/выбранное/">
+          <span class="fa-stack fa-lg">
+            <span class="fa-stack-2x layout fa fa-star"></span>
+            <span class="fa-stack-1x count"></span>
+          </span>
+        </a>
       </li>
 
       {% assign permalink = '/купить-лестницу/' %}
       <li {% if page.permalink contains permalink %}class="active"{% endif %}>
         <a href="{{ permalink }}">
           Купить<br>лестницу
-        </a>
-      </li>
-
-      <li>
-        <a class="stars" href="/подобрать-лестницу/по-каталогу/выбранное/">
-          <span class="fa-stack fa-lg">
-            <span class="fa-stack-2x layout fa fa-star"></span>
-            <span class="fa-stack-1x count"></span>
-          </span>
         </a>
       </li>
 

@@ -79,6 +79,7 @@
     align-items: center;
     position: relative;
     margin-bottom: -1px;
+    padding-right: 0.5rem;
     border-style: solid;
     border-width: 0 1px;
     border-color: rgba(0,0,0,0);
@@ -101,15 +102,14 @@
   }
 
   a:not(.stars) {
-    padding-left: 45px;
-    padding-right: 15px;
+    padding-left: 2rem;
 
     &::before {
       display: flex;
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 10px;
+      left: 0.5rem;
       align-items: center;
       content: counter(ol-counter);
       counter-increment: ol-counter;
@@ -119,6 +119,7 @@
 
   a.stars {
     display: none;
+    margin-left: 0.4rem;
     cursor: pointer;
 
     .layout {
@@ -128,6 +129,10 @@
 
     .count {
       color: black;
+
+      &:hover {
+        color: #6d85b3;
+      }
     }
   }
 
@@ -186,7 +191,7 @@
 
     &.fa-star {
       @extend %shadow;
-      color: lighten($style-color, 15%);
+      color: #6d85b3;
       -webkit-text-stroke: 1px black;
     }
   }
