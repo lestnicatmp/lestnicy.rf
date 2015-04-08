@@ -45,6 +45,7 @@
 
   .items {
     display: flex;
+    align-items: flex-start;
     font-size: 1.1em;
   }
 
@@ -52,14 +53,12 @@
     flex: 0 0 auto;
 
     th {
-      border-right-style: dashed;
-      border-right-color: darken($grey-color, 10%);
+      border-color: darken($grey-color, 10%);
       background-color: $background-color;
       font-weight: normal;
-      text-align: right;
 
       &.active {
-        background-color: #f8f8f8;
+        background-color: #eee;
         text-decoration: underline;
         font-weight: bold;
       }
@@ -72,11 +71,9 @@
 
   .params {
     flex: 0 0 auto;
-    margin-left: -1px;
+    margin-left: 0.1rem;
 
     th {
-      border-left-style: dashed;
-      border-left-color: darken($grey-color, 10%);
       font-size: 0.9em;
     }
   }
