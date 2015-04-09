@@ -56,11 +56,13 @@ class HomeModule
     element = $(event.currentTarget)
     element.siblings().removeClass('active')
     element.addClass('active')
-    showcase_image = element.data('showcase-image')
-    $('img.showcase').stop()
-    $('img.showcase').fadeOut 'fast', =>
-      $('img.showcase').attr('src', showcase_image)
-      $('img.showcase').fadeIn(1000)
+    target = $('.image')
+    target.stop()
+    target.fadeOut 'fast', =>
+      target.find('img').attr('src', element.data('showcase-image'))
+      target.find('.name').html(element.data('name'))
+      target.find('.price .value').html(element.data('price'))
+      target.fadeIn(1000)
     return false
 
   on_showcase_interval: =>

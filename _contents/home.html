@@ -17,12 +17,19 @@ layout: home
 
     <div class="container">
 
-      <div class="image">
+      <figure class="image">
         {% assign active = true %}
         {% for stair in stairs %}
         {% for photo in stair.photos %}
         {% if photo.home %}
-        <img width="600px" height="450px" class="showcase" src="{{ photo.image | replace:'<size>','600x450' }} ">
+        <img width="600px" height="450px" src="{{ photo.image | replace:'<size>','600x450' }} ">
+        <figcaption>
+          Лестница <span class="name">{{ stair.name }}</span>
+          <div class="price">
+            <span class="value">{{ stair.price }}</span>
+            <span class="currency fa fa-rub"></span>
+          </div>
+        </figcaption>
         {% assign active = false %}
         {% endif %}
         {% endfor %}
@@ -30,7 +37,7 @@ layout: home
         {% break %}
         {% endif %}
         {% endfor %}
-      </div>
+      </figure>
 
       <div class="content">
 
@@ -46,7 +53,7 @@ layout: home
           {% for stair in stairs %}
           {% for photo in stair.photos %}
           {% if photo.home %}
-          <img width="160px" height="120px" {% if active %}class="active"{% endif %} data-showcase-image="{{ photo.image | replace:'<size>','600x450' }}" src="{{ photo.image | replace:'<size>','200x150' }}">
+          <img width="160px" height="120px" {% if active %}class="active"{% endif %} data-name="{{ stair.name }}" data-price="{{ stair.price }}" data-showcase-image="{{ photo.image | replace:'<size>','600x450' }}" src="{{ photo.image | replace:'<size>','200x150' }}">
           {% assign active = false %}
           {% endif %}
           {% endfor %}

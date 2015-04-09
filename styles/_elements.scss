@@ -25,6 +25,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+a {
+  cursor: pointer;
+  color: $brand-color;
+  text-decoration: underline;
+
+  &:hover {
+     text-decoration: underline;
+  }
+}
+
 table {
   text-align: left;
   font-family: $header-font-family;
@@ -40,14 +50,9 @@ table {
   }
 }
 
-a {
-  cursor: pointer;
-  color: $brand-color;
-  text-decoration: underline;
-
-  &:hover {
-     text-decoration: underline;
-  }
+figcaption {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
 }
 
 %shadow {
