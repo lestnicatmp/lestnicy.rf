@@ -23,11 +23,11 @@ layout: select
   <section class="showcase">
 
     <div class="image">
-      <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
+      <img class="flipped-right" src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
     </div>
 
     <div class="content">
-      <p class="text">{{ stair.text }}</p>
+      <p class="text">{{ stair.text }} Показывать <a class="flip-left">левозаходные</a> модификации.</p>
       <div class="items">
         <table>
           <tr><th>Поворот</th><td>{{ stair.turn }}</td></tr>

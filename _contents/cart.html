@@ -9,7 +9,7 @@ layout: cart
 
   <header>
     <h1>{{ page.title }}</h1>
-    <p>На этой странице представлены отобранные вами лестницы.</p>
+    <p>На этой странице представлены отобранные вами лестницы. Показывать <a class="flip-left">левозаходные</a> модификации.</p>
   </header>
 
   <section class="stairs">
@@ -19,7 +19,7 @@ layout: cart
     <article class="stair">
 
       <div class="image">
-        <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
+        <img class="flipped-right" src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
       </div>
 
       <div class="brief">

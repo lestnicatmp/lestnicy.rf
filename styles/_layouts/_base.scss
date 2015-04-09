@@ -208,6 +208,16 @@
     }
   }
 
+  .flip-left,
+  .flip-right {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .flipped-left {
+    transform: scaleX(-1);
+  }
+
   footer {
     margin-bottom: 1rem;
     padding-top: 1rem;

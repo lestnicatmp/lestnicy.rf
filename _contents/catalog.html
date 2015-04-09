@@ -9,7 +9,7 @@ layout: catalog
 
   <header>
     <h1>{{ page.title }}</h1>
-    <p>На этой странице представлен полный каталог наших лестниц. Вы можете узнать про каждую из лестниц подробнее, нажав на название модели. Нажмите на звездочку, что запомнить понравившуюся модель.</p>
+    <p>На этой странице представлен полный каталог наших лестниц. Вы можете узнать про каждую из лестниц подробнее, нажав на название модели. Нажмите на звездочку, что запомнить понравившуюся модель. Показывать <a class="flip-left">левозаходные</a> модификации.</p>
   </header>
 
   <section class="stairs">
@@ -19,7 +19,7 @@ layout: catalog
     <article class="stair">
 
       <div class="image">
-        <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
+        <img class="flipped-right" src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
       </div>
 
       <div class="brief">
