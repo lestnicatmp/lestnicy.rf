@@ -20,6 +20,7 @@
   	text-decoration: none;
 
     a {
+      text-decoration: none;
       color: #fff;
 
       &:hover {
@@ -98,7 +99,12 @@
   }
 
   a {
+    text-decoration: none;
     color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   a:not(.stars) {
@@ -120,7 +126,6 @@
   a.stars {
     display: none;
     margin-left: 0.4rem;
-    cursor: pointer;
 
     .layout {
       @extend %shadow;
@@ -181,13 +186,20 @@
       font-weight: bold;
     }
   }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 #article {
   padding-top: $site-menu-height + $page-menu-height;
 
   .star {
-    cursor: pointer;
 
     &.fa-star {
       @extend %shadow;
@@ -206,12 +218,6 @@
     .fa {
       font-size: 0.9em;
     }
-  }
-
-  .flip-left,
-  .flip-right {
-    cursor: pointer;
-    text-decoration: underline;
   }
 
   .flipped-left {
@@ -235,6 +241,7 @@
       border-radius: 0.5rem;
       box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
       background-color: #6d85b3;
+      text-decoration: none;
       text-align: center;
       color: #fff;
 
