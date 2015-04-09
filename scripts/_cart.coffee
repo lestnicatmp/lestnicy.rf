@@ -61,14 +61,14 @@ class CartModule
   on_star_change_data: (event) =>
     @update()
 
-  # Helpers
+  # Storage
 
   get_stairs: =>
     stairs = []
-    if localStorage.stairs
-      stairs = localStorage.stairs.split(',')
+    if localStorage.cart
+      stairs = localStorage.cart.split(',')
     return stairs
 
   set_stairs: (stairs) =>
-    localStorage.stairs = stairs.join(',')
+    localStorage.cart = stairs.join(',')
 
