@@ -23,7 +23,7 @@ class HomeModule
   bind: =>
     $(window).scroll(@on_window_scroll)
     $('#page-menu a').click(@on_page_menu_click)
-    $('#article > header .preview img').click(@on_preview_image_click)
+    $('#article > header .items img').click(@on_preview_image_click)
 
   # Bindings
 
@@ -64,7 +64,7 @@ class HomeModule
     return false
 
   on_showcase_interval: =>
-    current = $('.preview .active')
+    current = $('#article > header .items img.active')
     next = current.next()
     if not next.length
       next = current.siblings().first()

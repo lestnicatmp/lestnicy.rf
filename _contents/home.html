@@ -10,36 +10,53 @@ layout: home
 <article id="article">
 
   <header id="лидеры">
-    <h1>Ведущий производитель готовых деревянных лестниц в России</h1>
-    {% assign active = true %}
-    {% for stair in stairs %}
-    {% for photo in stair.photos %}
-    {% if photo.home %}
-    <img class="showcase" src="{{ photo.image | replace:'<size>','600x450' }} ">
-    {% assign active = false %}
-    {% endif %}
-    {% endfor %}
-    {% if active == false %}
-    {% break %}
-    {% endif %}
-    {% endfor %}
-    <p>
-      Лесопромышленная компания «Темп» предлагает готовые деревянные
-      лестницы на второй этаж для дач и коттеджей. Наша компания уже более
-      15 лет на рынке и за это время приобрела устойчивый статус одного из
-      лидеров отрасли. Оцените преимущества нашей продукции.
-    </p>
-    <p class="preview">
-      {% assign active = true %}
-      {% for stair in stairs %}
-      {% for photo in stair.photos %}
-      {% if photo.home %}
-      <img width="150px" {% if active %}class="active"{% endif %} data-showcase-image="{{ photo.image | replace:'<size>','600x450' }}" src="{{ photo.image | replace:'<size>','200x150' }}">
-      {% assign active = false %}
-      {% endif %}
-      {% endfor %}
-      {% endfor %}
-    </p>
+
+    <h1 class="heading">
+      Ведущий производитель готовых деревянных лестниц в России
+    </h1>
+
+    <div class="container">
+
+      <div class="image">
+        {% assign active = true %}
+        {% for stair in stairs %}
+        {% for photo in stair.photos %}
+        {% if photo.home %}
+        <img width="600px" height="450px" class="showcase" src="{{ photo.image | replace:'<size>','600x450' }} ">
+        {% assign active = false %}
+        {% endif %}
+        {% endfor %}
+        {% if active == false %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="content">
+
+        <div class="text">
+          Лесопромышленная компания «Темп» предлагает готовые деревянные
+          лестницы на второй этаж для дач и коттеджей. Наша компания уже более
+          15 лет на рынке и за это время приобрела устойчивый статус одного из
+          лидеров отрасли. Оцените преимущества нашей продукции.
+        </div>
+
+        <div class="items">
+          {% assign active = true %}
+          {% for stair in stairs %}
+          {% for photo in stair.photos %}
+          {% if photo.home %}
+          <img width="160px" height="120px" {% if active %}class="active"{% endif %} data-showcase-image="{{ photo.image | replace:'<size>','600x450' }}" src="{{ photo.image | replace:'<size>','200x150' }}">
+          {% assign active = false %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+
+      </div>
+
+    </div>
+
   </header>
 
   <section id="качество">
