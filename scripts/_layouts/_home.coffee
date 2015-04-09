@@ -30,7 +30,7 @@ class HomeModule
   on_window_scroll: (event)  =>
     element = $(event.currentTarget)
     # Get container scroll position
-    offset = $('main').offset().top + 150
+    offset = $('#article').offset().top + 150
     fromTop = element.scrollTop()+offset
     # Get id of current scroll item
     cur = @scrollItems.map (index, value) =>
@@ -73,7 +73,7 @@ class HomeModule
   # Helpers
 
   scroll_to_element: (selector, duration) =>
-    offset = $('main').offset().top - 1
+    offset = $('#article').offset().top - 1
     duration = duration or 500
     $('html, body').animate({
       scrollTop: $(selector).offset().top - offset

@@ -197,7 +197,8 @@
 }
 
 #article {
-  padding-top: $site-menu-height + $page-menu-height;
+  @extend %clearfix;
+  margin-top: $site-menu-height + $page-menu-height;
 
   .star {
 
