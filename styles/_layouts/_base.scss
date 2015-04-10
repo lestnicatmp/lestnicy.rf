@@ -200,8 +200,17 @@
   @extend %clearfix;
   margin-top: $site-menu-height + $page-menu-height;
 
-  .star {
+  header {
+    background-image: url("/images/background2.png");
+    border-bottom: dashed 1px $grey-color;
+  }
 
+  .intro {
+    font-size: 1.1em;
+    font-style: italic;
+  }
+
+  .star {
     &.fa-star {
       @extend %shadow;
       color: #6d85b3;
@@ -226,6 +235,7 @@
   }
 
   footer {
+    background-image: url("/images/background2.png");
     margin-bottom: 1rem;
     padding-top: 1rem;
     border-top: dashed 1px $grey-color;
