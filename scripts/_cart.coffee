@@ -38,12 +38,15 @@ class CartModule
 
   update_stairs: =>
     stairs = @get_stairs()
-    $('body[data-layout="cart"] .stair').map (index, element) =>
+    elements = $('body[data-layout="cart"] .stair')
+    elements.map (index, element) =>
       element = $(element)
       stair = element.find('.star').data('stair')
       element.hide()
       if stair in stairs
         element.show()
+    elements.filter(':visible:first').css('border-top', 'none')
+    elements.filter(':visible:last').css('border-bottom', 'none')
 
   # Bindings
 
