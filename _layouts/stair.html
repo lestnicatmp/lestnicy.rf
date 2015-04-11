@@ -27,7 +27,7 @@ layout: select
   <section class="showcase">
 
     <div class="image">
-      <img class="flipped-right" src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px">
+      <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px" class="flipped-right">
     </div>
 
     <div class="content">
@@ -40,7 +40,7 @@ layout: select
           <tr><th>Древесина</th><td>{{ stair.wood }}</td></tr>
         </table>
         {% for photo in stair.photos %}
-        <img width="200px" height="150px" src="{{ photo.image | replace:'<size>','200x150' }}">
+        <img src="{{ photo.image | replace:'<size>','200x150' }}" width="200px" height="150px">
         {% endfor %}
       </div>
     </div>

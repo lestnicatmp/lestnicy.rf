@@ -17,7 +17,7 @@ layout: params
   <section class="filters">
 
     <section class="filter turn">
-      <h4>Поворот</h4>
+      <h3>Поворот</h3>
       <p>Повотор лестницы, градусы</p>
       <table>
         <tr>
@@ -32,7 +32,7 @@ layout: params
     </section>
 
     <section class="filter window">
-      <h4>Проем</h4>
+      <h3>Проем</h3>
       <p>Мин. размеры проема, м x м</p>
       <table>
         <tr>
@@ -48,7 +48,7 @@ layout: params
     </section>
 
     <section class="filter height">
-      <h4>Высота</h4>
+      <h3>Высота</h3>
       <p>Высота от пола до пола, м</p>
       <table>
         <tr>
@@ -61,7 +61,7 @@ layout: params
     </section>
 
     <section class="filter wood">
-      <h4>Древесина</h4>
+      <h3>Древесина</h3>
       <p>Материал лестницы</p>
       <table>
         <tr>
@@ -89,7 +89,7 @@ layout: params
     <article class="stair" data-slug="{{ stair.slug }}">
 
       <div class="image">
-        <img class="flipped-right" width="150px" height="225px" src="{{ stair.image | replace:'<size>','200x300' }}">
+        <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px" class="flipped-right">
       </div>
 
       <div class="content">

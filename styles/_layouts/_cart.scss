@@ -3,6 +3,7 @@
 }
 
 #article .stairs {
+
   h2 {
     margin-top: 0;
     font-size: 1.25em;
@@ -10,17 +11,7 @@
 
   table {
     font-size: 0.9em;
-    height: 152px;
-  }
-
-  th, td {
-    border: solid 1px lighten($grey-color, 10%);
-    padding: 0 0.5rem;
-  }
-
-  th {
-    background-color: #f8f8f8;
-    font-family: $header-font-family;
+    height: 8rem*0.75;
   }
 }
 
@@ -33,9 +24,14 @@
   }
 
   .image {
-    flex-shrink: 0;
+    flex: 0 0 auto;
     align-self: center;
     padding: 0 1rem;
+
+    img {
+      height: 8rem*1.5;
+      width: 8rem;
+    }
   }
 
   .brief {
@@ -53,6 +49,9 @@
     }
 
     img {
+      box-sizing: border-box;
+      height: 8rem*0.75;
+      width: 8rem;
       border: solid 1px darken($grey-color, 10%);
     }
   }

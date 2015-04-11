@@ -12,16 +12,15 @@
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
   background-color: $background-color;
-  font-family: $header-font-family;
 
-  h4 {
-    margin: 0.1rem 0;
+  h3 {
+    margin: 0.5rem 0;
   }
 
   p {
-    font-family: $header-font-family;
+    margin: 0.5rem 0;
     font-size: 90%;
-    color: #aaa;
+    color: $grey-color;
   }
 
   table {
@@ -30,22 +29,22 @@
   }
 
   td {
-    padding: 2px;
+    padding: 0.1rem;
     border: none;
   }
 
   input {
     display: block;
-    width: 100px;
+    width: 4rem;
     border: solid 1px #ccc;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     font-size: 100%;
     font-family: $header-font-family;
     text-align: center;
 
     &.range {
-      padding-left: 12px;
-      width: 88px;
+      padding-left: 0.5rem;
+      width: 4rem;
     }
 
     &.option {
@@ -59,8 +58,8 @@
   .filter {
     flex-basis: 0;
   	flex-grow: 1;
-  	min-width: 250px;
-  	padding: 10px;
+  	min-width: 10rem;
+  	padding: 0.25rem 0;
   	text-align: center;
     &:not(:last-child) {
       border-right: dashed 1px #ccc;
@@ -71,12 +70,12 @@
 
 #article .message {
   margin: 0 2rem;
-  border: solid 1px darken(#9bb36d, 30%);
+  border: solid 1px #ccc;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
-  background-color: #9bb36d;
+  background-color: #f8f8f8;
   margin-bottom: 1rem;
-  padding: 5px 10px;
+  padding: 0.25rem 0.5rem;
   font-size: 0.75em;
   text-align: center;
 }
@@ -115,7 +114,13 @@
 
     .image {
       flex: 0 0 auto;
+
+      img {
+        height: 6rem*1.5;
+        width: 6rem;
+      }
     }
+
     .content {
       flex: 1 0 auto;
       font-size: 0.9em;
