@@ -37,7 +37,6 @@ a {
 
 table {
   text-align: left;
-  font-family: $header-font-family;
 
   th, td {
     padding: 0 0.5rem;
@@ -46,7 +45,12 @@ table {
 
   th {
     background-color: #f8f8f8;
+    font-family: $header-font-family;
     color: #000;
+  }
+
+  td {
+    font-size: 0.9em;
   }
 }
 

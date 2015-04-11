@@ -71,14 +71,13 @@
 
 #article .message {
   margin: 0 2rem;
-  border: solid 1px darken(#eee, 30%);
+  border: solid 1px darken(#9bb36d, 30%);
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba($grey-color,0.25);
-  background-color: #eee;
+  background-color: #9bb36d;
   margin-bottom: 1rem;
   padding: 5px 10px;
-  font-family: $header-font-family;
-  font-size: 90%;
+  font-size: 0.75em;
   text-align: center;
 }
 
@@ -89,19 +88,16 @@
 
   h2 {
     margin-top: 0;
-    font-size: 1.25em;
   }
 
   img {
-    margin-right: 30px;
+    margin-right: 1rem;
   }
 
   ul {
     margin: 0;
     padding: 0;
     list-style-position: inside;
-    font-family: $header-font-family;
-    font-size: 1.1em;
   }
 
   .stair {
