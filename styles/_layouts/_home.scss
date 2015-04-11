@@ -81,19 +81,24 @@
   }
 }
 
-#article > section {
-  @extend %clearfix;
-  padding: 1rem 2rem;
-  border-top: dashed 1px $grey-color;
-  background-color: $background-color;
+#article .arguments {
 
-  h2 {
-    margin-top: 0;
-  }
+  section {
+    @extend %clearfix;
+    padding: 1rem 2rem;
 
-  img {
-    float: left;
-    margin-right: 1rem;
+    &:not(:last-child) {
+      border-bottom: dashed 1px $grey-color;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    img {
+      float: left;
+      margin-right: 1rem;
+    }
   }
 }
 

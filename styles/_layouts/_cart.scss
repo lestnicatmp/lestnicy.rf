@@ -29,11 +29,9 @@
 #article .stair {
   display: flex;
   position: relative;
-  border-bottom: dashed 1px $grey-color;
-  background-color: #fff;
 
-  &:last-child {
-    border-bottom: none;
+  &:not(:last-child) {
+    border-bottom: dashed 1px $grey-color;
   }
 
   .image {
