@@ -23,6 +23,32 @@ $header-font-weight: 700;
 $header-line-height: 1;
 
 @import "normalize";
-@import "elements";
-@import "_layouts/base";
+@import "base";
 
+body[data-layout="home"] {
+  @import "home";
+}
+
+body[data-layout="select"] {
+  @import "select";
+}
+
+body[data-layout="params"] {
+  @import "params";
+}
+
+body[data-layout="catalog"] {
+  @import "catalog";
+}
+
+body[data-layout="cart"] {
+  @import "cart";
+}
+
+body[data-layout="stair"] {
+  @import "stair";
+}
+
+body[data-layout="shops"] {
+  @import "shops";
+}

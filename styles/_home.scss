@@ -6,16 +6,13 @@
 }
 
 #article > header {
-  @extend %clearfix;
-  padding: 1rem 2rem;
+  @extend %topclear;
+  padding: 0 2rem;
   background-image: url("/images/background.jpg");
-
-  h1 {
-    margin-top: 0;
-  }
 
   .container {
     display: flex;
+    margin: 1rem 0;
   }
 
   .image {
@@ -99,9 +96,8 @@
 }
 
 #article .arguments {
-
   section {
-    @extend %clearfix;
+    @extend %bottomclear;
     padding: 1rem 2rem;
 
     &:not(:last-child) {

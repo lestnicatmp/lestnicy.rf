@@ -1,8 +1,10 @@
-#article > header {
-  padding: 0 2rem;
-}
+#article .stair {
+  display: flex;
+  position: relative;
 
-#article .stairs {
+  &:not(:last-child) {
+    border-bottom: dashed 1px $grey-color;
+  }
 
   h2 {
     margin-top: 0;
@@ -12,15 +14,6 @@
   table {
     font-size: 0.9em;
     height: 8rem*0.75;
-  }
-}
-
-#article .stair {
-  display: flex;
-  position: relative;
-
-  &:not(:last-child) {
-    border-bottom: dashed 1px $grey-color;
   }
 
   .image {

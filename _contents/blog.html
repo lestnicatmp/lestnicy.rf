@@ -4,13 +4,19 @@ title: Блог
 layout: home
 ---
 
-<main>
+<article id="article">
 
-  {% for post in site.posts %}
-    <section>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </section>
-  {% endfor %}
-  
-</main>
+  <header>
+    <h1>Блог</h1>
+    <p class="intro">Блог компании</p>
+  </header>
+
+  <section>
+    {% for post in site.posts %}
+    <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+    {% endfor %}
+  </section>
+
+</article>

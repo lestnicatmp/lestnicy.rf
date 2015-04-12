@@ -5,9 +5,9 @@
 {% include_relative _application.coffee %}
 {% include_relative _cart.coffee %}
 {% include_relative _flip.coffee %}
-{% include_relative _layouts/_home.coffee %}
-{% include_relative _layouts/_select.coffee %}
-{% include_relative _layouts/_params.coffee %}
+{% include_relative _home.coffee %}
+{% include_relative _select.coffee %}
+{% include_relative _params.coffee %}
 
 jQuery =>
   app = new Application()

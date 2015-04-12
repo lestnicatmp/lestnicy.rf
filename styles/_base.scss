@@ -1,3 +1,83 @@
+html {
+  font-size: $rem-value;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+  color: #000;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+a {
+  cursor: pointer;
+  color: $brand-color;
+  text-decoration: underline;
+
+  &:hover {
+     text-decoration: underline;
+  }
+}
+
+table {
+  text-align: left;
+
+  th, td {
+    padding: 0 0.5rem;
+    border: solid 1px lighten($grey-color, 10%);
+  }
+
+  th {
+    background-color: #f8f8f8;
+    font-family: $header-font-family;
+    color: #000;
+  }
+
+  td {
+    font-size: 0.9em;
+  }
+}
+
+figcaption {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+}
+
+%topclear {
+  &::before {
+    content: "";
+    display: table;
+  }
+}
+
+%bottomclear {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%text-shadow {
+  text-shadow: 1px 1px 0.1rem #333;
+}
+
 #header {
   display: flex;
   position: fixed;
@@ -13,7 +93,7 @@
   color: #fff;
 
   .logo {
-    @extend %shadow;
+    @extend %text-shadow;
     margin-left: 1rem;
   	font-size: 200%;
   	font-family: $header-font-family;
@@ -128,7 +208,7 @@
     margin-left: 0.4rem;
 
     .layout {
-      @extend %shadow;
+      @extend %text-shadow;
       -webkit-text-stroke: 1px black;
     }
 
@@ -197,23 +277,28 @@
 }
 
 #article {
-  @extend %clearfix;
   margin-top: $site-menu-height + $page-menu-height;
 
-  header {
-    background-image: url("/images/background2.png");
+  > header:not([class]) {
+    @extend %topclear;
+    padding: 0 2rem;
     border-bottom: dashed 1px $grey-color;
+    background-image: url("/images/background2.png");
+
+    > p:not([class]):first-of-type {
+      font-size: 1.1em;
+    }
   }
 
-  .intro {
-    font-size: 1.1em;
+  > section:not([class]) {
+    padding: 0 2rem;
   }
 
   .star {
     cursor: pointer;
 
     &.fa-star {
-      @extend %shadow;
+      @extend %text-shadow;
       color: #6d85b3;
       -webkit-text-stroke: 1px black;
     }
@@ -235,9 +320,8 @@
     transform: scaleX(-1);
   }
 
-  footer {
+  > footer:not([class]) {
     background-image: url("/images/background2.png");
-    margin-bottom: 1rem;
     padding-top: 1rem;
     border-top: dashed 1px $grey-color;
     font-size: 175%;
@@ -245,7 +329,7 @@
     letter-spacing: 0.05em;
 
     a {
-      @extend %shadow;
+      @extend %text-shadow;
       display: block;
       margin: 0 1rem;
       padding: 0.25rem 0;
@@ -267,6 +351,7 @@
 }
 
 #footer {
+  margin-top: 1rem;
   padding: 0.75rem 2rem 1.25rem;
   border-top: dashed 1px $grey-color;
   background-color: $background-color;
@@ -298,36 +383,4 @@
       text-decoration: underline;
     }
   }
-}
-
-body[data-layout="home"] {
-  @import "home";
-}
-
-body[data-layout="select"] {
-  @import "select";
-}
-
-body[data-layout="params"] {
-  @import "params";
-}
-
-body[data-layout="catalog"] {
-  @import "catalog";
-}
-
-body[data-layout="cart"] {
-  @import "cart";
-}
-
-body[data-layout="stair"] {
-  @import "stair";
-}
-
-body[data-layout="order"] {
-  @import "order";
-}
-
-body[data-layout="shops"] {
-  @import "shops";
 }
