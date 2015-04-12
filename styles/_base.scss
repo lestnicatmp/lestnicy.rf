@@ -287,7 +287,7 @@ figcaption {
     @extend %topclear;
     padding: 0 2rem;
     border-bottom: dashed 1px $grey-color;
-    background-image: url("/images/background2.png");
+    background-image: url("/images/background.png");
 
     > p:not([class]):first-of-type {
       font-size: 1.1em;
@@ -325,7 +325,7 @@ figcaption {
   }
 
   > footer:not([class]) {
-    background-image: url("/images/background2.png");
+    background-image: url("/images/background.png");
     padding-top: 1rem;
     border-top: dashed 1px $grey-color;
     font-size: 175%;
