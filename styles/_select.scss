@@ -45,40 +45,39 @@
   .items {
     display: flex;
     align-items: flex-start;
-    font-size: 1.1em;
   }
 
   .options {
     flex: 0 0 auto;
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+    list-style-position: inside;
 
-    th {
-      border-color: darken($grey-color, 10%);
-      background-color: $background-color;
-      font-weight: normal;
+    li {
+      width: 4rem;
+      border-right: solid 1px $grey-color;
+      padding-right: 1rem;
+      white-space: nowrap;
 
       &.active {
-        background-color: #eee;
-        text-decoration: underline;
+        border-bottom: solid 1px $grey-color;
         font-weight: bold;
       }
+    }
 
-      a {
-        text-decoration: none;
+    a {
+      text-decoration: none;
 
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
 
   .params {
     flex: 0 0 auto;
-    margin-left: 0.15rem;
-
-    th {
-      font-size: 0.9em;
-    }
+    margin-top: 0.35rem;
+    margin-left: -1px;
   }
 }
 

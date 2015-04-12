@@ -15,7 +15,7 @@ class SelectModule
   on_option_click: (event) =>
     element = $(event.currentTarget)
     target = element.parentsUntil('.solution').parent()
-    target.children().fadeOut 'fast', =>
+    target.find('h2, .image, .params').fadeOut 'fast', =>
       target.find('h2 .name').html(element.data('name'))
       target.find('img').attr('src', element.data('image'))
       target.find('h2 a').attr('href', element.data('href'))
@@ -29,7 +29,7 @@ class SelectModule
       target.find('.window').html(element.data('window'))
       target.find('.height').html(element.data('height'))
       target.find('.wood').html(element.data('wood'))
-      element.parentsUntil('table').find('th').removeClass('active')
+      element.parent().siblings().removeClass('active')
       element.parent().addClass('active')
       target.children().fadeIn('slow')
     return false
