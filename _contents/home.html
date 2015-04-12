@@ -18,11 +18,12 @@ layout: home
       <figure class="image">
         {% assign active = true %}
         {% for stair in stairs %}
+        {% assign stair_page = site.contents | where:'stair',stair.name | first %}
         {% for photo in stair.photos %}
         {% if photo.home %}
         <img src="{{ photo.image | replace:'<size>','600x450' }}" width="600px" height="450px">
         <figcaption>
-          Лестница <span class="name">{{ stair.name }}</span>
+          <a href="{{ stair_page.permalink }}">Лестница <span class="name">{{ stair.name }}</span></a>
           <div class="price">
             <span class="value">{{ stair.price }}</span>
             <span class="currency fa fa-rub"></span>
@@ -49,9 +50,15 @@ layout: home
         <div class="items">
           {% assign active = true %}
           {% for stair in stairs %}
+          {% assign stair_page = site.contents | where:'stair',stair.name | first %}
           {% for photo in stair.photos %}
           {% if photo.home %}
-          <img src="{{ photo.image | replace:'<size>','200x150' }}" width="200px" height="150px" {% if active %}class="active"{% endif %} data-name="{{ stair.name }}" data-price="{{ stair.price }}" data-showcase-image="{{ photo.image | replace:'<size>','600x450' }}">
+          <img src="{{ photo.image | replace:'<size>','200x150' }}" width="200px" height="150px"
+            {% if active %}class="active"{% endif %}
+            data-name="{{ stair.name }}"
+            data-price="{{ stair.price }}"
+            data-link="{{ stair_page.permalink }}"
+            data-image="{{ photo.image | replace:'<size>','600x450' }}">
           {% assign active = false %}
           {% endif %}
           {% endfor %}

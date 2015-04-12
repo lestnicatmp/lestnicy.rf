@@ -210,6 +210,8 @@
   }
 
   .star {
+    cursor: pointer;
+
     &.fa-star {
       @extend %shadow;
       color: #6d85b3;

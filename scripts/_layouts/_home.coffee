@@ -59,7 +59,8 @@ class HomeModule
     target = $('.image')
     target.stop()
     target.fadeOut 'fast', =>
-      target.find('img').attr('src', element.data('showcase-image'))
+      target.find('img').attr('src', element.data('image'))
+      target.find('a').attr('href', element.data('link'))
       target.find('.name').html(element.data('name'))
       target.find('.price .value').html(element.data('price'))
       target.fadeIn(1000)
