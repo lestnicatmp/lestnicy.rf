@@ -1,5 +1,29 @@
 #article {
+  #map {
+    height: 20rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: solid 1px $grey-color;
+  }
+
   table {
     margin: 1rem 0;
+  }
+
+  .index {
+    background: none;
+  }
+
+  .region {
+    width: 15%;
+  }
+
+  .address,
+  .comment {
+    width: 25%;
+  }
+
+  .phones {
+    white-space: nowrap;
   }
 }
