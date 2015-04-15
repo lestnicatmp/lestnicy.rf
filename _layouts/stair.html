@@ -40,7 +40,11 @@ layout: select
           <tr><th>Древесина</th><td>{{ stair.wood }}</td></tr>
         </table>
         {% for photo in stair.photos %}
-        <img src="{{ photo.image | replace:'<size>','200x150' }}" width="200px" height="150px">
+        <img src="{{ photo.image | replace:'<size>','200x150' }}" width="200px" height="150px" class="zoomable"
+          data-source="{{ photo.image | replace:'<size>','1000x750' }}"
+          data-source-width="1000"
+          data-source-height="750"
+          data-source-title="Лестница {{ stair.name }}">
         {% endfor %}
       </div>
     </div>

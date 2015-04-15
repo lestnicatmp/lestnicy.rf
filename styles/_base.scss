@@ -320,6 +320,10 @@ figcaption {
     }
   }
 
+  .zoomable {
+    cursor: zoom-in;
+  }
+
   .flipped-left {
     transform: scaleX(-1);
   }
@@ -386,5 +390,11 @@ figcaption {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+#gallery {
+  .pswp__caption__center {
+    font-size: 0.9rem !important;
   }
 }
