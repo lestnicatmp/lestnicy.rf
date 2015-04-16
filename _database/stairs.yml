@@ -27,6 +27,8 @@
       weight: 60
     - size: 2290 x 400 x 280
       weight: 60
+  plans:
+    - image: /images/stairs/plans/ls93-1.jpg
 
 - name: ЛС-01У
   slug: ls01u
@@ -58,6 +60,8 @@
   photos:
     - image: /images/stairs/photos/<size>/ls01u-1.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/ls01u-1.jpg
 
 - name: ЛС-04У
   slug: ls04u
@@ -88,6 +92,8 @@
   photos:
     - image: /images/stairs/photos/<size>/ls04u-1.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/ls04u-1.jpg
 
 - name: ЛС-05
   slug: ls05
@@ -118,6 +124,8 @@
   photos:
     - image: /images/stairs/photos/<size>/ls05-1.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/ls05-1.jpg
 
 - name: ЛС-02
   slug: ls02
@@ -145,6 +153,8 @@
       weight: 65
     - size: 3490 x 340 x 280
       weight: 112
+  plans:
+    - image: /images/stairs/plans/ls02-1.jpg
 
 - name: ЛС-21
   slug: ls21
@@ -174,6 +184,8 @@
       weight: 56
     - size: 3490 x 340 x 280
       weight: 110
+  plans:
+    - image: /images/stairs/plans/ls21-1.jpg
 
 - name: ЛС-215
   slug: ls215
@@ -203,6 +215,8 @@
       weight: 129
   photos:
     - image: /images/stairs/photos/<size>/ls215-1.jpg
+  plans:
+    - image: /images/stairs/plans/ls215-1.jpg
 
 - name: ЛС-32
   slug: ls32
@@ -234,6 +248,8 @@
       weight: 114
   photos:
     - image: /images/stairs/photos/<size>/ls32-1.jpg
+  plans:
+    - image: /images/stairs/plans/ls32-1.jpg
 
 - name: ЛС-62У
   slug: ls62u
@@ -267,6 +283,8 @@
       weight: 107
   photos:
     - image: /images/stairs/photos/<size>/ls62u-1.jpg
+  plans:
+    - image: /images/stairs/plans/ls62u-1.jpg
 
 - name: ЛМ-31
   slug: lm31
@@ -300,6 +318,8 @@
     - image: /images/stairs/photos/<size>/lm31-1.jpg
     - image: /images/stairs/photos/<size>/lm31-2.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/ls31-1.jpg
 
 - name: ЛС-91
   slug: ls91
@@ -330,6 +350,8 @@
     - image: /images/stairs/photos/<size>/ls91-1.jpg
     - image: /images/stairs/photos/<size>/ls91-2.jpg
     - image: /images/stairs/photos/<size>/ls91-3.jpg
+  plans:
+    - image: /images/stairs/plans/ls91-1.jpg
 
 - name: ЛС-92
   slug: ls92
@@ -355,6 +377,8 @@
       weight: 19
     - size: 2705 x 525 x 280
       weight: 109
+  plans:
+    - image: /images/stairs/plans/ls92-1.jpg
 
 - name: ЛС-925
   slug: ls925
@@ -382,6 +406,8 @@
       weight: 124
     - size: 785 x 305 x 280
       weight: 28
+  plans:
+    - image: /images/stairs/plans/ls925-1.jpg
 
 - name: ЛС-225
   slug: ls225
@@ -411,6 +437,8 @@
       weight: 72
   photos:
     - image: /images/stairs/photos/<size>/ls225-1.jpg
+  plans:
+    - image: /images/stairs/plans/ls225-1.jpg
 
 - name: ЛС-235
   slug: ls235
@@ -438,6 +466,8 @@
       weight: 124
     - size: 3280 x 420 x 280
       weight: 75
+  plans:
+    - image: /images/stairs/plans/ls235-1.jpg
 
 - name: ЛС-06
   slug: ls06
@@ -470,6 +500,8 @@
   photos:
     - image: /images/stairs/photos/<size>/ls06-1.jpg
     - image: /images/stairs/photos/<size>/ls06-2.jpg
+  plans:
+    - image: /images/stairs/plans/ls06-1.jpg
 
 - name: ЛМ-22
   slug: lm22
@@ -502,6 +534,8 @@
   photos:
     - image: /images/stairs/photos/<size>/lm22-1.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/lm22-1.jpg
 
 - name: ЛВ-1.0
   slug: lv10
@@ -534,6 +568,8 @@
       home: true
     - image: /images/stairs/photos/<size>/lv10-2.jpg
     - image: /images/stairs/photos/<size>/lv10-3.jpg
+  plans:
+    - image: /images/stairs/plans/lv10-1.jpg
 
 - name: ЛВ-1.2Б
   slug: lv12b
@@ -617,6 +653,8 @@
     - image: /images/stairs/photos/<size>/lv14b-1.jpg
       home: true
     - image: /images/stairs/photos/<size>/lv14b-2.jpg
+  plans:
+    - image: /images/stairs/plans/lv14b-1.jpg
 
 - name: ЛВ-1.4Х
   slug: lv14x
@@ -646,6 +684,8 @@
       weight: 105
   photos:
     - image: /images/stairs/photos/<size>/lv14x-1.jpg
+  plans:
+    - image: /images/stairs/plans/lv14x-1.jpg
 
 - name: ЛВР-1.0
   slug: lvr10
@@ -666,6 +706,8 @@
   image: /images/stairs/image/<size>/lvr10.jpg
   text: >
     Элегантная винтовая лестница. Допустимо изъятие одной ступени - тогда высота подъема от пола до пола сокращается до 2,48-2,52 м.
+  plans:
+    - image: /images/stairs/plans/lvr10-1.jpg
 
 - name: ЛС-10У
   slug: ls10u
@@ -695,6 +737,8 @@
   photos:
     - image: /images/stairs/photos/<size>/ls10u-1.jpg
       home: true
+  plans:
+    - image: /images/stairs/plans/ls10u-1.jpg
 
 - name: ЛС-11/12
   slug: ls1112
@@ -726,6 +770,8 @@
     - image: /images/stairs/photos/<size>/ls1112-1.jpg
     - image: /images/stairs/photos/<size>/ls1112-2.jpg
     - image: /images/stairs/photos/<size>/ls1112-3.jpg
+  plans:
+    - image: /images/stairs/plans/ls1112-1.jpg
 
 - name: ЛС-08
   slug: ls08
@@ -742,7 +788,7 @@
   finish: false
   step_height: 190-215
   step_quantity: 13
-  step_depth: 35
+  step_depth: 36
   image: /images/stairs/image/<size>/ls08.jpg
   text: >
     Компактная лестница с переменным профилем ступеней. Отличительная

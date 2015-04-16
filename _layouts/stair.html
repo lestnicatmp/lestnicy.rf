@@ -101,6 +101,13 @@ layout: select
     </table>
     {% endif %}
 
+    {% if stair.plans %}
+    <h2>Чертежи</h2>
+    {% for plan in stair.plans %}
+    <img src="{{ plan.image }}">
+    {% endfor %}
+    {% endif %}
+
     {{ content }}
 
   </section>
