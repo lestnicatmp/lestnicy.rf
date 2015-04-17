@@ -210,10 +210,7 @@ figcaption {
       content: counter(ol-counter);
       counter-increment: ol-counter;
       font-size: 250%;
-
-      &:hover {
-        text-decoration: none;
-      }
+      text-decoration: none !important;
     }
   }
 
