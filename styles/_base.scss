@@ -335,6 +335,10 @@ ul {
     margin-right: 1rem;
   }
 
+  .rounded {
+    border-radius: 0.5rem;
+  }
+
   .zoomable {
     cursor: zoom-in;
   }
@@ -344,6 +348,7 @@ ul {
   }
 
   > footer:not([class]) {
+    @xtend %topclear;
     background-image: url("/images/background.png");
     margin-bottom: 1rem;
     padding-top: 1rem;
