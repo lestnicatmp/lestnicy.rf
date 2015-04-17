@@ -211,11 +211,6 @@ figcaption {
       counter-increment: ol-counter;
       font-size: 250%;
     }
-
-    // IE fix
-    &:hover::before {
-      text-decoration: none;
-    }
   }
 
   a.stars {
