@@ -1,8 +1,8 @@
-class ShopsModule
+class DealersModule
 
   # General
 
-  layouts: ['shops']
+  layouts: ['dealers']
 
   run: =>
     @init_map()
@@ -24,7 +24,7 @@ class ShopsModule
       {iconContent: '{{ forloop.index }}',
       balloonContentHeader: '{{ shop.name }}',
       balloonContentBody: '{{ shop.region }}, {{ shop.address }}',
-      balloonContentFooter: '<a href="#магазин-{{ forloop.index }}">подбронее</a>',})
+      balloonContentFooter: '<a href="#дилер-{{ forloop.index }}">подбронее</a>',})
     @map.geoObjects.add(shop)
     {% endfor %}
 

@@ -8,6 +8,10 @@
 
   table {
     margin: 1rem 0;
+
+    tr:nth-child(2n+3) > * {
+      background-color: #f8f8f8;
+    }
   }
 
   .index {
