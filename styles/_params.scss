@@ -51,8 +51,7 @@
   }
 
   .filter {
-    flex-basis: 0;
-  	flex-grow: 1;
+    flex: 1 1 auto;
   	min-width: 10rem;
   	padding: 0.25rem 0;
   	text-align: center;
@@ -85,7 +84,7 @@
   display: flex;
   position: relative;
   min-width: 15rem;
-  flex: 1 0 0;
+  flex: 1 0 auto;
   margin: 0.5rem;
   padding: 0.5rem;
   border: solid 1px $grey-color;
