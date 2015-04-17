@@ -210,7 +210,11 @@ figcaption {
       content: counter(ol-counter);
       counter-increment: ol-counter;
       font-size: 250%;
-      text-decoration: none !important;
+    }
+
+    // IE fix
+    &:hover::before {
+      text-decoration: none;
     }
   }
 
