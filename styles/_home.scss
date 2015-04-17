@@ -125,3 +125,16 @@
   }
 }
 
+#article .examples {
+  display: flex;
+  padding: 1rem 2rem;
+  border-top: dashed 1px $grey-color;
+  background-color: #f8f8f8;
+
+  img {
+    flex: 0 0 auto;
+    height: 15rem*0.75;
+    width: 15rem;
+    margin-right: 1rem;
+  }
+}

@@ -326,6 +326,11 @@ figcaption {
     }
   }
 
+  .inline {
+    float: left;
+    margin-right: 0.5rem;
+  }
+
   .zoomable {
     cursor: zoom-in;
   }
@@ -336,6 +341,7 @@ figcaption {
 
   > footer:not([class]) {
     background-image: url("/images/background.png");
+    margin-bottom: 1rem;
     padding-top: 1rem;
     border-top: dashed 1px $grey-color;
     font-size: 175%;
@@ -365,7 +371,6 @@ figcaption {
 }
 
 #footer {
-  margin-top: 1rem;
   padding: 0.75rem 2rem 1.25rem;
   border-top: dashed 1px $grey-color;
   background-color: $background-color;
