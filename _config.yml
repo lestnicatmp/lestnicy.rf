@@ -6,7 +6,7 @@ keywords: деревянные лестницы
 permalink: /блог/:title/:year-:month-:day/
 data_source: ./_database
 sass: {sass_dir: styles}
-exclude: [node_modules, CNAME, README.md, gulpfile.js, tags, lestnicy.rf.iml]
+exclude: [node_modules, tmp, CNAME, README.md, gulpfile.js, tags, lestnicy.rf.iml]
 
 # Collections
 collections:
