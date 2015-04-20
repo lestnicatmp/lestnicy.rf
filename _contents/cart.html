@@ -9,7 +9,7 @@ layout: cart
 
   <header>
     <h1>{{ page.title }}</h1>
-    <p>На этой странице представлены отобранные вами лестницы. Показывать <a class="flip-left">левозаходные</a> модификации. Перейти в <a href="/подобрать-лестницу/по-каталогу/">каталог</a>.</p>
+    <p>Здесь хранятся выбранные вами лестницы. Показывать <a class="flip-left">левозаходные</a> модификации. Перейти в <a href="/подобрать-лестницу/по-каталогу/">каталог</a>.</p>
   </header>
 
   <section class="stairs">
@@ -39,9 +39,12 @@ layout: cart
         <p class="text">{{ stair.text }}</p>
         <div class="cards">
           <table class="compact">
-            <tr><th>Поворот</th><td>{{ stair.turn }}</td></tr>
-            <tr><th>Проем</th><td>{{ stair.window }}</td></tr>
-            <tr><th>Высота</th><td>{{ stair.height }}</td></tr>
+            <tr><th>Поворот</th><td>{{ stair.turn }} градусов</td></tr>
+            <tr>
+              <th>Высота</th>
+              <td>от {{ stair.min_height }} (опт. {{ stair.opt_height }})</td>
+            </tr>
+            <tr><th>Проем</th><td>от {{ stair.min_window }}</td></tr>
             <tr><th>Древесина</th><td>{{ stair.wood }}</td></tr>
           </table>
           {% for photo in stair.photos %}

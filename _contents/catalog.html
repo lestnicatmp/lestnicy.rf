@@ -40,9 +40,12 @@ layout: catalog
         <p class="text">{{ stair.text }}</p>
         <div class="cards">
           <table class="compact">
-            <tr><th>Поворот</th><td>{{ stair.turn }}</td></tr>
-            <tr><th>Проем</th><td>{{ stair.window }}</td></tr>
-            <tr><th>Высота</th><td>{{ stair.height }}</td></tr>
+            <tr><th>Поворот</th><td>{{ stair.turn }} градусов</td></tr>
+            <tr>
+              <th>Высота</th>
+              <td>от {{ stair.min_height }} (опт. {{ stair.opt_height }})</td>
+            </tr>
+            <tr><th>Проем</th><td>от {{ stair.min_window }}</td></tr>
             <tr><th>Древесина</th><td>{{ stair.wood }}</td></tr>
           </table>
           {% for photo in stair.photos %}

@@ -75,8 +75,9 @@ layout: select
                    data-href="{{ stair_page.permalink }}"
                    data-presence="{{ stair.presence }}"
                    data-turn="{{ stair.turn }}"
-                   data-window="{{ stair.window }}"
-                   data-height="{{ stair.height }}"
+                   data-min_height="{{ stair.min_height }}"
+                   data-opt_height="{{ stair.opt_height }}"
+                   data-min_window="{{ stair.min_window }}"
                    data-wood="{{ stair.wood }}"
                    data-price="{% if stair.presence %}{{ stair.price }}{% else %}звоните{% endif %}">
                   {{ stair.name }}
@@ -90,10 +91,31 @@ layout: select
             </ul>
 
             <table class="params compact">
-              <tr><th>Поворот</th><td class="turn">{{ default_stair.turn }}</td></tr>
-              <tr><th>Проем</th><td class="window">{{ default_stair.window }}</td></tr>
-              <tr><th>Высота</th><td class="height">{{ default_stair.height }}</td></tr>
-              <tr><th>Древесина</th><td class="wood">{{ default_stair.wood }}</td></tr>
+              <tr>
+                <th>Поворот</th>
+                <td>
+                  <span class="turn">{{ default_stair.turn }}</span> градусов
+                </td>
+              </tr>
+              <tr>
+                <th>Высота</th>
+                <td>
+                  от <span class="min_height">{{ default_stair.min_height }}</span>
+                  (опт. <span class="opt_height">{{ default_stair.opt_height }}</span>)
+                </td>
+              </tr>
+              <tr>
+                <th>Проем</th>
+                <td>
+                  от <span class="min_window">{{ default_stair.min_window }}</span>
+                </td>
+              </tr>
+              <tr>
+                <th>Древесина</th>
+                <td>
+                  <span class="wood">{{ default_stair.wood }}</span>
+                </td>
+              </tr>
             </table>
 
           </div>

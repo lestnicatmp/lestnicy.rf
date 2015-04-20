@@ -31,32 +31,25 @@ layout: params
       </table>
     </section>
 
-    <section class="filter window">
-      <h3>Проем</h3>
-      <p>Мин. размеры проема, м x м</p>
+    <section class="filter height">
+      <h3>Высота</h3>
+      <p>Ваша высота от пола до пола, м</p>
       <table>
         <tr>
-          <td><input class="range left_min" type="number" min="0" max="3" step="0.5" value="0"></td>
-          <td rowspan="2">&nbsp;x&nbsp;</td>
-          <td><input class="range right_min" type="number" min="0" max="3" step="0.5" value="0"></td>
-        </tr>
-        <tr>
-          <td><input class="range left_max" type="number" min="0" max="3" step="0.5" value="3"></td>
-          <td><input class="range right_max" type="number" min="0" max="3" step="0.5" value="3"></td>
+          <td><input class="value height" type="number" min="2" max="4" step="0.1"></td>
         </tr>
       </table>
     </section>
 
-    <section class="filter height">
-      <h3>Высота</h3>
-      <p>Высота от пола до пола, м</p>
+    <section class="filter window">
+      <h3>Проем</h3>
+      <p>Ваши размеры проема, м x м</p>
       <table>
-        <tr>
-          <td><input class="range min" type="number" min="2.5" max="3.5" step="0.1" value="2.5"></td>
-        </tr>
-        <tr>
-          <td><input class="range max" type="number" min="2.5" max="3.5" step="0.1" value="3.5"></td>
-        </tr>
+      <tr>
+        <td><input class="value length" type="number" min="0" max="4" step="0.1"></td>
+        <td>x</td>
+        <td><input class="value width" type="number" min="0" max="4" step="0.1"></td>
+      </tr>
       </table>
     </section>
 
@@ -89,10 +82,12 @@ layout: params
     <article class="stair" data-slug="{{ stair.slug }}">
 
       <div class="image">
-        <img src="{{ stair.image | replace:'<size>','200x300' }}" width="200px" height="300px" class="flipped-right">
+        <img src="{{ stair.image | replace:'<size>','200x300' }}"
+             width="200px" height="300px" class="flipped-right">
       </div>
 
       <div class="content">
+
         <h2>
           <a href="{{ stair_page.permalink }}">{{ stair.name }}</a>
           <span class="star fa fa-star-o" data-stair="{{ stair.slug }}"></span>
@@ -105,12 +100,17 @@ layout: params
             {% endif %}
           </div>
         </h2>
+
         <ul class="data">
           <li>Поворот: <span class="turn">{{ stair.turn }}</span></li>
-          <li>Проем: <span class="window">{{ stair.window }}</span></li>
-          <li>Высота: <span class="height">{{ stair.height }}</span></li>
+          <li>Высота: от
+            <span class="min_height">{{ stair.min_height }}</span>
+            (опт. <span class="opt_height">{{ stair.opt_height }})</span>
+          </li>
+          <li>Проем: от <span class="min_window">{{ stair.min_window }}</span></li>
           <li>Древесина: <span class="wood">{{ stair.wood }}</span></li>
         </ul>
+
       </div>
 
     </article>

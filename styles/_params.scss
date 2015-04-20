@@ -37,15 +37,20 @@
     font-family: $header-font-family;
     text-align: center;
 
-    &.range {
-      padding-left: 0.5rem;
-      width: 4rem;
-    }
-
     &.option {
       cursor: pointer;
       &.active {
         background-color: #eee;
+      }
+    }
+
+    &.value {
+      width: 5rem;
+      padding-left: 0.5rem;
+      font-size: 2.2em;
+
+      &.height {
+        width: 12.5rem;
       }
     }
   }
