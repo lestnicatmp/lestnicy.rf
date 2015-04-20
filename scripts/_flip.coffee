@@ -27,7 +27,7 @@ class FlipModule
   on_flip_left_click: (event) =>
     element = $(event.currentTarget)
     element.removeClass('flip-left').addClass('flip-right')
-    element.html('правозаходные')
+    element.html('левозаходные')
     target = $('.flipped-right')
     target.fadeOut 'fast', =>
       target.removeClass('flipped-right').addClass('flipped-left')
@@ -38,7 +38,7 @@ class FlipModule
   on_flip_right_click: (event) =>
     element = $(event.currentTarget)
     element.removeClass('flip-right').addClass('flip-left')
-    element.html('левозаходные')
+    element.html('правозаходные')
     target = $('.flipped-left')
     target.fadeOut 'fast', =>
       target.removeClass('flipped-left').addClass('flipped-right')
