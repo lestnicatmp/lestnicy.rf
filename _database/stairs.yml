@@ -6,9 +6,9 @@
   position: 1
   presence: true
   price: 30900
-  min_height: "2,5"
-  min_window: 1,50 x 0,83
-  opt_height: "2,5"
+  height_min: "2,5"
+  height_opt: "2,5"
+  window_min: 1,50 x 0,83
   turn: 180
   wood: сосна
   rail: false
@@ -36,9 +36,9 @@
   position: 2
   presence: true
   price: 26500
-  min_height: "2,5"
-  min_window: 1,64 x 0,9
-  opt_height: "2,7"
+  height_min: "2,5"
+  height_opt: "2,7"
+  window_min: 1,64 x 0,9
   size: 1,65 x 1,39
   turn: 180
   wood: хвоя
@@ -70,10 +70,10 @@
   position: 3
   presence: true
   price: 31000
-  opt_height: "2,7"
-  min_height: "2,5"
+  height_opt: "2,7"
+  height_min: "2,5"
   size: 1,71 x 1,40
-  min_window: 1,64 x 0,90
+  window_min: 1,64 x 0,90
   turn: 180
   wood: хвоя
   rail: true
@@ -103,10 +103,10 @@
   position: 4
   presence: true
   price: 32200
-  opt_height: "2,7"
-  min_height: "2,5"
+  height_opt: "2,7"
+  height_min: "2,5"
   size: 1,71 x 1,40
-  min_window: 1,64 x 0,90
+  window_min: 1,64 x 0,90
   turn: 180
   wood: хвоя
   rail: true
@@ -136,10 +136,10 @@
   position: 5
   presence: true
   price: 34000
-  opt_height: "2,9"
-  min_height: "2,5"
+  height_opt: "2,9"
+  height_min: "2,5"
   size: 2,49 x 1,02
-  min_window: 2,00 x 0,92
+  window_min: 2,00 x 0,92
   turn: 90
   wood: хвоя
   rail: true
@@ -166,10 +166,10 @@
   position: 6
   presence: true
   price: 35500
-  opt_height: "2,9"
-  min_height: "2,5"
+  height_opt: "2,9"
+  height_min: "2,5"
   size: 2,49 x 0,94
-  min_window: 2,00 x 0,92
+  window_min: 2,00 x 0,92
   turn: 90
   wood: хвоя
   rail: true
@@ -198,10 +198,10 @@
   position: 7
   presence: true
   price: 36600
-  opt_height: "2,9"
-  min_height: "2,5"
+  height_opt: "2,9"
+  height_min: "2,5"
   size: 2,49 x 0,96
-  min_window: 2,00 x 0,92
+  window_min: 2,00 x 0,92
   turn: 90
   wood: хвоя
   rail: true
@@ -230,10 +230,10 @@
   position: 8
   presence: true
   price: 69000
-  opt_height: "3,13"
-  min_height: "2,5"
+  height_opt: "3,13"
+  height_min: "2,5"
   size: 1,95 x 2,23
-  min_window: 1,87 x 2,11
+  window_min: 1,87 x 2,11
   turn: 180
   wood: хвоя
   rail: true
@@ -264,10 +264,10 @@
   position: 9
   presence: true
   price: 68000
-  opt_height: "3,1"
-  min_height: "2,5"
+  height_opt: "3,1"
+  height_min: "2,5"
   size: 1,95 x 2,57
-  min_window: 1,95 x 2,55
+  window_min: 1,95 x 2,55
   turn: 180
   wood: хвоя
   rail: true
@@ -300,10 +300,10 @@
   position: 10
   presence: true
   price: 125000
-  opt_height: "3,13"
-  min_height: "2,5"
+  height_opt: "3,13"
+  height_min: "2,5"
   size: 2,05 x 1,80
-  min_window: 2,02 x 1,80
+  window_min: 2,02 x 1,80
   turn: 180
   wood: бук
   rail: true
@@ -336,10 +336,10 @@
   position: 11
   presence: true
   price: 22500
-  opt_height: "2,7"
-  min_height: "2,5"
+  height_opt: "2,7"
+  height_min: "2,5"
   size: 1,23 x 1,11
-  min_window: 1,22 x 0,90
+  window_min: 1,22 x 0,90
   turn: 90
   wood: хвоя
   rail: true
@@ -369,10 +369,10 @@
   position: 12
   presence: true
   price: 25500
-  opt_height: "2,7"
-  min_height: "2,5"
+  height_opt: "2,7"
+  height_min: "2,5"
   size: 1,85 x 1,03
-  min_window: 1,80 x 0,83
+  window_min: 1,80 x 0,83
   turn: 90
   wood: сосна
   rail: false
@@ -397,10 +397,10 @@
   position: 13
   presence: true
   price: 30900
-  opt_height: "2,7"
-  min_height: "2,5"
+  height_opt: "2,7"
+  height_min: "2,5"
   size: 1,89 x 1,03
-  min_window: 1,83 x 0,83
+  window_min: 1,83 x 0,83
   turn: 90
   wood: сосна
   rail: true
@@ -427,10 +427,10 @@
   position: 14
   presence: true
   price: 39900
-  opt_height: "2,9"
-  min_height: "2,5"
+  height_opt: "2,9"
+  height_min: "2,5"
   size: 2,31 x 1,40
-  min_window: 2,20 x 0,92
+  window_min: 2,20 x 0,92
   turn: 90
   wood: хвоя
   rail: true
@@ -459,10 +459,10 @@
   position: 15
   presence: true
   price: 39900
-  opt_height: "3,1"
-  min_height: "2,5"
+  height_opt: "3,1"
+  height_min: "2,5"
   size: 2,03 x 1,69
-  min_window: 1,92 x 1,02
+  window_min: 1,92 x 1,02
   turn: 90
   wood: хвоя
   rail: true
@@ -489,10 +489,10 @@
   position: 16
   presence: true
   price: 56200
-  opt_height: "3,1"
-  min_height: "2,5"
+  height_opt: "3,1"
+  height_min: "2,5"
   size: 3,50 x 1,64
-  min_window: 2,23 x 0,93
+  window_min: 2,23 x 0,93
   turn: 90
   wood: хвоя
   rail: true
@@ -524,10 +524,10 @@
   position: 17
   presence: true
   price: 89900
-  opt_height: "3,17"
-  min_height: "2,5"
+  height_opt: "3,17"
+  height_min: "2,5"
   size: 3,03 x 1,64
-  min_window: 2,95 x 0,90
+  window_min: 2,95 x 0,90
   turn: 90
   wood: бук
   rail: true
@@ -559,10 +559,10 @@
   position: 18
   presence: true
   price: 50500
-  opt_height: 2,93-2,97
-  min_height: "2,5"
+  height_opt: 2,93-2,97
+  height_min: "2,5"
   size: 1,00 x 1,00
-  min_window: 1,00 x 1,00
+  window_min: 1,00 x 1,00
   turn: 270
   wood: бук
   rail: true
@@ -594,10 +594,10 @@
   position: 19
   presence: true
   price: 50500
-  opt_height: 2,93-2,97
-  min_height: "2,5"
+  height_opt: 2,93-2,97
+  height_min: "2,5"
   size: 1,20 x 1,20
-  min_window: 1,20 x 1,20
+  window_min: 1,20 x 1,20
   turn: 270
   wood: бук
   rail: true
@@ -620,10 +620,10 @@
   position: 20
   presence: true
   price: 25700
-  opt_height: "2,73"
-  min_height: "2,5"
+  height_opt: "2,73"
+  height_min: "2,5"
   size: 1,22 x 1,22
-  min_window: 1,20 x 1,20
+  window_min: 1,20 x 1,20
   turn: 270
   wood: хвоя
   rail: false
@@ -648,10 +648,10 @@
   position: 21
   presence: true
   price: 86500
-  opt_height: "2,73"
-  min_height: "2,5"
+  height_opt: "2,73"
+  height_min: "2,5"
   size: 1,40 x 1,40
-  min_window: 1,40 x 1,40
+  window_min: 1,40 x 1,40
   turn: 270
   wood: бук
   rail: true
@@ -682,10 +682,10 @@
   position: 22
   presence: true
   price: 29900
-  opt_height: "2,73"
-  min_height: "2,5"
+  height_opt: "2,73"
+  height_min: "2,5"
   size: 1,42 x 1,42
-  min_window: 1,40 x 1,40
+  window_min: 1,40 x 1,40
   turn: 270
   wood: хвоя
   rail: false
@@ -714,10 +714,10 @@
   position: 23
   presence: false
   price:
-  opt_height: 2,70-2,75
-  min_height: "2,5"
+  height_opt: 2,70-2,75
+  height_min: "2,5"
   size: d=1,07
-  min_window: 1,07 x 1,07
+  window_min: 1,07 x 1,07
   turn: 270
   wood: бук
   rail: false
@@ -737,10 +737,10 @@
   position: 24
   presence: true
   price: 26500
-  opt_height: "2,92"
-  min_height: "2,5"
+  height_opt: "2,92"
+  height_min: "2,5"
   size: 2,38 x 0,83
-  min_window: 1,90 x 0,83
+  window_min: 1,90 x 0,83
   turn: 0
   wood: хвоя
   rail: true
@@ -769,10 +769,10 @@
   position: 25
   presence: true
   price: 14500
-  opt_height: 2,70-2,90
-  min_height: "2,5"
+  height_opt: 2,70-2,90
+  height_min: "2,5"
   size: 1,60/1,70 x 0,63
-  min_window: 1,22-1,30 x 0,61
+  window_min: 1,22 x 0,61
   turn: 0
   wood: береза
   rail: false
@@ -803,10 +803,10 @@
   position: 26
   presence: true
   price: 43900
-  opt_height: 2,66-3,01
-  min_height: "2,5"
+  height_opt: 2,66-3,01
+  height_min: "2,5"
   size: 1,62 x 0,64, 1,50 x 0,95
-  min_window: 1,50 x 0,72
+  window_min: 1,50 x 0,72
   turn: 0-90
   wood: слоеная береза
   rail: true

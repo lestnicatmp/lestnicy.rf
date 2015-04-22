@@ -11,7 +11,7 @@ layout: select
   <header>
     <h1>{{ page.title }}</h1>
     <p>
-      Мы более 20-и лет помогаем людям обустраивать их дома. За это время мы создали более 25 оригинальных моделей лестниц (повсеместно копируемых). На этой странице мы представляем обзор наших лестниц, сгруппированных по их типу. Показывать <a class="flip-left">правозаходные</a> модификации.
+      Мы уже 20 лет помогаем людям обустраивать их дома. За это время мы создали более 25 оригинальных моделей лестниц (повсеместно копируемых). На этой странице мы представляем обзор наших лестниц, сгруппированных по их типу. Показывать <a class="flip-left">правозаходные</a> модификации.
     </p>
   </header>
 
@@ -75,9 +75,9 @@ layout: select
                    data-href="{{ stair_page.permalink }}"
                    data-presence="{{ stair.presence }}"
                    data-turn="{{ stair.turn }}"
-                   data-min_height="{{ stair.min_height }}"
-                   data-opt_height="{{ stair.opt_height }}"
-                   data-min_window="{{ stair.min_window }}"
+                   data-height_min="{{ stair.height_min }}"
+                   data-height_opt="{{ stair.height_opt }}"
+                   data-window_min="{{ stair.window_min }}"
                    data-wood="{{ stair.wood }}"
                    data-price="{% if stair.presence %}{{ stair.price }}{% else %}звоните{% endif %}">
                   {{ stair.name }}
@@ -100,14 +100,14 @@ layout: select
               <tr>
                 <th>Высота</th>
                 <td>
-                  от <span class="min_height">{{ default_stair.min_height }}</span>
-                  (опт. <span class="opt_height">{{ default_stair.opt_height }}</span>)
+                  от <span class="height_min">{{ default_stair.height_min }}</span>
+                  (опт. <span class="height_opt">{{ default_stair.height_opt }}</span>)
                 </td>
               </tr>
               <tr>
                 <th>Проем</th>
                 <td>
-                  от <span class="min_window">{{ default_stair.min_window }}</span>
+                  от <span class="window_min">{{ default_stair.window_min }}</span>
                 </td>
               </tr>
               <tr>

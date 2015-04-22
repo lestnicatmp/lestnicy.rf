@@ -36,7 +36,7 @@ layout: params
       <p>Ваша высота от пола до пола, м</p>
       <table>
         <tr>
-          <td><input class="value height" type="number" min="2" max="4" step="0.1"></td>
+          <td><input class="value" type="number" min="2" max="4" step="0.1"></td>
         </tr>
       </table>
     </section>
@@ -79,7 +79,13 @@ layout: params
     {% for stair in stairs %}
     {% assign stair_page = site.contents | where:'stair',stair.name | first %}
 
-    <article class="stair" data-slug="{{ stair.slug }}">
+    <article class="stair"
+             data-slug="{{ stair.slug }}"
+             data-turn="{{ stair.turn }}"
+             data-height_min="{{ stair.height_min }}"
+             data-height_opt="{{ stair.height_opt }}"
+             data-window_min="{{ stair.window_min }}"
+             data-wood="{{ stair.wood }}">
 
       <div class="image">
         <img src="{{ stair.image | replace:'<size>','200x300' }}"
@@ -101,14 +107,11 @@ layout: params
           </div>
         </h2>
 
-        <ul class="data">
-          <li>Поворот: <span class="turn">{{ stair.turn }}</span> градусов</li>
-          <li>Высота: от
-            <span class="min_height">{{ stair.min_height }}</span>
-            (опт. <span class="opt_height">{{ stair.opt_height }})</span>
-          </li>
-          <li>Проем: от <span class="min_window">{{ stair.min_window }}</span></li>
-          <li>Древесина: <span class="wood">{{ stair.wood }}</span></li>
+        <ul>
+          <li>Поворот: {{ stair.turn }} градусов</li>
+          <li>Высота: от {{ stair.height_min }} (опт. {{ stair.height_opt }})</li>
+          <li>Проем: от {{ stair.window_min }}</li>
+          <li>Древесина: {{ stair.wood }}</li>
         </ul>
 
       </div>
