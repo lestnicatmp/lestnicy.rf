@@ -22,7 +22,7 @@ $header-font-family: "Ubuntu Condensed", Arial, sans-serif;
 $header-font-weight: 700;
 $header-line-height: 1;
 
-@import "normalize";
+@import "../vendor/bootstrap-3.3.4/bootstrap";
 @import "base";
 
 body[data-layout="home"] {
