@@ -1,12 +1,12 @@
 session_name: lestnicyrf
 windows:
-  - window_name: console
+  - window_name: bash
     panes:
       -
-  - window_name: editor
+  - window_name: vim
     panes:
       - vim
-  - window_name: server
+  - window_name: misc
     panes:
       - jekyll serve
       - gulp watch
