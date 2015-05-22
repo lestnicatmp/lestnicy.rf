@@ -2,7 +2,7 @@ class HomeModule
 
   # General
 
-  layouts: ['home']
+  pages: ['home']
 
   run: =>
     @collect()

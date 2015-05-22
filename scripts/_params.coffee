@@ -2,7 +2,7 @@ class ParamsModule
 
   # General
 
-  layouts: ['params']
+  pages: ['params']
 
   run: =>
     @collect()

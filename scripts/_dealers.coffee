@@ -2,7 +2,7 @@ class DealersModule
 
   # General
 
-  layouts: ['dealers']
+  pages: ['dealers']
 
   run: =>
     @init_map()

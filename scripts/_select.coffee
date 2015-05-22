@@ -2,7 +2,7 @@ class SelectModule
 
   # General
 
-  layouts: ['select']
+  pages: ['select']
 
   run: =>
     @bind()

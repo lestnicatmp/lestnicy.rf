@@ -3,52 +3,34 @@
 ---
 @charset "utf-8";
 
-$rem-value: 1.5vw;
-
-$site-menu-height: 3.25rem;
-$page-menu-height: 2.25rem;
-
-$background-color: #fff;
-$style-color: #884c27;
-$brand-color: #000;
-$text-color: #222;
-$grey-color: #777;
-
-$base-font-family: "Open Sans", Arial, sans-serif;
-$base-font-size: 1rem;
-$base-font-weight: 300;
-$base-line-height: 1.5;
-$header-font-family: "Ubuntu Condensed", Arial, sans-serif;
-$header-font-weight: 700;
-$header-line-height: 1;
-
+@import "settings";
 @import "../vendor/bootstrap-3.3.4/bootstrap";
 @import "base";
 
-body[data-layout="home"] {
+body[data-page="home"] {
   @import "home";
 }
 
-body[data-layout="select"] {
+body[data-page="select"] {
   @import "select";
 }
 
-body[data-layout="params"] {
+body[data-page="params"] {
   @import "params";
 }
 
-body[data-layout="catalog"] {
+body[data-page="catalog"] {
   @import "catalog";
 }
 
-body[data-layout="cart"] {
+body[data-page="cart"] {
   @import "cart";
 }
 
-body[data-layout="stair"] {
+body[data-page="stair"] {
   @import "stair";
 }
 
-body[data-layout="dealers"] {
+body[data-page="dealers"] {
   @import "dealers";
 }
