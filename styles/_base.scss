@@ -147,7 +147,7 @@ ul {
   }
 }
 
-#site-menu {
+#mainnav {
   position: fixed;
   top: 0;
   left: 14rem;
@@ -233,7 +233,7 @@ ul {
 
 }
 
-#page-menu {
+#subnav {
   position: fixed;
   top: $site-menu-height;
   height: $page-menu-height;

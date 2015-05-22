@@ -13,7 +13,7 @@ class HomeModule
 
   collect: =>
     @hash = $(location).attr('hash')
-    @menuItems = $('#page-menu').find('a')
+    @menuItems = $('#subnav').find('a')
     @scrollItems = @menuItems.map (index, value) =>
       element = $(value)
       item = $(element.attr('href').replace('/', ''))
@@ -22,7 +22,7 @@ class HomeModule
 
   bind: =>
     $(window).scroll(@on_window_scroll)
-    $('#page-menu a').click(@on_page_menu_click)
+    $('#subnav a').click(@on_page_menu_click)
     $('#article > header .items img').click(@on_preview_image_click)
 
   # Bindings
