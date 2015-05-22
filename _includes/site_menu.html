@@ -1,0 +1,34 @@
+<nav id="site-menu">
+
+  <ol>
+
+    {% assign permalink = '/' %}
+    <li {% if page.permalink == permalink %}class="active"{% endif %}>
+      <a href="{{ permalink }}">
+        Главная<br>страница
+      </a>
+    </li>
+
+    {% assign permalink = '/подобрать-лестницу/' %}
+    <li {% if page.permalink contains permalink %}class="active"{% endif %}>
+      <a href="{{ permalink }}">
+        Подобрать<br>лестницу
+      </a>
+      <a class="stars" href="/подобрать-лестницу/по-каталогу/выбранное/">
+        <span class="fa-stack fa-lg">
+          <span class="fa-stack-2x layout fa fa-star"></span>
+          <span class="fa-stack-1x count"></span>
+        </span>
+      </a>
+    </li>
+
+    {% assign permalink = '/купить-лестницу/' %}
+    <li {% if page.permalink contains permalink %}class="active"{% endif %}>
+      <a href="{{ permalink }}">
+        Купить<br>лестницу
+      </a>
+    </li>
+
+  </ol>
+
+</nav>
