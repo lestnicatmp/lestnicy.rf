@@ -34,11 +34,13 @@ gulp.task('deploy', ['deploy#github']);
 // Deploy (guthub)
 gulp.task('deploy#github', function() {
     var data = code.loaders.data();
+    var filter = stack.filter('**/*.html')
     return gulp.src('build/**')
+        .pipe(filter)
         .pipe(stack.replace(
             /="\/(?=[^\/])/g,
-            '="'+data.stack.ghpages.basedir+'/',
-            {skipBinary: true}))
+            '="'+data.stack.ghpages.basedir+'/'))
+        .pipe(filter.restore())
         .pipe(stack.ghpages())
 });
 
