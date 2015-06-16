@@ -1,0 +1,31 @@
+name: ЛВ-1.4Б
+slug: лв-1.4б
+price: 86500
+presence: true
+height: "2,73"
+size: 1,40 x 1,40
+window: 1,40 x 1,40
+turn: 270
+wood: бук
+rail: true
+riser: false
+finish: true
+step_height: 210
+step_quantity: 13
+step_depth: 40
+image: /images/products/models/<size>/lv14b.jpg
+text: >
+  Самая комфортная лестница в виде полного винта с улучшенным дизайном. Её перильное ограждение включает в себя поручень с изогнутыми элементами и балясины, отделанные металлом. Требует проема 1,4м х 1,4м.
+boxes:
+  - size: 515 x 330 x 205
+    weight: 18
+  - size: 850 x 850 x 280
+    weight: 65
+  - size: 2790 x 470 x 220
+    weight: 132
+photos:
+  - image: /images/products/photos/<size>/lv14b-1.jpg
+    home: true
+  - image: /images/products/photos/<size>/lv14b-2.jpg
+plans:
+  - image: /images/products/plans/lv14b-1.jpg

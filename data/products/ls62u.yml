@@ -1,0 +1,33 @@
+name: ЛС-62У
+slug: лс-62у
+price: 68000
+presence: true
+height: "3,1"
+size: 1,95 x 2,57
+window: 1,95 x 2,55
+turn: 180
+wood: хвоя
+rail: true
+riser: true
+finish: false
+step_height: 193
+step_quantity: 16
+step_depth: 60
+image: /images/products/models/<size>/ls62u.jpg
+text: >
+  Лестница шахтного типа, сделанная по схеме марш-площадка-марш без забежных ступеней. Универсальна по положению маршей (слева и справа). Требует относительно большой междуэтажный проем, имеет перила, подступенки.
+boxes:
+  - size: 310 x 280 x 160
+    weight: 21
+  - size: 2020 x 385 x 280
+    weight: 87
+  - size: 2340 x 460 x 280
+    weight: 93
+  - size: 2530 x 340 x 280
+    weight: 89
+  - size: 2750 x 460 x 280
+    weight: 107
+photos:
+  - image: /images/products/photos/<size>/ls62u-1.jpg
+plans:
+  - image: /images/products/plans/ls62u-1.jpg

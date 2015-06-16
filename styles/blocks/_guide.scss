@@ -1,0 +1,11 @@
+.guide {
+  @extend .ut-border-bottom;
+}
+
+.guide-link {
+  @include box-shadow;
+  @include text-shadow;
+  border: solid 1px darken($second-color, 20%);
+  font-family: $base-heading-font-family;
+  letter-spacing: 0.05em;
+}

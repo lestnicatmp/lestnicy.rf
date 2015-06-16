@@ -1,0 +1,27 @@
+name: ЛС-93
+slug: лс-93
+price: 30900
+presence: true
+height: "2,5"
+window: 1,50 x 0,83
+turn: 180
+wood: сосна
+rail: false
+riser: false
+finish: true
+size: 1,55 x 0,87
+step_height: 227
+step_quantity: 11
+step_depth: 60
+image: /images/products/models/<size>/ls93.jpg
+text: >
+  Сверхмалогабаритная лестница с улучшенной эргономикой для невысоких помещений (бани, садовые домики и т. д.).
+boxes:
+  - size: 420 x 330 x 225
+    weight: 17
+  - size: 1720 x 400 x 280
+    weight: 60
+  - size: 2290 x 400 x 280
+    weight: 60
+plans:
+  - image: /images/products/plans/ls93-1.jpg

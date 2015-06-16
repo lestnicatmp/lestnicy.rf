@@ -1,0 +1,13 @@
+.ut-border-bottom {
+  border-bottom: dotted 1px $grey-color;
+}
+
+.ut-flip {
+  transform: scaleX(-1);
+}
+
+@media print {
+  .ut-hidden-print {
+    display: none !important;
+  }
+}

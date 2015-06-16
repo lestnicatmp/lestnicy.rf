@@ -1,0 +1,30 @@
+name: ЛС-04У
+slug: лс-04у
+price: 31000
+presence: true
+height: "2,7"
+size: 1,71 x 1,40
+window: 1,64 x 0,90
+turn: 180
+wood: хвоя
+rail: true
+riser: false
+finish: false
+step_height: 193
+step_quantity: 14
+step_depth: 40
+image: /images/products/models/<size>/ls04u.jpg
+text: >
+  Универсальная лестница (возможность сборки в левозаходном и правозаходном варианте одного и того же комплекта). Отличается от ЛС-01У наличием перил, что позволяет устанавливать ЛС-04У с примыканием только к одной стене.
+boxes:
+  - size: 420 x 420 x 200
+    weight: 20
+  - size: 1260 x 460 x 280
+    weight: 45
+  - size: 2505 x 460 x 280
+    weight: 100
+photos:
+  - image: /images/products/photos/<size>/ls04u-1.jpg
+    home: true
+plans:
+  - image: /images/products/plans/ls04u-1.jpg

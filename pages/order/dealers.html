@@ -1,0 +1,89 @@
+---
+permalink: /купить-лестницу/дилеры/
+title: Купить лестницу у наших дилеров
+layout: base.html
+route: order/dealers
+---
+
+<article class="article">
+  <div class="uk-container uk-margin-bottom">
+
+    <h1>{{ title }}</h1>
+    <p class="uk-text-large">Наши лестницы можно купить у наших дилеров в более чем 10 городах России. Вы можете найти подходящего дилера, воспользовавшись списком или картой. Если у вас возникли какие-либо вопросы, позвоните в наш центральный офис, и мы поможем вам.</p>
+
+    <hr>
+
+    <ul class="uk-tab" data-uk-tab="{connect:'#switcher', animation:'fade'}">
+      <li class="uk-active"><a href="#">Дилеры списком</a></li>
+      <li><a href="#">Дилеры на карте</a></li>
+    </ul>
+
+    <ul id="switcher" class="uk-switcher uk-margin">
+
+      <li class="uk-active">
+        <div class="uk-overflow-container">
+          <table class="uk-table uk-table-hover uk-table-striped">
+            <caption>Используйте горизонтальную прокрутку для просмотра таблицы на маленьком экране.</caption>
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Регион</th>
+                <th>Адрес</th>
+                <th>Телефоны</th>
+                <th>Название</th>
+                <th>Информация</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for dealer in dealers %}
+              <tr class="uk-table-middle">
+                <th class="index">{{ loop.index  }}</th>
+                <td class="uk-text-nowrap" class="region">{{ dealer.region  }}</td>
+                <td class="address">{{ dealer.address  }}</td>
+                <td class="phones">
+                  {% for phone in dealer.phones %}
+                  <span class="uk-text-nowrap">{{ phone }}<span><br>
+                  {% endfor %}
+                </td>
+                <td class="name">{{ dealer.name  }}</td>
+                <td class="comment">{{ dealer.comment  }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </li>
+
+      <li>
+        <div id="map" class="map"></div>
+      </li>
+
+    </ul>
+
+  </div>
+</article>
+
+<!-- Yandex Maps -->
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+    ymaps.ready(function() {
+      var map = new ymaps.Map('map', {center: [60, 100], zoom: 3});
+      {% for dealer in dealers %}
+      {% if dealer.latitude and dealer.longitude %}
+      var dealer = new ymaps.Placemark([{{ dealer.latitude }}, {{ dealer.longitude }}], {
+        iconContent: '{{ loop.index }}',
+        balloonContentHeader: '{{ dealer.name }}',
+        balloonContentBody:
+          '<div class="uk-margin-small">{{ dealer.region }}, {{ dealer.address }}</div>'+
+          '<div class="uk-margin-small">'+
+          {% for phone in dealer.phones %}
+          '<div>{{ phone }}</div>'+
+          {% endfor %}
+          '</div>'+
+          '<div class="uk-margin-small">{{ dealer.comment }}</div>',
+      });
+      map.geoObjects.add(dealer);
+      {% endif %}
+      {% endfor %}
+    });
+</script>

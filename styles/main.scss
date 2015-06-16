@@ -1,36 +1,25 @@
----
-# Required front matter
----
-@charset "utf-8";
-
-@import "settings";
-@import "../vendor/bootstrap-3.3.4/bootstrap";
+// General
+@import "config";
+@import "../vendor/uikit-2.20.3/uikit-mixins.scss";
+@import "../vendor/uikit-2.20.3/uikit";
+@import "../vendor/uikit-2.20.3/components/slidenav";
 @import "base";
+@import "mixins";
+@import "utility";
 
-body[data-page="home"] {
-  @import "home";
-}
-
-body[data-page="select"] {
-  @import "select";
-}
-
-body[data-page="params"] {
-  @import "params";
-}
-
-body[data-page="catalog"] {
-  @import "catalog";
-}
-
-body[data-page="cart"] {
-  @import "cart";
-}
-
-body[data-page="stair"] {
-  @import "stair";
-}
-
-body[data-page="dealers"] {
-  @import "dealers";
-}
+// Blocks
+@import "blocks/common/article";
+@import "blocks/common/feature";
+@import "blocks/common/hero";
+@import "blocks/common/map";
+@import "blocks/common/params";
+@import "blocks/common/price";
+@import "blocks/common/star";
+@import "blocks/categories";
+@import "blocks/category";
+@import "blocks/footer";
+@import "blocks/guide";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/product";
+@import "blocks/products";

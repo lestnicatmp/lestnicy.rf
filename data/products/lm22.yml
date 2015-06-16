@@ -1,0 +1,32 @@
+name: ЛМ-22
+slug: лм-22
+price: 89900
+presence: true
+height: "3,17"
+size: 3,03 x 1,64
+window: 2,95 x 0,90
+turn: 90
+wood: бук
+rail: true
+riser: false
+finish: false
+step_height: 193
+step_quantity: 16
+step_depth: 50
+image: /images/products/models/<size>/lm22.jpg
+text: >
+  Комфортная лестница с улучшенным дизайном с забежными ступенями снизу (поворот на 90°). Её поручень имеет винтовую вставку.
+boxes:
+  - size: 480 x 270 x 180
+    weight: 54
+  - size: 480 x 270 x 180
+    weight: 52
+  - size: 1810 x 560 x 280
+    weight: 77
+  - size: 2820 x 380 x 280
+    weight: 102
+photos:
+  - image: /images/products/photos/<size>/lm22-1.jpg
+    home: true
+plans:
+  - image: /images/products/plans/lm22-1.jpg

@@ -1,0 +1,29 @@
+name: ЛС-215
+slug: лс-215
+price: 36600
+presence: true
+height: "2,9"
+size: 2,49 x 0,96
+window: 2,00 x 0,92
+turn: 90
+wood: хвоя
+rail: true
+riser: true
+finish: true
+step_height: 193
+step_quantity: 15
+step_depth: 40
+image: /images/products/models/<size>/ls215.jpg
+text: >
+  Представляет собой прямую лестницу – в начале захода и поворотную (с забежными ступенями) - на выходе, устанавливается преимущественно с примыканием к одной стене. Лестница закрытого типа, т.е. имеет подступенки.
+boxes:
+  - size: 420х330х200
+    weight: 23
+  - size: 1860х415х280
+    weight: 58
+  - size: 3280х420х280
+    weight: 129
+photos:
+  - image: /images/products/photos/<size>/ls215-1.jpg
+plans:
+  - image: /images/products/plans/ls215-1.jpg

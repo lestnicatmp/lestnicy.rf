@@ -1,0 +1,24 @@
+---
+permalink: /подобрать-лестницу/по-каталогу/
+title: Подобрать лестницу по каталогу
+layout: base.html
+route: select/catalog
+---
+
+<section class="ut-border-bottom">
+  <div class="uk-container">
+
+    <h1>{{ title }}</h1>
+    <p class="uk-text-large">
+      На этой странице представлен полный каталог наших лестниц.
+      Вы можете узнать про каждую из лестниц подробнее, нажав на название модели.
+      Нажмите на звездочку, чтобы запомнить понравившуюся модель.
+    </p>
+    <blockquote>
+      Показать <a href="#" data-flip>правозаходные</a> модификации/варианты сборки.
+    </blockquote>
+
+  </div>
+</section>
+
+{% include 'blocks/products.html' %}

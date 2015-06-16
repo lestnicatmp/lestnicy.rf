@@ -1,0 +1,23 @@
+name: ЛВ-1.2Б
+slug: лв-1.2б
+price: 50500
+presence: true
+height: 2,93-2,97
+size: 1,20 x 1,20
+window: 1,20 x 1,20
+turn: 270
+wood: бук
+rail: true
+riser: false
+finish: false
+step_height: 225
+step_quantity: 13
+step_depth: 40
+image: /images/products/models/<size>/lv12b.jpg
+text: >
+  Малогабаритная лестница в виде полного винта, квадратная в плане. Требуемый размер междуэтажного проема - 1,2 м х 1,2 м.
+boxes:
+  - size: 360 x 280 x 160
+    weight: 30
+  - size: 2400 x 640 x 210
+    weight: 110

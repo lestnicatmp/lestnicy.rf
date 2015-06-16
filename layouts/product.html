@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% set product = products[product] %}
+
+{% block contents %}
+<article id="article" class="ut-border-bottom">
+
+  {% include 'blocks/product.html' %}
+
+  <div class="uk-container uk-margin-bottom">
+
+    <h2>Дополнительные параметры</h2>
+    <div class="uk-overflow-container">
+      <table class="uk-table uk-table-stripped uk-table-condensed">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th>Перила</th>
+            <th>Подступенки</th>
+            <th>Отделка опорной колонны</th>
+            <th>Высота шага, мм</th>
+            <th>Число шагов подъема</th>
+            <th>Толщина ступени, мм</th>
+            <th>Габариты в плане, м х м</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{% if product.rail %}есть{% else %}нет{% endif %}</td>
+            <td>{% if product.riser %}есть{% else %}нет{% endif %}</td>
+            <td>{% if product.finish %}есть{% else %}нет{% endif %}</td>
+            <td>{{ product.step_height }}</td>
+            <td>{{ product.step_quantity }}</td>
+            <td>{{ product.step_depth }}</td>
+            <td>{{ product.size }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {% if product.boxes %}
+    <h2>Упаковка</h2>
+    <div class="uk-width-medium-1-2 uk-overflow-container">
+      <table class="uk-table uk-table-stripped uk-table-hover uk-table-condensed">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th class="uk-width-1-3">Номер упаковки</th>
+            <th class="uk-width-1-3">Габариты, мм</th>
+            <th class="uk-width-1-3">Масса брутто, кг</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for box in product.boxes %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ box.size }}</td>
+            <td>{{ box.weight }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {% if product.plans %}
+    <h2>Чертежи</h2>
+    {% for plan in product.plans %}
+    <img src="{{ plan.image }}">
+    {% endfor %}
+    {% endif %}
+
+    {{ contents }}
+
+  </div>
+
+</article>
+{% endblock %}

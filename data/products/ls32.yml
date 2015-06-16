@@ -1,0 +1,31 @@
+name: ЛС-32
+slug: лс-32
+price: 69000
+presence: true
+height: "3,13"
+size: 1,95 x 2,23
+window: 1,87 x 2,11
+turn: 180
+wood: хвоя
+rail: true
+riser: true
+finish: true
+step_height: 174
+step_quantity: 18
+step_depth: 60
+image: /images/products/models/<size>/ls32.jpg
+text: >
+  Комфортная лестница средних размеров. Несмотря на наличие забежных ступеней имеет наилучшие соотношения высоты шага и глубины ступени. Предназначена для установки в шахту, ограниченную стенами с трех сторон (требует широкого междуэтажного проема).
+boxes:
+  - size: 420 x 330 x 225
+    weight: 30
+  - size: 1370 x 610 x 280
+    weight: 77
+  - size: 2745 x 475 x 280
+    weight: 122
+  - size: 2745 x 475 x 280
+    weight: 114
+photos:
+  - image: /images/products/photos/<size>/ls32-1.jpg
+plans:
+  - image: /images/products/plans/ls32-1.jpg

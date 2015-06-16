@@ -1,0 +1,29 @@
+name: ЛС-225
+slug: лс-225
+price: 39900
+presence: true
+height: "2,9"
+size: 2,31 x 1,40
+window: 2,20 x 0,92
+turn: 90
+wood: хвоя
+rail: true
+riser: true
+finish: true
+step_height: 193
+step_quantity: 15
+step_depth: 40
+image: /images/products/models/<size>/ls225.jpg
+text: >
+  Лестница с забежными ступенями снизу. Имеет в своем составе перила, подступенки и деревянное оформление колонны. Является малогабаритной версией лестницы ЛС-06.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 26
+  - size: 3280 x 460 x 280
+    weight: 130
+  - size: 1900 x 460 x 280
+    weight: 72
+photos:
+  - image: /images/products/photos/<size>/ls225-1.jpg
+plans:
+  - image: /images/products/plans/ls225-1.jpg

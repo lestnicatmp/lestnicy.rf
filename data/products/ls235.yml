@@ -1,0 +1,27 @@
+name: ЛС-235
+slug: лс-235
+price: 39900
+presence: true
+height: "3,1"
+size: 2,03 x 1,69
+window: 1,92 x 1,02
+turn: 90
+wood: хвоя
+rail: true
+riser: true
+finish: true
+step_height: 193
+step_quantity: 16
+step_depth: 40
+image: /images/products/models/<size>/ls235.jpg
+text: >
+  Модификация лестницы ЛС-225 с увеличенной заходной частью и уменьшенной – выходной. При этом уменьшена требуемая длина междуэтажного проема за счет увеличения его ширины. Одновременно на один шаг увеличена высота подъема.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 24
+  - size: 2060 x 415 x 280
+    weight: 124
+  - size: 3280 x 420 x 280
+    weight: 75
+plans:
+  - image: /images/products/plans/ls235-1.jpg

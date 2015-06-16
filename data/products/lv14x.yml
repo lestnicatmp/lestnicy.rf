@@ -1,0 +1,29 @@
+name: ЛВ-1.4Х
+slug: лв-1.4х
+price: 29900
+presence: true
+height: "2,73"
+size: 1,42 x 1,42
+window: 1,40 x 1,40
+turn: 270
+wood: хвоя
+rail: false
+riser: false
+finish: false
+step_height: 210
+step_quantity: 13
+step_depth: 40
+image: /images/products/models/<size>/lv14x.jpg
+text: >
+  Лестница из хвойной древесины в виде винта полного оборота, квадратная в плане. Размер квадрата (и требуемого междуэтажного проема) 1,4м х 1,4м.
+boxes:
+  - size: 460 x 435 x 225
+    weight: 30
+  - size: 800 x 800 x 240
+    weight: 45
+  - size: 2900 x 460 x 280
+    weight: 105
+photos:
+  - image: /images/products/photos/<size>/lv14x-1.jpg
+plans:
+  - image: /images/products/plans/lv14x-1.jpg

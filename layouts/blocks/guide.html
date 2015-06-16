@@ -1,0 +1,26 @@
+{% if route == 'index' %}
+
+  {% set href = '/подобрать-лестницу/' %}
+  {% set text = 'Перейти к подбору лестницы!' %}
+
+{% elif lodash.startsWith(route, 'select') %}
+
+  {% set href = '/купить-лестницу/' %}
+  {% set text = 'Перейти к покупке лестницы!' %}
+
+{% elif lodash.startsWith(route, 'order') %}
+
+  {% set href = '/' %}
+  {% set text = 'Звоните, приезжайте. Мы всегда рады вам!' %}
+
+{% endif %}
+
+{% if href and text %}
+<nav class="guide ut-hidden-print">
+  <div class="uk-container uk-margin-top uk-margin-bottom">
+    <a href="{{ href }}" class="guide-link uk-button uk-button-large uk-button-primary uk-width-1-1 uk-border-rounded">
+      {{ text }}
+    </a>
+  </div>
+</nav>
+{% endif %}

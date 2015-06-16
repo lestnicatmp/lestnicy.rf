@@ -1,0 +1,84 @@
+{% set first_item = category.items | first %}
+{% set first_product = products[first_item.product] %}
+
+<article class="category">
+
+  <h2 class="category-heading">
+
+    <a class="category-heading-link" href="/подобрать-лестницу/по-каталогу/{{ first_product.slug }}/">
+      {{ category.name }} &rsaquo;
+      <span class="category-heading-name">{{ first_product.name }}</span>
+    </a>
+
+    <span class="category-star uk-icon-star-o" data-product="{{ first_product.id }}">
+    </span>
+
+    <div class="category-price">
+      {% if first_product.presence %}
+      <span class="category-price-value">{{ first_product.price }}</span>
+      {% else %}
+      звоните
+      {% endif %}
+      <span class="category-price-currency uk-icon-rub"></span>
+    </div>
+
+  </h2>
+
+  <div class="uk-grid uk-grid-collapse">
+
+    <div class="uk-width-1-4">
+      <img class="category-image" data-flip  src="{{ first_product.image | replace('<size>','200x300') }}" width="200px" height="300px">
+    </div>
+
+    <div class="uk-width-3-4">
+
+      <p class="category-text">
+        {{ category.text }}
+      </p>
+
+      <div class="uk-grid uk-grid-collapse">
+
+        <div class="uk-width-1-4">
+          <ul class="category-items">
+            {% for item in category.items %}
+            {% set product = products[item.product] %}
+            {% if product %}
+            {% set class = 'category-item--active' if product == first_product %}
+            <li class="category-item {{ class }}">
+              <a class="category-item-link" data-name="{{ product.name }}"
+                 data-id="{{ product.id }}"
+                 data-image="{{ product.image | replace('<size>','200x300') }}"
+                 data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
+                 data-presence="{{ product.presence }}"
+                 data-turn="{{ product.turn }}"
+                 data-height="{{ product.height }}"
+                 data-window="{{ product.window }}"
+                 data-wood="{{ product.wood }}"
+                 data-price="{% if product.presence %}{{ product.price }}{% else %}звоните{% endif %}">
+                {{ product.name }}
+                {% if item.descr %}
+                - {{ item.descr }}
+                {% endif %}
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="uk-width-3-4">
+          <table class="category-table">
+            <tr><th>Поворот</th><td><span class="category-turn">{{ first_product.turn }}</span> градусов</td></tr>
+            <tr><th>Высота</th><td><span class="category-height">{{ first_product.height }}</span></td></tr>
+            <tr><th>Проем</th><td>от <span class="category-window">{{ first_product.window }}</span></td></tr>
+            <tr><th>Древесина</th><td><span class="category-wood">{{ first_product.wood }}</span></td></tr>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>

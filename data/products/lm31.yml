@@ -1,0 +1,33 @@
+name: ЛМ-31
+slug: лм-31
+price: 125000
+presence: true
+height: "3,13"
+size: 2,05 x 1,80
+window: 2,02 x 1,80
+turn: 180
+wood: бук
+rail: true
+riser: false
+finish: true
+step_height: 184
+step_quantity: 17
+step_depth: 60
+image: /images/products/models/<size>/lm31.jpg
+text: >
+  Комфортная лестница классической косоурной конструкции с забежными ступенями (поворот на 180°), центральной колонной и перилами по центру снизу и сверху. Центральная колонна облицована деревянными втулками.
+boxes:
+  - size: 480 x 270 x 180
+    weight: 54
+  - size: 480 x 270 x 180
+    weight: 52
+  - size: 1810 x 560 x 280
+    weight: 77
+  - size: 2820 x 380 x 280
+    weight: 102
+photos:
+  - image: /images/products/photos/<size>/lm31-1.jpg
+  - image: /images/products/photos/<size>/lm31-2.jpg
+    home: true
+plans:
+  - image: /images/products/plans/ls31-1.jpg

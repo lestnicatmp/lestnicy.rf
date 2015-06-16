@@ -1,0 +1,25 @@
+name: ЛС-92
+slug: лс-92
+price: 25500
+presence: true
+height: "2,7"
+size: 1,85 x 1,03
+window: 1,80 x 0,83
+turn: 90
+wood: сосна
+rail: false
+riser: false
+finish: true
+step_height: 225
+step_quantity: 12
+step_depth: 40
+image: /images/products/models/<size>/ls92.jpg
+text: >
+  Универсальная лестница без подступенков и поручней.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 19
+  - size: 2705 x 525 x 280
+    weight: 109
+plans:
+  - image: /images/products/plans/ls92-1.jpg

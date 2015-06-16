@@ -1,0 +1,27 @@
+name: ЛС-925
+slug: лс-925
+price: 30900
+presence: true
+height: "2,7"
+size: 1,89 x 1,03
+window: 1,83 x 0,83
+turn: 90
+wood: сосна
+rail: true
+riser: true
+finish: true
+step_height: 225
+step_quantity: 12
+step_depth: 40
+image: /images/products/models/<size>/ls925.jpg
+text: >
+  Универсальная лестница с подступенками и поручнями.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 19
+  - size: 2705 x 525 x 280
+    weight: 124
+  - size: 785 x 305 x 280
+    weight: 28
+plans:
+  - image: /images/products/plans/ls925-1.jpg

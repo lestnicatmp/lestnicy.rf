@@ -1,0 +1,31 @@
+name: ЛС-01У
+slug: лс-01у
+price: 26500
+presence: true
+height: "2,7"
+window: 1,64 x 0,9
+size: 1,65 x 1,39
+turn: 180
+wood: хвоя
+rail: false
+rail: false
+riser: false
+finish: false
+step_height: 193
+step_quantity: 14
+step_depth: 40
+image: /images/products/models/<size>/ls01u.jpg
+text: >
+  Универсальная лестница (возможность сборки в левозаходном и правозаходном варианте одного и того же комплекта). Удобна при установке в угол помещения, поэтому не имеет перил. При необходимости клиент может установить пристенные поручни.
+boxes:
+  - size: 420 x 420 x 200
+    weight: 20
+  - size: 2505 x 410 x 280
+    weight: 86
+  - size: 1205 x 410 x 280
+    weight: 34
+photos:
+  - image: /images/products/photos/<size>/ls01u-1.jpg
+    home: true
+plans:
+  - image: /images/products/plans/ls01u-1.jpg

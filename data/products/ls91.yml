@@ -1,0 +1,30 @@
+name: ЛС-91
+slug: лс-91
+price: 22500
+presence: true
+height: "2,7"
+size: 1,23 x 1,11
+window: 1,22 x 0,90
+turn: 90
+wood: хвоя
+rail: true
+riser: false
+finish: true
+step_height: 225
+step_quantity: 12
+step_depth: 40
+image: /images/products/models/<size>/ls91.jpg
+text: >
+  Предельно малогабаритная лестница без подступенков
+  с забежными ступенями снизу.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 20
+  - size: 2745 x 475 x 280
+    weight: 112
+photos:
+  - image: /images/products/photos/<size>/ls91-1.jpg
+  - image: /images/products/photos/<size>/ls91-2.jpg
+  - image: /images/products/photos/<size>/ls91-3.jpg
+plans:
+  - image: /images/products/plans/ls91-1.jpg

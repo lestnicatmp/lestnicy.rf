@@ -8,6 +8,4 @@ windows:
       - vim
   - window_name: misc
     panes:
-      - jekyll serve
-      - gulp watch
-
+      - gulp

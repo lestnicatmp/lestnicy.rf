@@ -1,0 +1,11 @@
+.feature {
+  @extend .ut-border-bottom;
+}
+
+.feature-image {
+  border: solid 1px darken($grey-color, 20%);
+}
+
+.feature-heading {
+  margin-top: 0;
+}

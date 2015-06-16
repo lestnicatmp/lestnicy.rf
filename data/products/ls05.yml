@@ -1,0 +1,30 @@
+name: ЛС-05
+slug: лс-05
+price: 32200
+presence: true
+height: "2,7"
+size: 1,71 x 1,40
+window: 1,64 x 0,90
+turn: 180
+wood: хвоя
+rail: true
+riser: true
+finish: true
+step_height: 193
+step_quantity: 14
+step_depth: 40
+image: /images/products/models/<size>/ls05.jpg
+text: >
+  Лестница повторяет эргономику ЛС-01У, но имеет подступенки, перила и деревяннное оформление центральной колонны. Выпускается в левозаходном или правозаходном исполнении.
+boxes:
+  - size: 420 x 420 x 200
+    weight: 25
+  - size: 2050 x 460 x 280
+    weight: 79
+  - size: 2750 x 460 x 280
+    weight: 105
+photos:
+  - image: /images/products/photos/<size>/ls05-1.jpg
+    home: true
+plans:
+  - image: /images/products/plans/ls05-1.jpg

@@ -1,0 +1,56 @@
+.product {
+  @extend .ut-border-bottom;
+}
+
+.product-image {
+  margin: 1rem 0;
+}
+
+.product-star {
+  cursor: pointer;
+  &.uk-icon-star {
+    @include text-shadow;
+    color: $second-color;
+    -webkit-text-stroke: 1px black;
+  }
+}
+
+.product-price {
+  float: right;
+  font-family: $base-heading-font-family;
+  font-size: 0.9em;
+  font-weight: 400;
+  .uk-icon-ruble {
+    font-size: 0.9em;
+  }
+}
+
+.product-table {
+  height: 6rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  th, td {
+    padding: 0 0.5rem;
+    border-color: lighten($grey-color, 10%);
+  }
+  th {
+    background-color: lighten($grey-color, 50%);
+    text-align: left;
+  }
+  td {
+    font-size: 0.9em;
+  }
+}
+
+.product-thumbnail {
+  height: 6rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  border: solid 1px darken($grey-color, 10%);
+  cursor: zoom-in;
+}
+
+.product-thumbnail--model {
+  border-color: lighten($grey-color, 20%);
+}

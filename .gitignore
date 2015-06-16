@@ -1,53 +1,5 @@
-# Coverage
-.coverage
-coverage.xml
-
-# Eclipse
-.settings/
-.project
-.pydevproject
-
-# Idea
-.idea/
-*.ipr
-*.iws
-*.iml
-
-# Jekyll
-_site
-.sass-cache
-
-# Nodejs
-node_modules/
-npm-debug.log
-
-# Nose
-nosetests.xml
-
-# Pip
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Project
-_tmp/
-tmp/
-
-# Python
-__pycache__/
-*.py[cod]
-
-# Sphinx
-docs/_build
-
-# Vagrant
-.vagrant/
-
-# Vim
-tags
-
-# Virtualenv
-venv/
-venvs/
-virtualenv/
-virtualenvs/
-
+/.sash-cache/
+/build/
+/node_modules/
+/npm-debug.log
+/tags

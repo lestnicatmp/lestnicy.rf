@@ -1,0 +1,49 @@
+<article class="product">
+  <div class="uk-container">
+
+    <div class="uk-grid uk-grid-divider">
+
+      <div class="uk-width-medium-1-5 uk-hidden-small">
+        <img class="product-image" data-flip src="{{ product.image | replace('<size>','200x300') }}" width="200px" height="300px">
+      </div>
+
+      <div class="uk-width-medium-4-5">
+
+        <h2 class="product-heading">
+          <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
+          <span class="product-star uk-icon-star-o" data-product="{{ product.slug }}"></span>
+          <div class="product-price">
+            {% if product.presence %}
+            {{ product.price }}
+            <span class="uk-icon-rub"></span>
+            {% else %}
+            звоните
+            {% endif %}
+          </div>
+        </h2>
+
+        <p class="product-text">
+          {{ product.text }}
+        </p>
+
+        <div class="uk-flex uk-flex-wrap">
+          <table class="product-table">
+            <tr><th>Поворот</th><td>{{ product.turn }} градусов</td></tr>
+            <tr><th>Высота</th><td>{{ product.height }}</td></tr>
+            <tr><th>Проем</th><td>от {{ product.window }}</td></tr>
+            <tr><th>Древесина</th><td>{{ product.wood }}</td></tr>
+          </table>
+          <img class="product-thumbnail product-thumbnail--model uk-visible-small" data-flip src="{{ product.image | replace('<size>','200x300') }}" width="200px" height="300px">
+          {% for photo in product.photos %}
+          <a href="{{ photo.image | replace('<size>','1000x750') }}" data-uk-lightbox="{group:'{{ product.id }}'}" title="{{ product.name }}">
+            <img class="product-thumbnail ut-hidden-print" src="{{ photo.image | replace('<size>','200x150') }}" width="200px" height="150px">
+          </a>
+          {% endfor %}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</article>

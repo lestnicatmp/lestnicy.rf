@@ -1,0 +1,29 @@
+name: ЛС-10У
+slug: лс-10у
+price: 26500
+presence: true
+height: "2,92"
+size: 2,38 x 0,83
+window: 1,90 x 0,83
+turn: 0
+wood: хвоя
+rail: true
+riser: false
+finish: false
+step_height: 225
+step_quantity: 13
+step_depth: 40
+image: /images/products/models/<size>/ls10u.jpg
+text: >
+  Имеет прямой марш без подступенков и перила с одной стороны,
+  последние могут ставиться как слева, так и справа.
+boxes:
+  - size: 300 x 260 x 130
+    weight: 14
+  - size: 3850 x 540 x 200
+    weight: 113
+photos:
+  - image: /images/products/photos/<size>/ls10u-1.jpg
+    home: true
+plans:
+  - image: /images/products/plans/ls10u-1.jpg

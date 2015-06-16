@@ -1,0 +1,11 @@
+.footer {
+  color: lighten($grey-color, 10%);
+  font-size: 0.75em;
+}
+
+.footer-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

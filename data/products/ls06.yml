@@ -1,0 +1,32 @@
+name: ЛС-06
+slug: лс-06
+price: 56200
+presence: true
+height: "3,1"
+size: 3,50 x 1,64
+window: 2,23 x 0,93
+turn: 90
+wood: хвоя
+rail: true
+riser: true
+finish: false
+step_height: 193
+step_quantity: 16
+step_depth: 60
+image: /images/products/models/<size>/ls06.jpg
+text: >
+  Комфортная лестница с классической схемой: марш-промежуточная площадка-марш. Основной вариант установки – с примыканием к одной стене. Занимает большую площадь при установке, но не требует широкого междуэтажного проема.
+boxes:
+  - size: 360 x 280 x 160
+    weight: 24
+  - size: 2060 x 415 x 280
+    weight: 79
+  - size: 2530 x 340 x 280
+    weight: 90
+  - size: 3560 x 415 x 280
+    weight: 137
+photos:
+  - image: /images/products/photos/<size>/ls06-1.jpg
+  - image: /images/products/photos/<size>/ls06-2.jpg
+plans:
+  - image: /images/products/plans/ls06-1.jpg

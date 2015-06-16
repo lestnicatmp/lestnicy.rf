@@ -1,0 +1,20 @@
+name: ЛВР-1.0
+slug: лвр-1.0
+price:
+presence: true
+height: 2,70-2,75
+size: d=1,07
+window: 1,07 x 1,07
+turn: 270
+wood: бук
+rail: false
+riser: false
+finish: true
+step_height: 225
+step_quantity: 12
+step_depth: 40
+image: /images/products/models/<size>/lvr10.jpg
+text: >
+  Элегантная винтовая лестница. Допустимо изъятие одной ступени - тогда высота подъема от пола до пола сокращается до 2,48-2,52 м.
+plans:
+  - image: /images/products/plans/lvr10-1.jpg

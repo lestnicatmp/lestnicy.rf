@@ -1,0 +1,23 @@
+---
+permalink: /подобрать-лестницу/по-каталогу/выбранное/
+title: Выбранные лестницы
+layout: base.html
+route: select/catalog/cart
+---
+
+<section class="ut-border-bottom">
+  <div class="uk-container">
+
+    <h1>{{ title }}</h1>
+    <p class="uk-text-large">
+      На этой странице представлены выбранные вами лестницы.
+      Нажмите на звездочку, чтобы удалить лестницу из списка.
+    </p>
+    <blockquote>
+      Показать <a href="#" data-flip>правозаходные</a> модификации/варианты сборки.
+    </blockquote>
+
+  </div>
+</section>
+
+{% include 'blocks/products.html' %}

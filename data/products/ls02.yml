@@ -1,0 +1,27 @@
+name: ЛС-02
+slug: лс-02
+price: 34000
+presence: true
+height: "2,9"
+size: 2,49 x 1,02
+window: 2,00 x 0,92
+turn: 90
+wood: хвоя
+rail: true
+riser: false
+finish: false
+step_height: 193
+step_quantity: 15
+step_depth: 40
+image: /images/products/models/<size>/ls02.jpg
+text: >
+  Представляет собой прямую лестницу – в начале захода и поворотную (с забежными ступенями) - на выходе, устанавливается преимущественно с примыканием к одной стене. Наверху поворот происходит в сторону противоположную стороне с перилами. Разработана для холлов со вторым светом.
+boxes:
+  - size: 420 x 330 x 225
+    weight: 23
+  - size: 1960 x 375 x 280
+    weight: 65
+  - size: 3490 x 340 x 280
+    weight: 112
+plans:
+  - image: /images/products/plans/ls02-1.jpg

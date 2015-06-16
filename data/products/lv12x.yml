@@ -1,0 +1,25 @@
+name: ЛВ-1.2Х
+slug: лв-1.2х
+price: 25700
+presence: true
+height: "2,73"
+size: 1,22 x 1,22
+window: 1,20 x 1,20
+turn: 270
+wood: хвоя
+rail: false
+riser: false
+finish: false
+step_height: 210
+step_quantity: 13
+step_depth: 40
+image: /images/products/models/<size>/lv12x.jpg
+text: >
+  Малогабаритная лестница из хвойной древесины в виде винта полного оборота, квадратная в плане. Размер квадрата (и требуемого междуэтажного проема) 1,2м х 1,2м.
+boxes:
+  - size: 460 x 435 x 225
+    weight: 29
+  - size: 620 x 620 x 240
+    weight: 35
+  - size: 2900 x 360 x 280
+    weight: 93
