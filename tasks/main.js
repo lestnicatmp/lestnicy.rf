@@ -28,9 +28,6 @@ gulp.task('clean', function (callback) {
     stack.del(['build/**'], callback);
 });
 
-// Deploy
-gulp.task('deploy', ['deploy#github']);
-
 // Deploy (guthub)
 gulp.task('deploy#github', function() {
     var data = code.loaders.data();
