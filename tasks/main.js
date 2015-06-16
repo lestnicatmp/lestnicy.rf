@@ -33,7 +33,12 @@ gulp.task('deploy', ['deploy#github']);
 
 // Deploy (guthub)
 gulp.task('deploy#github', function() {
+    var data = code.loaders.data();
     return gulp.src('build/**')
+        .pipe(stack.replace(
+            /="\/(?=[^\/])/g,
+            '="'+data.stack.ghpages.basedir+'/',
+            {skipBinary: true}))
         .pipe(stack.ghpages())
 });
 

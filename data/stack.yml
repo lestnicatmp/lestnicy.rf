@@ -23,7 +23,7 @@ coffee:
 
 # Ghpages
 ghpages:
-  basedir: lestnicy.rf
+  basedir: /lestnicy.rf
 
 # Imagemin
 imagemin:
