@@ -21,6 +21,10 @@ browsersync:
 coffee:
   bare: true
 
+# Ghpages
+ghpages:
+  basedir: lestnicy.rf
+
 # Imagemin
 imagemin:
   progressive: true
