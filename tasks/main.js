@@ -32,13 +32,13 @@ gulp.task('clean', function (callback) {
 gulp.task('deploy', ['deploy#github']);
 
 // Deploy (guthub)
-gulp.task('deploy#github', function(callback) {
+gulp.task('deploy#github', function() {
     return gulp.src('build/**')
         .pipe(stack.ghpages())
 });
 
 // Deploy (amazon)
-gulp.task('deploy#amazon', function(callback) {
+gulp.task('deploy#amazon', function() {
     var data = code.loaders.data();
     var publisher = stack.awspublish.create(data.stack.awspublish);
     return gulp.src('build/**')

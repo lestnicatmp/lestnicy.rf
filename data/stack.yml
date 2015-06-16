@@ -1,5 +1,6 @@
 # Awspublish
 awspublish:
+  region: eu-central-1
   params:
     Bucket: lestnicyrf
 
