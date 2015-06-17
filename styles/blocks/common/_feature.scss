@@ -1,5 +1,7 @@
 .feature {
-  @extend .ut-border-bottom;
+  &:not(:last-child) {
+    @extend .ut-border-bottom;
+  }
 }
 
 .feature-container {

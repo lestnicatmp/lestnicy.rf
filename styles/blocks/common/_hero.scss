@@ -72,6 +72,7 @@
 
 .hero-thumbs {
   @extend .ut-hidden-print;
+  @extend .uk-hidden-small;
   @extend .uk-flex;
   @extend .uk-flex-wrap;
 }

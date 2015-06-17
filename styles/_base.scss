@@ -1,5 +1,11 @@
 html {
-  font-size: $rem-value;
+  font-size: 20px;
+  @media (min-width: $breakpoint-medium) {
+    font-size: 24px;
+  }
+  @media (min-width: $breakpoint-large) {
+    font-size: 1.5vw;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
