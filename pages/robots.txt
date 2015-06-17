@@ -1,7 +1,6 @@
 ---
 permalink: false
 ---
-
 User-Agent: *
 Disallow: /*openstat=
 Disallow: /*gclid=
