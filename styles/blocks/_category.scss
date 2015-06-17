@@ -1,7 +1,8 @@
 .category {
   @extend .uk-border-rounded;
+  @extend .uk-flex-item-1;
   @inlude box-shadow;
-  min-width: 20rem;
+  min-width: 24rem;
   margin: 0.5rem;
   padding: 0 0.5rem;
   border: solid 1px $grey-color;
@@ -30,13 +31,39 @@
   }
 }
 
+.category-content {
+  @extend .uk-margin-bottom;
+  @extend .uk-flex;
+}
+
+.category-image {
+  @extend .uk-margin-small-right;
+  @extend .uk-flex-item-none;
+  width: 7rem;
+  height: 100%;
+}
+
+.category-panel {
+  @extend .uk-margin-top;
+  @extend .uk-flex;
+}
+
 .category-items {
-  margin-left: 1rem;
-  padding: 0px;
+  @extend .uk-margin-left;
+  @extend .uk-padding-remove;
+  @extend .uk-flex-item-none;
+  margin-top: -0.6rem;
 }
 
 .category-item {
-   white-space: nowrap;
+  margin-right: -1px;
+  padding-right: 1rem;
+  border-right: solid 1px $grey-color;
+  white-space: nowrap;
+}
+
+.category-item--active {
+  border-bottom: solid 1px $grey-color;
 }
 
 .category-item-link {
@@ -48,6 +75,7 @@
 }
 
 .category-table {
+  @extend .uk-flex-item-none;
   height: 6rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;

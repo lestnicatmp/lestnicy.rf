@@ -1,4 +1,6 @@
 .categories {
   @extend .ut-border-bottom;
+  @extend .uk-flex;
+  @extend .uk-flex-wrap;
   padding: 0.5rem 1.5rem;
 }
