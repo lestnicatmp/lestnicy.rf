@@ -2,7 +2,7 @@
 awspublish:
   region: eu-central-1
   params:
-    Bucket: stage.xn--e1aghjtg4a3b.xn--p1ai
+    Bucket: xn--e1aghjtg4a3b.xn--p1ai
 
 # Autoprefixer
 autoprefixer:
@@ -23,7 +23,7 @@ coffee:
 
 # Ghpages
 ghpages:
-  basedir: /lestnicy.rf
+  basedir: ''
 
 # Imagemin
 imagemin:
