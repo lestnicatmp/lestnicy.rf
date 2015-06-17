@@ -3,18 +3,18 @@ class HeroModule
   # General
 
   run: =>
-    @thumbnails = $('.hero-thumbnail')
-    if @thumbnails.length
+    @thumbs = $('.hero-thumb')
+    if @thumbs.length
       @interval = setInterval(@on_interval, 5000)
-      @thumbnails.click(@on_thumbnail_click)
+      @thumbs.click(@on_thumb_click)
 
   # Bindings
 
-  on_thumbnail_click: (event, auto=false) =>
+  on_thumb_click: (event, auto=false) =>
     if not auto
       clearInterval(@interval)
     event.preventDefault
-    active = 'hero-thumbnail--active'
+    active = 'hero-thumb--active'
     element = $(event.currentTarget)
     element.siblings().removeClass(active)
     element.addClass(active)
@@ -28,7 +28,7 @@ class HeroModule
       target.fadeIn(1000)
 
   on_interval: =>
-    current = $('.hero-thumbnail--active')
+    current = $('.hero-thumb--active')
     next = current.next()
     if not next.length
       next = current.siblings().first()

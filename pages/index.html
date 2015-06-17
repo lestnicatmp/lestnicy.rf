@@ -7,14 +7,15 @@ layout: base.html
 route: index
 ---
 
-<section class="hero">
-  <div class="uk-container">
+<article class="article">
 
-    <h1 id="лидеры">Ведущий производитель деревянных лестниц в России</h1>
+  <div class="hero">
+    <div class="hero-container">
 
-    <div class="uk-grid uk-margin-bottom">
+      <h1 id="лидеры">Ведущий производитель деревянных лестниц в России</h1>
 
-      <div class="uk-width-medium-2-5">
+      <div class="hero-content">
+
         <figure class="hero-figure">
           {% set active = true %}
           {% for product in lists.products %}
@@ -38,110 +39,114 @@ route: index
           {% endfor %}
           {% endfor %}
         </figure>
-      </div>
 
-      <div class="uk-width-medium-3-5">
-        <div class="hero-text">
-          Лесопромышленная компания «Темп» предлагает готовые деревянные
-          лестницы на второй этаж для дач и коттеджей. Наша компания уже более
-          15 лет на рынке и за это время приобрела устойчивый статус одного из
-          лидеров отрасли.
+        <div class="hero-descr">
+
+          <div class="hero-text">
+            Лесопромышленная компания «Темп» предлагает готовые деревянные
+            лестницы на второй этаж для дач и коттеджей. Наша компания уже более
+            15 лет на рынке и за это время приобрела устойчивый статус одного из
+            лидеров отрасли.
+          </div>
+
+          <div class="hero-thumbs">
+            {% set active = 'hero-thumb--active' %}
+            {% for product in lists.products %}
+            {% set product = products[product] %}
+            {% for photo in product.photos %}
+            {% if photo.home %}
+            <img src="{{ photo.image | replace('<size>','200x150') }}"
+              class="hero-thumb {{ active }}"
+              width="200px" height="150px"
+              data-name="{{ product.name }}"
+              data-price="{{ product.price }}"
+              data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
+              data-image="{{ photo.image | replace('<size>','600x450') }}">
+            {% set active = '' %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </div>
+
         </div>
-        <div class="hero-list">
-          {% set active = 'hero-thumbnail--active' %}
-          {% for product in lists.products %}
-          {% set product = products[product] %}
-          {% for photo in product.photos %}
-          {% if photo.home %}
-          <img src="{{ photo.image | replace('<size>','200x150') }}"
-            class="hero-thumbnail {{ active }}"
-            width="200px" height="150px"
-            data-name="{{ product.name }}"
-            data-price="{{ product.price }}"
-            data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
-            data-image="{{ photo.image | replace('<size>','600x450') }}">
-          {% set active = '' %}
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="uk-container uk-margin-top uk-margin-bottom">
+      <div class="uk-grid">
+
+        <div class="uk-width-medium-1-3 uk-hidden-small">
+          <img class="feature-image uk-border-rounded" src="/images/products/photos/600x450/lv14b-1.jpg" width="600px" height="450px">
         </div>
+
+        <div class="uk-width-medium-2-3">
+          <h2 class="feature-heading" id="качество">Высокое качество</h2>
+          <p>
+            В настоящее время производство лестниц сосредоточено в Москве
+            (разработка и макетирование, выпуск рабочей документации,
+            производство опытных образцов и установочных партий, полное
+            изготовление буковых лестниц, изготовление металлических деталей
+            всех лестниц, складирование готовой продукции, демонстрация образцов
+            лестниц в торгово-выставочном зале, создание рекламной продукции.
+          </p>
+        </div>
+
       </div>
-
-    </div>
-
-  </div>
-</header>
-
-<section class="feature">
-  <div class="uk-container uk-margin-top uk-margin-bottom">
-    <div class="uk-grid">
-
-      <div class="uk-width-medium-1-3 uk-hidden-small">
-        <img class="feature-image uk-border-rounded" src="/images/products/photos/600x450/lv14b-1.jpg" width="600px" height="450px">
-      </div>
-
-      <div class="uk-width-medium-2-3">
-        <h2 class="feature-heading" id="качество">Высокое качество</h2>
-        <p>
-          В настоящее время производство лестниц сосредоточено в Москве
-          (разработка и макетирование, выпуск рабочей документации,
-          производство опытных образцов и установочных партий, полное
-          изготовление буковых лестниц, изготовление металлических деталей
-          всех лестниц, складирование готовой продукции, демонстрация образцов
-          лестниц в торгово-выставочном зале, создание рекламной продукции.
-        </p>
-      </div>
-
     </div>
   </div>
-</section>
 
-<section class="feature">
-  <div class="uk-container uk-margin-top uk-margin-bottom">
-    <div class="uk-grid">
+  <div class="feature">
+    <div class="uk-container uk-margin-top uk-margin-bottom">
+      <div class="uk-grid">
 
-      <div class="uk-width-medium-1-3 uk-hidden-small">
-        <img class="feature-image uk-border-rounded" src="/images/products/photos/600x450/ls01u-1.jpg" width="600px" height="450px">
+        <div class="uk-width-medium-1-3 uk-hidden-small">
+          <img class="feature-image uk-border-rounded" src="/images/products/photos/600x450/ls01u-1.jpg" width="600px" height="450px">
+        </div>
+
+        <div class="uk-width-medium-2-3">
+          <h2 class="feature-heading" id="цена">Доступная цена</h2>
+          <p>
+            Выбор и покупку лестниц рекомендуем делать в нашем торгово-выставочном
+            зале, в котором размещена единственная полная экспозиция нашей продукции.
+            Опытные продавцы-консультанты помогут вам сделать правильный выбор,
+            подскажут, как адаптировать нашу готовую лестницу под Ваши конкретные
+            условия и при необходимости примут заказ на продажу или изготовление
+            дополнительных деталей.
+          </p>
+        </div>
+
       </div>
-
-      <div class="uk-width-medium-2-3">
-        <h2 class="feature-heading" id="цена">Доступная цена</h2>
-        <p>
-          Выбор и покупку лестниц рекомендуем делать в нашем торгово-выставочном
-          зале, в котором размещена единственная полная экспозиция нашей продукции.
-          Опытные продавцы-консультанты помогут вам сделать правильный выбор,
-          подскажут, как адаптировать нашу готовую лестницу под Ваши конкретные
-          условия и при необходимости примут заказ на продажу или изготовление
-          дополнительных деталей.
-        </p>
-      </div>
-
     </div>
   </div>
-</section>
 
-<section class="feature">
-  <div class="uk-container uk-margin-top uk-margin-bottom">
-    <div class="uk-grid">
+  <div class="feature">
+    <div class="uk-container uk-margin-top uk-margin-bottom">
+      <div class="uk-grid">
 
-      <div class="uk-width-medium-1-3 uk-hidden-small">
-        <img class="feature-image uk-border-rounded" src="/images/contents/order-1.jpg" width="600px" height="450px">
+        <div class="uk-width-medium-1-3 uk-hidden-small">
+          <img class="feature-image uk-border-rounded" src="/images/contents/order-1.jpg" width="600px" height="450px">
+        </div>
+
+        <div class="uk-width-medium-2-3">
+          <h2 class="feature-heading" id="скорость">Шоурум-склад в Москве</h2>
+          <p>
+            В России мы оказались пионерами подобного подхода применительно
+            к лестницам и к концу первого десятилетия начавшегося века нам
+            удалось занять ведущее положение как на Российском, так и на
+            зарубежных рынках. К концу 2009 года наши лестницы продаются
+            в Москве и области, Санкт-Петербурге и Ленинградской области,
+            в Новосибирске, Самаре, Ростове-на-Дону, Краснодаре, Омске,
+            Воронеже, Туле, Уфе, Калуге, Казани, Костроме, Анапе, Ижевске,
+            в Эстонии, Латвии, Литве и Финляндии.
+          </p>
+        </div>
+
       </div>
-
-      <div class="uk-width-medium-2-3">
-        <h2 class="feature-heading" id="скорость">Шоурум-склад в Москве</h2>
-        <p>
-          В России мы оказались пионерами подобного подхода применительно
-          к лестницам и к концу первого десятилетия начавшегося века нам
-          удалось занять ведущее положение как на Российском, так и на
-          зарубежных рынках. К концу 2009 года наши лестницы продаются
-          в Москве и области, Санкт-Петербурге и Ленинградской области,
-          в Новосибирске, Самаре, Ростове-на-Дону, Краснодаре, Омске,
-          Воронеже, Туле, Уфе, Калуге, Казани, Костроме, Анапе, Ижевске,
-          в Эстонии, Латвии, Литве и Финляндии.
-        </p>
-      </div>
-
     </div>
   </div>
-</section>
+
+</article>

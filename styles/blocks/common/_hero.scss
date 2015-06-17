@@ -3,21 +3,32 @@
   background-image: url("../images/background.jpg");
 }
 
+.hero-container {
+  @extend .uk-container;
+  @extend .uk-margin-bottom;
+}
+
+.hero-content {
+  @extend .uk-flex;
+}
+
 .hero-figure {
+  @extend .ut-hidden-print;
+  @extend .uk-hidden-small;
+  @extend .uk-margin-remove;
+  @extend .uk-padding-remove;
+  @extend .uk-border-rounded;
+  @extend .uk-flex-item-none;
+  @extend .uk-width-medium-2-5;
   position: relative;
-  flex: 0 0 auto;
-  height: 26rem*0.75;
-  width: 26rem;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
   border: solid 1px #000;
-  border-radius: 0.5rem;
 }
 
 .hero-image {
-  width: 100%;
+  position: absolute;
   height: 100%;
+  width: 100%;
 }
 
 .hero-caption {
@@ -27,51 +38,58 @@
   right: 0;
   padding: 0.5rem 1rem;
   border-top: solid 1px #000;
-  background-color: rgba(0,0,0,0.4);
-  color: rgba(255,255,255,0.75);
+  background-color: rgba(#000, 0.4);
   font-family: $base-heading-font-family;
   font-size: 1.33em;
   line-height: 1;
+  color: rgba(#fff, 0.75);
 }
 
 .hero-link {
-  color: rgba(255,255,255,0.75);
   text-decoration: none;
-
+  color: rgba(#fff, 0.75);
   &:hover {
     text-decoration: underline;
+    color: rgba(#fff, 0.75);
   }
 }
 
 .hero-price {
-  color: rgba(255,255,255,0.75);
+  float: right;
+  color: rgba(#fff,0.75);
+}
+
+.hero-descr {
+  @extend .uk-width-medium-3-5;
+  // TODO: move to figure!
+  margin-left: 0.5rem;
 }
 
 .hero-text {
-  margin-top: 0.25rem;
-  font-size: 1.1em;
+  @extend .uk-text-large;
+  margin-bottom: 0.5rem;
 }
 
-.hero-list {
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  margin: -0.2rem;
+.hero-thumbs {
+  @extend .ut-hidden-print;
+  @extend .uk-flex;
+  @extend .uk-flex-wrap;
 }
 
-.hero-thumbnail {
+.hero-thumb {
   @extend .uk-border-rounded;
-  flex: 0 0 auto;
-  height: 7.5rem*0.75;
-  width: 7.5rem;
-  margin: 0.2rem;
+  @extend .uk-flex-item-none;
+  width: 22.5%;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
   border: solid 1px white;
   opacity: 0.75;
   cursor: pointer;
 }
 
-.hero-thumbnail--active {
-  opacity: 1;
+.hero-thumb--active {
+  @include box-shadow;
   border-color: #000;
-  box-shadow: 0 0 0.5rem #aaa;
+  opacity: 1;
 }
