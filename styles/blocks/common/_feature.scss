@@ -2,7 +2,21 @@
   @extend .ut-border-bottom;
 }
 
+.feature-container {
+  @extend .uk-container;
+  @extend .uk-margin-top;
+  @extend .uk-margin-bottom;
+  @extend .uk-flex;
+}
+
 .feature-image {
+  @extend .ut-hidden-print;
+  @extend .uk-hidden-small;
+  @extend .uk-border-rounded;
+  @extend .uk-flex-item-none;
+  width: 15rem;
+  height: 100%;
+  margin-right: 0.5rem;
   border: solid 1px darken($grey-color, 20%);
 }
 
