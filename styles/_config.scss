@@ -649,7 +649,7 @@ $table-active-background:                        $table-hover-background !defaul
 $text-small-font-size:                           (11rem/14) !default;
 $text-small-line-height:                         (16rem/14) !default;
 $text-large-font-size:                           1.15rem;
-$text-large-line-height:                         (24rem/14) !default;
+$text-large-line-height:                         $base-body-line-height;
 $text-large-font-weight:                         normal !default;
 
 $text-muted-color:                               #999 !default;
