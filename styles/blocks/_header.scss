@@ -20,6 +20,7 @@
 .header-mainnav-toggle-link {
   font-size: 1.4rem;
   color: #fff;
+  border-color: $alpha-color !important;
   &:hover {
     color: #000;
   }
@@ -36,12 +37,7 @@
 .header-mainnav-logo-link {
   margin: 0.6rem 0;
   line-height: 1;
-  text-decoration: none;
-  color: #fff;
-  &:hover {
-    text-decoration: none;
-    color: #fff;
-  }
+  color: #fff !important;
 }
 
 .header-mainnav-list {
@@ -61,7 +57,7 @@
   margin-bottom: -1px;
   border-style: solid;
   border-width: 0 1px ;
-  border-color: rgba(#fff, 0);
+  border-color: $alpha-color;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -73,21 +69,16 @@
 
 .header-mainnav-link {
   position: relative;
-  margin-right: 0.5rem;
-  padding-left: 2rem;
-  text-decoration: none;
-  color: #fff;
-  &:hover {
-    text-decoration: underline;
-    color: #fff;
-  }
+  margin: 0 0.5rem;
+  padding-left: 1.5rem;
+  color: #fff !important;
   &::before {
     @extend .uk-flex;
     @extend .uk-flex-middle;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0.5rem;
+    left: 0;
     font-size: 2.5rem;
     line-height: 1;
     content: counter(ol-counter);
@@ -98,11 +89,8 @@
 .header-mainnav-stars {
   display: none;
   margin-right: 0.3rem;
-  text-decoration: none;
-  color: #fff;
-  &:hover {
-    color: #fff;
-  }
+  color: #fff !important;
+  border-color: $alpha-color !important;
 }
 
 .header-mainnav-stars-layout {
@@ -153,12 +141,7 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  text-decoration: none;
-  color: #000;
-  &:hover {
-    text-decoration: underline;
-    color: #000;
-  }
+  color: #000 !important;
 }
 
 .header-contacts {

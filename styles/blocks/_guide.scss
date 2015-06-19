@@ -5,7 +5,7 @@
 .guide-link {
   @include box-shadow;
   @include text-shadow;
-  border: solid 1px darken($second-color, 20%);
+  border: solid 1px darken($second-color, 20%) !important;
   font-family: $base-heading-font-family;
   letter-spacing: 0.05em;
 }

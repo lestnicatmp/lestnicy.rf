@@ -12,6 +12,7 @@
 
 .product-star {
   cursor: pointer;
+  border-color: $alpha-color !important;
   &.fa-star {
     @include text-shadow;
     color: $second-color;

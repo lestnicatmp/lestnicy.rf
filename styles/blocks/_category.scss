@@ -14,6 +14,7 @@
 
 .category-star {
   cursor: pointer;
+  border-color: $alpha-color !important;
   &.fa-star {
     @include text-shadow;
     color: $second-color;
@@ -67,11 +68,8 @@
 
 .category-item-link {
   margin-right: 1rem;
-  color: #000;
   font-size: 0.9em;
-  &:hover {
-    color: #000;
-  }
+  color: #000 !important;
 }
 
 .category-table {

@@ -44,3 +44,14 @@ table {
     color: #000;
   }
 }
+
+a {
+  border-bottom: solid 1px $alpha-color;
+  &:hover {
+    text-decoration: none !important;
+    border-bottom: solid 1px currentColor;
+  }
+  &[data-uk-lightbox] {
+    border-color: $alpha-color !important;
+  }
+}
