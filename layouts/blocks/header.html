@@ -76,7 +76,14 @@
       {% set link = '#скорость' if route == 'index' else '/#скорость' %}
       <li class="header-subnav-item">
         <a class="header-subnav-link" href="{{ link }}">
-          шоурум-склад в Москве
+          не надо ждать
+        </a>
+      </li>
+
+      {% set link = '#шоурум' if route == 'index' else '/#шоурум' %}
+      <li class="header-subnav-item">
+        <a class="header-subnav-link" href="{{ link }}">
+          шоурум в Москве
         </a>
       </li>
 
@@ -107,7 +114,7 @@
       {% set class = active if route == 'order/index' %}
       <li class="header-subnav-item {{ class }}">
         <a class="header-subnav-link" href="/купить-лестницу/">
-          шоурум-склад в Москве
+          шоурум в Москве
         </a>
       </li>
 
