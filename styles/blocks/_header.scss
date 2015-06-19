@@ -95,22 +95,25 @@
   }
 }
 
-.header-mainnav-star {
+.header-mainnav-stars {
   display: none;
-  margin-left: 0.3rem;
+  margin-right: 0.3rem;
   text-decoration: none;
   color: #fff;
+  &:hover {
+    color: #fff;
+  }
 }
 
-.header-mainnav-star-layout {
+.header-mainnav-stars-layout {
   @include text-shadow;
   -webkit-text-stroke: 1px black;
 }
 
-.header-mainnav-star-count {
+.header-mainnav-stars-count {
   color: black;
   &:hover {
-    color: #6d85b3;
+    color: $second-color;
   }
 }
 

@@ -11,7 +11,7 @@
 
         <h2 class="product-heading">
           <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
-          <span class="product-star uk-icon-star-o" data-product="{{ product.slug }}"></span>
+          <a href="#" title="Отложить лестницу" class="product-star uk-icon-star-o" data-star="{{ product.id }}"></a>
           <div class="product-price">
             {% if product.presence %}
             {{ product.price }}

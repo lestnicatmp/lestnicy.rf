@@ -3,74 +3,71 @@ class CartModule
   # General
 
   run: =>
-    @bind()
+    @stars = $('[data-star]')
+    @stars.click(@on_star_click)
+    @stars.bind('product_change', @on_product_change)
     @update()
-
-  bind: =>
-    $('.star').click(@on_star_click)
-    $('.star').bind('stair_change', @on_star_change_data)
 
   update: =>
     @update_menu()
     @update_stars()
-    @update_stairs()
+    @update_cart()
 
   # Updaters
 
   update_menu: =>
-    stairs = @get_stairs()
-    target = $('#site-menu .stars')
+    products = @get_products()
+    target = $('.header-mainnav-stars')
     target.hide()
     target.html()
-    if stairs.length
-      target.find('.count').html(stairs.length)
+    if products.length
+      target.find('.header-mainnav-stars-count').html(products.length)
       target.show()
 
   update_stars: =>
-    $('.star').map (index, element) =>
+    @stars.map (index, element) =>
       element = $(element)
-      stair = element.data('stair')
-      stairs = @get_stairs()
-      if stair in stairs
-        element.removeClass('fa-star-o').addClass('fa-star')
+      product = element.data('star')
+      products = @get_products()
+      if product in products
+        element.removeClass('uk-icon-star-o').addClass('uk-icon-star')
       else
-        element.removeClass('fa-star').addClass('fa-star-o')
+        element.removeClass('uk-icon-star').addClass('uk-icon-star-o')
 
-  update_stairs: =>
-    stairs = @get_stairs()
-    elements = $('body[data-layout="cart"] .stair')
+  update_cart: =>
+    products = @get_products()
+    elements = $('body[data-route="select/catalog/cart"] .product')
     elements.map (index, element) =>
       element = $(element)
-      stair = element.find('.star').data('stair')
+      product = element.find('[data-star]').data('star')
       element.hide()
-      if stair in stairs
+      if product in products
         element.show()
     elements.filter(':visible:first').css('border-top', 'none')
-    elements.filter(':visible:last').css('border-bottom', 'none')
 
   # Bindings
 
   on_star_click: (event) =>
     element = $(event.currentTarget)
-    stair = element.data('stair')
-    stairs = @get_stairs()
-    if stair in stairs
-      stairs = _.without(stairs, stair)
+    product = element.data('star')
+    products = @get_products()
+    if product in products
+      products = _.without(products, product)
     else
-      stairs.push(stair)
-    @set_stairs(stairs)
+      products.push(product)
+    @set_products(products)
     @update()
 
-  on_star_change_data: (event) =>
+  on_product_change: (event) =>
     @update()
 
   # Storage
 
-  get_stairs: =>
-    stairs = []
+  get_products: =>
+    products = []
     if localStorage.cart
-      stairs = localStorage.cart.split(',')
-    return stairs
+      products = JSON.parse(localStorage.cart)
+    return products
 
-  set_stairs: (stairs) =>
-    localStorage.cart = stairs.join(',')
+  set_products: (products) =>
+    localStorage.cart = JSON.stringify(products)
