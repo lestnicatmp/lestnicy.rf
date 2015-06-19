@@ -111,6 +111,7 @@
 }
 
 .header-mainnav-stars-count {
+  font-family: $base-heading-font-family;
   color: black;
   &:hover {
     color: $second-color;
