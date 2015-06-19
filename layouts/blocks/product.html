@@ -1,6 +1,37 @@
 <article class="product">
-  <div class="uk-container">
 
+  {% if modifier == 'single' %}
+  <div class="product-header">
+    <div class="uk-container">
+
+      <h1 class="product-heading">
+        <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
+        <a href="#" title="Отложить лестницу" class="product-star uk-icon-star-o" data-star="{{ product.id }}"></a>
+        <div class="product-price">
+          {% if product.presence %}
+          {{ product.price }}
+          <span class="uk-icon-rub"></span>
+          {% else %}
+          нет в наличии
+          {% endif %}
+        </div>
+      </h1>
+
+      <p class="uk-text-large">
+        На этой странице представлена подробная информация о лестнице {{ product.name }}.
+        Нажмите на звездочку, чтобы отложить эту модель.
+        Чтобы вернуться в каталог перейдите по
+        <a title="Вернуться в каталог" href="/подобрать-лестницу/по-каталогу/">ссылке</a>.
+      </p>
+      <blockquote class="ut-hidden-print">
+        Показать <a href="#" data-flip>правозаходные</a> модификации/варианты сборки.
+      </blockquote>
+
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="uk-container">
     <div class="uk-grid uk-grid-divider">
 
       <div class="uk-width-medium-1-5 uk-hidden-small">
@@ -9,6 +40,7 @@
 
       <div class="uk-width-medium-4-5">
 
+        {% if modifier == 'list' %}
         <h2 class="product-heading">
           <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
           <a href="#" title="Отложить лестницу" class="product-star uk-icon-star-o" data-star="{{ product.id }}"></a>
@@ -21,6 +53,7 @@
             {% endif %}
           </div>
         </h2>
+        {% endif %}
 
         <p class="product-text">
           {{ product.text }}
@@ -44,6 +77,6 @@
       </div>
 
     </div>
-
   </div>
+
 </article>
