@@ -1,10 +1,44 @@
 <nav class="menu uk-offcanvas">
-  <div class="uk-offcanvas-bar">
+  <div class="menu-bar uk-offcanvas-bar">
 
-    <ul class="uk-nav uk-nav-offcanvas">
-      <li class="uk-active"><a href="/">Главная страница</a></li>
-      <li><a href="/подобрать-лестницу/">Подобрать лестницу</a></li>
-      <li><a href="/купить-лестницу/">Купить лестницу</a></li>
+    {% set active = 'uk-active' %}
+    <ul class="menu-nav uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+
+      <li class="menu-header uk-nav-header">Лестницы.рф</li>
+
+      {% set class = active if route == 'index' %}
+      <li class="{{ class }}">
+        <a class="menu-link" href="/">Главная страница</a>
+      </li>
+
+      {% set class = active if lodash.startsWith(route, 'select') else '' %}
+      <li class="uk-parent {{ class }}">
+        <a class="menu-link" href="#">Подобрать лестницу</a>
+        <ul class="uk-nav-sub">
+          <li><a href="/подобрать-лестницу/">по типу</a></li>
+          <li><a href="/подобрать-лестницу/по-каталогу/">по каталогу</a></li>
+          <li><a href="/подобрать-лестницу/по-каталогу/отложенные/">отложенные</a></li>
+        </ul>
+      </li>
+
+      {% set class = active if lodash.startsWith(route, 'order') else '' %}
+      <li class="uk-parent {{ class }}">
+        <a class="menu-link" href="#">Купить лестницу</a>
+        <ul class="uk-nav-sub">
+          <li><a href="/купить-лестницу/">в шоуруме</a></li>
+          <li><a href="/купить-лестницу/дилеры/">у дилеров</a></li>
+        </ul>
+      </li>
+
+      <li class="uk-parent">
+        <a class="menu-link" href="#">Дополнительно</a>
+        <ul class="uk-nav-sub">
+          <li><a href="/изготовление-лестниц-на-заказ/">лестницы на заказ</a></li>
+          <li><a href="/информация-для-дилеров/">информация для дилеров</a></li>
+          <li><a href="/продажа-доски/">продажа доски</a></li>
+        </ul>
+      </li>
+
     </ul>
 
   </div>
