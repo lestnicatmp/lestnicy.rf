@@ -17,7 +17,7 @@
       {% if first_product.presence %}
       <span class="category-price-value">{{ first_product.price }}</span>
       {% else %}
-      звоните
+      нет в наличии
       {% endif %}
       <span class="category-price-currency uk-icon-rub"></span>
     </div>
@@ -51,7 +51,7 @@
                data-height="{{ product.height }}"
                data-window="{{ product.window }}"
                data-wood="{{ product.wood }}"
-               data-price="{% if product.presence %}{{ product.price }}{% else %}звоните{% endif %}">
+               data-price="{% if product.presence %}{{ product.price }}{% else %}нет в наличии{% endif %}">
               {{ product.name }}
               {% if item.descr %}
               - {{ item.descr }}
