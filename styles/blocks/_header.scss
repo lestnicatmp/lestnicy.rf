@@ -162,12 +162,18 @@
 }
 
 .header-contacts {
-  @extend .ut-hidden-print;
-  @extend .uk-hidden-small;
   @extend .uk-margin-remove;
-  @extend .uk-border-rounded;
   @extend .uk-flex;
   @extend .uk-flex-middle;
+  font-size: 1.1em;
+  line-height: 1.33;
+  color: #000;
+}
+
+.header-contacts--default {
+  @extend .ut-hidden-print;
+  @extend .uk-hidden-small;
+  @extend .uk-border-rounded;
   @include box-shadow--contrast;
   position: absolute;
   top: 0.3rem;
@@ -175,14 +181,31 @@
   bottom: 0.3rem;
   border: solid 1px $first-color;
   background-color: $base-body-background;
-  font-size: 1.1em;
   font-weight: 700;
-  line-height: 1.33;
-  color: #000;
 }
 
-.header-contacts-list {
+.header-contacts-list--default {
   @extend .uk-list;
   @extend .uk-margin-remove;
   margin: 0 0.5rem !important;
+}
+
+.header-contacts--compact {
+  @extend .uk-visible-small;
+  @include box-shadow;
+  background-color: $second-color;
+  border-top: solid 1px $first-color;
+  border-bottom: solid 1px darken($second-color, 20%);
+  color: #fff;
+}
+
+.header-contacts-list--compact {
+  @extend .uk-list;
+  @extend .uk-margin-remove;
+  @extend .uk-container;
+  margin: 0.3rem 0 !important;
+  & > * {
+    float: left;
+    margin-right: 1rem;
+  }
 }
