@@ -1,5 +1,8 @@
 .menu {
   font-family: $base-heading-font-family;
+  a {
+    border-bottom-color: $alpha-color !important;
+  }
 }
 
 .menu-bar {
