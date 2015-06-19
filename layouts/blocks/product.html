@@ -6,11 +6,11 @@
 
       <h1 class="product-heading">
         <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
-        <a href="#" title="Отложить лестницу" class="product-star uk-icon-star-o" data-star="{{ product.id }}"></a>
+        <a href="#" title="Отложить лестницу" class="product-star fa fa-star-o" data-star="{{ product.id }}"></a>
         <div class="product-price">
           {% if product.presence %}
           {{ product.price }}
-          <span class="uk-icon-rub"></span>
+          <span class="fa fa-rub"></span>
           {% else %}
           нет в наличии
           {% endif %}
@@ -43,11 +43,11 @@
         {% if modifier == 'list' %}
         <h2 class="product-heading">
           <a href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">Лестница {{ product.name }}</a>
-          <a href="#" title="Отложить лестницу" class="product-star uk-icon-star-o" data-star="{{ product.id }}"></a>
+          <a href="#" title="Отложить лестницу" class="product-star fa fa-star-o" data-star="{{ product.id }}"></a>
           <div class="product-price">
             {% if product.presence %}
             {{ product.price }}
-            <span class="uk-icon-rub"></span>
+            <span class="fa fa-rub"></span>
             {% else %}
             нет в наличии
             {% endif %}

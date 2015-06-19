@@ -30,9 +30,9 @@ class CartModule
       product = element.data('star')
       products = @get_products()
       if product in products
-        element.removeClass('uk-icon-star-o').addClass('uk-icon-star')
+        element.removeClass('fa-star-o').addClass('fa-star')
       else
-        element.removeClass('uk-icon-star').addClass('uk-icon-star-o')
+        element.removeClass('fa-star').addClass('fa-star-o')
 
   update_cart: =>
     products = @get_products()

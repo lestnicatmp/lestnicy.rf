@@ -12,7 +12,7 @@
 
 .product-star {
   cursor: pointer;
-  &.uk-icon-star {
+  &.fa-star {
     @include text-shadow;
     color: $second-color;
     -webkit-text-stroke: 1px black;
@@ -24,7 +24,7 @@
   font-family: $base-heading-font-family;
   font-size: 0.9em;
   font-weight: 400;
-  .uk-icon-ruble {
+  .fa-ruble {
     font-size: 0.9em;
   }
 }
