@@ -6,7 +6,6 @@
 
 .header-mainnav {
   @extend .uk-flex;
-  z-index: 10;
   background: linear-gradient(to bottom, $first-color, lighten($first-color, 10%));
 }
 
