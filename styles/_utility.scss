@@ -6,6 +6,10 @@
   transform: scaleX(-1);
 }
 
+a[data-uk-lightbox] {
+  cursor: zoom-in;
+}
+
 @media print {
   .ut-hidden-print {
     display: none !important;
