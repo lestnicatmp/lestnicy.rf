@@ -1,18 +1,22 @@
 <div class="categories">
 
   {% for category in categories %}
-  {% include 'blocks/category.html' %}
+  <div class="categories-item">
+    {% include 'blocks/category.html' %}
+  </div>
   {% endfor %}
 
-  <article class="category">
-    <h2 class="category-heading">
-      <a href="/изготовление-лестниц-на-заказ/">Изготовление на заказ</a>
-    </h2>
-    <div class="category-content">
-      <div class="category-text">
-        Если вы не смогли подобрать подходящую лестницу, то мы можем изготовить ее на заказ. Пожалуйста ознакомьтесь с дополнительной <a href="/изготовление-лестниц-на-заказ">информацией по изготовлению лестниц на заказ</a> или позвоните нам по телефону для консультации.
+  <div class="categories-item">
+    <article class="category">
+      <h2 class="category-heading">
+        <a href="/изготовление-лестниц-на-заказ/">Изготовление на заказ</a>
+      </h2>
+      <div class="category-content">
+        <div class="category-text">
+          Если вы не смогли подобрать подходящую лестницу, то мы можем изготовить ее на заказ. Пожалуйста ознакомьтесь с дополнительной <a href="/изготовление-лестниц-на-заказ">информацией по изготовлению лестниц на заказ</a> или позвоните нам по телефону для консультации.
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
 </div>

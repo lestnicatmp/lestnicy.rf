@@ -3,8 +3,17 @@
   @extend .uk-flex;
   @extend .uk-flex-wrap;
   padding: 0.5rem 1.5rem;
+}
+
+.categories-item {
+  @extend .uk-flex;
+  box-sizing: border-box;
+  width: 100%;
+  @media (min-width: 1350px) {
+    width: 50%;
+  }
+  padding: 0.5rem;
   & > * {
-    @extend .uk-flex-item-1;
-    margin: 0.5rem;
+    width: 100%;
   }
 }
