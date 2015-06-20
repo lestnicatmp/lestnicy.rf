@@ -48,8 +48,8 @@ table {
 a {
   border-bottom: solid 1px $alpha-color;
   &:hover {
-    text-decoration: none !important;
     border-bottom: solid 1px currentColor;
+    text-decoration: none !important;
   }
   &[data-uk-lightbox] {
     border-color: $alpha-color !important;

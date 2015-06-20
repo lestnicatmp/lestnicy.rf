@@ -46,10 +46,7 @@
 }
 
 .hero-link {
-  color: rgba(#fff, 0.75);
-  &:hover {
-    color: rgba(#fff, 0.75);
-  }
+  color: rgba(#fff, 0.75) !important;
 }
 
 .hero-price {
