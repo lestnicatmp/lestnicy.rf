@@ -9,6 +9,7 @@
   @extend .uk-margin-top;
   @extend .uk-margin-bottom;
   @extend .uk-flex;
+  @extend .uk-flex-top;
 }
 
 .feature-image {
@@ -17,7 +18,7 @@
   @extend .uk-border-rounded;
   @extend .uk-flex-item-none;
   width: 15rem;
-  height: 100%;
+  height: auto;
   margin-right: 0.5rem;
   border: solid 1px darken($grey-color, 20%);
 }

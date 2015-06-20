@@ -60,13 +60,13 @@
         </p>
 
         <div class="uk-flex uk-flex-wrap">
+          <img class="product-thumbnail product-thumbnail--model uk-visible-small" data-flip src="{{ product.image | replace('<size>','200x300') }}" width="200px" height="300px">
           <table class="product-table">
             <tr><th>Поворот</th><td>{{ product.turn }} градусов</td></tr>
             <tr><th>Высота</th><td>{{ product.height }}</td></tr>
             <tr><th>Проем</th><td>от {{ product.window }}</td></tr>
             <tr><th>Древесина</th><td>{{ product.wood }}</td></tr>
           </table>
-          <img class="product-thumbnail product-thumbnail--model uk-visible-small" data-flip src="{{ product.image | replace('<size>','200x300') }}" width="200px" height="300px">
           {% for photo in product.photos %}
           <a href="{{ photo.image | replace('<size>','1000x750') }}" data-uk-lightbox="{group:'{{ product.id }}'}" title="{{ product.name }}">
             <img class="product-thumbnail ut-hidden-print" src="{{ photo.image | replace('<size>','200x150') }}" width="200px" height="150px">
