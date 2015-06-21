@@ -13,20 +13,23 @@
     <a title="Отложить лестницу" class="category-star fa fa-star-o" data-star="{{ first_product.id }}">
     </a>
 
-    <div class="category-price">
+    <span class="category-price">
       {% if first_product.presence %}
       <span class="category-price-value">{{ first_product.price }}</span>
       {% else %}
       нет в наличии
       {% endif %}
       <span class="category-price-currency fa fa-rub"></span>
-    </div>
+    </span>
 
   </h2>
 
   <div class="category-content">
 
-    <img class="category-image" data-flip  src="{{ first_product.image | replace('<size>','200x300') }}" width="200px" height="300px">
+    <img class="category-image" data-flip
+         alt="Лестница {{ first_product.name | escape }}"
+         src="{{ first_product.image | replace('<size>','200x300') }}"
+         width="200" height="300">
 
     <div class="category-descr">
 

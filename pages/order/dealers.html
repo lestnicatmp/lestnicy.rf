@@ -38,11 +38,11 @@ route: order/dealers
               {% for dealer in dealers %}
               <tr class="uk-table-middle">
                 <th class="index">{{ loop.index  }}</th>
-                <td class="uk-text-nowrap" class="region">{{ dealer.region  }}</td>
+                <td class="uk-text-nowrap">{{ dealer.region  }}</td>
                 <td class="address">{{ dealer.address  }}</td>
                 <td class="phones">
                   {% for phone in dealer.phones %}
-                  <span class="uk-text-nowrap">{{ phone }}<span><br>
+                  <span class="uk-text-nowrap">{{ phone }}</span><br>
                   {% endfor %}
                 </td>
                 <td class="name">{{ dealer.name  }}</td>

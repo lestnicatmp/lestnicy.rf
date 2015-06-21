@@ -68,7 +68,7 @@
     <h2>Чертежи</h2>
     {% for plan in product.plans %}
     <a href="{{ plan.image }}" data-uk-lightbox="{group:'plans'}" >
-      <img src="{{ plan.image }}">
+      <img alt="Чертеж лестницы {{ product.name | escape }}" src="{{ plan.image }}">
     </a>
     {% endfor %}
     {% endif %}
