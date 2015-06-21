@@ -73,19 +73,25 @@
 }
 
 .hero-thumb {
-  @extend .uk-border-rounded;
   @extend .uk-flex-item-none;
-  width: 22.5%;
   box-sizing: border-box;
-  margin-bottom: 0.2rem;
-  margin-right: 0.2rem;
-  border: solid 1px white;
-  opacity: 0.75;
-  cursor: pointer;
+  width: 25%;
+  padding-bottom: 0.2rem;
+  padding-right: 0.2rem;
+  border-color: $alpha-color !important;
+  & > img {
+    @extend .uk-border-rounded;
+    width: 100%;
+    height: auto;
+    border: solid 1px white;
+    opacity: 0.75;
+  }
 }
 
 .hero-thumb--active {
-  @include box-shadow;
-  border-color: #000;
-  opacity: 1;
+  & > img {
+    @include box-shadow;
+    border-color: #000;
+    opacity: 1;
+  }
 }

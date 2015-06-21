@@ -25,7 +25,9 @@ route: index
           {% if photo.home %}
           <img class="hero-image" src="{{ photo.image | replace('<size>','600x450') }}" width="600px" height="450px">
           <figcaption class="hero-caption">
-            <a class="hero-link" href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">
+            <a class="hero-link"
+               title="Перейти к карточке модели {{ product.name }}"
+               href="/подобрать-лестницу/по-каталогу/{{ product.slug }}/">
               Лестница <span class="hero-link-name">{{ product.name }}</span>
             </a>
             <div class="hero-price">
@@ -55,13 +57,13 @@ route: index
             {% set product = products[product] %}
             {% for photo in product.photos %}
             {% if photo.home %}
-            <img src="{{ photo.image | replace('<size>','200x150') }}"
-              class="hero-thumb {{ active }}"
-              width="200px" height="150px"
+            <a href="#" class="hero-thumb {{ active }}" title="Показать лестницу {{ product.name | escape }}"
               data-name="{{ product.name }}"
               data-price="{{ product.price }}"
               data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
               data-image="{{ photo.image | replace('<size>','600x450') }}">
+              <img src="{{ photo.image | replace('<size>','200x150') }}" width="200px" height="150px">
+            </a>
             {% set active = '' %}
             {% endif %}
             {% endfor %}
