@@ -23,7 +23,10 @@ route: index
           {% for photo in product.photos %}
           {% if active %}
           {% if photo.home %}
-          <img class="hero-image" src="{{ photo.image | replace('<size>','600x450') }}" width="600px" height="450px">
+          <img class="hero-image"
+               src="{{ photo.image | replace('<size>','600x450') }}"
+               alt="Лестница {{ product.name }}"
+               width="600" height="450">
           <figcaption class="hero-caption">
             <a class="hero-link"
                title="Перейти к карточке модели {{ product.name }}"
@@ -62,7 +65,9 @@ route: index
               data-price="{{ product.price }}"
               data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
               data-image="{{ photo.image | replace('<size>','600x450') }}">
-              <img src="{{ photo.image | replace('<size>','200x150') }}" width="200px" height="150px">
+              <img src="{{ photo.image | replace('<size>','200x150') }}"
+                   alt="Лестница {{ product.name }}"
+                   width="200" height="150">
             </a>
             {% set active = '' %}
             {% endif %}
@@ -80,7 +85,10 @@ route: index
   <div class="feature">
     <div class="feature-container">
 
-      <img class="feature-image" src="/images/products/photos/600x450/lv14b-1.jpg" width="600px" height="450px">
+      <img class="feature-image"
+           src="/images/products/photos/600x450/lv14b-1.jpg"
+           alt="Высокое качество"
+           width="600" height="450">
 
       <div class="feature-text">
         <h2 class="feature-heading" id="качество">Высокое качество</h2>
@@ -100,7 +108,10 @@ route: index
   <div class="feature">
     <div class="feature-container">
 
-      <img class="feature-image" src="/images/products/photos/600x450/ls01u-1.jpg" width="600px" height="450px">
+      <img class="feature-image"
+           src="/images/products/photos/600x450/ls01u-1.jpg"
+           alt="Доступная цена"
+           width="600" height="450">
 
       <div class="feature-text">
         <h2 class="feature-heading" id="цена">Доступная цена</h2>
@@ -120,10 +131,13 @@ route: index
   <div class="feature">
     <div class="feature-container">
 
-      <img class="feature-image uk-border-rounded" src="/images/contents/order-1.jpg" width="600px" height="450px">
+      <img class="feature-image"
+           src="/images/contents/order-1.jpg"
+           alt="Не надо ждать"
+           width="600" height="450">
 
       <div class="feature-text">
-        <h2 class="feature-heading" id="скорость">Шоурум в Москве</h2>
+        <h2 class="feature-heading" id="скорость">Не надо ждать</h2>
         <p>
           В России мы оказались пионерами подобного подхода применительно
           к лестницам и к концу первого десятилетия начавшегося века нам
@@ -141,7 +155,10 @@ route: index
   <div class="feature">
     <div class="feature-container">
 
-      <img class="feature-image uk-border-rounded" src="/images/contents/order-1.jpg" width="600px" height="450px">
+      <img class="feature-image"
+           src="/images/contents/order-1.jpg"
+           alt="Шоурум в Москве"
+           width="600" height="450">
 
       <div class="feature-text">
         <h2 class="feature-heading" id="шоурум">Шоурум в Москве</h2>
