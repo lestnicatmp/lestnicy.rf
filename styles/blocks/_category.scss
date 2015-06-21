@@ -1,6 +1,6 @@
 .category {
   @extend .uk-border-rounded;
-  @inlude box-shadow;
+  @include box-shadow;
   padding: 0 0.5rem;
   border: solid 1px $grey-color;
 }
