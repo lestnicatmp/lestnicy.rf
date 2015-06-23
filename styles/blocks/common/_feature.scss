@@ -30,6 +30,7 @@
 .feature-caption {
   @extend .uk-overlay-panel;
   @extend .uk-overlay-top;
+  @include text-shadow;
   padding: 1.1rem;
   background: rgba(#000, 0.4);
   font-family: $base-heading-font-family;
