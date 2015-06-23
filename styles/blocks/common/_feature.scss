@@ -12,17 +12,28 @@
   @extend .uk-flex-top;
 }
 
-.feature-image {
+.feature-figure {
   @extend .ut-hidden-print;
   @extend .uk-hidden-small;
   @extend .uk-border-rounded;
   @extend .uk-flex-item-none;
-  width: 15rem;
-  height: auto;
+  @extend .uk-overlay;
   margin-right: 0.5rem;
   border: solid 1px darken($grey-color, 20%);
 }
 
-.feature-heading {
-  margin-top: 0;
+.feature-image {
+  width: 16rem;
+  height: 13rem;
+}
+
+.feature-caption {
+  @extend .uk-overlay-panel;
+  @extend .uk-overlay-top;
+  padding: 1.1rem;
+  background: rgba(#000, 0.4);
+  font-family: $base-heading-font-family;
+  font-size: $base-h3-font-size;
+  font-weight: 700;
+  line-height: 1;
 }
