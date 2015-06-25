@@ -13,9 +13,9 @@ $base-body-font-size:                            1rem;
 $base-body-line-height:                          1.4;
 $base-body-color:                                #333;
 
-$base-link-color:                                lighten($first-color, 10%);
+$base-link-color:                                $second-color;
 $base-link-text-decoration:                      none !default;
-$base-link-hover-color:                          lighten($first-color, 10%);
+$base-link-hover-color:                          $second-color;
 $base-link-hover-text-decoration:                underline !default;
 
 $base-code-color:                                #D05 !default;
@@ -620,13 +620,13 @@ $tab-padding-top:                                $tab-padding-vertical !default;
 $tab-padding-bottom:                             $tab-padding-vertical !default;
 $tab-margin-horizontal:                          (5rem/14) !default;
 $tab-margin-vertical:                            (5rem/14) !default;
-$tab-color:                                      lighten($first-color, 10%);
+$tab-color:                                      $second-color;
 $tab-hover-border:                               #f5f5f5 !default;
 $tab-hover-background:                           #f5f5f5 !default;
-$tab-hover-color:                                lighten($second-color, 10%);
+$tab-hover-color:                                $second-color;
 $tab-active-border:                              #ddd !default;
 $tab-active-background:                          #fff !default;
-$tab-active-color:                               #444 !default;
+$tab-active-color:                               #333;
 $tab-disabled-color:                             #999 !default;
 
 // Uikit (table)

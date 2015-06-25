@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+h1 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 p {
   margin: 1rem 0;
 }
@@ -56,11 +61,16 @@ table {
 
 a {
   border-bottom: solid 1px $alpha-color;
+  font-family: $base-heading-font-family;
+  font-style: normal;
   &:hover {
     border-bottom: solid 1px currentColor;
     text-decoration: none !important;
   }
   &[data-uk-lightbox] {
+    border-color: $alpha-color !important;
+  }
+  &.uk-slidenav {
     border-color: $alpha-color !important;
   }
 }
