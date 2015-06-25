@@ -3,6 +3,10 @@
   background-image: url("../images/background.jpg");
 }
 
+.hero-heading {
+  margin-top: 1rem;
+}
+
 .hero-container {
   @extend .uk-container;
   @extend .uk-margin-bottom;
