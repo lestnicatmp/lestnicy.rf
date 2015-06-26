@@ -28,6 +28,7 @@
         На этой странице представлена подробная информация о лестнице {{ product.name }}.
         Нажмите на звездочку, чтобы отложить эту модель.
         Показывать <a href="#" data-flip>правозаходные</a> модификации/варианты сборки.
+        Показать <a title="Показать подсказку" data-uk-modal="{target: '.help'}">подсказку</a> по используемым терминам.
       </p>
 
     </div>
@@ -71,10 +72,11 @@
                src="{{ product.image | replace('<size>','200x300') }}"
                width="200" height="300">
           <table class="product-table">
-            <tr><th>Поворот</th><td>{{ product.turn }} градусов</td></tr>
-            <tr><th>Высота</th><td>{{ product.height }}</td></tr>
-            <tr><th>Проем</th><td>от {{ product.window }}</td></tr>
-            <tr><th>Древесина</th><td>{{ product.wood }}</td></tr>
+            {% set help = '<a href="#" title="Показать подсказку" class="product-table-help fa fa-question-circle" data-uk-modal="{target: \'.help\'}"></a>'%}
+            <tr><th>Поворот {{ help }}</th><td>{{ product.turn }} градусов</td></tr>
+            <tr><th>Высота {{ help }}</th><td>{{ product.height }}</td></tr>
+            <tr><th>Проем {{ help }}</th><td>от {{ product.window }}</td></tr>
+            <tr><th>Древесина {{ help }}</th><td>{{ product.wood }}</td></tr>
           </table>
           {% for photo in product.photos %}
           <a href="{{ photo.image | replace('<size>','1000x750') }}" data-uk-lightbox="{group:'{{ product.id }}'}" title="{{ product.name }}">

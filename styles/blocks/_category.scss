@@ -91,3 +91,11 @@
     text-align: left;
   }
 }
+
+.category-table-help {
+  border-color: $alpha-color !important;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
