@@ -1,0 +1,15 @@
+.breadcrumb {
+  @extend .uk-breadcrumb;
+  margin: -0.8rem 0 0;
+  padding-top: 0.1rem;
+  border-top: solid 1px #ddd;
+  line-height: 1;
+}
+
+.breadcrumb-item--active {
+  @extend .uk-active;
+}
+
+.breadcrumb-link {
+  color: #222 !important;
+}

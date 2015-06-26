@@ -11,7 +11,7 @@ $base-body-font-family:                          "Open Sans", Arial, sans-serif;
 $base-body-font-weight:                          300;
 $base-body-font-size:                            1rem;
 $base-body-line-height:                          1.4;
-$base-body-color:                                #333;
+$base-body-color:                                #444;
 
 $base-link-color:                                $second-color;
 $base-link-text-decoration:                      none !default;
@@ -122,11 +122,11 @@ $block-primary-background:                       #00a8e6 !default;
 $block-secondary-background:                     #222 !default;
 
 // Uikit (breadcrumb)
-$breadcrumb-font-size:                           1rem !default;
+$breadcrumb-font-size:                           0.9rem;
 
 $breadcrumb-divider:                             "/" !default;
-$breadcrumb-divider-margin:                      (8rem/14) !default;
-$breadcrumb-disabled-color:                      #999 !default;
+$breadcrumb-divider-margin:                      0.4rem;
+$breadcrumb-disabled-color:                      $grey-color;
 
 // Uikit (button)
 $button-height:                                  (30rem/14) !default;
@@ -630,26 +630,26 @@ $tab-active-color:                               #333;
 $tab-disabled-color:                             #999 !default;
 
 // Uikit (table)
-$table-margin-vertical:                          (15rem/14) !default;
-$table-padding-vertical:                         (8rem/14) !default;
-$table-padding-horizontal:                       (8rem/14) !default;
+$table-margin-vertical:                          1rem;
+$table-padding-vertical:                         0.4rem;
+$table-padding-horizontal:                       0.5rem;
 
 $table-caption-color:                            #999 !default;
-$table-caption-font-size:                        (12rem/14) !default;
+$table-caption-font-size:                        0.9rem;
 
-$table-striped-background:                       lighten($second-color, 40%);
+$table-striped-background:                       lighten($second-color, 41%);
 
-$table-condensed-padding-vertical:               (4rem/14) !default;
-$table-condensed-padding-horizontal:             (8rem/14) !default;
+$table-condensed-padding-vertical:               0.2rem;
+$table-condensed-padding-horizontal:             0.5rem;
 
-$table-hover-background:                         lighten($second-color, 30%);
+$table-hover-background:                         lighten($second-color, 35%);
 
 $table-active-background:                        $table-hover-background !default;
 
 // Uikit (text)
-$text-small-font-size:                           (11rem/14) !default;
-$text-small-line-height:                         (16rem/14) !default;
-$text-large-font-size:                           1.15rem;
+$text-small-font-size:                           0.9rem;
+$text-small-line-height:                         $base-body-line-height;
+$text-large-font-size:                           1.1rem;
 $text-large-line-height:                         $base-body-line-height;
 $text-large-font-weight:                         normal !default;
 

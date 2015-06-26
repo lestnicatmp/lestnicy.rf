@@ -61,7 +61,7 @@
 
 .category-item {
   margin-right: -1px;
-  border-right: solid 1px $grey-color;
+  border-right: solid 1px lighten($second-color, 15%);
   border-bottom: solid 1px $alpha-color;
   white-space: nowrap;
   & > .category-item-link {
@@ -72,7 +72,7 @@
 }
 
 .category-item--active {
-  border-bottom-color: $grey-color;
+  border-bottom-color: lighten($second-color, 15%);
   & > .category-item-link {
     cursor: default;
     border-color: $alpha-color !important;
@@ -84,16 +84,10 @@
   height: 6rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
-  font-size: 0.9em;
   th, td {
     padding: 0 0.5rem;
-    border-color: lighten($grey-color, 10%);
   }
   th {
-    background-color: lighten($grey-color, 50%);
     text-align: left;
-  }
-  td {
-    font-size: 0.9em;
   }
 }

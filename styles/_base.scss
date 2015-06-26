@@ -44,18 +44,24 @@ ul {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
-  thead {
-    background-color: lighten($second-color, 30%);
-  }
+  border-collapse: collapse;
+  font-size: $text-small-font-size;
   th, td {
     border: solid 1px lighten($second-color, 15%);
   }
   th {
+    background-color: lighten($second-color, 35%);
     font-family: $base-heading-font-family;
     color: #000;
   }
+  td {
+    font-size: 0.9em;
+  }
+}
+
+blockquote {
+  font-size: $text-large-font-size;
 }
 
 a {
