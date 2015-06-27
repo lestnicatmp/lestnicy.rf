@@ -28,5 +28,6 @@ photos:
     home: true
   - image: /images/products/photos/<size>/lv10-2.jpg
   - image: /images/products/photos/<size>/lv10-3.jpg
-plans:
-  - image: /images/products/plans/lv10-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lv10/1.jpg
+  - image: /images/products/sketchs/lv10/2.jpg

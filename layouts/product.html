@@ -64,11 +64,11 @@
     </div>
     {% endif %}
 
-    {% if product.plans %}
+    {% if product.sketchs %}
     <h2>Чертежи</h2>
-    {% for plan in product.plans %}
-    <a href="{{ plan.image }}" data-uk-lightbox="{group:'plans'}" >
-      <img alt="Чертеж лестницы {{ product.name | escape }}" src="{{ plan.image }}">
+    {% for sketch in product.sketchs %}
+    <a href="{{ sketch.image }}" data-uk-lightbox="{group:'sketchs'}" >
+      <img class="uk-width-1-4" alt="Чертеж лестницы {{ product.name | escape }}" src="{{ sketch.image }}">
     </a>
     {% endfor %}
     {% endif %}

@@ -29,5 +29,5 @@ boxes:
     weight: 107
 photos:
   - image: /images/products/photos/<size>/ls62u-1.jpg
-plans:
-  - image: /images/products/plans/ls62u-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls62u/1.jpg

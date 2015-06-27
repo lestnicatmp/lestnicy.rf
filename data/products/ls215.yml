@@ -25,5 +25,6 @@ boxes:
     weight: 129
 photos:
   - image: /images/products/photos/<size>/ls215-1.jpg
-plans:
-  - image: /images/products/plans/ls215-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls215/1.jpg
+  - image: /images/products/sketchs/ls215/2.jpg

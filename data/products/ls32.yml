@@ -27,5 +27,6 @@ boxes:
     weight: 114
 photos:
   - image: /images/products/photos/<size>/ls32-1.jpg
-plans:
-  - image: /images/products/plans/ls32-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls32/1.jpg
+  - image: /images/products/sketchs/ls32/2.jpg

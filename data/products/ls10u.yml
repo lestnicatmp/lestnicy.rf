@@ -25,5 +25,6 @@ boxes:
 photos:
   - image: /images/products/photos/<size>/ls10u-1.jpg
     home: true
-plans:
-  - image: /images/products/plans/ls10u-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls10u/1.jpg
+  - image: /images/products/sketchs/ls10u/2.jpg

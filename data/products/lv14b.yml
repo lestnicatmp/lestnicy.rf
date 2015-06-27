@@ -27,5 +27,6 @@ photos:
   - image: /images/products/photos/<size>/lv14b-1.jpg
     home: true
   - image: /images/products/photos/<size>/lv14b-2.jpg
-plans:
-  - image: /images/products/plans/lv14b-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lv14b/1.jpg
+  - image: /images/products/sketchs/lv14b/2.jpg

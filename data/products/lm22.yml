@@ -28,5 +28,5 @@ boxes:
 photos:
   - image: /images/products/photos/<size>/lm22-1.jpg
     home: true
-plans:
-  - image: /images/products/plans/lm22-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lm22/1.jpg

@@ -27,5 +27,5 @@ photos:
   - image: /images/products/photos/<size>/ls1112-1.jpg
   - image: /images/products/photos/<size>/ls1112-2.jpg
   - image: /images/products/photos/<size>/ls1112-3.jpg
-plans:
-  - image: /images/products/plans/ls1112-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls1112/1.jpg

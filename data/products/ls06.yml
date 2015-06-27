@@ -28,5 +28,8 @@ boxes:
 photos:
   - image: /images/products/photos/<size>/ls06-1.jpg
   - image: /images/products/photos/<size>/ls06-2.jpg
-plans:
-  - image: /images/products/plans/ls06-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls06/1.jpg
+  - image: /images/products/sketchs/ls06/2.jpg
+  - image: /images/products/sketchs/ls06/3.jpg
+  - image: /images/products/sketchs/ls06/4.jpg

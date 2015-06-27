@@ -26,5 +26,6 @@ photos:
   - image: /images/products/photos/<size>/ls91-1.jpg
   - image: /images/products/photos/<size>/ls91-2.jpg
   - image: /images/products/photos/<size>/ls91-3.jpg
-plans:
-  - image: /images/products/plans/ls91-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls91/1.jpg
+  - image: /images/products/sketchs/ls91/2.jpg

@@ -26,5 +26,6 @@ boxes:
 photos:
   - image: /images/products/photos/<size>/ls04u-1.jpg
     home: true
-plans:
-  - image: /images/products/plans/ls04u-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls04u/1.jpg
+  - image: /images/products/sketchs/ls04u/2.jpg

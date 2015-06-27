@@ -29,5 +29,5 @@ photos:
   - image: /images/products/photos/<size>/lm31-1.jpg
   - image: /images/products/photos/<size>/lm31-2.jpg
     home: true
-plans:
-  - image: /images/products/plans/lm31-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lm31/1.jpg

@@ -23,5 +23,5 @@ boxes:
     weight: 65
   - size: 3490 x 340 x 280
     weight: 112
-plans:
-  - image: /images/products/plans/ls02-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls02/1.jpg

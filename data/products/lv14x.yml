@@ -25,5 +25,6 @@ boxes:
     weight: 105
 photos:
   - image: /images/products/photos/<size>/lv14x-1.jpg
-plans:
-  - image: /images/products/plans/lv14x-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lv14x/1.jpg
+  - image: /images/products/sketchs/lv14x/2.jpg

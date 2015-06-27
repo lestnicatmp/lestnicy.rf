@@ -16,5 +16,5 @@ step_depth: 40
 image: /images/products/models/<size>/lvr10.jpg
 text: >
   Элегантная винтовая лестница. Допустимо изъятие одной ступени - тогда высота подъема от пола до пола сокращается до 2,48-2,52 м.
-plans:
-  - image: /images/products/plans/lvr10-1.jpg
+sketchs:
+  - image: /images/products/sketchs/lvr10/1.jpg

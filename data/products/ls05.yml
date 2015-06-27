@@ -26,5 +26,6 @@ boxes:
 photos:
   - image: /images/products/photos/<size>/ls05-1.jpg
     home: true
-plans:
-  - image: /images/products/plans/ls05-1.jpg
+sketchs:
+  - image: /images/products/sketchs/ls05/1.jpg
+  - image: /images/products/sketchs/ls05/2.jpg
