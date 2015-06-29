@@ -1,0 +1,16 @@
+.callback {
+  @extend .uk-flex;
+  @extend .uk-width-1-1;
+}
+
+.callback-button {
+  @extend .uk-button;
+  @extend .uk-button-large;
+  @extend .uk-button-success;
+  @extend .uk-width-1-1;
+  @extend .uk-border-rounded;
+  @include box-shadow;
+  @include text-shadow;
+  border: solid 1px darken($third-color, 20%) !important;
+  font-family: $base-heading-font-family;
+}

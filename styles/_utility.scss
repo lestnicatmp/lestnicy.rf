@@ -6,6 +6,12 @@
   transform: scaleX(-1);
 }
 
+.uk-text-bold {
+  font-family: $base-heading-font-family;
+  font-style: normal;
+  color: #222;
+}
+
 a[data-uk-lightbox] {
   cursor: zoom-in;
 }

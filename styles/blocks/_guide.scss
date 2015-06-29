@@ -1,8 +1,20 @@
 .guide {
   @extend .ut-border-bottom;
+  @extend .ut-hidden-print;
+}
+
+.guide-container {
+  @extend .uk-container;
+  @extend .uk-margin-top;
+  @extend .uk-margin-bottom;
 }
 
 .guide-link {
+  @extend .uk-button;
+  @extend .uk-button-large;
+  @extend .uk-button-primary;
+  @extend .uk-width-1-1;
+  @extend .uk-border-rounded;
   @include box-shadow;
   @include text-shadow;
   border: solid 1px darken($second-color, 20%) !important;

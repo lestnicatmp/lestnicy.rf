@@ -163,11 +163,11 @@ $button-primary-hover-color:                     #fff !default;
 $button-primary-active-background:               darken($second-color, 10%);
 $button-primary-active-color:                    #fff !default;
 
-$button-success-background:                      #8cc14c !default;
+$button-success-background:                      $third-color;
 $button-success-color:                           #fff !default;
-$button-success-hover-background:                #8ec73b !default;
+$button-success-hover-background:                lighten($third-color, 10%);
 $button-success-hover-color:                     #fff !default;
-$button-success-active-background:               #72ae41 !default;
+$button-success-active-background:               darken($third-color, 10%);
 $button-success-active-color:                    #fff !default;
 
 $button-danger-background:                       #da314b !default;

@@ -11,14 +11,14 @@
 {% elif lodash.startsWith(route, 'order') %}
 
   {% set href = '/' %}
-  {% set text = 'Заказать обратный звонок!' %}
+  {% set text = 'Перейти на главную страницу!' %}
 
 {% endif %}
 
 {% if href and text %}
-<nav class="guide ut-hidden-print">
-  <div class="uk-container uk-margin-top uk-margin-bottom">
-    <a href="{{ href }}" class="guide-link uk-button uk-button-large uk-button-primary uk-width-1-1 uk-border-rounded">
+<nav class="guide">
+  <div class="guide-container">
+    <a href="{{ href }}" class="guide-link">
       {{ text }}
     </a>
   </div>
