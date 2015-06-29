@@ -1,5 +1,5 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-flexbox-flexboxlegacy-cssclasses-prefixes-css_calc-cssclassprefix:mn!
+ * Build: http://modernizr.com/download/#-flexbox-flexboxlegacy-cssanimations-cssclasses-css_calc-cssclassprefix:mn!
  */
 ;
 
@@ -22,13 +22,7 @@ window.Modernizr = (function( window, document, undefined ) {
     inputElem  ,
 
 
-    toString = {}.toString,
-
-    prefixes = ' -webkit- -moz- -o- -ms- '.split(' '),
-
-
-
-    omPrefixes = 'Webkit Moz O ms',
+    toString = {}.toString,    omPrefixes = 'Webkit Moz O ms',
 
     cssomPrefixes = omPrefixes.split(' '),
 
@@ -169,6 +163,9 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
 
+    tests['cssanimations'] = function() {
+        return testPropsAll('animationName');
+    };
     for ( var feature in tests ) {
         if ( hasOwnProp(tests, feature) ) {
                                     featureName  = feature.toLowerCase();
@@ -214,7 +211,6 @@ window.Modernizr = (function( window, document, undefined ) {
 
     Modernizr._version      = version;
 
-    Modernizr._prefixes     = prefixes;
     Modernizr._domPrefixes  = domPrefixes;
     Modernizr._cssomPrefixes  = cssomPrefixes;
 
