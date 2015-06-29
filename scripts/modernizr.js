@@ -1,5 +1,5 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-flexbox-flexboxlegacy-cssanimations-cssclasses-css_calc-cssclassprefix:mn!
+ * Build: http://modernizr.com/download/#-flexbox-flexboxlegacy-cssanimations-cssclasses-teststyles-testprop-prefixes-css_calc-css_remunit-css_vwunit-cssclassprefix:mn!
  */
 ;
 
@@ -22,7 +22,13 @@ window.Modernizr = (function( window, document, undefined ) {
     inputElem  ,
 
 
-    toString = {}.toString,    omPrefixes = 'Webkit Moz O ms',
+    toString = {}.toString,
+
+    prefixes = ' -webkit- -moz- -o- -ms- '.split(' '),
+
+
+
+    omPrefixes = 'Webkit Moz O ms',
 
     cssomPrefixes = omPrefixes.split(' '),
 
@@ -40,7 +46,44 @@ window.Modernizr = (function( window, document, undefined ) {
     featureName,
 
 
+    injectElementWithStyles = function( rule, callback, nodes, testnames ) {
 
+      var style, ret, node, docOverflow,
+          div = document.createElement('div'),
+                body = document.body,
+                fakeBody = body || document.createElement('body');
+
+      if ( parseInt(nodes, 10) ) {
+                      while ( nodes-- ) {
+              node = document.createElement('div');
+              node.id = testnames ? testnames[nodes] : mod + (nodes + 1);
+              div.appendChild(node);
+          }
+      }
+
+                style = ['&#173;','<style id="s', mod, '">', rule, '</style>'].join('');
+      div.id = mod;
+          (body ? div : fakeBody).innerHTML += style;
+      fakeBody.appendChild(div);
+      if ( !body ) {
+                fakeBody.style.background = '';
+                fakeBody.style.overflow = 'hidden';
+          docOverflow = docElement.style.overflow;
+          docElement.style.overflow = 'hidden';
+          docElement.appendChild(fakeBody);
+      }
+
+      ret = callback(div, rule);
+        if ( !body ) {
+          fakeBody.parentNode.removeChild(fakeBody);
+          docElement.style.overflow = docOverflow;
+      } else {
+          div.parentNode.removeChild(div);
+      }
+
+      return !!ret;
+
+    },
     _hasOwnProperty = ({}).hasOwnProperty, hasOwnProp;
 
     if ( !is(_hasOwnProperty, 'undefined') && !is(_hasOwnProperty.call, 'undefined') ) {
@@ -211,6 +254,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     Modernizr._version      = version;
 
+    Modernizr._prefixes     = prefixes;
     Modernizr._domPrefixes  = domPrefixes;
     Modernizr._cssomPrefixes  = cssomPrefixes;
 
@@ -222,7 +266,8 @@ window.Modernizr = (function( window, document, undefined ) {
 
     Modernizr.testAllProps  = testPropsAll;
 
-    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
+
+    Modernizr.testStyles    = injectElementWithStyles;    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
 
                                                     (enableClasses ? " mn-js mn-"+classes.join(" mn-") : '');
 
@@ -240,5 +285,38 @@ Modernizr.addTest('csscalc', function() {
     el.style.cssText = prop + Modernizr._prefixes.join(value + prop);
 
     return !!el.style.length;
+});
+
+// test by github.com/nsfmc
+
+// "The 'rem' unit ('root em') is relative to the computed
+// value of the 'font-size' value of the root element."
+// http://www.w3.org/TR/css3-values/#relative0
+// you can test by checking if the prop was ditched
+
+// http://snook.ca/archives/html_and_css/font-size-with-rem
+
+Modernizr.addTest('cssremunit', function(){
+
+  var div = document.createElement('div');
+  try {
+    div.style.fontSize = '3rem';
+  } catch(er){}
+  return (/rem/).test(div.style.fontSize);
+
+});
+// https://github.com/Modernizr/Modernizr/issues/572
+// http://jsfiddle.net/FWeinb/etnYC/
+Modernizr.addTest('cssvwunit', function(){
+    var bool;
+    Modernizr.testStyles("#modernizr { width: 50vw; }", function(elem, rule) {
+        var width = parseInt(window.innerWidth/2,10),
+            compStyle = parseInt((window.getComputedStyle ?
+                      getComputedStyle(elem, null) :
+                      elem.currentStyle)["width"],10);
+
+        bool= (compStyle == width);
+    });
+    return bool;
 });
 ;
