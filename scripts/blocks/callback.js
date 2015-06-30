@@ -1,5 +1,6 @@
 jQuery(function () {
-    $('.callback-button').click(function () {
+    $('[data-callback-trigger]').click(function (event) {
+        event.preventDefault();
         Comagic.openSitePhonePanel();
     })
 })
