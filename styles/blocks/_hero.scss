@@ -1,6 +1,8 @@
 .hero {
   @extend .ut-border-bottom;
-  background-image: url("../images/background.jpg");
+  @media (min-width: $breakpoint-medium) {
+    background-image: url("../images/background.jpg");
+  }
 }
 
 .hero-heading {
