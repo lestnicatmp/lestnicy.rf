@@ -150,8 +150,8 @@
   @extend .uk-flex;
   @extend .uk-flex-middle;
   font-size: 1.1em;
-  line-height: 1.33;
-  color: #000;
+  line-height: 1.25;
+  color: #222;
 }
 
 .header-contacts--default {
@@ -165,7 +165,7 @@
   bottom: 0.3rem;
   border: solid 1px $first-color;
   background-color: $base-body-background;
-  font-weight: 700;
+  text-align: center;
 }
 
 .header-contacts-list--default {
@@ -192,4 +192,14 @@
     float: left;
     margin-right: 1rem;
   }
+}
+
+.header-contacts-phone {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header-contacts-time {
+  font-family: $base-body-font-family;
+  font-size: 0.85rem;
 }
