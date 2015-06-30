@@ -12,6 +12,10 @@
   color: #222;
 }
 
+.uk-close {
+  border-color: $alpha-color !important;
+}
+
 a[data-uk-lightbox] {
   cursor: zoom-in;
 }

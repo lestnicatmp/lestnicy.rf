@@ -1,5 +1,5 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-flexbox-flexboxlegacy-cssanimations-cssclasses-teststyles-testprop-prefixes-css_calc-css_remunit-css_vwunit-cssclassprefix:mn!
+ * Build: http://modernizr.com/download/#-flexbox-cssclasses-teststyles-testprop-prefixes-css_remunit-cssclassprefix:mn!
  */
 ;
 
@@ -198,17 +198,6 @@ window.Modernizr = (function( window, document, undefined ) {
     }    tests['flexbox'] = function() {
       return testPropsAll('flexWrap');
     };
-
-
-    tests['flexboxlegacy'] = function() {
-        return testPropsAll('boxDirection');
-    };
-
-
-
-    tests['cssanimations'] = function() {
-        return testPropsAll('animationName');
-    };
     for ( var feature in tests ) {
         if ( hasOwnProp(tests, feature) ) {
                                     featureName  = feature.toLowerCase();
@@ -274,18 +263,6 @@ window.Modernizr = (function( window, document, undefined ) {
     return Modernizr;
 
 })(this, this.document);
-// Method of allowing calculated values for length units, i.e. width: calc(100%-3em) http://caniuse.com/#search=calc
-// By @calvein
-
-Modernizr.addTest('csscalc', function() {
-    var prop = 'width:';
-    var value = 'calc(10px);';
-    var el = document.createElement('div');
-
-    el.style.cssText = prop + Modernizr._prefixes.join(value + prop);
-
-    return !!el.style.length;
-});
 
 // test by github.com/nsfmc
 
@@ -304,19 +281,5 @@ Modernizr.addTest('cssremunit', function(){
   } catch(er){}
   return (/rem/).test(div.style.fontSize);
 
-});
-// https://github.com/Modernizr/Modernizr/issues/572
-// http://jsfiddle.net/FWeinb/etnYC/
-Modernizr.addTest('cssvwunit', function(){
-    var bool;
-    Modernizr.testStyles("#modernizr { width: 50vw; }", function(elem, rule) {
-        var width = parseInt(window.innerWidth/2,10),
-            compStyle = parseInt((window.getComputedStyle ?
-                      getComputedStyle(elem, null) :
-                      elem.currentStyle)["width"],10);
-
-        bool= (compStyle == width);
-    });
-    return bool;
 });
 ;

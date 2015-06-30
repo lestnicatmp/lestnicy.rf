@@ -60,6 +60,17 @@ table {
   }
 }
 
+dl {
+  dt {
+    font-family: $base-heading-font-family;
+    font-weight: 700 !important;
+    color: #222 !important;
+  }
+  dd {
+    color: #444 !important;
+  }
+}
+
 blockquote {
   font-size: $text-large-font-size;
 }

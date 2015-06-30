@@ -28,7 +28,7 @@
         На этой странице представлена подробная информация о лестнице {{ product.name }}.
         Нажмите на звездочку, чтобы отложить эту модель.
         Показывать <a href="#" data-flip>правозаходные</a> модификации/варианты сборки.
-        Показать <a title="Показать подсказку" data-uk-modal="{target: '.help'}">подсказку</a> по используемым терминам.
+        Показать <a title="Показать справку" data-uk-modal="{target: '.help'}">справку</a> по используемым терминам.
       </p>
 
     </div>
@@ -72,7 +72,7 @@
                src="{{ product.image | replace('<size>','200x300') }}"
                width="200" height="300">
           <table class="product-table">
-            {% set help = '<a href="#" title="Показать подсказку" class="product-table-help fa fa-question-circle" data-uk-modal="{target: \'.help\'}"></a>'%}
+            {% set help = '<a href="#" title="Показать справку" class="product-table-help fa fa-question-circle" data-uk-modal="{target: \'.help\'}"></a>'%}
             <tr><th>Поворот {{ help }}</th><td>{{ product.turn }} градусов</td></tr>
             <tr><th>Высота {{ help }}</th><td>{{ product.height }}</td></tr>
             <tr><th>Проем {{ help }}</th><td>от {{ product.window }}</td></tr>

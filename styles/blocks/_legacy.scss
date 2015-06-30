@@ -1,0 +1,25 @@
+.legacy {
+  display: none;
+}
+
+.mn-no-flexbox,
+.mn-no-remunit,
+.br-ie10 {
+  .legacy {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.95;
+    background-color: #fff;
+    text-align: center;
+  }
+}
+
+.legacy-phone {
+  @extend .uk-text-bold;
+  font-size: $base-h1-font-size;
+}
