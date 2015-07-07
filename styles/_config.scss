@@ -642,7 +642,7 @@ $table-striped-background:                       lighten($second-color, 41%);
 $table-condensed-padding-vertical:               0.2rem;
 $table-condensed-padding-horizontal:             0.5rem;
 
-$table-hover-background:                         lighten($second-color, 35%);
+$table-hover-background:                         #f8f8f8;
 
 $table-active-background:                        $table-hover-background !default;
 

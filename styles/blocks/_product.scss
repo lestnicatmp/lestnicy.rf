@@ -45,6 +45,8 @@
 .product-table-help {
   border-color: $alpha-color !important;
   opacity: 0.4;
+  font-size: 0.9em;
+  color: $grey-color !important;
   &:hover {
     opacity: 1;
   }
