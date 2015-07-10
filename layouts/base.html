@@ -61,7 +61,8 @@
     ga('send', 'pageview');
     setTimeout('ga("send", "event", "Accurate bounce rate", "Time on page more than 60 seconds")', 60000);
     $(function () {
-      ga('set', 'dimension1', Modernizr.mq('(min-width: 1000px)'));
+      ga('set', 'dimension1', Modernizr.mq('(min-width: 1000px)') ? 'desktop' : 'mobile');
+      ga('set', 'metric5', $(window).width());
     });
   </script>
 
