@@ -3,6 +3,10 @@
   font-family: $base-heading-font-family;
 }
 
+.badge--success {
+  @extend .uk-badge-success;
+}
+
 .badge-link {
   color: #fff !important;
 }
