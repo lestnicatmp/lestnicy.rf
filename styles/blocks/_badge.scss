@@ -1,0 +1,8 @@
+.badge {
+  @extend .uk-badge;
+  font-family: $base-heading-font-family;
+}
+
+.badge-link {
+  color: #fff !important;
+}
