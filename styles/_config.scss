@@ -637,12 +637,12 @@ $table-padding-horizontal:                       0.5rem;
 $table-caption-color:                            #999 !default;
 $table-caption-font-size:                        0.9rem;
 
-$table-striped-background:                       lighten($second-color, 41%);
+$table-striped-background:                       lighten($second-color, 37.5%);
 
 $table-condensed-padding-vertical:               0.2rem;
 $table-condensed-padding-horizontal:             0.5rem;
 
-$table-hover-background:                         #f8f8f8;
+$table-hover-background:                         lighten($second-color, 35%);
 
 $table-active-background:                        $table-hover-background !default;
 

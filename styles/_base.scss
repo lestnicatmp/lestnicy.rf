@@ -48,10 +48,10 @@ table {
   border-collapse: collapse;
   font-size: $text-small-font-size;
   th, td {
-    border: solid 1px #bbb;
+    border: solid 1px lighten($second-color, 10%);
   }
   th {
-    background-color: #f8f8f8;
+    background-color: lighten($second-color, 35%);
     font-family: $base-heading-font-family;
     color: #000;
   }
