@@ -1,5 +1,5 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-flexbox-cssclasses-teststyles-testprop-prefixes-css_remunit-cssclassprefix:mn!
+ * Build: http://modernizr.com/download/#-flexbox-mq-cssclasses-teststyles-testprop-prefixes-css_remunit-cssclassprefix:mn!
  */
 ;
 
@@ -84,6 +84,25 @@ window.Modernizr = (function( window, document, undefined ) {
       return !!ret;
 
     },
+
+    testMediaQuery = function( mq ) {
+
+      var matchMedia = window.matchMedia || window.msMatchMedia;
+      if ( matchMedia ) {
+        return matchMedia(mq) && matchMedia(mq).matches || false;
+      }
+
+      var bool;
+
+      injectElementWithStyles('@media ' + mq + ' { #' + mod + ' { position: absolute; } }', function( node ) {
+        bool = (window.getComputedStyle ?
+                  getComputedStyle(node, null) :
+                  node.currentStyle)['position'] == 'absolute';
+      });
+
+      return bool;
+
+     },
     _hasOwnProperty = ({}).hasOwnProperty, hasOwnProp;
 
     if ( !is(_hasOwnProperty, 'undefined') && !is(_hasOwnProperty.call, 'undefined') ) {
@@ -247,6 +266,7 @@ window.Modernizr = (function( window, document, undefined ) {
     Modernizr._domPrefixes  = domPrefixes;
     Modernizr._cssomPrefixes  = cssomPrefixes;
 
+    Modernizr.mq            = testMediaQuery;
 
 
     Modernizr.testProp      = function(prop){

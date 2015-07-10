@@ -60,6 +60,9 @@
     ga('create', 'UA-17358822-2', 'auto');
     ga('send', 'pageview');
     setTimeout('ga("send", "event", "Accurate bounce rate", "Time on page more than 60 seconds")', 60000);
+    $(function () {
+      ga('set', 'dimension1', Modernizr.mq('(min-width: 1000px)'));
+    });
   </script>
 
   <!-- Yandex Metrika -->
