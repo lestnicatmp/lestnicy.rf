@@ -6,19 +6,15 @@
 {% elif lodash.startsWith(route, 'select') %}
 
   {% set href = '/купить-лестницу/' %}
+  {% set class = 'guide-link--success' %}
   {% set text = 'Перейти к покупке лестницы!' %}
-
-{% elif lodash.startsWith(route, 'order') %}
-
-  {% set href = '/' %}
-  {% set text = 'Перейти на главную страницу!' %}
 
 {% endif %}
 
 {% if href and text %}
 <nav class="guide">
   <div class="guide-container">
-    <a href="{{ href }}" class="guide-link">
+    <a href="{{ href }}" class="guide-link {{ class }}">
       {{ text }}
     </a>
   </div>

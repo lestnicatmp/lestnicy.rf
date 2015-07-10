@@ -21,3 +21,8 @@
   font-family: $base-heading-font-family;
   letter-spacing: 0.05em;
 }
+
+.guide-link--success {
+  @extend .uk-button-success;
+  border: solid 1px darken($third-color, 20%) !important;
+}
