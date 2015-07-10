@@ -1,4 +1,4 @@
-.callback--default {
+.callback {
   @extend .uk-flex;
   @extend .uk-width-1-1;
 }
@@ -13,12 +13,4 @@
   @include text-shadow;
   border: solid 1px darken($third-color, 20%) !important;
   font-family: $base-heading-font-family;
-}
-
-.callback-link {
-  color: $third-color !important;
-  border-bottom: dashed 1px currentColor !important;
-  &:hover {
-    border-bottom-style: solid !important;
-  }
 }
