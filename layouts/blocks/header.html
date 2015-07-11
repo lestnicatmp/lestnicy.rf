@@ -1,28 +1,5 @@
 <header class="header" data-uk-sticky>
-
   {% include 'blocks/mainnav.html' %}
   {% include 'blocks/subnav.html' %}
-
-  <address class="header-contacts header-contacts--default" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 500}">
-    <ul class="header-contacts-list header-contacts-list--default">
-      <li class="header-contacts-phone comagic_phone">+7 (495) 490-38-14</li>
-      <li class="header-contacts-time">(пн-пт 9:00-18:00)</li>
-      <li>
-        <span class="badge badge--success">
-          <a title="Заказать обратный звонок" class="badge-link" href="#" data-callback-trigger>
-            Обратный звонок
-          </a>
-        </span>
-      </li>
-    </ul>
-  </address>
-
-  <address class="header-contacts header-contacts--compact">
-    <ul class="header-contacts-list header-contacts-list--compact" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 500}">
-      <li><span class="fa fa-phone"></span></li>
-      <li class="comagic_phone">+7 (495) 490-38-14</li>
-      <li>пн-пт 9:00-18:00</li>
-    </ul>
-  </address>
-
+  {% include 'blocks/contacts.html' %}
 </header>
