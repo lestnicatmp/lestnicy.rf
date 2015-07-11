@@ -1,0 +1,43 @@
+<nav class="mainnav">
+
+  <div class="mainnav-toggle">
+    <a class="mainnav-toggle-link fa fa-bars" data-uk-offcanvas="{target:'.menu'}" href="#"></a>
+  </div>
+
+  <div class="mainnav-logo">
+    <a class="mainnav-logo-link" href="/">Лестницы.рф</a>
+  </div>
+
+  {% set active = 'mainnav-item--active' %}
+  <ol class="mainnav-list">
+
+    {% set class = active if not lodash.includes(route, '/') else '' %}
+    <li class="mainnav-item {{ class }}">
+      <a class="mainnav-link" href="/">
+        Главная<br>страница
+      </a>
+    </li>
+
+    {% set class = active if lodash.startsWith(route, 'select') else '' %}
+    <li class="mainnav-item {{ class }}">
+      <a class="mainnav-link" href="/подобрать-лестницу/">
+        Подобрать<br>лестницу
+      </a>
+      <a class="mainnav-stars" title="Отложенные лестницы" href="/подобрать-лестницу/по-каталогу/отложенные/">
+        <span class="fa fa-stack fa-lg">
+          <span class="mainnav-stars-layout fa fa-stack-2x fa-star"></span>
+          <span class="mainnav-stars-count fa fa-stack-1x"></span>
+        </span>
+      </a>
+    </li>
+
+    {% set class = active if lodash.startsWith(route, 'order') else '' %}
+    <li class="mainnav-item {{ class }}">
+      <a class="mainnav-link" href="/купить-лестницу/">
+        Купить<br>лестницу
+      </a>
+    </li>
+
+  </ol>
+
+</nav>

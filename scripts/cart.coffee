@@ -17,11 +17,11 @@ class CartModule
 
   update_menu: =>
     products = @get_products()
-    target = $('.header-mainnav-stars')
+    target = $('.mainnav-stars')
     target.hide()
     target.html()
     if products.length
-      target.find('.header-mainnav-stars-count').html(products.length)
+      target.find('.mainnav-stars-count').html(products.length)
       target.show()
 
   update_stars: =>
