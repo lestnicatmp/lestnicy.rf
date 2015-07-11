@@ -59,12 +59,11 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-17358822-2', 'auto');
+    ga('set', 'dimension1', Modernizr.mq('(min-width: 1000px)') ? 'desktop' : 'mobile');
+    ga('set', 'dimension2', $('.legacy:hidden').length ? 'modern' : 'legacy');
+    ga('set', 'metric5', $(window).width());
     ga('send', 'pageview');
     setTimeout('ga("send", "event", "Accurate bounce rate", "Time on page more than 60 seconds")', 60000);
-    $(function () {
-      ga('set', 'dimension1', Modernizr.mq('(min-width: 1000px)') ? 'desktop' : 'mobile');
-      ga('set', 'metric5', $(window).width());
-    });
   </script>
 
   <!-- Yandex Metrika -->
