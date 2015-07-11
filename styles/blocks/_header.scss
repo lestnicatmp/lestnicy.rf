@@ -4,45 +4,6 @@
   font-family: $base-heading-font-family;
 }
 
-.header-subnav {
-  @extend .ut-hidden-print;
-  @extend .uk-hidden-small;
-  @include box-shadow;
-  border-top: solid 1px $first-color;
-  border-bottom: solid 1px lighten($first-color, 5%);
-  background-color: lighten($first-color, 15%);
-}
-
-.header-subnav-list {
-  @extend .uk-list;
-  @extend .uk-margin-remove;
-  @extend .uk-flex;
-  margin-left: 0.8rem !important;
-}
-
-.header-subnav-item {
-  margin: 0.4rem 0;
-  margin-left: 0.2rem;
-  border: solid 1px rgba(#fff, 0);
-  font-weight: 400;
-}
-
-.header-subnav-item--active {
-  @extend .uk-border-rounded;
-  @include box-shadow--contrast;
-  border-color: $first-color;
-  background-color: $base-body-background;
-  font-weight: 700;
-}
-
-.header-subnav-link {
-  margin: 0 1rem;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-  color: #000 !important;
-}
-
 .header-contacts {
   @extend .uk-margin-remove;
   @extend .uk-flex;

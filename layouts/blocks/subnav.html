@@ -1,0 +1,79 @@
+<nav class="subnav">
+
+  {% set active = 'subnav-item--active' %}
+  <ul class="subnav-list" data-uk-scrollspy-nav="{cls:'{{ active }}', closest:'li', topoffset: 300}">
+
+    {% if not lodash.includes(route, '/') %}
+
+    {% set class = active %}
+    {% set link = '#лидеры' if route == 'index' else '/#лидеры' %}
+    <li class="subnav-item {{ class }}">
+      <a class="subnav-link" href="{{ link }}">
+        №1 в России
+      </a>
+    </li>
+
+    {% set link = '#качество' if route == 'index' else '/#качество' %}
+    <li class="subnav-item">
+      <a class="subnav-link" href="{{ link }}">
+        высокое качество
+      </a>
+    </li>
+
+    {% set link = '#цена' if route == 'index' else '/#цена' %}
+    <li class="subnav-item">
+      <a class="subnav-link" href="{{ link }}">
+        доступная цена
+      </a>
+    </li>
+
+    {% set link = '#скорость' if route == 'index' else '/#скорость' %}
+    <li class="subnav-item">
+      <a class="subnav-link" href="{{ link }}">
+        торгово-выставочный зал
+      </a>
+    </li>
+
+    {% elif lodash.startsWith(route, 'select') %}
+
+    {% set class = active if route == 'select/index' %}
+    <li class="subnav-item {{ class }}">
+      <a class="subnav-link" href="/подобрать-лестницу/">
+        по типу
+      </a>
+    </li>
+
+    {% set class = active if lodash.startsWith(route, 'select/catalog') %}
+    <li class="subnav-item {{ class }}">
+      <a class="subnav-link" href="/подобрать-лестницу/по-каталогу/">
+        по каталогу
+      </a>
+    </li>
+
+    <li class="subnav-item">
+      <a class="subnav-link" href="/купить-лестницу/">
+        в торгово-выставочном зале
+      </a>
+    </li>
+
+    {% elif lodash.startsWith(route, 'order') %}
+
+    {% set class = active if route == 'order/index' %}
+    <li class="subnav-item {{ class }}">
+      <a class="subnav-link" href="/купить-лестницу/">
+        торгово-выставочный зал
+      </a>
+    </li>
+
+    {% set class = active if route == 'order/dealers' %}
+    <li class="subnav-item {{class }}">
+      <a class="subnav-link" href="/купить-лестницу/дилеры/">
+        дилеры по всей России
+      </a>
+    </li>
+
+    {% endif %}
+
+  </ul>
+
+</nav>
