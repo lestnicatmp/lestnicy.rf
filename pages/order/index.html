@@ -23,9 +23,13 @@ route: order/index
     <p class="uk-text-large">
       Выбрать и купить лестницу вы можете в нашем торгово-выставочном зале
       расположенном в Москве, недалеко от станции м. Тушинская. В зале представлено
-      <em>более 20 моделей лестниц</em>! Мы вам поможем подобрать подходящую вам лестницу,
-      проконсультируем по любым вопросам. Большинство лестниц можно купить и
-      забрать сразу же!
+      <span class="badge">
+        <a class="badge-link" href="/images/shop/1600x1067/shop-03.jpg" data-uk-lightbox="{group: 'shop'}">
+          более 20 моделей лестниц!
+        </a>
+      </span>
+      Мы вам поможем подобрать подходящую вам лестницу, проконсультируем по любым вопросам.
+      Большинство лестниц можно купить и забрать сразу же!
 
       <hr>
 
@@ -59,11 +63,15 @@ route: order/index
     <div class="uk-grid">
 
       <div class="uk-width-medium-2-5 uk-flex uk-hidden-small ut-hidden-print">
-        <a href="/images/shop/1600x1067/shop-01.jpg" data-uk-lightbox>
-          <img alt="Торгово-выставочный зал"
-               src="/images/shop/shop-01.jpg"
-               class="uk-width-1-1 uk-margin-small-top uk-margin-small-bottom"
-               style="height: 18rem;">
+        <a class="uk-width-1-1 uk-margin-small-top uk-margin-small-bottom"
+           href="/images/shop/1600x1067/shop-01.jpg"
+           data-uk-lightbox="{group: 'shop'}">
+          <figure class="uk-overlay ut-border">
+            <img alt="Торгово-выставочный зал" src="/images/shop/shop-01.jpg" style="height: 18rem;">
+            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom ut-caption">
+              Посмотреть фотографии зала
+            </figcaption>
+          </figure>
         </a>
       </div>
 
@@ -75,6 +83,20 @@ route: order/index
 
   </div>
 </article>
+
+<!-- Gallery -->
+<div class="uk-hidden">
+  <a href="/images/shop/1600x1067/shop-02.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-04.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-05.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-06.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-07.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-08.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-09.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-10.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-11.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+  <a href="/images/shop/1600x1067/shop-12.jpg" data-uk-lightbox="{group: 'shop'}"></a>
+</div>
 
 <!-- Yandex Maps -->
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

@@ -1,3 +1,7 @@
+.ut-border {
+  border: solid 1px darken($grey-color, 20%);
+}
+
 .ut-border-bottom {
   border-bottom: dotted 1px $grey-color;
 }
@@ -10,6 +14,16 @@
   font-family: $base-heading-font-family;
   font-style: normal;
   color: #222;
+}
+
+.ut-caption {
+  @include text-shadow;
+  padding: 1.1rem;
+  background: rgba(#000, 0.4);
+  font-family: $base-heading-font-family;
+  font-size: $base-h3-font-size;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .uk-close {
