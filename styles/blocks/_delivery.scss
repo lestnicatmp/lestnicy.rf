@@ -1,0 +1,26 @@
+.delivery {
+  @extend .ut-hidden-print;
+  @extend .uk-border-rounded;
+  @include box-shadow--contrast;
+  position: fixed;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  width: 15rem;
+  border: solid 1px darken(#f00, 20%) !important;
+  background-color: #f00;
+  font-family: $base-heading-font-family;
+  font-size: 1.1em;
+  line-height: 1.25;
+  color: #fff;
+  text-align: center;
+}
+
+.delivery-heading {
+  @include text-shadow;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.delivery-content {
+  margin: 0.5rem 0;
+}
