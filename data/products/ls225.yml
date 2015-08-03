@@ -2,6 +2,7 @@ name: ЛС-225
 slug: лс-225
 price: 41634
 presence: true
+discount: true
 height: 2,71-2,90
 size: 2,31 x 1,40
 window: 2,20 x 0,92

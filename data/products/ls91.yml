@@ -2,6 +2,7 @@ name: ЛС-91
 slug: лс-91
 price: 25145
 presence: true
+discount: true
 height: 2,48-2,70
 size: 1,23 x 1,11
 window: 1,22 x 0,90

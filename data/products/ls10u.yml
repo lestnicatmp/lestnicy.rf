@@ -2,6 +2,7 @@ name: ЛС-10У
 slug: лс-10у
 price: 26300
 presence: true
+discount: true
 height: 2,67-2,92
 size: 2,38 x 0,83
 window: 1,90 x 0,83
