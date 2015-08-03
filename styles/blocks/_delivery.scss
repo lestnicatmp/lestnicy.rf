@@ -6,8 +6,8 @@
   right: 0.3rem;
   bottom: 0.3rem;
   width: 15rem;
-  border: solid 1px darken(#f00, 20%) !important;
-  background-color: #f00;
+  border: solid 1px darken($third-color, 20%) !important;
+  background-color: $third-color;
   font-family: $base-heading-font-family;
   font-size: 1.1em;
   line-height: 1.25;
