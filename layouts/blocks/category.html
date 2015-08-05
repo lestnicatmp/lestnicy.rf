@@ -33,6 +33,12 @@
 
     <div class="category-descr">
 
+      {% if first_product.discount %}
+      <div class="category-notice">
+        <span class="badge badge--success">Скидка 5% при самовывозе!</span>
+      </div>
+      {% endif %}
+
       <div class="category-text">
         {{ category.text }}
       </div>
@@ -51,6 +57,7 @@
                data-image="{{ product.image | replace('<size>','200x300') }}"
                data-link="/подобрать-лестницу/по-каталогу/{{ product.slug }}/"
                data-presence="{{ product.presence }}"
+               data-discount="{{ product.discount }}"
                data-turn="{{ product.turn }}"
                data-height="{{ product.height }}"
                data-window="{{ product.window }}"

@@ -46,6 +46,11 @@
   @extend .uk-flext-item-none;
 }
 
+.category-notice {
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .category-panel {
   @extend .uk-margin-top;
   @extend .uk-flex;
