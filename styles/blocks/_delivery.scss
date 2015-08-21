@@ -24,3 +24,15 @@
 .delivery-content {
   margin: 0.5rem 0;
 }
+
+.delivery-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  line-height: 1;
+}
+
+.delivery-close-link {
+  color: #fff !important;
+  border-color: $alpha-color !important;
+}
