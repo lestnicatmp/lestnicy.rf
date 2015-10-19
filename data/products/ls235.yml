@@ -23,6 +23,9 @@ boxes:
     weight: 124
   - size: 3280 x 420 x 280
     weight: 75
+photos:
+  - image: /images/products/photos/<size>/ls235-1.jpg
+  - image: /images/products/photos/<size>/ls235-2.jpg
 sketchs:
   - image: /images/products/sketchs/ls235/1.jpg
   - image: /images/products/sketchs/ls235/3.jpg

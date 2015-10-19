@@ -21,6 +21,9 @@ boxes:
     weight: 19
   - size: 2705 x 525 x 280
     weight: 109
+photos:
+  - image: /images/products/photos/<size>/ls92-1.jpg
+  - image: /images/products/photos/<size>/ls92-2.jpg
 sketchs:
   - image: /images/products/sketchs/ls92/1.jpg
   - image: /images/products/sketchs/ls92/2.jpg

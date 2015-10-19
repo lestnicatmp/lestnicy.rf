@@ -26,6 +26,9 @@ boxes:
     weight: 56
   - size: 3490 x 340 x 280
     weight: 110
+photos:
+  - image: /images/products/photos/<size>/ls21-1.jpg
+  - image: /images/products/photos/<size>/ls21-2.jpg
 sketchs:
   - image: /images/products/sketchs/ls21/1.jpg
   - image: /images/products/sketchs/ls21/2.jpg

@@ -5,10 +5,15 @@ session_name: lestnicyrf
 windows:
   - window_name: bash
     panes:
-      -
+      - shell_command:
+        - nvm use 0
   - window_name: vim
     panes:
-      - vim
+      - shell_command:
+        - nvm use 0
+        - vim
   - window_name: misc
     panes:
-      - gulp
+      - shell_command:
+        - nvm use 0
+        - gulp

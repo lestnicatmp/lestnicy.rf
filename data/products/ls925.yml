@@ -23,6 +23,9 @@ boxes:
     weight: 124
   - size: 785 x 305 x 280
     weight: 28
+photos:
+  - image: /images/products/photos/<size>/ls925-1.jpg
+  - image: /images/products/photos/<size>/ls925-2.jpg
 sketchs:
   - image: /images/products/sketchs/ls925/1.jpg
   - image: /images/products/sketchs/ls925/2.jpg

@@ -23,5 +23,8 @@ boxes:
     weight: 60
   - size: 2290 x 400 x 280
     weight: 60
+photos:
+  - image: /images/products/photos/<size>/ls93-1.jpg
+  - image: /images/products/photos/<size>/ls93-2.jpg
 sketchs:
   - image: /images/products/sketchs/ls93/1.jpg
