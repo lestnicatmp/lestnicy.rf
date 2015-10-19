@@ -23,3 +23,5 @@ boxes:
     weight: 35
   - size: 2900 x 360 x 280
     weight: 93
+photos:
+  - image: /images/products/photos/<size>/lv12x-1.jpg
