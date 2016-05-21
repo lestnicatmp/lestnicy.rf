@@ -1,19 +1,17 @@
 # General
-session_name: lestnicyrf
+session_name: lestnicy+rf
 
 # Windows
 windows:
   - window_name: bash
     panes:
       - shell_command:
-        - nvm use 0
+        -
   - window_name: vim
     panes:
       - shell_command:
-        - nvm use 0
         - vim
-  - window_name: misc
+  - window_name: proc
     panes:
       - shell_command:
-        - nvm use 0
-        - gulp
+        -
