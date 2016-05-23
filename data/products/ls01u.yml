@@ -9,7 +9,6 @@ size: 1,65 x 1,39
 turn: 180
 wood: хвоя
 rail: false
-rail: false
 riser: false
 finish: false
 step_height: 193
