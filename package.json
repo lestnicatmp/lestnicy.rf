@@ -3,6 +3,9 @@
   "license": "internal",
   "description": "internal",
   "repository": "internal",
+  "engines": {
+    "node": "^0.12.0"
+  },
   "dependencies": {
     "browser-sync": "^2.7.6",
     "cheerio": "^0.19.0",
