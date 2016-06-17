@@ -22,5 +22,5 @@ boxes:
   - size: 2400 x 640 x 210
     weight: 110
 photos:
-  - image: /images/products/photos/<size>/lv12b-1.jpg
-  - image: /images/products/photos/<size>/lv12b-2.jpg
+  # - image: /images/products/photos/<size>/lv12b-1.jpg
+  # - image: /images/products/photos/<size>/lv12b-2.jpg
