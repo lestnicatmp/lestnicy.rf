@@ -4,6 +4,7 @@
   text: >
     Компактные лестницы идеально подойдут для небольших домов и помещений.
   items:
+    - product: modul
     - product: ls91
     - product: ls93
     - product: ls01u

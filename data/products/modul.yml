@@ -1,0 +1,23 @@
+name: Модульная
+slug: модульная
+price: 38100
+presence: true
+height:
+size:
+window:
+turn:
+wood:
+rail:
+riser:
+finish:
+step_height:
+step_quantity:
+step_depth:
+image: /images/products/models/<size>/modul.jpg
+text: >
+  Внимание новинка!!! Модульная лестница завода Темп. От 38100р. за ТРИ метра подъёма, всего 2540р. за шаг прямой лестницы, при минимальной комплектации. Переменная высота шага от 190 до 225мм, который можно точно подстроить под любую высоту помещения. Любая конфигурация лестницы, в том числе: прямая, 90°, 180°, 270°, 360°, Z- образная. Ширина ступеней 900 мм, легко уменьшается до требуемой, вплоть до 500 мм.
+photos:
+  - image: /images/products/photos/<size>/modul-1.jpg
+    home: true
+  - image: /images/products/photos/<size>/modul-2.jpg
+  - image: /images/products/photos/<size>/modul-3.jpg
