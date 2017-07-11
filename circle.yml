@@ -1,9 +1,11 @@
-# Test
+machine:
+  node:
+    version: 0.12.18
+
 test:
   override:
     - npm run gulp build
 
-# Deploy
 deployment:
   deploy:
     branch: master
