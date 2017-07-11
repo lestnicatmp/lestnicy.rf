@@ -2,6 +2,7 @@ name: ЛС-92
 slug: лс-92
 price: 19630
 presence: true
+discount: true
 height: 2,48-2,7
 size: 1,85 x 1,03
 window: 1,80 x 0,83
