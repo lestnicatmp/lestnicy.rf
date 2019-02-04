@@ -22,16 +22,16 @@ text: >
       <tr><th style="width:60%">Наименование</th><th>Цена</th></tr>
     </thead>
     <tbody>
-      <tr><td>Модуль промежуточный</td><td>1700</td></tr>
-      <tr><td>Модуль угловой</td><td>1900</td></tr>
-      <tr><td>Модуль поворотный</td><td>1900</td></tr>
-      <tr><td>Модуль верх-низ</td><td>3000</td></tr>
-      <tr><td>Опора 1м</td><td>1150</td></tr>
-      <tr><td>Опора 2м</td><td>2200</td></tr>
-      <tr><td>Опора в стену</td><td>2500</td></tr>
-      <tr><td>Балясина</td><td>380</td></tr>
-      <tr><td>Балясина Т-образная</td><td>380</td></tr>
-      <tr><td>Набор для болец</td><td>270</td></tr>
+      <tr><td>Модуль промежуточный</td><td>1729</td></tr>
+      <tr><td>Модуль угловой</td><td>1932</td></tr>
+      <tr><td>Модуль поворотный</td><td>1932</td></tr>
+      <tr><td>Модуль верх-низ</td><td>3051</td></tr>
+      <tr><td>Опора 1м</td><td>1169</td></tr>
+      <tr><td>Опора 2м</td><td>2237</td></tr>
+      <tr><td>Опора в стену</td><td>2542</td></tr>
+      <tr><td>Балясина</td><td>386</td></tr>
+      <tr><td>Балясина Т-образная</td><td>386</td></tr>
+      <tr><td>Набор для болец</td><td>275</td></tr>
     </tbody>
   </table>
   <table class="uk-table uk-table-stripped uk-table-condensed" style="width:50%">
@@ -39,10 +39,10 @@ text: >
       <tr><th style="width:60%">Ступени</th><th>Сосна</th><th>Бук</th></tr>
     </thead>
     <tbody>
-      <tr><td>Ступень прямая</td><td>640</td><td>1440</td></tr>
-      <tr><td>Ступень поворотная 1</td><td>750</td><td>1575</td></tr>
-      <tr><td>Ступень поворотная 2</td><td>750</td><td>1575</td></tr>
-      <tr><td>Ступень угловая</td><td>1200</td><td>2700</td></tr>
+      <tr><td>Ступень прямая</td><td>651</td><td>1464</td></tr>
+      <tr><td>Ступень поворотная 1</td><td>763</td><td>1602</td></tr>
+      <tr><td>Ступень поворотная 2</td><td>763</td><td>1602</td></tr>
+      <tr><td>Ступень угловая</td><td>1220</td><td>2746</td></tr>
     </tbody>
   </table>
   <table class="uk-table uk-table-stripped uk-table-condensed" style="width:50%">
@@ -50,8 +50,8 @@ text: >
       <tr><th style="width:60%">Поручни</th><th>Сосна</th><th>Бук</th></tr>
     </thead>
     <tbody>
-      <tr><td>Поручень 2м</td><td>360</td><td>810</td></tr>
-      <tr><td>Поручень 3м</td><td>540</td><td>1215</td></tr>
+      <tr><td>Поручень 2м</td><td>366</td><td>824</td></tr>
+      <tr><td>Поручень 3м</td><td>549</td><td>1236</td></tr>
     </tbody>
   </table>
 photos:
