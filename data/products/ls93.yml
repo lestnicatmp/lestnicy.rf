@@ -1,7 +1,7 @@
 name: ЛС-93
 slug: лс-93
-price: 33458
-presence: true
+price:
+presence: false
 height: 2,27-2,50
 window: 1,50 x 0,83
 turn: 180
