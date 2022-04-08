@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /*openstat=
+Disallow: /*gclid=
+Disallow: /*utm_*=
+Disallow: /?
+Allow: /
+Host: xn--e1aghjtg4a3b.xn--p1ai
+Sitemap: http://xn--e1aghjtg4a3b.xn--p1ai/sitemap.xml
