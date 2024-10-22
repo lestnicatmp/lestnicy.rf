@@ -1,6 +1,6 @@
-name: ЛС-01У
+﻿name: ЛС-01У
 slug: лс-01у
-price: 45400
+price: 45401
 presence: true
 discount: true
 height: 2,51-2,70
@@ -13,7 +13,7 @@ riser: false
 finish: false
 step_height: 193
 step_quantity: 14
-step_depth: 40
+step_depth: 38
 image: /images/products/models/<size>/ls01u.jpg
 text: >
   Универсальная лестница (возможность сборки в левозаходном и правозаходном варианте одного и того же комплекта). Удобна при установке в угол помещения, поэтому не имеет перил. При необходимости клиент может установить пристенные поручни.
