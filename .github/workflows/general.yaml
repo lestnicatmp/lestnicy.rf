@@ -22,7 +22,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v1
         with:
-          node-version: 8
+          node-version: 16
       - name: Install dependencies
         run: npm install
       - name: Build software
